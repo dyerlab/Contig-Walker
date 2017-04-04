@@ -25,6 +25,9 @@
 *
 ******************************************************************************/
 
+#include <QMenu>
+#include <QDebug>
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -39,3 +42,37 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::makeActions(){
+    actionOpenDataFolder = new QAction( tr("&Open Data Folder"));
+    actionOpenDataFolder->setShortcut(tr("CTRL+O"));
+    connect( actionOpenDataFolder, SIGNAL(triggered(bool)),
+             this, SLOT(slotSetFolder()));
+}
+
+void MainWindow::makeMenus() {
+    QMenu *fileMenu = this->menuBar()->addMenu(tr("&File"));
+    fileMenu->addAction( actionOpenDataFolder );
+    QAction *actionQuit = new QAction(tr("&Quit"));
+    connect( actionQuit, SLOT(triggered(bool)),
+             qApp, SLOT(closeAllWindows()));
+
+}
+
+void MainWindow::makeUI() {
+
+}
+
+
+
+
+
+void MainWindow::slotSetFolder(){
+    qDebug() << "slotSetFolder";
+}
+
+
+
+
+
+

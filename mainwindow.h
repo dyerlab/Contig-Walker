@@ -49,8 +49,14 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QAction *actionSetFolder;
+    QAction *actionOpenDataFolder;
     QString *projectPath;
+
+
+    void makeActions();
+    void makeMenus();
+    void makeUI();
+
 
 
 private slots:
