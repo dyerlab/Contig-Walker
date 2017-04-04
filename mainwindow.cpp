@@ -27,6 +27,8 @@
 
 #include <QMenu>
 #include <QDebug>
+#include <QStringList>
+#include <QFileDialog>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -36,6 +38,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    makeActions();
+    makeMenus();
+    makeUI();
 }
 
 MainWindow::~MainWindow()
@@ -46,16 +52,19 @@ MainWindow::~MainWindow()
 void MainWindow::makeActions(){
     actionOpenDataFolder = new QAction( tr("&Open Data Folder"));
     actionOpenDataFolder->setShortcut(tr("CTRL+O"));
-    connect( actionOpenDataFolder, SIGNAL(triggered(bool)),
-             this, SLOT(slotSetFolder()));
+    connect( actionOpenDataFolder, SIGNAL(triggered(bool)),this, SLOT(slotSetFolder()));
+
+    actionQuit = new QAction(tr("&Quit"));
+    actionQuit->setShortcut(tr("CTRL+Q"));
+    connect( actionQuit, SIGNAL(triggered(bool)),qApp,SLOT(closeAllWindows()));
+
 }
 
 void MainWindow::makeMenus() {
-    QMenu *fileMenu = this->menuBar()->addMenu(tr("&File"));
+    QMenu *fileMenu = menuBar()->addMenu(tr("&File"));
     fileMenu->addAction( actionOpenDataFolder );
-    QAction *actionQuit = new QAction(tr("&Quit"));
-    connect( actionQuit, SLOT(triggered(bool)),
-             qApp, SLOT(closeAllWindows()));
+    fileMenu->addSeparator();
+    fileMenu->addAction( actionQuit );
 
 }
 
@@ -68,7 +77,21 @@ void MainWindow::makeUI() {
 
 
 void MainWindow::slotSetFolder(){
-    qDebug() << "slotSetFolder";
+    QString path = QFileDialog::getExistingDirectory(this,
+                                                    "Locate data directory",
+                                                    QDir::homePath());
+    if( path.isEmpty())
+        return;
+
+    QStringList filters;
+    filters << "*.gml";
+
+    dataDir = new QDir(path);
+    dataDir->setNameFilters(filters);
+    dataDir->setFilter( QDir::Files );
+
+    qDebug() << "Directory has " << dataDir->count() << " items.";
+
 }
 
 

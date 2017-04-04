@@ -28,6 +28,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QDir>
 #include <QMenu>
 #include <QString>
 #include <QAction>
@@ -49,8 +50,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
     QAction *actionOpenDataFolder;
-    QString *projectPath;
+    QAction *actionQuit;
+    QDir *dataDir;
 
 
     void makeActions();
