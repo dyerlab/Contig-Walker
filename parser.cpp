@@ -24,9 +24,9 @@ QString Parser::getFeedback(){
     QString ret;
 
     if( errors.count())
-        ret << "Errors: " << errors.join("\n");
+        ret.append( QString("Errors:\n%1").arg(errors.join("\n")));
     if( warnings.count())
-        ret << "Warnings: " << warnings.join("\n");
+        ret.append( QString("Errors:\n%1").arg(warnings.join("\n")));
 
     return ret;
 }

@@ -27,11 +27,16 @@
 
 #include <QMenu>
 #include <QDebug>
-#include <QCharts>
+#include <QChart>
+#include <QChartView>
 #include <QStringList>
 #include <QFileDialog>
 
 #include "parsegraphjson.h"
+#include "plotops.h"
+#include "vector.h"
+#include "vectorops.h"
+#include "graphanalysisdegree.h"
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -95,20 +100,44 @@ void MainWindow::slotSetFolder(){
     dataDir->makeAbsolute();
 
     qDebug() << "Directory has " << dataDir->count() << " items.";
+    if( !dataDir->count() ) {
+        qDebug() << "No json files in that folder";
+        return;
+    }
+
 
     QString dataFile = dataDir->absoluteFilePath( dataDir->entryList().at(0) );
 
     ParseGraphJSON *parser = new ParseGraphJSON( dataFile, this);
+    qDebug() << "a parser was made";
 
     if( !parser->parse()){
         qDebug() << "Cannot parse " << dataFile;
-        qDebug() << parser->getFeedback();
+        //qDebug() << parser->getFeedback();
    }
     else {
         Graph *theGraph = parser->getGraph();
+        qDebug() << "theGraph";
+        GraphAnalysisDegree *analysis = new GraphAnalysisDegree(theGraph);
+        qDebug() << "analysis";
+        if( analysis->run() ) {
+            qDebug() << "analysis->run()";
+            //Vector *degree = analysis->getDegreeDistribution();
+            Vector *degree = analysis->getDegreeHistogram();
+
+            QChart *chart = barChartFromVector(degree,QString("Graph Degree Distribution"));
+            QChartView *chartView = new QChartView(chart);
+            chartView->setRenderHint(QPainter::Antialiasing);
+            setCentralWidget( chartView );
+        }
+        free(theGraph);
+        free(analysis);
+
 
         qDebug() << "Parser finished";
     }
+
+    delete parser;
 
 
 }

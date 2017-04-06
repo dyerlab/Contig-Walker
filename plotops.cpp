@@ -2,6 +2,7 @@
 
 #include <QBarSet>
 #include <QBarSeries>
+#include <QBarCategoryAxis>
 
 
 QChart* barChartFromVector( Vector *theVec, QString title ) {
@@ -19,7 +20,13 @@ QChart* barChartFromVector( Vector *theVec, QString title ) {
     chart->setTitle(title);
     chart->setAnimationOptions(QChart::SeriesAnimations);
 
-    return chart;
+    QStringList categories = theVec->getLabels();
+    QBarCategoryAxis *axis = new QBarCategoryAxis();
+    axis->append(categories);
+    axis->setLabelsAngle(90);
+    chart->createDefaultAxes();
+    chart->setAxisX(axis, series);
 
+    return chart;
 }
 

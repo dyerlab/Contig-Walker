@@ -1,10 +1,10 @@
 #include "vector.h"
+#include <QDebug>
 
 Vector::Vector(int length)
 {
     vector = gsl_vector_calloc(length);
-    while( labels.count() < length)
-        labels.append("");
+
 }
 
 Vector::~Vector() {
@@ -31,7 +31,8 @@ bool Vector::contains( QString lbl ) const {
 
 
 double Vector::get(int idx) const {
-    if( idx < labels.count())
+    qDebug() << vector->size << idx;
+    if( idx < labels.count() )
         return gsl_vector_get( vector, idx );
     else
         return 0.0;

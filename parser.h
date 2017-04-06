@@ -23,7 +23,7 @@ public:
 
     virtual bool parse() = 0 ;
     PARSER_STATUS getStatus() const;
-    QString getFeedback() const;
+    QString getFeedback();
 
     inline QStringList getErrors() { return errors; }
     inline QStringList getWarnings() { return warnings; }

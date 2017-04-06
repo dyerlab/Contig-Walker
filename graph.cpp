@@ -32,11 +32,15 @@ Edge* Graph::getEdge(int idx) {
 bool Graph::addEdge( int source, int target, double weight ){
     Node *n1 = nodes.at(source);
     Node *n2 = nodes.at(target);
-    Edge *e = new Edge(n1,n2,weight);
 
-    edges.append(e);
+    if( n1 && n2 ) {
+        Edge *e = new Edge(n1,n2,weight);
+        edges.append(e);
+        return true;
+    }
+    else
+        return false;
 
-    return true;
 }
 
 

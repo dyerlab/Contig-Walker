@@ -17,6 +17,12 @@ public:
 
     bool run();
 
+    inline Vector* getInDegree() const { return in_degree; }
+    inline Vector* getOutDegree() const { return out_degree; }
+    Vector* getDegreeDistribution();
+    Vector* getDegreeHistogram();
+
+
 private:
     Vector *in_degree;
     Vector *out_degree;

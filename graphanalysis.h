@@ -6,6 +6,7 @@
 #include "vector.h"
 #include <gsl/gsl_matrix.h>
 
+#include <QDebug>
 #include <QString>
 #include <QStringList>
 

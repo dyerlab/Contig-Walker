@@ -10,15 +10,17 @@ public:
     Vector(int length);
     ~Vector();
 
-    inline int count() const { return labels.count(); }
+    inline int count() const { return (int)vector->size; }
 
     void set(int idx, double val);
     void set(QString key, double val);
     void setLabel( int idx, QString key );
     bool contains( QString lbl ) const;
+    inline QStringList getLabels() const { return labels; }
 
     double get(int idx) const;
     double get(const QString lbl ) const;
+
 
 
 

@@ -31,7 +31,6 @@ bool ParseGraphJSON::parse() {
         return false;
     }
 
-
     QByteArray contents = file.readAll();
     QJsonDocument doc = QJsonDocument::fromJson(contents);
 
@@ -57,7 +56,7 @@ bool ParseGraphJSON::parse() {
             errors << "Not a valid JSON file, no 'nodes' or 'links' objects in it.";
         }
 
-        Graph *theGraph = new Graph();
+        theGraph = new Graph();
 
         // Grab the nodes
         QJsonArray nodes = obj.value("nodes").toArray();
@@ -82,7 +81,8 @@ bool ParseGraphJSON::parse() {
             int target = edge["target"].toInt();
             double weight = edge["weight"].toDouble();
 
-            theGraph->addEdge(source,target,weight);
+            if( !theGraph->addEdge(source,target,weight) )
+                qDebug() << "ERROR: could not add edge";
 
         }
 
