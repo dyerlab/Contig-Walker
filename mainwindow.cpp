@@ -27,8 +27,11 @@
 
 #include <QMenu>
 #include <QDebug>
+#include <QCharts>
 #include <QStringList>
 #include <QFileDialog>
+
+#include "parsegraphjson.h"
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -84,13 +87,29 @@ void MainWindow::slotSetFolder(){
         return;
 
     QStringList filters;
-    filters << "*.gml";
+    filters << "*.json";
 
     dataDir = new QDir(path);
     dataDir->setNameFilters(filters);
     dataDir->setFilter( QDir::Files );
+    dataDir->makeAbsolute();
 
     qDebug() << "Directory has " << dataDir->count() << " items.";
+
+    QString dataFile = dataDir->absoluteFilePath( dataDir->entryList().at(0) );
+
+    ParseGraphJSON *parser = new ParseGraphJSON( dataFile, this);
+
+    if( !parser->parse()){
+        qDebug() << "Cannot parse " << dataFile;
+        qDebug() << parser->getFeedback();
+   }
+    else {
+        Graph *theGraph = parser->getGraph();
+
+        qDebug() << "Parser finished";
+    }
+
 
 }
 

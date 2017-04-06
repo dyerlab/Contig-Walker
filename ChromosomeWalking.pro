@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui xml charts
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -24,8 +25,37 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    parser.cpp \
+    parsegml.cpp \
+    parsegraphjson.cpp \
+    node.cpp \
+    edge.cpp \
+    graph.cpp \
+    graphanalysis.cpp \
+    graphanalysisdegree.cpp \
+    vector.cpp \
+    vectorops.cpp \
+    plotops.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    parser.h \
+    parsegml.h \
+    parsegraphjson.h \
+    node.h \
+    edge.h \
+    graph.h \
+    graphanalysis.h \
+    graphanalysisdegree.h \
+    vector.h \
+    vectorops.h \
+    plotops.h
 
 FORMS    += mainwindow.ui
+
+macx: LIBS += -L/usr/local/Cellar/gsl/2.3/lib/ -lgsl
+
+INCLUDEPATH += /usr/local/Cellar/gsl/2.3/include
+DEPENDPATH += /usr/local/Cellar/gsl/2.3/include
+
+macx: PRE_TARGETDEPS += /usr/local/Cellar/gsl/2.3/lib/libgsl.a
