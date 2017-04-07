@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  mainwindow.h
+*  graphdataset.cpp
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,50 +25,41 @@
 *
 ******************************************************************************/
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
-
-#include <QDir>
-#include <QMenu>
-#include <QString>
-#include <QAction>
-#include <QMainWindow>
-#include <QGraphicsView>
-#include <QGraphicsScene>
-
 #include "graphdataset.h"
 
-namespace Ui {
-class MainWindow;
+GraphDataSet::GraphDataSet(QObject *parent) : QObject(parent) {
+    theGraph = NULL;
 }
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
+GraphDataSet::~GraphDataSet() {
+    if( theGraph != NULL )
+        delete theGraph;
+}
 
-public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+bool GraphDataSet::loadGraph( QString path, PARSE_TYPE type ) {
+    ParseGraphJSON *parser;
+    bool parse_status;
 
-private:
-    Ui::MainWindow *ui;
+    if( type == PARSE_TYPE_GRAPH_JSON )
+        parser = new ParseGraphJSON( path, this);
+    else {
+        qDebug() << "Incorrect parser.";
+        return false;
+    }
 
-    QAction *actionOpenDataFolder;
-    QAction *actionQuit;
-    QDir *dataDir;
+    parse_status = parser->parse();
 
-    GraphDataSet *graphDataSet;
+    if( parse_status ) {
+        theGraph = parser->getGraph();
+    }
 
+    delete parser;
+    return parse_status;
+}
 
-    void makeActions();
-    void makeMenus();
-    void makeUI();
+void GraphDataSet::setGraph( Graph *graph ) {
+    if( theGraph != NULL )
+        delete theGraph;
 
-
-
-private slots:
-    void slotSetFolder();
-
-};
-
-#endif // MAINWINDOW_H
+    theGraph = graph;
+}

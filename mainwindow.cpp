@@ -34,7 +34,6 @@
 
 #include "parsegraphjson.h"
 #include "plotops.h"
-#include "vector.h"
 #include "vectorops.h"
 #include "graphanalysisdegree.h"
 
@@ -108,6 +107,15 @@ void MainWindow::slotSetFolder(){
 
     QString dataFile = dataDir->absoluteFilePath( dataDir->entryList().at(0) );
 
+    graphDataSet = new GraphDataSet( this );
+    if( graphDataSet->loadGraph( dataDir->entryList().at(0), PARSE_TYPE_GRAPH_JSON)){
+
+    } else {
+        delete graphDataSet;
+    }
+
+
+/*
     ParseGraphJSON *parser = new ParseGraphJSON( dataFile, this);
     qDebug() << "a parser was made";
 
@@ -122,10 +130,10 @@ void MainWindow::slotSetFolder(){
         qDebug() << "analysis";
         if( analysis->run() ) {
             qDebug() << "analysis->run()";
-            //Vector *degree = analysis->getDegreeDistribution();
-            Vector *degree = analysis->getDegreeHistogram();
+            gsl_vector * degree = analysis->getDegreeDistribution();
+            QStringList labels = theGraph->nodeLabels();
 
-            QChart *chart = barChartFromVector(degree,QString("Graph Degree Distribution"));
+            QChart *chart = makeBarChart(degree, labels, QString("Graph Degree Distribution"));
             QChartView *chartView = new QChartView(chart);
             chartView->setRenderHint(QPainter::Antialiasing);
             setCentralWidget( chartView );
@@ -139,6 +147,7 @@ void MainWindow::slotSetFolder(){
 
     delete parser;
 
+*/
 
 }
 

@@ -15,6 +15,9 @@ public:
     double getSize() const;
     QString toString();
 
+    inline void addEdge( Edge *e ) { edges.append( e ); }
+    inline int degree() { return edges.count(); }
+
 signals:
 
 public slots:
@@ -22,6 +25,8 @@ public slots:
 protected:
     QString name;
     double size;
+
+    QList<Edge*> edges;
 };
 
 #endif // NODE_H

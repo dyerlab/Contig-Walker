@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  mainwindow.h
+*  graphitem.h
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,50 +25,35 @@
 *
 ******************************************************************************/
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef GRAPHITEM_H
+#define GRAPHITEM_H
 
-#include <QDir>
-#include <QMenu>
-#include <QString>
-#include <QAction>
-#include <QMainWindow>
-#include <QGraphicsView>
-#include <QGraphicsScene>
+#include <QPen>
+#include <QBrush>
+#include <QGraphicsItem>
 
-#include "graphdataset.h"
+typedef enum {
+    GRAPH_ITEM_UNDEF,
+    GRAPH_ITEM_EDGE,
+    GRAPH_ITEM_NODE
+} GRAPH_ITEM_TYPE;
 
-namespace Ui {
-class MainWindow;
-}
 
-class MainWindow : public QMainWindow
+class GraphItem : public QGraphicsItem
 {
-    Q_OBJECT
-
 public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+    GraphItem( QGraphicsItem *parent = 0);
 
-private:
-    Ui::MainWindow *ui;
+    inline GRAPH_ITEM_TYPE Type()   { return GRAPH_ITEM_UNDEF; }
 
-    QAction *actionOpenDataFolder;
-    QAction *actionQuit;
-    QDir *dataDir;
+    inline QColor getColor()        {return brush.color(); }
+    inline void setPen( QPen p)     { pen = p; }
+    inline void setBrush( QBrush b) { brush = b; }
 
-    GraphDataSet *graphDataSet;
-
-
-    void makeActions();
-    void makeMenus();
-    void makeUI();
-
-
-
-private slots:
-    void slotSetFolder();
+protected:
+    QPen pen;
+    QBrush brush;
 
 };
 
-#endif // MAINWINDOW_H
+#endif // GRAPHITEM_H

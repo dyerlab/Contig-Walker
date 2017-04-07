@@ -5,6 +5,9 @@ Edge::Edge(Node *source, Node *target, double weight, QObject *parent) : QObject
     this->source = source;
     this->target = target;
     this->weight = weight;
+
+    source->addEdge(this);
+    target->addEdge(this);
 }
 
 

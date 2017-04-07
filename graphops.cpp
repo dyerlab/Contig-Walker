@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  mainwindow.h
+*  graphops
 *
 *  Created: 4 2017 by rodney
 *
@@ -24,51 +24,23 @@
 * this file belongs to.
 *
 ******************************************************************************/
+#include "graphops.h"
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
 
-#include <QDir>
-#include <QMenu>
-#include <QString>
-#include <QAction>
-#include <QMainWindow>
-#include <QGraphicsView>
-#include <QGraphicsScene>
+gsl_vector* degree( QList<Node*> nodes) {
+    int N = nodes.count();
+    gsl_vector *vec = gsl_vector_calloc(N);
 
-#include "graphdataset.h"
+    for(int i=0;i<N;i++){
+        gsl_vector_set( vec, i, (double)nodes.at(i)->degree() );
+    }
 
-namespace Ui {
-class MainWindow;
+    return vec;
 }
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
-
-public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
-
-private:
-    Ui::MainWindow *ui;
-
-    QAction *actionOpenDataFolder;
-    QAction *actionQuit;
-    QDir *dataDir;
-
-    GraphDataSet *graphDataSet;
-
-
-    void makeActions();
-    void makeMenus();
-    void makeUI();
 
 
 
-private slots:
-    void slotSetFolder();
 
-};
 
-#endif // MAINWINDOW_H
+

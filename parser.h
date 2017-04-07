@@ -14,6 +14,13 @@ typedef enum {
     PARSER_STATUS_FUBAR
 } PARSER_STATUS;
 
+typedef enum {
+    PARSE_TYPE_UNDEF,
+    PARSE_TYPE_GRAPH_JSON
+} PARSE_TYPE;
+
+
+
 class Parser : public QObject
 {
     Q_OBJECT

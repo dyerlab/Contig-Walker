@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  mainwindow.h
+*  graphdataset.h
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,50 +25,38 @@
 *
 ******************************************************************************/
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef GRAPHDATASET_H
+#define GRAPHDATASET_H
 
-#include <QDir>
-#include <QMenu>
+#include "graph.h"
+#include "parsegraphjson.h"
+
+#include <QObject>
 #include <QString>
-#include <QAction>
-#include <QMainWindow>
-#include <QGraphicsView>
-#include <QGraphicsScene>
+#include <QStringList>
 
-#include "graphdataset.h"
 
-namespace Ui {
-class MainWindow;
-}
-
-class MainWindow : public QMainWindow
-{
+class GraphDataSet : public QObject {
     Q_OBJECT
-
 public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+    explicit GraphDataSet(QObject *parent = 0);
+    ~GraphDataSet();
+
+    // Set the graph
+    bool loadGraph( QString path, PARSE_TYPE type );
+    inline Graph *graph() const { return theGraph; }
+    void setGraph( Graph *graph );
+
+
+signals:
+
+public slots:
+
 
 private:
-    Ui::MainWindow *ui;
+    Graph *theGraph;
 
-    QAction *actionOpenDataFolder;
-    QAction *actionQuit;
-    QDir *dataDir;
-
-    GraphDataSet *graphDataSet;
-
-
-    void makeActions();
-    void makeMenus();
-    void makeUI();
-
-
-
-private slots:
-    void slotSetFolder();
 
 };
 
-#endif // MAINWINDOW_H
+#endif // GRAPHDATASET_H

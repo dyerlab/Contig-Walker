@@ -5,11 +5,11 @@
 #include <QBarCategoryAxis>
 
 
-QChart* barChartFromVector( Vector *theVec, QString title ) {
+QChart* makeBarChart(gsl_vector *theVec, QStringList labels, QString title ) {
     QBarSet *set = new QBarSet("Main");
 
-    for(int i=0;i<theVec->count();++i) {
-        set->append(theVec->get(i) );
+    for(int i=0;i<(int)theVec->size;++i) {
+        set->append( gsl_vector_get(theVec, i) );
     }
 
     QBarSeries *series = new QBarSeries();
@@ -18,11 +18,10 @@ QChart* barChartFromVector( Vector *theVec, QString title ) {
     QChart *chart = new QChart();
     chart->addSeries(series);
     chart->setTitle(title);
-    chart->setAnimationOptions(QChart::SeriesAnimations);
+    chart->setAnimationOptions( QChart::SeriesAnimations );
 
-    QStringList categories = theVec->getLabels();
     QBarCategoryAxis *axis = new QBarCategoryAxis();
-    axis->append(categories);
+    axis->append(labels);
     axis->setLabelsAngle(90);
     chart->createDefaultAxes();
     chart->setAxisX(axis, series);

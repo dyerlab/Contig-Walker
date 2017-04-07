@@ -6,6 +6,20 @@ Graph::Graph(QObject *parent) : QObject(parent)
 }
 
 
+int Graph::indexOf( Node* node ) {
+    return( nodes.indexOf( node ) );
+}
+
+
+
+QStringList Graph::nodeLabels() const {
+    QStringList ret;
+    foreach( Node *n, nodes){
+        ret.append( n->getLabel() );
+    }
+    return ret;
+}
+
 QString Graph::toString() {
     QStringList ret;
     ret << "Graph:";

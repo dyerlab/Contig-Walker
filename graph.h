@@ -19,12 +19,14 @@ public:
     inline int numNodes() { return nodes.count(); }
     inline void addNode(Node *node) { nodes.append( node ); }
     Node* getNode( int idx );
+    int indexOf( Node* node );
 
     inline int numEdges() { return edges.count(); }
     bool addEdge( int source, int target, double weight );
     Edge* getEdge( int idx );
 
     QString toString();
+    QStringList nodeLabels() const;
 
     gsl_matrix* asAdjacencyMatrix();
 

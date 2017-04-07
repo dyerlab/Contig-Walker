@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  mainwindow.h
+*  graphitem.cpp
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,50 +25,10 @@
 *
 ******************************************************************************/
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#include "graphitem.h"
 
-#include <QDir>
-#include <QMenu>
-#include <QString>
-#include <QAction>
-#include <QMainWindow>
-#include <QGraphicsView>
-#include <QGraphicsScene>
-
-#include "graphdataset.h"
-
-namespace Ui {
-class MainWindow;
+GraphItem::GraphItem(QGraphicsItem *parent) : QGraphicsItem(parent) {
+    setPen( QPen( Qt::black) );
+    setBrush( QBrush(Qt::darkRed ) );
 }
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
-
-public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
-
-private:
-    Ui::MainWindow *ui;
-
-    QAction *actionOpenDataFolder;
-    QAction *actionQuit;
-    QDir *dataDir;
-
-    GraphDataSet *graphDataSet;
-
-
-    void makeActions();
-    void makeMenus();
-    void makeUI();
-
-
-
-private slots:
-    void slotSetFolder();
-
-};
-
-#endif // MAINWINDOW_H

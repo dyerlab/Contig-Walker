@@ -1,7 +1,7 @@
 #ifndef GRAPHANALYSISDEGREE_H
 #define GRAPHANALYSISDEGREE_H
 
-#include "vector.h"
+#include "vectorops.h"
 #include "graphanalysis.h"
 
 typedef enum {
@@ -17,15 +17,14 @@ public:
 
     bool run();
 
-    inline Vector* getInDegree() const { return in_degree; }
-    inline Vector* getOutDegree() const { return out_degree; }
-    Vector* getDegreeDistribution();
-    Vector* getDegreeHistogram();
+    inline gsl_vector* getInDegree() const { return in_degree; }
+    inline gsl_vector* getOutDegree() const { return out_degree; }
 
+    gsl_vector* getDegreeDistribution();
 
 private:
-    Vector *in_degree;
-    Vector *out_degree;
+    gsl_vector *in_degree;
+    gsl_vector *out_degree;
 };
 
 #endif // GRAPHANALYSISDEGREE_H

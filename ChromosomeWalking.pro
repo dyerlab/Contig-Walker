@@ -34,9 +34,12 @@ SOURCES += main.cpp\
     graph.cpp \
     graphanalysis.cpp \
     graphanalysisdegree.cpp \
-    vector.cpp \
     vectorops.cpp \
-    plotops.cpp
+    plotops.cpp \
+    graphdataset.cpp \
+    graphops.cpp \
+    matrixops.cpp \
+    graphitem.cpp
 
 HEADERS  += mainwindow.h \
     parser.h \
@@ -47,9 +50,12 @@ HEADERS  += mainwindow.h \
     graph.h \
     graphanalysis.h \
     graphanalysisdegree.h \
-    vector.h \
     vectorops.h \
-    plotops.h
+    plotops.h \
+    graphops.h \
+    graphdataset.h \
+    matrixops.h \
+    graphitem.h
 
 FORMS    += mainwindow.ui
 
