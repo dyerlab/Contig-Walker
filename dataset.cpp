@@ -25,12 +25,61 @@
 *
 ******************************************************************************/
 
+#include <QDir>
+#include <QDebug>
+#include <QtGlobal>
 #include "dataset.h"
+#include <QApplication>
+#include <QProgressDialog>
 
 DataSet::DataSet(QObject *parent) : QObject(parent) {
 
 }
 
-bool DataSet::loadGraphsFromFolder(QString path) {
+DataSet::~DataSet() {
+    foreach( GraphDataSet *gds, this->theGraphs)
+        delete gds;
+}
 
+bool DataSet::loadGraphsFromFolder(QString path) {
+    QStringList filters;
+    filters << "*.json";
+
+    QDir *dataDir = new QDir(path);
+    dataDir->setNameFilters(filters);
+    dataDir->setFilter( QDir::Files );
+    dataDir->makeAbsolute();
+    if( !dataDir->count() ) {
+        qDebug() << "No graph files in that folder";
+        return false;
+    }
+    int ctr = 0;
+    QProgressDialog progress(QObject::tr("Loading graph files"),
+                             QObject::tr("Cancel"),
+                             0, dataDir->entryList().count(),
+                             qApp->activeWindow());
+
+    foreach(QString dataFilePath, dataDir->entryList()){
+
+
+        QString dataFile = dataDir->absoluteFilePath( dataFilePath );
+
+        GraphDataSet *graphDataSet = new GraphDataSet( this );
+        if( graphDataSet->loadGraph( dataFile, PARSE_TYPE_GRAPH_JSON) ) {
+            theGraphs.append( graphDataSet );
+            qDebug() << "Adding" << path;
+        }
+        else {
+            qDebug() << "Deleting graphDataSet";
+            delete graphDataSet;
+        }
+        progress.setValue(++ctr);
+        qApp->processEvents();
+    }
+
+    progress.setValue(dataDir->entryList().count());
+    qApp->processEvents();
+
+    delete dataDir;
+    return (theGraphs.count() > 0) ;
 }

@@ -36,7 +36,7 @@
 #include <QGraphicsView>
 #include <QGraphicsScene>
 
-#include "graphdataset.h"
+#include "dataset.h"
 
 namespace Ui {
 class MainWindow;
@@ -57,8 +57,7 @@ private:
     QAction *actionQuit;
     QDir *dataDir;
 
-    GraphDataSet *graphDataSet;
-
+    DataSet *dataSet;
 
     void makeActions();
     void makeMenus();

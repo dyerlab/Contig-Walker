@@ -38,10 +38,11 @@ class DataSet : public QObject
     Q_OBJECT
 public:
     explicit DataSet(QObject *parent = 0);
+    ~DataSet();
 
     bool loadGraphsFromFolder( QString path );
 
-    inline int numberOfGraphs() const { return theGraphs.count(); }
+    inline int count() const { return theGraphs.count(); }
 
 signals:
 
@@ -50,7 +51,7 @@ public slots:
 
 
 private:
-    QList<GraphDataSet> theGraphs;
+    QList<GraphDataSet*> theGraphs;
 };
 
 #endif // DATASET_H

@@ -90,8 +90,26 @@ void MainWindow::slotSetFolder(){
     if( path.isEmpty())
         return;
 
+
+
+    dataSet = new DataSet(this);
+    if( dataSet->loadGraphsFromFolder(path) ) {
+        // put in the stuff to load it into the UI here
+        qDebug() << "This has " << dataSet->count() << " graphs in it!";
+    }
+    else {
+        qDebug() << "Deleting dataSet";
+        delete dataSet;
+    }
+
+/*
+ *
+ *
+ *
+
     QStringList filters;
     filters << "*.json";
+
 
     dataDir = new QDir(path);
     dataDir->setNameFilters(filters);
@@ -115,7 +133,9 @@ void MainWindow::slotSetFolder(){
     }
 
 
-/*
+
+
+
     ParseGraphJSON *parser = new ParseGraphJSON( dataFile, this);
     qDebug() << "a parser was made";
 
