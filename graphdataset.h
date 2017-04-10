@@ -44,8 +44,11 @@ public:
 
     // Set the graph
     bool loadGraph( QString path, PARSE_TYPE type );
-    inline Graph *graph() const { return theGraph; }
+    inline Graph* graph() const { return theGraph; }
     void setGraph( Graph *graph );
+
+    // Parameters
+    inline QString graphPath() { return this->path; }
 
 
 signals:

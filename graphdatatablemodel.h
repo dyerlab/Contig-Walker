@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  dataset.h
+*  graphdatatablemodel.h
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,35 +25,43 @@
 *
 ******************************************************************************/
 
-#ifndef DATASET_H
-#define DATASET_H
+#ifndef GRAPHDATATABLEMODEL_H
+#define GRAPHDATATABLEMODEL_H
 
-#include <QList>
-#include <QString>
+#include "dataset.h"
+
 #include <QObject>
-#include "graphdataset.h"
+#include <QAbstractTableModel>
 
-class DataSet : public QObject
+typedef enum {
+    TABLE_ROW_PATH,
+    TABLE_ROW_GRAPH,
+    TABLE_ROW_SIZE,
+    TABLE_ROW_DEGREE
+} TABLE_ROW_CATEGORY;
+
+
+
+class GraphDataTableModel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
-    explicit DataSet(QObject *parent = 0);
-    ~DataSet();
+    explicit GraphDataTableModel(DataSet *theData, QObject *parent = 0);
 
-    bool loadGraphsFromFolder( QString path );
+    // QAbstratTableModel stuff
+    int rowCount(const QModelIndex &parent) const;
+    int columnCount(const QModelIndex &parent) const;
+    QVariant data(const QModelIndex &index, int role) const;
 
-    inline int count() const { return theGraphs.count(); }
-
-    inline GraphDataSet* graph(int idx ) { return theGraphs.at(idx); }
 
 signals:
 
 public slots:
 
 
-
 private:
-    QList<GraphDataSet*> theGraphs;
+    DataSet *theData;
+
 };
 
-#endif // DATASET_H
+#endif // GRAPHDATATABLEMODEL_H

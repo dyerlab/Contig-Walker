@@ -43,7 +43,8 @@ SOURCES += main.cpp\
     matrixops.cpp \
     graphicitem.cpp \
     graphicnode.cpp \
-    dataset.cpp
+    dataset.cpp \
+    graphdatatablemodel.cpp
 
 HEADERS  += mainwindow.h \
     parser.h \
@@ -61,7 +62,8 @@ HEADERS  += mainwindow.h \
     matrixops.h \
     graphicitem.h \
     graphicnode.h \
-    dataset.h
+    dataset.h \
+    graphdatatablemodel.h
 
 FORMS    += mainwindow.ui
 
