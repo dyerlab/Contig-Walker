@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  graphdataset.h
+*  graphicnode.cpp
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,39 +25,10 @@
 *
 ******************************************************************************/
 
-#ifndef GRAPHDATASET_H
-#define GRAPHDATASET_H
+#include "graphicnode.h"
 
-#include "graph.h"
-#include "parsegraphjson.h"
+GraphicNode::GraphicNode(QString name, double size, QObject *parent, QGraphicsItem *graphic_parent) :
+    GraphicItem(graphic_parent), Node(name,size,parent)
+{
 
-#include <QObject>
-#include <QString>
-#include <QStringList>
-
-
-class GraphDataSet : public QObject {
-    Q_OBJECT
-public:
-    explicit GraphDataSet(QObject *parent = 0);
-    ~GraphDataSet();
-
-    // Set the graph
-    bool loadGraph( QString path, PARSE_TYPE type );
-    inline Graph *graph() const { return theGraph; }
-    void setGraph( Graph *graph );
-
-
-signals:
-
-public slots:
-
-
-private:
-    Graph *theGraph;
-    QString path;
-
-
-};
-
-#endif // GRAPHDATASET_H
+}

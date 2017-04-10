@@ -14,10 +14,6 @@ public:
 
     bool parse();
 
-    inline Graph* getGraph() { return theGraph; }
-
-private:
-    Graph *theGraph;
 
 };
 

@@ -19,7 +19,7 @@ typedef enum {
     PARSE_TYPE_GRAPH_JSON
 } PARSE_TYPE;
 
-
+#include "graph.h"
 
 class Parser : public QObject
 {
@@ -35,6 +35,8 @@ public:
     inline QStringList getErrors() { return errors; }
     inline QStringList getWarnings() { return warnings; }
 
+    inline Graph* getGraph() { return theGraph; }
+
 signals:
 
 public slots:
@@ -43,6 +45,7 @@ protected:
     QString path;
     QStringList errors;
     QStringList warnings;
+    Graph *theGraph;
 
 };
 

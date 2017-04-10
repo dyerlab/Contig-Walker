@@ -33,18 +33,18 @@
 #include <QGraphicsItem>
 
 typedef enum {
-    GRAPH_ITEM_UNDEF,
-    GRAPH_ITEM_EDGE,
-    GRAPH_ITEM_NODE
-} GRAPH_ITEM_TYPE;
+    GRAPHIC_ITEM_UNDEF,
+    GRAPHIC_ITEM_EDGE,
+    GRAPHIC_ITEM_NODE
+} GRAPHIC_ITEM_TYPE;
 
 
-class GraphItem : public QGraphicsItem
+class GraphicItem : public QGraphicsItem
 {
 public:
-    GraphItem( QGraphicsItem *parent = 0);
+    GraphicItem( QGraphicsItem *parent = 0);
 
-    inline GRAPH_ITEM_TYPE Type()   { return GRAPH_ITEM_UNDEF; }
+    inline GRAPHIC_ITEM_TYPE Type()   { return GRAPHIC_ITEM_UNDEF; }
 
     inline QColor getColor()        {return brush.color(); }
     inline void setPen( QPen p)     { pen = p; }

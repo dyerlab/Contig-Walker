@@ -15,8 +15,8 @@ public:
     double getSize() const;
     QString toString();
 
-    inline void addEdge( Edge *e ) { edges.append( e ); }
-    inline int degree() { return edges.count(); }
+    inline void addEdge( Edge *e )  { edges.append( e ); }
+    inline int degree()             { return edges.count(); }
 
 signals:
 

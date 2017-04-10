@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  graphdataset.h
+*  dataset.cpp
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,39 +25,12 @@
 *
 ******************************************************************************/
 
-#ifndef GRAPHDATASET_H
-#define GRAPHDATASET_H
+#include "dataset.h"
 
-#include "graph.h"
-#include "parsegraphjson.h"
+DataSet::DataSet(QObject *parent) : QObject(parent) {
 
-#include <QObject>
-#include <QString>
-#include <QStringList>
+}
 
+bool DataSet::loadGraphsFromFolder(QString path) {
 
-class GraphDataSet : public QObject {
-    Q_OBJECT
-public:
-    explicit GraphDataSet(QObject *parent = 0);
-    ~GraphDataSet();
-
-    // Set the graph
-    bool loadGraph( QString path, PARSE_TYPE type );
-    inline Graph *graph() const { return theGraph; }
-    void setGraph( Graph *graph );
-
-
-signals:
-
-public slots:
-
-
-private:
-    Graph *theGraph;
-    QString path;
-
-
-};
-
-#endif // GRAPHDATASET_H
+}

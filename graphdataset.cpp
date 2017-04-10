@@ -37,7 +37,7 @@ GraphDataSet::~GraphDataSet() {
 }
 
 bool GraphDataSet::loadGraph( QString path, PARSE_TYPE type ) {
-    ParseGraphJSON *parser;
+    Parser *parser;
     bool parse_status;
 
     if( type == PARSE_TYPE_GRAPH_JSON )
@@ -51,6 +51,7 @@ bool GraphDataSet::loadGraph( QString path, PARSE_TYPE type ) {
 
     if( parse_status ) {
         theGraph = parser->getGraph();
+        this->path = path;
     }
 
     delete parser;

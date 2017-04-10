@@ -11,6 +11,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ChromosomeWalking
 TEMPLATE = app
+MOC_DIR = objs
+OBJECTS_DIR = objs
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
@@ -39,7 +41,9 @@ SOURCES += main.cpp\
     graphdataset.cpp \
     graphops.cpp \
     matrixops.cpp \
-    graphitem.cpp
+    graphicitem.cpp \
+    graphicnode.cpp \
+    dataset.cpp
 
 HEADERS  += mainwindow.h \
     parser.h \
@@ -55,7 +59,9 @@ HEADERS  += mainwindow.h \
     graphops.h \
     graphdataset.h \
     matrixops.h \
-    graphitem.h
+    graphicitem.h \
+    graphicnode.h \
+    dataset.h
 
 FORMS    += mainwindow.ui
 

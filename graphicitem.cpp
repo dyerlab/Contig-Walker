@@ -25,9 +25,9 @@
 *
 ******************************************************************************/
 
-#include "graphitem.h"
+#include "graphicitem.h"
 
-GraphItem::GraphItem(QGraphicsItem *parent) : QGraphicsItem(parent) {
+GraphicItem::GraphicItem(QGraphicsItem *parent) : QGraphicsItem(parent) {
     setPen( QPen( Qt::black) );
     setBrush( QBrush(Qt::darkRed ) );
 }
