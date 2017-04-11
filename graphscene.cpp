@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  dataset.h
+*  graphscene.cpp
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,37 +25,37 @@
 *
 ******************************************************************************/
 
-#ifndef DATASET_H
-#define DATASET_H
+#include <QDebug>
+#include "graphscene.h"
 
-#include <QList>
-#include <QString>
-#include <QObject>
-#include "graphdataset.h"
-
-class DataSet : public QObject
+GraphScene::GraphScene(QObject *parent) : QGraphicsScene(parent)
 {
-    Q_OBJECT
-public:
-    explicit DataSet(QObject *parent = 0);
-    ~DataSet();
+    backgroundColor = Qt::white;
+    setBackgroundBrush( backgroundColor);
+    setSceneRect(0,0,1000,1000);
 
-    bool loadGraphsFromFolder( QString path );
+}
 
-    inline int count() const { return theGraphs.count(); }
+QList<GraphicNode*> GraphScene::getNodes() {
+    QList<GraphicNode*> ret;
+    foreach(QGraphicsItem *item, items() ){
+        GraphicNode *node = qgraphicsitem_cast<GraphicNode*>(item);
+        if( node )
+            ret.append( node );
+    }
+    return ret;
+}
 
-    inline GraphDataSet* graph(int idx ) { return theGraphs.at(idx); }
+QList<GraphicEdge*> GraphScene::getEdges() {
+    QList<GraphicEdge*> ret;
+    foreach( QGraphicsItem *item, items() ){
+        GraphicEdge *edge = qgraphicsitem_cast<GraphicEdge*>(item);
+        if( edge )
+            ret.append(edge);
+    }
+    return ret;
+}
 
-    void setUnifiedNodeCoordinates();
-
-signals:
-
-public slots:
-
-
-
-private:
-    QList<GraphDataSet*> theGraphs;
-};
-
-#endif // DATASET_H
+void GraphScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
+    QGraphicsScene::mousePressEvent( event );
+}

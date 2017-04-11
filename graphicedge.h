@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  dataset.h
+*  graphicedge.h
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,37 +25,30 @@
 *
 ******************************************************************************/
 
-#ifndef DATASET_H
-#define DATASET_H
+#ifndef GRAPHICEDGE_H
+#define GRAPHICEDGE_H
 
-#include <QList>
-#include <QString>
-#include <QObject>
-#include "graphdataset.h"
+#include "edge.h"
+#include "graphicitem.h"
 
-class DataSet : public QObject
+class GraphicNode;
+
+class GraphicEdge : public GraphicItem, public Edge
 {
-    Q_OBJECT
 public:
-    explicit DataSet(QObject *parent = 0);
-    ~DataSet();
+    GraphicEdge(GraphicNode *node1, GraphicNode *node2, double weight, GraphicItem *graphParent=0, QObject *parent = 0);
 
-    bool loadGraphsFromFolder( QString path );
+    enum{ Type = UserType + 11 };
+    int type() const { return Type; }
+    inline GRAPHIC_ITEM_TYPE graphItemType() { return GRAPHIC_ITEM_EDGE; }
 
-    inline int count() const { return theGraphs.count(); }
+    void adjust();
 
-    inline GraphDataSet* graph(int idx ) { return theGraphs.at(idx); }
-
-    void setUnifiedNodeCoordinates();
-
-signals:
-
-public slots:
+protected:
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    QRectF boundingRect() const;
 
 
-
-private:
-    QList<GraphDataSet*> theGraphs;
 };
 
-#endif // DATASET_H
+#endif // GRAPHICEDGE_H

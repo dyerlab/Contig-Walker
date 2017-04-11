@@ -86,8 +86,6 @@ bool ParseGraphJSON::parse() {
 
         }
 
-        qDebug() << theGraph->toString();
-
     }
     else  {
         errors << "JSON docuement was not object";

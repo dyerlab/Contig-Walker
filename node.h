@@ -13,6 +13,7 @@ public:
 
     QString getLabel() const;
     double getSize() const;
+    inline void setSize(double val ) { size = val; }
     QString toString();
 
     inline void addEdge( Edge *e )  { edges.append( e ); }

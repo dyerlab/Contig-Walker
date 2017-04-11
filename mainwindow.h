@@ -32,11 +32,13 @@
 #include <QMenu>
 #include <QString>
 #include <QAction>
+#include <QTableView>
 #include <QMainWindow>
 #include <QGraphicsView>
 #include <QGraphicsScene>
 
 #include "dataset.h"
+#include "graphdatatablemodel.h"
 
 namespace Ui {
 class MainWindow;
@@ -52,11 +54,13 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QTableView *tableView;
 
     QAction *actionOpenDataFolder;
     QAction *actionQuit;
     QDir *dataDir;
 
+    GraphDataTableModel *tableModel;
     DataSet *dataSet;
 
     void makeActions();

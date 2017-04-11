@@ -44,7 +44,10 @@ SOURCES += main.cpp\
     graphicitem.cpp \
     graphicnode.cpp \
     dataset.cpp \
-    graphdatatablemodel.cpp
+    graphdatatablemodel.cpp \
+    graphview.cpp \
+    graphscene.cpp \
+    graphicedge.cpp
 
 HEADERS  += mainwindow.h \
     parser.h \
@@ -63,7 +66,10 @@ HEADERS  += mainwindow.h \
     graphicitem.h \
     graphicnode.h \
     dataset.h \
-    graphdatatablemodel.h
+    graphdatatablemodel.h \
+    graphview.h \
+    graphscene.h \
+    graphicedge.h
 
 FORMS    += mainwindow.ui
 

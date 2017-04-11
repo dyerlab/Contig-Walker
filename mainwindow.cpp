@@ -76,7 +76,8 @@ void MainWindow::makeMenus() {
 }
 
 void MainWindow::makeUI() {
-
+    tableView = new QTableView(this);
+    setCentralWidget(tableView);
 }
 
 
@@ -94,8 +95,12 @@ void MainWindow::slotSetFolder(){
 
     dataSet = new DataSet(this);
     if( dataSet->loadGraphsFromFolder(path) ) {
-        // put in the stuff to load it into the UI here
+
         qDebug() << "This has " << dataSet->count() << " graphs in it!";
+        tableModel = new GraphDataTableModel( dataSet, this );
+        tableView->setModel(tableModel);
+        tableView->update();
+
     }
     else {
         qDebug() << "Deleting dataSet";

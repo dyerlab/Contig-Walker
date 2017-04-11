@@ -29,16 +29,35 @@
 #define GRAPHICNODE_H
 
 #include "node.h"
-#include <QPair>
+#include <QPointF>
 #include "graphicitem.h"
 
-class GraphicNode : public GraphicItem, Node
+class GraphicNode : public GraphicItem, public Node
 {
 public:
     GraphicNode(QString name = QString("Node"), double size=5.0, QObject *parent = 0, QGraphicsItem *graphic_parent = 0);
 
+    enum { Type = UserType + 10 };
+    int type() const { return Type; }
+
+    inline GRAPHIC_ITEM_TYPE graphicType() { return GRAPHIC_ITEM_NODE; }
+
+    // overloaded functions
+    QRectF boundingRect() const;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    QVariant itemChange(GraphicsItemChange change, const QVariant &value);
+    QPainterPath shape() const;
+    bool shouldAdvance();
+
+    void calculateForces( double maxVelocity );
+
+    inline void toggleLabel() { showLabel = !showLabel; }
+
+
 protected:
-    QPair<qreal,qreal> coordinates;
+    QPointF newPosition;
+    bool showLabel;
+
 
 };
 

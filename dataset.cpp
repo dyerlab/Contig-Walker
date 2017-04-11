@@ -83,3 +83,11 @@ bool DataSet::loadGraphsFromFolder(QString path) {
     delete dataDir;
     return (theGraphs.count() > 0) ;
 }
+
+void DataSet::setUnifiedNodeCoordinates() {
+
+
+}
+
+
+

@@ -29,7 +29,11 @@
 #define GRAPHITEM_H
 
 #include <QPen>
+#include <QFont>
 #include <QBrush>
+#include <QPainter>
+#include <QFontMetrics>
+#include <QFontMetricsF>
 #include <QGraphicsItem>
 
 typedef enum {
@@ -44,7 +48,7 @@ class GraphicItem : public QGraphicsItem
 public:
     GraphicItem( QGraphicsItem *parent = 0);
 
-    inline GRAPHIC_ITEM_TYPE Type()   { return GRAPHIC_ITEM_UNDEF; }
+    inline GRAPHIC_ITEM_TYPE graphicType()   { return GRAPHIC_ITEM_UNDEF; }
 
     inline QColor getColor()        {return brush.color(); }
     inline void setPen( QPen p)     { pen = p; }

@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  dataset.h
+*  graphscene.h
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,37 +25,30 @@
 *
 ******************************************************************************/
 
-#ifndef DATASET_H
-#define DATASET_H
+#ifndef GRAPHSCENE_H
+#define GRAPHSCENE_H
 
-#include <QList>
-#include <QString>
 #include <QObject>
-#include "graphdataset.h"
+#include <QGraphicsScene>
 
-class DataSet : public QObject
+#include "graphicnode.h"
+#include "graphicedge.h"
+
+class GraphScene : public QGraphicsScene
 {
     Q_OBJECT
 public:
-    explicit DataSet(QObject *parent = 0);
-    ~DataSet();
+    explicit GraphScene(QObject *parent = 0);
 
-    bool loadGraphsFromFolder( QString path );
+    QList<GraphicNode*> getNodes();
+    QList<GraphicEdge*> getEdges();
 
-    inline int count() const { return theGraphs.count(); }
-
-    inline GraphDataSet* graph(int idx ) { return theGraphs.at(idx); }
-
-    void setUnifiedNodeCoordinates();
-
-signals:
-
-public slots:
-
+protected:
+    void mousePressEvent(QGraphicsSceneMouseEvent *event);
 
 
 private:
-    QList<GraphDataSet*> theGraphs;
+    QColor backgroundColor;
 };
 
-#endif // DATASET_H
+#endif // GRAPHSCENE_H

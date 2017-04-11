@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  dataset.h
+*  graphview.h
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,37 +25,42 @@
 *
 ******************************************************************************/
 
-#ifndef DATASET_H
-#define DATASET_H
+#ifndef GRAPHVIEW_H
+#define GRAPHVIEW_H
 
-#include <QList>
-#include <QString>
 #include <QObject>
-#include "graphdataset.h"
+#include <QGraphicsView>
+#include "graphscene.h"
 
-class DataSet : public QObject
+
+typedef enum {
+    ZOOM_IN,
+    ZOOM_OUT
+} ZOOM_DIRECTION;
+
+
+class GraphView : public QGraphicsView
 {
     Q_OBJECT
 public:
-    explicit DataSet(QObject *parent = 0);
-    ~DataSet();
+    explicit GraphView(GraphScene *scene);
 
-    bool loadGraphsFromFolder( QString path );
+    void itemMoved();
+    void resetLayout();
 
-    inline int count() const { return theGraphs.count(); }
-
-    inline GraphDataSet* graph(int idx ) { return theGraphs.at(idx); }
-
-    void setUnifiedNodeCoordinates();
-
-signals:
-
-public slots:
-
-
+protected:
+    void timerEvent( QTimerEvent *event);
+    void keyPressEvent( QKeyEvent *event);
 
 private:
-    QList<GraphDataSet*> theGraphs;
+    double temperature;
+    int timerID;
+    bool canMove;
+
+    void shuffleNodes();
+    void toggleLabels();
+    void scaleNodes( double val );
+    void zoom( ZOOM_DIRECTION direction );
 };
 
-#endif // DATASET_H
+#endif // GRAPHVIEW_H
