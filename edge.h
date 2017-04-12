@@ -1,16 +1,20 @@
 #ifndef EDGE_H
 #define EDGE_H
 
-#include <QObject>
-#include <QString>
 
 #include "node.h"
+#include "graphicitem.h"
 
-class Edge : public QObject
+
+
+class Edge : public GraphicItem
 {
-    Q_OBJECT
+
 public:
-    explicit Edge(Node *source, Node *target, double weight=1.0, QObject *parent = 0);
+    explicit Edge(Node *source, Node *target, double weight=1.0, GraphicItem *parent = 0);
+
+    enum { Type = UserType + 11 };
+    int type() const { return Type; }
 
     inline Node* sourceNode() const { return source; }
     inline Node* targetNode() const { return target; }
@@ -18,9 +22,12 @@ public:
 
     QString toString();
 
-signals:
+    // Visualization stuff
+    void adjust();
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    QRectF boundingRect() const;
 
-public slots:
+
 
 protected:
     Node *source;

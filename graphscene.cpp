@@ -36,20 +36,20 @@ GraphScene::GraphScene(QObject *parent) : QGraphicsScene(parent)
 
 }
 
-QList<GraphicNode*> GraphScene::getNodes() {
-    QList<GraphicNode*> ret;
+QList<Node*> GraphScene::getNodes() {
+    QList<Node*> ret;
     foreach(QGraphicsItem *item, items() ){
-        GraphicNode *node = qgraphicsitem_cast<GraphicNode*>(item);
+        Node *node = qgraphicsitem_cast<Node*>(item);
         if( node )
             ret.append( node );
     }
     return ret;
 }
 
-QList<GraphicEdge*> GraphScene::getEdges() {
-    QList<GraphicEdge*> ret;
+QList<Edge *> GraphScene::getEdges() {
+    QList<Edge*> ret;
     foreach( QGraphicsItem *item, items() ){
-        GraphicEdge *edge = qgraphicsitem_cast<GraphicEdge*>(item);
+        Edge *edge = qgraphicsitem_cast<Edge*>(item);
         if( edge )
             ret.append(edge);
     }

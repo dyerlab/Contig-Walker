@@ -31,8 +31,8 @@
 #include <QObject>
 #include <QGraphicsScene>
 
-#include "graphicnode.h"
-#include "graphicedge.h"
+#include "node.h"
+#include "edge.h"
 
 class GraphScene : public QGraphicsScene
 {
@@ -40,8 +40,8 @@ class GraphScene : public QGraphicsScene
 public:
     explicit GraphScene(QObject *parent = 0);
 
-    QList<GraphicNode*> getNodes();
-    QList<GraphicEdge*> getEdges();
+    QList<Node*> getNodes();
+    QList<Edge*> getEdges();
 
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event);

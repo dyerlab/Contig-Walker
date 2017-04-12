@@ -31,14 +31,15 @@
 #include "dataset.h"
 #include <QApplication>
 #include <QProgressDialog>
+#include "parsegraphjson.h"
 
 DataSet::DataSet(QObject *parent) : QObject(parent) {
 
 }
 
 DataSet::~DataSet() {
-    foreach( GraphDataSet *gds, this->theGraphs)
-        delete gds;
+    foreach( Graph *graph, this->theGraphs)
+        delete graph;
 }
 
 bool DataSet::loadGraphsFromFolder(QString path) {
@@ -64,15 +65,15 @@ bool DataSet::loadGraphsFromFolder(QString path) {
 
         QString dataFile = dataDir->absoluteFilePath( dataFilePath );
 
-        GraphDataSet *graphDataSet = new GraphDataSet( this );
-        if( graphDataSet->loadGraph( dataFile, PARSE_TYPE_GRAPH_JSON) ) {
-            theGraphs.append( graphDataSet );
-            qDebug() << "Adding" << path;
+        ParseGraphJSON *parser = new ParseGraphJSON( path, this );
+        if( parser->parse()){
+            theGraphs.append( parser->getGraph());
         }
-        else {
-            qDebug() << "Deleting graphDataSet";
-            delete graphDataSet;
-        }
+        else
+            qDebug() << parser->getFeedback();
+
+        delete parser;
+
         progress.setValue(++ctr);
         qApp->processEvents();
     }

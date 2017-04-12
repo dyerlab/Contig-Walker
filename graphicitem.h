@@ -31,10 +31,12 @@
 #include <QPen>
 #include <QFont>
 #include <QBrush>
+#include <QDebug>
+#include <QObject>
 #include <QPainter>
 #include <QFontMetrics>
-#include <QFontMetricsF>
 #include <QGraphicsItem>
+
 
 typedef enum {
     GRAPHIC_ITEM_UNDEF,

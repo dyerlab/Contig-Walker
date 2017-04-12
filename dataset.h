@@ -31,7 +31,7 @@
 #include <QList>
 #include <QString>
 #include <QObject>
-#include "graphdataset.h"
+#include "graph.h"
 
 class DataSet : public QObject
 {
@@ -44,7 +44,7 @@ public:
 
     inline int count() const { return theGraphs.count(); }
 
-    inline GraphDataSet* graph(int idx ) { return theGraphs.at(idx); }
+    inline Graph* graph(int idx ) { return theGraphs.at(idx); }
 
     void setUnifiedNodeCoordinates();
 
@@ -55,7 +55,7 @@ public slots:
 
 
 private:
-    QList<GraphDataSet*> theGraphs;
+    QList<Graph*> theGraphs;
 };
 
 #endif // DATASET_H

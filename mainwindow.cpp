@@ -35,7 +35,6 @@
 #include "parsegraphjson.h"
 #include "plotops.h"
 #include "vectorops.h"
-#include "graphanalysisdegree.h"
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"

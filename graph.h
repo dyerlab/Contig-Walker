@@ -13,6 +13,8 @@
 class Graph : public QObject
 {
     Q_OBJECT
+    Q_PROPERTY(QString m_path READ path WRITE setPath );
+
 public:
     explicit Graph(QObject *parent = 0);
 
@@ -30,13 +32,14 @@ public:
 
     gsl_matrix* asAdjacencyMatrix();
 
-signals:
-
-public slots:
+    inline void setPath(QString path)   { m_path = path; }
+    inline QString path()               { return m_path; }
 
 protected:
     QList<Node*> nodes;
     QList<Edge*> edges;
+
+    QString m_path;
 };
 
 #endif // GRAPH_H

@@ -1,15 +1,17 @@
 #ifndef NODE_H
 #define NODE_H
 
-#include <QObject>
+
+#include "graphicitem.h"
 
 class Edge;
 
-class Node : public QObject
+class Node : public GraphicItem
 {
-    Q_OBJECT
+
 public:
-    explicit Node(QString name = QString("Node"), double size=5.0, QObject *parent = 0);
+
+    explicit Node(QString name = QString("Node"), double size=5.0, GraphicItem *parent = 0);
 
     QString getLabel() const;
     double getSize() const;
@@ -19,15 +21,24 @@ public:
     inline void addEdge( Edge *e )  { edges.append( e ); }
     inline int degree()             { return edges.count(); }
 
-signals:
+    // Visualization stuff
+    QRectF boundingRect() const;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    QVariant itemChange(GraphicsItemChange change, const QVariant &value);
+    QPainterPath shape() const;
+    bool shouldAdvance();
+    inline void toggleLabel()       { showLabel = !showLabel; }
 
-public slots:
+    void calculateForces( double maxVelocity );
+
 
 protected:
-    QString name;
     double size;
+    QString label;
+    bool showLabel;
 
     QList<Edge*> edges;
+    QPointF newPosition;
 };
 
 #endif // NODE_H

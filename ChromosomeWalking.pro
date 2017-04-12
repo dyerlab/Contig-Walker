@@ -34,20 +34,15 @@ SOURCES += main.cpp\
     node.cpp \
     edge.cpp \
     graph.cpp \
-    graphanalysis.cpp \
-    graphanalysisdegree.cpp \
     vectorops.cpp \
     plotops.cpp \
-    graphdataset.cpp \
     graphops.cpp \
     matrixops.cpp \
     graphicitem.cpp \
-    graphicnode.cpp \
     dataset.cpp \
     graphdatatablemodel.cpp \
     graphview.cpp \
-    graphscene.cpp \
-    graphicedge.cpp
+    graphscene.cpp
 
 HEADERS  += mainwindow.h \
     parser.h \
@@ -56,20 +51,15 @@ HEADERS  += mainwindow.h \
     node.h \
     edge.h \
     graph.h \
-    graphanalysis.h \
-    graphanalysisdegree.h \
     vectorops.h \
     plotops.h \
     graphops.h \
-    graphdataset.h \
     matrixops.h \
     graphicitem.h \
-    graphicnode.h \
     dataset.h \
     graphdatatablemodel.h \
     graphview.h \
-    graphscene.h \
-    graphicedge.h
+    graphscene.h
 
 FORMS    += mainwindow.ui
 

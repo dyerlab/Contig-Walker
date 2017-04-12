@@ -56,11 +56,11 @@ void GraphView::timerEvent(QTimerEvent *event) {
     if( !canMove )
         return;
     GraphScene *scene = qobject_cast<GraphScene*>( this->scene() );
-    QList<GraphicNode*> nodes = scene->getNodes();
+    QList<Node*> nodes = scene->getNodes();
 
     temperature = (temperature > 0.5 ) ? 0.999 * temperature : 0.45;
 
-    foreach(GraphicNode* node, nodes ){
+    foreach(Node* node, nodes ){
         node->calculateForces( temperature );
     }
 
@@ -108,8 +108,8 @@ void GraphView::keyPressEvent(QKeyEvent *event) {
 
 void GraphView::shuffleNodes() {
     GraphScene *scene = qobject_cast<GraphScene*>( this->scene() );
-    QList<GraphicNode*> nodes = scene->getNodes();
-    foreach(GraphicNode* node, nodes )
+    QList<Node*> nodes = scene->getNodes();
+    foreach(Node* node, nodes )
         node->setPos( qrand() % (int)scene->height(),
                       qrand() % (int)scene->height() );
     itemMoved();
@@ -118,16 +118,16 @@ void GraphView::shuffleNodes() {
 
 void GraphView::toggleLabels() {
     GraphScene *scene = qobject_cast<GraphScene*>( this->scene() );
-    QList<GraphicNode*> nodes = scene->getNodes();
-    foreach(GraphicNode* node, nodes )
+    QList<Node*> nodes = scene->getNodes();
+    foreach(Node* node, nodes )
         node->toggleLabel();
     update();
 }
 
 void GraphView::scaleNodes(double val) {
     GraphScene *scene = qobject_cast<GraphScene*>( this->scene() );
-    QList<GraphicNode*> nodes = scene->getNodes();
-    foreach(GraphicNode* node, nodes ) {
+    QList<Node*> nodes = scene->getNodes();
+    foreach(Node* node, nodes ) {
         double newSize = node->getSize() * val;
         if( newSize > 4 && newSize < 26 )
             node->setSize(newSize);

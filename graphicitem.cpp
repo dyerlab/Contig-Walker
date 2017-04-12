@@ -30,5 +30,11 @@
 GraphicItem::GraphicItem(QGraphicsItem *parent) : QGraphicsItem(parent) {
     setPen( QPen( Qt::black) );
     setBrush( QBrush(Qt::darkRed ) );
+    setPen( QPen(Qt::black));
+    setBrush( QBrush(Qt::darkRed));
+
+    setCacheMode( DeviceCoordinateCache );
+    setZValue( 2 );
+
 }
 
