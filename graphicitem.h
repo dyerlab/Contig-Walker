@@ -32,11 +32,9 @@
 #include <QFont>
 #include <QBrush>
 #include <QDebug>
-#include <QObject>
 #include <QPainter>
 #include <QFontMetrics>
 #include <QGraphicsItem>
-
 
 typedef enum {
     GRAPHIC_ITEM_UNDEF,
@@ -45,21 +43,21 @@ typedef enum {
 } GRAPHIC_ITEM_TYPE;
 
 
-class GraphicItem : public QGraphicsItem
-{
+class GraphicItem : public QGraphicsItem {
+
 public:
     GraphicItem( QGraphicsItem *parent = 0);
 
-    inline GRAPHIC_ITEM_TYPE graphicType()   { return GRAPHIC_ITEM_UNDEF; }
+    inline GRAPHIC_ITEM_TYPE graphicType()  { return GRAPHIC_ITEM_UNDEF; }
 
-    inline QColor getColor()        {return brush.color(); }
-    inline void setPen( QPen p)     { pen = p; }
-    inline void setBrush( QBrush b) { brush = b; }
+    inline QColor getColor()                { return brush.color(); }
+    inline void setPen( QPen p)             { pen = p; }
+    inline void setBrush( QBrush b)         { brush = b; }
 
 protected:
     QPen pen;
     QBrush brush;
-
 };
 
 #endif // GRAPHITEM_H
+

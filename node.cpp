@@ -26,10 +26,14 @@ QString Node::toString() {
 }
 
 
-
-void Node::calculateForces( double maxVelocity ){
-    qDebug() << "calculateforces";
+void Node::stopMoving() {
+    newPosition = pos();
 }
+
+void Node::nudge(double dX, double dY){
+    newPosition += QPointF(dX,dY);
+}
+
 
 
 

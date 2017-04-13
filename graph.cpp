@@ -30,7 +30,7 @@ QString Graph::toString() {
 
     ret << QString( "Edge Set (J=%1):").arg(edges.count());
     for(int i=0;i<edges.count();i++)
-        ret << QString(" - %1").arg( edges.at(i)->toString());
+        ret << QString(" - wt=%1").arg( edges.at(i)->getWeight());
 
     return ret.join("\n");
 }
@@ -44,11 +44,16 @@ Edge* Graph::getEdge(int idx) {
 }
 
 bool Graph::addEdge( int source, int target, double weight ){
+    if( source > nodes.count() || target > nodes.count())
+        return false;
+
     Node *n1 = nodes.at(source);
     Node *n2 = nodes.at(target);
 
     if( n1 && n2 ) {
         Edge *e = new Edge(n1,n2,weight);
+        n1->addEdge( e );
+        n2->addEdge( e );
         edges.append(e);
         return true;
     }
@@ -61,6 +66,7 @@ bool Graph::addEdge( int source, int target, double weight ){
 gsl_matrix* Graph::asAdjacencyMatrix(){
     gsl_matrix *m = gsl_matrix_calloc( numNodes(), numNodes() );
 
+    /*
     for(int i=0;i<numEdges();i++){
         Edge *e = edges.at(i);
         int x = nodes.indexOf( e->sourceNode() );
@@ -68,6 +74,7 @@ gsl_matrix* Graph::asAdjacencyMatrix(){
         double wt = e->getWeight();
         gsl_matrix_set(m,x,y,wt);
     }
+    */
 
     return m;
 

@@ -33,6 +33,7 @@
 
 #include "node.h"
 #include "edge.h"
+#include "graph.h"
 
 class GraphScene : public QGraphicsScene
 {
@@ -40,8 +41,12 @@ class GraphScene : public QGraphicsScene
 public:
     explicit GraphScene(QObject *parent = 0);
 
+    int count() const;
     QList<Node*> getNodes();
     QList<Edge*> getEdges();
+
+    void calculateNodeForces( double temperature );
+    void setGraph( Graph *graph);
 
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
@@ -49,6 +54,8 @@ protected:
 
 private:
     QColor backgroundColor;
+    Graph *currentGraph;
+
 };
 
 #endif // GRAPHSCENE_H

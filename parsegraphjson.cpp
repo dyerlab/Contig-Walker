@@ -21,9 +21,6 @@ bool ParseGraphJSON::parse() {
         errors << "Path not set";
         return false;
     }
-    else {
-        qDebug() << "Parsing GML file: " << path;
-    }
 
     QFile file(path);
     if( !file.open(QIODevice::ReadOnly)) {
@@ -44,11 +41,8 @@ bool ParseGraphJSON::parse() {
         return false;
     }
 
-    if( doc.isObject() ){
-        qDebug() << "As Object";
+    if( doc.isObject() ){        
         QJsonObject obj = doc.object();
-        qDebug() << " - length: " << obj.length();
-        qDebug() << " - keys; " << obj.keys().join(", ");
 
         // bad json, bail out!
         if( !(obj.keys().contains("nodes") && obj.keys().contains("links"))){

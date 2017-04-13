@@ -32,12 +32,14 @@
 #include <QMenu>
 #include <QString>
 #include <QAction>
+#include <QSplitter>
 #include <QTableView>
 #include <QMainWindow>
-#include <QGraphicsView>
-#include <QGraphicsScene>
+
 
 #include "dataset.h"
+#include "graphview.h"
+#include "graphscene.h"
 #include "graphdatatablemodel.h"
 
 namespace Ui {
@@ -52,9 +54,15 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
+    void closeEvent(QCloseEvent *event);
+
 private:
     Ui::MainWindow *ui;
+    QSplitter *mainSplitter;
     QTableView *tableView;
+    GraphView *graphView;
+    GraphScene *graphScene;
 
     QAction *actionOpenDataFolder;
     QAction *actionQuit;
@@ -66,11 +74,14 @@ private:
     void makeActions();
     void makeMenus();
     void makeUI();
+    void loadSettings();
+    void saveSettings();
 
 
 
-private slots:
+public slots:
     void slotSetFolder();
+    void slotGraphClicked(const QModelIndex &index);
 
 };
 

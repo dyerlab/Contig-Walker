@@ -55,19 +55,20 @@ bool DataSet::loadGraphsFromFolder(QString path) {
         return false;
     }
     int ctr = 0;
+    const int K = dataDir->entryList().count();
     QProgressDialog progress(QObject::tr("Loading graph files"),
                              QObject::tr("Cancel"),
-                             0, dataDir->entryList().count(),
-                             qApp->activeWindow());
+                             0, K, qApp->activeWindow());
 
     foreach(QString dataFilePath, dataDir->entryList()){
 
-
         QString dataFile = dataDir->absoluteFilePath( dataFilePath );
 
-        ParseGraphJSON *parser = new ParseGraphJSON( path, this );
+        ParseGraphJSON *parser = new ParseGraphJSON( dataFile, this );
         if( parser->parse()){
-            theGraphs.append( parser->getGraph());
+            Graph *g = parser->getGraph();
+            g->setPath( dataFilePath );
+            theGraphs.append( g );
         }
         else
             qDebug() << parser->getFeedback();
@@ -78,7 +79,7 @@ bool DataSet::loadGraphsFromFolder(QString path) {
         qApp->processEvents();
     }
 
-    progress.setValue(dataDir->entryList().count());
+    progress.setValue(K);
     qApp->processEvents();
 
     delete dataDir;

@@ -55,15 +55,13 @@ void GraphView::timerEvent(QTimerEvent *event) {
 
     if( !canMove )
         return;
+
     GraphScene *scene = qobject_cast<GraphScene*>( this->scene() );
-    QList<Node*> nodes = scene->getNodes();
 
-    temperature = (temperature > 0.5 ) ? 0.999 * temperature : 0.45;
-
-    foreach(Node* node, nodes ){
-        node->calculateForces( temperature );
+    if( scene ) {
+        scene->calculateNodeForces( temperature );
+        temperature = (temperature > 0.5 ) ? 0.999 * temperature : 0.45;
     }
-
 
 }
 

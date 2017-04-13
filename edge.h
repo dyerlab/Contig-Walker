@@ -2,25 +2,19 @@
 #define EDGE_H
 
 
-#include "node.h"
-#include "graphicitem.h"
+#include <QGraphicsItem>
 
-
-
-class Edge : public GraphicItem
+class Edge : public QGraphicsItem
 {
 
 public:
-    explicit Edge(Node *source, Node *target, double weight=1.0, GraphicItem *parent = 0);
+    explicit Edge(QGraphicsItem *source, QGraphicsItem *target, double weight=1.0, QGraphicsItem *parent = 0);
 
-    enum { Type = UserType + 11 };
-    int type() const { return Type; }
-
-    inline Node* sourceNode() const { return source; }
-    inline Node* targetNode() const { return target; }
+    inline QGraphicsItem* sourceNode() const { return source; }
+    inline QGraphicsItem* targetNode() const { return target; }
+    QGraphicsItem* otherNode(QGraphicsItem *node);
     inline double getWeight() const { return weight; }
 
-    QString toString();
 
     // Visualization stuff
     void adjust();
@@ -30,8 +24,8 @@ public:
 
 
 protected:
-    Node *source;
-    Node *target;
+    QGraphicsItem *source;
+    QGraphicsItem *target;
     double weight;
 };
 

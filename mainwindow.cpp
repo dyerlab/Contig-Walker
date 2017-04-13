@@ -28,6 +28,7 @@
 #include <QMenu>
 #include <QDebug>
 #include <QChart>
+#include <QSettings>
 #include <QChartView>
 #include <QStringList>
 #include <QFileDialog>
@@ -55,6 +56,38 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::closeEvent(QCloseEvent *event) {
+    saveSettings();
+    event->accept();
+}
+
+void MainWindow::loadSettings() {
+    QSettings settings("Dyerlab","ChromosomeWalking");
+    move( settings.value("pos", QVariant(QPoint(100,100))).toPoint());
+    resize( settings.value( "size", QVariant(QSize(500,500))).toSize());
+
+    QString dir = settings.value("dataDir", QVariant(QDir::homePath())).toString();
+    qDebug() << "Loading dir as:" << dir;
+    this->dataDir = new QDir( dir );
+
+    mainSplitter->restoreState( settings.value("splitter", QVariant(QByteArray())).toByteArray());
+}
+
+void MainWindow::saveSettings() {
+    QSettings settings("Dyerlab", "ChromosomeWalking");
+    settings.setValue("pos",QVariant(pos()));
+    settings.setValue("size",QVariant(size()));
+    if( dataDir ) {
+        settings.setValue("dataDir", dataDir->absolutePath());
+        qDebug() << "Saving dataDir as: " << dataDir->absolutePath();
+    } else {
+        qDebug() << "DataDir not set";
+    }
+    settings.setValue("splitter",QVariant(mainSplitter->saveState()));
+}
+
+
 void MainWindow::makeActions(){
     actionOpenDataFolder = new QAction( tr("&Open Data Folder"));
     actionOpenDataFolder->setShortcut(tr("CTRL+O"));
@@ -75,13 +108,31 @@ void MainWindow::makeMenus() {
 }
 
 void MainWindow::makeUI() {
-    tableView = new QTableView(this);
-    setCentralWidget(tableView);
+    mainSplitter = new QSplitter(this);
+    tableView = new QTableView(mainSplitter);
+    tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    graphScene = new GraphScene(this);
+    graphView  = new GraphView(graphScene);
+    graphView->setScene(graphScene);
+    mainSplitter->setOrientation(Qt::Horizontal);
+    mainSplitter->addWidget(tableView);
+    mainSplitter->addWidget(graphView);
+
+    connect( tableView,
+             SIGNAL(clicked(QModelIndex)),
+             this,
+             SLOT(slotGraphClicked(QModelIndex)));
+
+
+    setCentralWidget(mainSplitter);
+    loadSettings();
+
 }
 
 
 
 
+/******************************************     SLOTS ********/
 
 void MainWindow::slotSetFolder(){
     QString path = QFileDialog::getExistingDirectory(this,
@@ -105,73 +156,15 @@ void MainWindow::slotSetFolder(){
         qDebug() << "Deleting dataSet";
         delete dataSet;
     }
+}
 
-/*
- *
- *
- *
+void MainWindow::slotGraphClicked(const QModelIndex &index) {
+    int row = index.row();
 
-    QStringList filters;
-    filters << "*.json";
+    qDebug() << "graphSelectionChanged()";
 
-
-    dataDir = new QDir(path);
-    dataDir->setNameFilters(filters);
-    dataDir->setFilter( QDir::Files );
-    dataDir->makeAbsolute();
-
-    qDebug() << "Directory has " << dataDir->count() << " items.";
-    if( !dataDir->count() ) {
-        qDebug() << "No json files in that folder";
-        return;
-    }
-
-
-    QString dataFile = dataDir->absoluteFilePath( dataDir->entryList().at(0) );
-
-    graphDataSet = new GraphDataSet( this );
-    if( graphDataSet->loadGraph( dataDir->entryList().at(0), PARSE_TYPE_GRAPH_JSON)){
-
-    } else {
-        delete graphDataSet;
-    }
-
-
-
-
-
-    ParseGraphJSON *parser = new ParseGraphJSON( dataFile, this);
-    qDebug() << "a parser was made";
-
-    if( !parser->parse()){
-        qDebug() << "Cannot parse " << dataFile;
-        //qDebug() << parser->getFeedback();
-   }
-    else {
-        Graph *theGraph = parser->getGraph();
-        qDebug() << "theGraph";
-        GraphAnalysisDegree *analysis = new GraphAnalysisDegree(theGraph);
-        qDebug() << "analysis";
-        if( analysis->run() ) {
-            qDebug() << "analysis->run()";
-            gsl_vector * degree = analysis->getDegreeDistribution();
-            QStringList labels = theGraph->nodeLabels();
-
-            QChart *chart = makeBarChart(degree, labels, QString("Graph Degree Distribution"));
-            QChartView *chartView = new QChartView(chart);
-            chartView->setRenderHint(QPainter::Antialiasing);
-            setCentralWidget( chartView );
-        }
-        free(theGraph);
-        free(analysis);
-
-
-        qDebug() << "Parser finished";
-    }
-
-    delete parser;
-
-*/
+    graphScene->setGraph( dataSet->graph(row) );
+    graphView->itemMoved();
 
 }
 

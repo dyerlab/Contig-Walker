@@ -19,6 +19,7 @@ public:
     QString toString();
 
     inline void addEdge( Edge *e )  { edges.append( e ); }
+    inline Edge* getEdge( int idx ) { return edges.at(idx); }
     inline int degree()             { return edges.count(); }
 
     // Visualization stuff
@@ -29,8 +30,8 @@ public:
     bool shouldAdvance();
     inline void toggleLabel()       { showLabel = !showLabel; }
 
-    void calculateForces( double maxVelocity );
-
+    void stopMoving();
+    void nudge(double dX, double dY);
 
 protected:
     double size;

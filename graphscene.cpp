@@ -25,6 +25,7 @@
 *
 ******************************************************************************/
 
+#include <cmath>
 #include <QDebug>
 #include "graphscene.h"
 
@@ -33,7 +34,7 @@ GraphScene::GraphScene(QObject *parent) : QGraphicsScene(parent)
     backgroundColor = Qt::white;
     setBackgroundBrush( backgroundColor);
     setSceneRect(0,0,1000,1000);
-
+    currentGraph = NULL;
 }
 
 QList<Node*> GraphScene::getNodes() {
@@ -55,6 +56,91 @@ QList<Edge *> GraphScene::getEdges() {
     }
     return ret;
 }
+
+int GraphScene::count() const {
+    return items().count();
+}
+
+
+void GraphScene::setGraph(Graph *graph){
+    if( currentGraph != NULL ){
+        // put in part here to give corridents of old graph to new graph.
+
+    }
+    currentGraph = graph;
+    for( int i=0;i<graph->numEdges();++i){
+        this->addItem( graph->getEdge(i));
+    }
+    for( int i=0;i<graph->numNodes(); ++i){
+        this->addItem( graph->getNode(i));
+    }
+
+}
+
+void GraphScene::calculateNodeForces( double temperature ) {
+
+   if( currentGraph ){
+
+       int K = items().count();
+       K = qRound(sqrt( 1.0*((this->width() * this->height() )/K )) * 50.0) ;
+
+       for( int i=0; i<currentGraph->numNodes(); i++ ){
+           Node *n1 = currentGraph->getNode(i);
+           double xvel = 0.0;
+           double yvel = 0.0;
+
+           // Repulsive Forces
+           if( n1 != mouseGrabberItem() ){
+               for( int j=0;j<currentGraph->numNodes(); j++) {
+                   if( i != j ){
+                       Node *n2 = currentGraph->getNode(j);
+                       QLineF line( n1->mapFromItem(n2,0,0), QPointF(0,0));
+                       double dX = line.dx();
+                       double dY = line.dy();
+                       double l = (dX*dX + dY*dY) * 4;
+                       if( l > 0 ){
+                           xvel += (dX/l) * (K*K/l);
+                           yvel += (dY/l) * (K*K/l);
+                       }
+                   }
+               }
+           }
+
+
+           // Attractive Forces
+           for(int i=0;i<n1->degree();i++){
+               Edge *e = n1->getEdge(i);
+               if( e ){
+                   Node *n2 = qgraphicsitem_cast<Node*>( e->otherNode(n1) );
+                   if( n2 ){
+                       QPointF here = n1->mapFromItem(n2,0,0);
+                       double wt = e->getWeight() * 10.0;
+                       xvel += here.x() / wt;
+                       yvel += here.y() / wt;
+                   }
+               }
+           }
+
+           // Correct for out-of-scene stuff
+           if( qAbs(xvel) > temperature )
+               xvel = temperature * xvel/qAbs(xvel);
+           if( qAbs(yvel) > temperature )
+               yvel = temperature * yvel/qAbs(yvel);
+
+
+           QRectF sceneRect = this->sceneRect();
+           xvel += n1->pos().x();
+           yvel += n1->pos().y();
+
+           xvel = qMin(qMax(xvel, sceneRect.left() + 10), sceneRect.right() - 10);
+           yvel = qMin(qMax(yvel, sceneRect.top() + 10), sceneRect.bottom() - 10);
+
+           n1->nudge(xvel,yvel);
+       }
+   }
+}
+
+
 
 void GraphScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     QGraphicsScene::mousePressEvent( event );

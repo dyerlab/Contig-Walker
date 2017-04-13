@@ -35,45 +35,21 @@ GraphDataTableModel::GraphDataTableModel(DataSet *theData, QObject *parent) : QA
 
 int GraphDataTableModel::rowCount(const QModelIndex &parent) const {
     Q_UNUSED( parent );
-    return 4;
+    return theData->count();
 }
 
 int GraphDataTableModel::columnCount(const QModelIndex &parent) const {
     Q_UNUSED( parent );
-    return theData->count();
+    return 1;
 }
 
 QVariant GraphDataTableModel::data(const QModelIndex &index, int role) const {
-    QVariant ret;
+    QVariant ret = QVariant();
 
     if( role == Qt::DisplayRole ){
-        int displayType = index.row();
-        int graphID = index.column();
-        Graph *theGraph = theData->graph( graphID );
-
-
-        switch (displayType) {
-        case TABLE_ROW_PATH:
-            ret = QVariant( theGraph->path() );
-            break;
-
-        case TABLE_ROW_GRAPH:
-            ret = QVariant("Graph image here");
-            break;
-
-        case TABLE_ROW_SIZE:
-            ret = QVariant(  QString("Nodes %1; Edges %2").arg(theGraph->numNodes()).arg(theGraph->numEdges()));
-            break;
-
-        case TABLE_ROW_DEGREE:
-            ret = QVariant("Degree");
-            break;
-        }
-
+        int graphID = index.row();
+        ret = QVariant( theData->graph(graphID)->path());
     }
-    else
-        ret = QVariant();
-
 
     return ret;
 
