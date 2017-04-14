@@ -28,8 +28,12 @@
 #ifndef GRAPHVIEW_H
 #define GRAPHVIEW_H
 
+#include <QTimer>
 #include <QObject>
+#include <QPanGesture>
 #include <QGraphicsView>
+#include <QGestureEvent>
+#include <QPinchGesture>
 #include "graphscene.h"
 
 
@@ -49,8 +53,9 @@ public:
     void resetLayout();
 
 protected:
-    void timerEvent( QTimerEvent *event);
-    void keyPressEvent( QKeyEvent *event);
+    void timerEvent( QTimerEvent *event) override;
+    void keyPressEvent( QKeyEvent *event) override;
+    bool event(QEvent *event) override;
 
 private:
     double temperature;
@@ -61,6 +66,10 @@ private:
     void toggleLabels();
     void scaleNodes( double val );
     void zoom( ZOOM_DIRECTION direction );
+
+    bool gestureEvent(QGestureEvent *event);
+    void panTriggered(QPanGesture *pan);
+    void pinchTriggered(QPinchGesture *pinch);
 };
 
 #endif // GRAPHVIEW_H

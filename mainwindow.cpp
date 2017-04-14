@@ -168,13 +168,13 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
     int row = index.row();
 
     qDebug() << "graphSelectionChanged()";
+    Graph* g = dataSet->graph(row);
+    if( g ){
+        graphScene->setGraph(g);
+        graphView->resetLayout();
+        graphView->itemMoved();
+    }
 
-    GraphScene *scene = new GraphScene(this);
-    scene->setGraph( dataSet->graph(row));
-    delete graphScene;
-    graphScene = scene;
-    graphView->setScene(graphScene);
-    graphView->itemMoved();
 
 }
 

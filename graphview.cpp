@@ -34,6 +34,11 @@ GraphView::GraphView(GraphScene *scene) : QGraphicsView(scene) {
     setInteractive(true);
     setRenderHints( QPainter::Antialiasing | QPainter::SmoothPixmapTransform | QPainter::TextAntialiasing | QPainter::HighQualityAntialiasing );
     setSceneRect(0,0,1000,1000);
+
+    // set up gesture grabbing
+    viewport()->grabGesture(Qt::PanGesture);
+    viewport()->grabGesture(Qt::PinchGesture);
+
 }
 
 
@@ -107,6 +112,13 @@ void GraphView::keyPressEvent(QKeyEvent *event) {
 
 
 
+
+bool GraphView::event(QEvent *event) {
+    if( event->type() == QEvent::Gesture)
+        return gestureEvent(static_cast<QGestureEvent*>(event) );
+    return QWidget::event(event);
+}
+
 void GraphView::shuffleNodes() {
     GraphScene *scene = qobject_cast<GraphScene*>( this->scene() );
     QList<Node*> nodes = scene->getNodes();
@@ -142,3 +154,26 @@ void GraphView::zoom(ZOOM_DIRECTION direction) {
     else
         scale(1/1.2, 1/1.2);
 }
+
+bool GraphView::gestureEvent(QGestureEvent *event) {
+    qDebug() << "gestureEvent()" << event;
+
+    if( QGesture *pinch = event->gesture(Qt::PinchGesture))
+        pinchTriggered(static_cast<QPinchGesture*>(pinch));
+    else if( QGesture *pan = event->gesture(Qt::PanGesture))
+        panTriggered(static_cast<QPanGesture*>(pan));
+    return true;
+}
+
+void GraphView::panTriggered(QPanGesture *pan){
+    qDebug() << "panTriggered()" << pan;
+}
+
+void GraphView::pinchTriggered(QPinchGesture *pinch) {
+    qDebug() << "pinchTriggered()" << pinch;
+}
+
+
+
+
+

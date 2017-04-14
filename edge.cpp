@@ -1,9 +1,10 @@
 #include "edge.h"
+#include "node.h"
 
 #include <QPen>
 #include <QPainter>
 
-Edge::Edge(QGraphicsItem *source, QGraphicsItem *target, double weight, QGraphicsItem *parent) : QGraphicsItem(parent) {
+Edge::Edge(Node *source, Node *target, double weight, GraphicItem *parent) : GraphicItem(parent) {
     this->source = source;
     this->target = target;
     this->weight = weight;
@@ -21,13 +22,11 @@ void Edge::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
     if( qFuzzyCompare( line.length(),qreal(0.0)))
         return;
 
-    QPen pen = QPen(Qt::black);
-
     painter->setPen(pen);
     painter->drawLine( line );
 }
 
-QGraphicsItem* Edge::otherNode(QGraphicsItem *node) {
+Node* Edge::otherNode(Node *node) {
     if( node == source )
         return target;
     else if( node == target )

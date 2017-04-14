@@ -32,15 +32,17 @@
 #include <QFont>
 #include <QBrush>
 #include <QDebug>
+#include <QtGlobal>
 #include <QPainter>
 #include <QFontMetrics>
 #include <QGraphicsItem>
+#include <QAbstractGraphicsShapeItem>
 
 typedef enum {
-    GRAPHIC_ITEM_UNDEF,
-    GRAPHIC_ITEM_EDGE,
-    GRAPHIC_ITEM_NODE
-} GRAPHIC_ITEM_TYPE;
+    GRAPHIC_TYPE_UNDEF = QAbstractGraphicsShapeItem::UserType + 1,
+    GRAPHIC_TYPE_EDGE,
+    GRAPHIC_TYPE_NODE
+} GRAPHIC_TYPE;
 
 
 class GraphicItem : public QGraphicsItem {
@@ -48,7 +50,7 @@ class GraphicItem : public QGraphicsItem {
 public:
     GraphicItem( QGraphicsItem *parent = 0);
 
-    inline GRAPHIC_ITEM_TYPE graphicType()  { return GRAPHIC_ITEM_UNDEF; }
+    int type() const                        { return GRAPHIC_TYPE_UNDEF; }
 
     inline QColor getColor()                { return brush.color(); }
     inline void setPen( QPen p)             { pen = p; }

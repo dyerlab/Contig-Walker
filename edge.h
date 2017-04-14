@@ -2,30 +2,31 @@
 #define EDGE_H
 
 
-#include <QGraphicsItem>
+#include "graphicitem.h"
 
-class Edge : public QGraphicsItem
+class Node;
+
+class Edge : public GraphicItem
 {
 
 public:
-    explicit Edge(QGraphicsItem *source, QGraphicsItem *target, double weight=1.0, QGraphicsItem *parent = 0);
+    explicit Edge(Node *source, Node *target, double weight=1.0, GraphicItem *parent = 0);
 
-    inline QGraphicsItem* sourceNode() const { return source; }
-    inline QGraphicsItem* targetNode() const { return target; }
-    QGraphicsItem* otherNode(QGraphicsItem *node);
+    inline GRAPHIC_TYPE graphicType()      { return GRAPHIC_TYPE_EDGE; }
+
+    inline Node* sourceNode() const    { return source; }
+    inline Node* targetNode() const    { return target; }
+    Node* otherNode(Node *node);
     inline double getWeight() const { return weight; }
-
 
     // Visualization stuff
     void adjust();
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     QRectF boundingRect() const;
 
-
-
 protected:
-    QGraphicsItem *source;
-    QGraphicsItem *target;
+    Node *source;
+    Node *target;
     double weight;
 };
 
