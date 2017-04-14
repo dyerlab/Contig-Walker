@@ -66,12 +66,18 @@ void MainWindow::loadSettings() {
     QSettings settings("Dyerlab","ChromosomeWalking");
     move( settings.value("pos", QVariant(QPoint(100,100))).toPoint());
     resize( settings.value( "size", QVariant(QSize(500,500))).toSize());
-
     QString dir = settings.value("dataDir", QVariant(QDir::homePath())).toString();
     qDebug() << "Loading dir as:" << dir;
     this->dataDir = new QDir( dir );
-
     mainSplitter->restoreState( settings.value("splitter", QVariant(QByteArray())).toByteArray());
+    QFile in(":/AppStyleSheet.css");
+    if( in.open(QIODevice::Text|QIODevice::ReadOnly)){
+        QTextStream stream(&in);
+        QString css = stream.readAll();
+        if( !css.isEmpty() )
+            this->setStyleSheet(css);
+        in.close();
+    }
 }
 
 void MainWindow::saveSettings() {
@@ -111,6 +117,9 @@ void MainWindow::makeUI() {
     mainSplitter = new QSplitter(this);
     tableView = new QTableView(mainSplitter);
     tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    tableView->verticalHeader()->hide();
+    tableView->setObjectName("graphTableView");
+
     graphScene = new GraphScene(this);
     graphView  = new GraphView(graphScene);
     graphView->setScene(graphScene);
@@ -157,6 +166,12 @@ void MainWindow::slotSetFolder(){
         tableView->update();
         dataDir = new QDir(path);
 
+        if( dataSet->count() ) {
+            tableView->selectRow(0);
+            QModelIndex index = tableModel->index(0,0);
+            this->slotGraphClicked( index );
+        }
+
     }
     else {
         qDebug() << "Deleting dataSet";
@@ -174,7 +189,6 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
         graphView->resetLayout();
         graphView->itemMoved();
     }
-
 
 }
 

@@ -45,7 +45,7 @@ public:
     QList<Node*> getNodes();
     QList<Edge*> getEdges();
 
-    void calculateNodeForces( double temperature );
+    bool calculateNodeForces( double temperature );
     void setGraph( Graph *graph);
 
 protected:

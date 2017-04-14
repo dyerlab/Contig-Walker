@@ -33,11 +33,11 @@ GraphView::GraphView(GraphScene *scene) : QGraphicsView(scene) {
     resetLayout();
     setInteractive(true);
     setRenderHints( QPainter::Antialiasing | QPainter::SmoothPixmapTransform | QPainter::TextAntialiasing | QPainter::HighQualityAntialiasing );
-    setSceneRect(0,0,1000,1000);
 
     // set up gesture grabbing
     viewport()->grabGesture(Qt::PanGesture);
     viewport()->grabGesture(Qt::PinchGesture);
+    temperature = 100.0;
 
 }
 
@@ -58,18 +58,22 @@ void GraphView::resetLayout() {
 void GraphView::timerEvent(QTimerEvent *event) {
     Q_UNUSED( event );
 
-    if( !canMove )
+    // bail on moving if necessary
+    if( !canMove ){
         return;
-
-    GraphScene *scene = qobject_cast<GraphScene*>( this->scene() );
-
-    if( scene ) {
-        scene->calculateNodeForces( temperature );
-        temperature = (temperature > 0.5 ) ? 0.999 * temperature : 0.45;
     }
-    else {
-        qDebug() << "GraphScene is null";
+
+    // grab nodes
+    temperature = (temperature > 0.5 ) ? 0.999 * temperature : 0.45;
+    GraphScene *theScene = static_cast<GraphScene*>(this->scene());
+    if( theScene ) {
+        if( !theScene->calculateNodeForces( temperature ) ){
+            killTimer(timerID);
+            timerID = 0;
+        }
     }
+
+    this->update();
 
 }
 
@@ -116,7 +120,7 @@ void GraphView::keyPressEvent(QKeyEvent *event) {
 bool GraphView::event(QEvent *event) {
     if( event->type() == QEvent::Gesture)
         return gestureEvent(static_cast<QGestureEvent*>(event) );
-    return QWidget::event(event);
+    return QGraphicsView::event(event);
 }
 
 void GraphView::shuffleNodes() {

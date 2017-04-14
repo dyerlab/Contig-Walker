@@ -39,7 +39,19 @@ gsl_vector* degree( QList<Node*> nodes) {
 }
 
 
+void transferNodeLocations( Graph* fromGraph, Graph *toGraph ) {
+    Q_ASSERT( fromGraph->numNodes() == toGraph->numNodes());
 
+    for( int i=0;i<fromGraph->numNodes();i++){
+        int idx = toGraph->indexOf( fromGraph->getNode(i)->getLabel());
+        if( idx != -1 ){
+            toGraph->getNode(idx)->setPos( fromGraph->getNode(i)->pos());
+        }
+        else {
+            toGraph->getNode(idx)->setPos(400,400);
+        }
+    }
+}
 
 
 

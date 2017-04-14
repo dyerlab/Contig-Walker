@@ -35,6 +35,6 @@
 
 gsl_vector* degree( QList<Node*> nodes );
 
-
+void transferNodeLocations( Graph* fromGraph, Graph *toGraph );
 
 #endif // GRAPHOPS_H

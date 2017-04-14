@@ -28,6 +28,7 @@
 #include <cmath>
 #include <QDebug>
 #include "graphscene.h"
+#include "graphops.h"
 
 GraphScene::GraphScene(QObject *parent) : QGraphicsScene(parent)
 {
@@ -65,7 +66,7 @@ int GraphScene::count() const {
 void GraphScene::setGraph(Graph *graph){
     if( currentGraph != NULL ){
         // put in part here to give corridents of old graph to new graph.
-
+        transferNodeLocations(currentGraph,graph);
     }
 
     while( this->items().count()){
@@ -82,8 +83,8 @@ void GraphScene::setGraph(Graph *graph){
 
 }
 
-void GraphScene::calculateNodeForces( double temperature ) {
-
+bool GraphScene::calculateNodeForces( double temperature ) {
+   bool ret = false;
    if( currentGraph ){
 
        int K = items().count();
@@ -133,6 +134,10 @@ void GraphScene::calculateNodeForces( double temperature ) {
                yvel = temperature * yvel/qAbs(yvel);
 
 
+           // set flag for still moving if any movement of any node.
+           if( xvel != 0 || yvel != 0)
+               ret = true;
+
            QRectF sceneRect = this->sceneRect();
            xvel += n1->pos().x();
            yvel += n1->pos().y();
@@ -143,6 +148,8 @@ void GraphScene::calculateNodeForces( double temperature ) {
            n1->nudge(xvel,yvel);
        }
    }
+
+   return ret;
 }
 
 

@@ -22,6 +22,7 @@ public:
     inline void addNode(Node *node) { nodes.append( node ); }
     Node* getNode( int idx );
     int indexOf( Node* node );
+    int indexOf( QString nodeLabel );
 
     inline int numEdges() { return edges.count(); }
     bool addEdge( int source, int target, double weight );

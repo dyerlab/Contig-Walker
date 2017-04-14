@@ -69,3 +69,9 @@ INCLUDEPATH += /usr/local/Cellar/gsl/2.3/include
 DEPENDPATH += /usr/local/Cellar/gsl/2.3/include
 
 macx: PRE_TARGETDEPS += /usr/local/Cellar/gsl/2.3/lib/libgsl.a
+
+DISTFILES += \
+    AppStyleSheet.css
+
+RESOURCES += \
+    chromosomewalking.qrc

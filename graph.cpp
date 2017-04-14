@@ -10,7 +10,13 @@ int Graph::indexOf( Node* node ) {
     return( nodes.indexOf( node ) );
 }
 
-
+int Graph::indexOf( QString nodeLabel ){
+    for( int i=0;i<nodes.count();++i){
+        if( nodes.at(i)->getLabel() == nodeLabel )
+            return i;
+    }
+    return -1;
+}
 
 QStringList Graph::nodeLabels() const {
     QStringList ret;
