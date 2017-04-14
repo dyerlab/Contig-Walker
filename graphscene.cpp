@@ -67,12 +67,14 @@ void GraphScene::setGraph(Graph *graph){
         // put in part here to give corridents of old graph to new graph.
 
     }
+
+    this->clear();
     currentGraph = graph;
     for( int i=0;i<graph->numEdges();++i){
-        this->addItem( graph->getEdge(i));
+        this->addItem( graph->getEdge(i) );
     }
     for( int i=0;i<graph->numNodes(); ++i){
-        this->addItem( graph->getNode(i));
+        this->addItem( graph->getNode(i) );
     }
 
 }

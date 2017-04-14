@@ -62,6 +62,9 @@ void GraphView::timerEvent(QTimerEvent *event) {
         scene->calculateNodeForces( temperature );
         temperature = (temperature > 0.5 ) ? 0.999 * temperature : 0.45;
     }
+    else {
+        qDebug() << "GraphScene is null";
+    }
 
 }
 

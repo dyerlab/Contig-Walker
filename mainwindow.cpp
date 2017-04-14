@@ -135,9 +135,14 @@ void MainWindow::makeUI() {
 /******************************************     SLOTS ********/
 
 void MainWindow::slotSetFolder(){
+    QString defaultPath = QDir::homePath();
+
+    if( dataDir )
+        defaultPath = dataDir->absolutePath();
+
     QString path = QFileDialog::getExistingDirectory(this,
                                                     "Locate data directory",
-                                                    QDir::homePath());
+                                                    defaultPath);
     if( path.isEmpty())
         return;
 
@@ -150,6 +155,7 @@ void MainWindow::slotSetFolder(){
         tableModel = new GraphDataTableModel( dataSet, this );
         tableView->setModel(tableModel);
         tableView->update();
+        dataDir = new QDir(path);
 
     }
     else {
@@ -163,7 +169,11 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
 
     qDebug() << "graphSelectionChanged()";
 
-    graphScene->setGraph( dataSet->graph(row) );
+    GraphScene *scene = new GraphScene(this);
+    scene->setGraph( dataSet->graph(row));
+    delete graphScene;
+    graphScene = scene;
+    graphView->setScene(graphScene);
     graphView->itemMoved();
 
 }
