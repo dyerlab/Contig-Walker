@@ -74,8 +74,9 @@ void MainWindow::loadSettings() {
     if( in.open(QIODevice::Text|QIODevice::ReadOnly)){
         QTextStream stream(&in);
         QString css = stream.readAll();
-        if( !css.isEmpty() )
+        if( !css.isEmpty() ) {
             this->setStyleSheet(css);
+        }
         in.close();
     }
 }
@@ -86,9 +87,6 @@ void MainWindow::saveSettings() {
     settings.setValue("size",QVariant(size()));
     if( dataDir ) {
         settings.setValue("dataDir", dataDir->absolutePath());
-        qDebug() << "Saving dataDir as: " << dataDir->absolutePath();
-    } else {
-        qDebug() << "DataDir not set";
     }
     settings.setValue("splitter",QVariant(mainSplitter->saveState()));
 }
@@ -118,7 +116,11 @@ void MainWindow::makeUI() {
     tableView = new QTableView(mainSplitter);
     tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     tableView->verticalHeader()->hide();
+    tableView->horizontalHeader()->hide();
     tableView->setObjectName("graphTableView");
+    tableView->setAttribute(Qt::WA_MacShowFocusRect, false);
+    connect( tableView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
+             this, SLOT(slotGraphSelectionChanged(QItemSelection,QItemSelection)));
 
     graphScene = new GraphScene(this);
     graphView  = new GraphView(graphScene);
@@ -126,12 +128,6 @@ void MainWindow::makeUI() {
     mainSplitter->setOrientation(Qt::Horizontal);
     mainSplitter->addWidget(tableView);
     mainSplitter->addWidget(graphView);
-
-    connect( tableView,
-             SIGNAL(clicked(QModelIndex)),
-             this,
-             SLOT(slotGraphClicked(QModelIndex)));
-
 
     setCentralWidget(mainSplitter);
     loadSettings();
@@ -163,6 +159,12 @@ void MainWindow::slotSetFolder(){
         qDebug() << "This has " << dataSet->count() << " graphs in it!";
         tableModel = new GraphDataTableModel( dataSet, this );
         tableView->setModel(tableModel);
+        tableView->setSelectionMode(QAbstractItemView::SingleSelection);
+        tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+        QItemSelectionModel *sm = tableView->selectionModel();
+        connect(sm,SIGNAL(currentRowChanged(QModelIndex,QModelIndex)),
+                this, SLOT(slotGraphSelectionChanged(QModelIndex,QModelIndex)));
+
         tableView->update();
         dataDir = new QDir(path);
 
@@ -182,7 +184,7 @@ void MainWindow::slotSetFolder(){
 void MainWindow::slotGraphClicked(const QModelIndex &index) {
     int row = index.row();
 
-    qDebug() << "graphSelectionChanged()";
+    qDebug() << "graphSelectionChanged() to " << row;
     Graph* g = dataSet->graph(row);
     if( g ){
         graphScene->setGraph(g);
@@ -195,5 +197,13 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
 
 
 
+void MainWindow::slotGraphSelectionChanged(QModelIndex current, QModelIndex previous) {
+    if( current.isValid() ) {
 
+        qDebug() << "selected" << current.row();
+        slotGraphClicked( current );
+    }
+    if( previous.isValid() )
+        qDebug() << "deselected" << previous.row();
+}
 

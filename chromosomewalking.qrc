@@ -1,1 +1,6 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/">
+        <file>brown_bkgrnd.png</file>
+        <file>AppStyleSheet.css</file>
+    </qresource>
+</RCC>

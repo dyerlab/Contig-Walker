@@ -71,7 +71,9 @@ DEPENDPATH += /usr/local/Cellar/gsl/2.3/include
 macx: PRE_TARGETDEPS += /usr/local/Cellar/gsl/2.3/lib/libgsl.a
 
 DISTFILES += \
-    AppStyleSheet.css
+    AppStyleSheet.css \
+    media/brown_bkgrnd.png
 
 RESOURCES += \
     chromosomewalking.qrc
+

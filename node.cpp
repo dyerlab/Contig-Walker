@@ -7,14 +7,15 @@ Node::Node(QString name, double size, GraphicItem *parent) : GraphicItem(parent)
     this->size = size;
     showLabel = true;
     setPos( QPointF( qrand() % 800, qrand() % 800 ));
+
     setFlag( QGraphicsItem::ItemIsMovable, true );
     setFlag( QGraphicsItem::ItemIsSelectable, true );
     setFlag( QGraphicsItem::ItemSendsGeometryChanges, true);
+
     setPen( QPen(Qt::black));
     setBrush( Qt::darkRed );
-    setZValue(1);
+    setZValue(3);
 
-    qDebug() << name << size;
 }
 
 
@@ -46,11 +47,15 @@ void Node::nudge(double dX, double dY){
 
 /****************   Overrides for Plotting *******************/
 QRectF Node::boundingRect() const {
+
+    QRectF bRect = QRectF(-size/2,-size/2,size,size);
+
+    /*
+     *
     QFont font("Helvetica [Cronyx]", 12, QFont::Normal);
     QFontMetrics metrics(font);
     QRect fontRect = metrics.boundingRect(label);
 
-    QRectF bRect;
     bRect.setLeft( -size/2 );
     if( size < fontRect.height())
         bRect.setTop(fontRect.height() + size/2 + 4);
@@ -58,7 +63,7 @@ QRectF Node::boundingRect() const {
         bRect.setTop(-size/2);
     bRect.setWidth( size + 4 + fontRect.width() );
     bRect.setHeight( size + 4 + fontRect.height() );
-
+    */
     //
 
 
@@ -80,17 +85,18 @@ void Node::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
     painter->drawEllipse(-size/2,-size/2,size,size);
 
     // show the label if necessary
+    /*
     if( showLabel ) {
         painter->setFont( QFont("Helvetica [Cronyx]", 12, QFont::Normal) );
         //painter->drawText(size/2+2,size/2, label);
         painter->drawText(size/2+2,0, label);
     }
+    */
 }
 
 QVariant Node::itemChange(GraphicsItemChange change, const QVariant &value) {
     switch( change ) {
     case ItemPositionChange:
-        qDebug() << "Changing position";
         foreach( Edge *edge, edges )
             edge->adjust();
         break;

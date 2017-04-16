@@ -9,7 +9,7 @@ Edge::Edge(Node *source, Node *target, double weight, GraphicItem *parent) : Gra
     this->target = target;
     this->weight = weight;
 
-    setZValue(2);
+    setZValue(1);
 }
 
 

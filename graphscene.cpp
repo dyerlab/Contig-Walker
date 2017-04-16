@@ -71,7 +71,6 @@ void GraphScene::setGraph(Graph *graph){
 
     while( this->items().count()){
         removeItem( items().at(0));
-        qDebug() << "removing item" << items().count();
     }
     currentGraph = graph;
     for( int i=0;i<graph->numEdges();++i){
