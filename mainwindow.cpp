@@ -108,7 +108,6 @@ void MainWindow::makeMenus() {
     fileMenu->addAction( actionOpenDataFolder );
     fileMenu->addSeparator();
     fileMenu->addAction( actionQuit );
-
 }
 
 void MainWindow::makeUI() {
@@ -125,6 +124,7 @@ void MainWindow::makeUI() {
     graphScene = new GraphScene(this);
     graphView  = new GraphView(graphScene);
     graphView->setScene(graphScene);
+    graphView->setAttribute(Qt::WA_MacShowFocusRect, false);
     mainSplitter->setOrientation(Qt::Horizontal);
     mainSplitter->addWidget(tableView);
     mainSplitter->addWidget(graphView);
