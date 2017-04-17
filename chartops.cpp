@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  matrixops
+*  chartops
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,19 +25,27 @@
 *
 ******************************************************************************/
 
-#ifndef MATRIXOPS_H
-#define MATRIXOPS_H
+#include "chartops.h"
 
-#include <gsl/gsl_math.h>
-#include <gsl/gsl_vector.h>
-#include <gsl/gsl_matrix.h>
+QChart* histogram(gsl_vector *data, int num_bins , QString title) {
+    gsl_histogram *hist = gsl_histogram_alloc( num_bins );
+    for(size_t i=0;i<data->size;i++){
+        gsl_histogram_increment(hist, gsl_vector_get( data, i) );
+    }
 
+    QBarSet *set = new QBarSet("Main");
+    for( size_t i=0; i < hist->n; i++){
+        set->append( (qreal)gsl_histogram_get(hist,i) );
+    }
 
-double matrixSum( gsl_matrix *A );
+    QBarSeries *series = new QBarSeries();
+    series->append(set);
 
-gsl_matrix* shortestPathFloydWarshall( gsl_matrix *A );
+    QChart *chart = new QChart();
+    chart->addSeries( series );
+    chart->setTitle( title );
+    chart->setAnimationOptions( QChart::SeriesAnimations );
+    return chart;
 
+}
 
-
-
-#endif // MATRIXOPS_H

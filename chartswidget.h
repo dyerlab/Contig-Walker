@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  matrixops
+*  chartswidget.h
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,19 +25,25 @@
 *
 ******************************************************************************/
 
-#ifndef MATRIXOPS_H
-#define MATRIXOPS_H
+#ifndef CHARTSWIDGET_H
+#define CHARTSWIDGET_H
 
-#include <gsl/gsl_math.h>
-#include <gsl/gsl_vector.h>
-#include <gsl/gsl_matrix.h>
+#include "graph.h"
+#include "graphops.h"
 
-
-double matrixSum( gsl_matrix *A );
-
-gsl_matrix* shortestPathFloydWarshall( gsl_matrix *A );
+#include <QWidget>
+#include <QVBoxLayout>
 
 
+class ChartsWidget : public QWidget
+{
+    Q_OBJECT
+public:
+    explicit ChartsWidget(Graph *theGraph, QWidget *parent = 0);
 
+private:
+    QVBoxLayout *mainLayout;
 
-#endif // MATRIXOPS_H
+};
+
+#endif // CHARTSWIDGET_H

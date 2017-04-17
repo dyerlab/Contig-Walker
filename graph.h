@@ -4,6 +4,7 @@
 
 #include "node.h"
 #include "edge.h"
+#include "graphops.h"
 
 #include <QList>
 #include <QObject>
@@ -32,6 +33,8 @@ public:
     QStringList nodeLabels() const;
 
     gsl_matrix* asAdjacencyMatrix();
+    gsl_vector* centrality( CENTRALITY_TYPE type );
+
 
     inline void setPath(QString path)   { m_path = path; }
     inline QString path()               { return m_path; }

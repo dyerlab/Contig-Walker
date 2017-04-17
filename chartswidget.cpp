@@ -6,7 +6,7 @@
 *                   \__,_|\__, |\___|_|  |_|\__,_|_.__/
 *                         |___/
 *
-*  matrixops
+*  chartswidget.cpp
 *
 *  Created: 4 2017 by rodney
 *
@@ -25,19 +25,37 @@
 *
 ******************************************************************************/
 
-#ifndef MATRIXOPS_H
-#define MATRIXOPS_H
-
-#include <gsl/gsl_math.h>
+#include "chartswidget.h"
+#include "chartops.h"
 #include <gsl/gsl_vector.h>
-#include <gsl/gsl_matrix.h>
+#include <QtCharts>
 
+#include "graphops.h"
 
-double matrixSum( gsl_matrix *A );
+ChartsWidget::ChartsWidget(Graph *theGraph, QWidget *parent) : QWidget(parent)
+{
+    Q_ASSERT( theGraph );
 
-gsl_matrix* shortestPathFloydWarshall( gsl_matrix *A );
+    gsl_vector *deg = theGraph->centrality( CENTRALITY_DEGREE );
+    gsl_vector *clo = theGraph->centrality( CENTRALITY_CLOSENESS );
+    gsl_vector *btw = theGraph->centrality( CENTRALITY_BETWEENESS );
 
+    mainLayout = new QVBoxLayout(this);
 
+    QChart *degChart = histogram(deg,20,QString("Degree Centrality"));
+    QChartView *degView = new QChartView( degChart );
+    degView->setRenderHint(QPainter::Antialiasing);
+    mainLayout->addWidget( degView );
 
+    QChart *cloChart =  histogram(clo,20,QString("Closeness Centrality"));
+    QChartView *cloView = new QChartView(cloChart);
+    mainLayout->addWidget( cloView );
 
-#endif // MATRIXOPS_H
+    QChart *btwChart = histogram(btw,20,QString("Betweenness Centrality"));
+    QChartView *btwView = new QChartView( btwChart );
+    mainLayout->addWidget(  btwView );
+
+    gsl_vector_free( deg );
+    gsl_vector_free( clo );
+    gsl_vector_free( btw );
+}

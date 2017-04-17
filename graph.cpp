@@ -72,7 +72,7 @@ bool Graph::addEdge( int source, int target, double weight ){
 gsl_matrix* Graph::asAdjacencyMatrix(){
     gsl_matrix *m = gsl_matrix_calloc( numNodes(), numNodes() );
 
-    /*
+
     for(int i=0;i<numEdges();i++){
         Edge *e = edges.at(i);
         int x = nodes.indexOf( e->sourceNode() );
@@ -80,8 +80,35 @@ gsl_matrix* Graph::asAdjacencyMatrix(){
         double wt = e->getWeight();
         gsl_matrix_set(m,x,y,wt);
     }
-    */
 
     return m;
 
 }
+
+
+gsl_vector* Graph::centrality( CENTRALITY_TYPE type ){
+
+    gsl_matrix *A = asAdjacencyMatrix();
+    gsl_vector *ret = NULL;
+
+    switch (type ) {
+
+    case CENTRALITY_DEGREE:
+        ret = degreeCentrality(nodes);
+        break;
+
+    case CENTRALITY_CLOSENESS:
+        ret = closenessCentrality( A );
+        break;
+
+    case CENTRALITY_BETWEENESS:
+        ret = betweennessCentrality( A );
+        break;
+    }
+
+    gsl_matrix_free( A );
+
+    return ret;
+}
+
+

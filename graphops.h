@@ -29,12 +29,27 @@
 #define GRAPHOPS_H
 
 
-#include "graph.h"
+class Graph;
+
+#include <QList>
+#include "node.h"
+#include "matrixops.h"
 #include <gsl/gsl_vector.h>
 #include <gsl/gsl_matrix.h>
 
-gsl_vector* degree( QList<Node*> nodes );
+
+typedef enum {
+    CENTRALITY_DEGREE,
+    CENTRALITY_BETWEENESS,
+    CENTRALITY_CLOSENESS
+} CENTRALITY_TYPE;
 
 void transferNodeLocations( Graph* fromGraph, Graph *toGraph );
+
+
+// Centrality characteristics
+gsl_vector* degreeCentrality( QList<Node*> nodes );
+gsl_vector* betweennessCentrality( gsl_matrix *A );
+gsl_vector* closenessCentrality( gsl_matrix *A );
 
 #endif // GRAPHOPS_H

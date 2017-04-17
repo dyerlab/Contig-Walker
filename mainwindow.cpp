@@ -190,6 +190,11 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
         graphScene->setGraph(g);
         graphView->resetLayout();
         graphView->itemMoved();
+
+        // add the charts HERE TO DO ADD TO GRAPH VIEW
+
+
+
     }
 
 }

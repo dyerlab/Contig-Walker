@@ -42,7 +42,9 @@ SOURCES += main.cpp\
     dataset.cpp \
     graphdatatablemodel.cpp \
     graphview.cpp \
-    graphscene.cpp
+    graphscene.cpp \
+    chartops.cpp \
+    chartswidget.cpp
 
 HEADERS  += mainwindow.h \
     parser.h \
@@ -59,7 +61,9 @@ HEADERS  += mainwindow.h \
     dataset.h \
     graphdatatablemodel.h \
     graphview.h \
-    graphscene.h
+    graphscene.h \
+    chartops.h \
+    chartswidget.h
 
 FORMS    += mainwindow.ui
 
