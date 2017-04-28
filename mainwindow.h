@@ -65,6 +65,7 @@ private:
     GraphScene *graphScene;
 
     QAction *actionOpenDataFolder;
+    QAction *actionToggleLayout;
     QAction *actionQuit;
     QDir *dataDir;
 

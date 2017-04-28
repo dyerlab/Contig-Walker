@@ -97,6 +97,13 @@ void MainWindow::makeActions(){
     actionOpenDataFolder->setShortcut(tr("CTRL+O"));
     connect( actionOpenDataFolder, SIGNAL(triggered(bool)),this, SLOT(slotSetFolder()));
 
+
+    actionToggleLayout = new QAction(tr("&Layout Network"));
+    actionToggleLayout->setCheckable(true);
+    actionToggleLayout->setShortcut(tr("CTRL+L"));
+    connect( actionToggleLayout, SIGNAL(triggered(bool)), this, SLOT( slotToggleLayout()));
+
+
     actionQuit = new QAction(tr("&Quit"));
     actionQuit->setShortcut(tr("CTRL+Q"));
     connect( actionQuit, SIGNAL(triggered(bool)),qApp,SLOT(closeAllWindows()));
@@ -188,8 +195,10 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
     Graph* g = dataSet->graph(row);
     if( g ){
         graphScene->setGraph(g);
-        graphView->resetLayout();
-        graphView->itemMoved();
+        if( actionToggleLayout->isCheckable() ){
+            graphView->resetLayout();
+            graphView->itemMoved();
+        }
 
         // add the charts HERE TO DO ADD TO GRAPH VIEW
 
@@ -204,11 +213,19 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
 
 void MainWindow::slotGraphSelectionChanged(QModelIndex current, QModelIndex previous) {
     if( current.isValid() ) {
-
-        qDebug() << "selected" << current.row();
         slotGraphClicked( current );
     }
-    if( previous.isValid() )
-        qDebug() << "deselected" << previous.row();
 }
+
+
+void MainWindow::slotToggleLayout() {
+
+    if( actionToggleLayout->isChecked()){
+        actionToggleLayout->setChecked(false);
+    } else {
+        actionToggleLayout->setChecked(true);
+    }
+
+}
+
 
