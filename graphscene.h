@@ -48,6 +48,8 @@ public:
     bool calculateNodeForces( double temperature );
     void setGraph( Graph *graph);
 
+    void stopMoving();
+
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
 

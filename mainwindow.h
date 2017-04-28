@@ -84,6 +84,7 @@ public slots:
     void slotSetFolder();
     void slotGraphClicked(const QModelIndex &index);
     void slotGraphSelectionChanged(QModelIndex current, QModelIndex previous);
+    void slotToggleLayout();
 
 };
 

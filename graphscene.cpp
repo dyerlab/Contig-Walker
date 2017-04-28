@@ -63,6 +63,14 @@ int GraphScene::count() const {
 }
 
 
+void GraphScene::stopMoving() {
+    QList<Node*> nodes = this->getNodes();
+    foreach( Node *node, nodes ){
+        node->stopMoving();
+    }
+}
+
+
 void GraphScene::setGraph(Graph *graph){
     if( currentGraph != NULL ){
         // put in part here to give corridents of old graph to new graph.

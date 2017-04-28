@@ -52,6 +52,8 @@ public:
     void itemMoved();
     void resetLayout();
 
+    void stopMoving();
+
 protected:
     void timerEvent( QTimerEvent *event) override;
     void keyPressEvent( QKeyEvent *event) override;

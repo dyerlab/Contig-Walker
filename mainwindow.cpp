@@ -115,6 +115,9 @@ void MainWindow::makeMenus() {
     fileMenu->addAction( actionOpenDataFolder );
     fileMenu->addSeparator();
     fileMenu->addAction( actionQuit );
+
+    QMenu *viewMenu = menuBar()->addMenu(tr("&View"));
+    viewMenu->addAction( actionToggleLayout );
 }
 
 void MainWindow::makeUI() {
@@ -212,6 +215,7 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
 
 
 void MainWindow::slotGraphSelectionChanged(QModelIndex current, QModelIndex previous) {
+    Q_UNUSED( previous );
     if( current.isValid() ) {
         slotGraphClicked( current );
     }
@@ -222,6 +226,7 @@ void MainWindow::slotToggleLayout() {
 
     if( actionToggleLayout->isChecked()){
         actionToggleLayout->setChecked(false);
+
     } else {
         actionToggleLayout->setChecked(true);
     }
