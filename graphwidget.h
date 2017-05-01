@@ -29,12 +29,17 @@
 #define GRAPHWIDGET_H
 
 #include <QWidget>
+#include "graphview.h"
+#include "graphscene.h"
+#include "graph.h"
+
+
 
 class GraphWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit GraphWidget(QWidget *parent = 0);
+    explicit GraphWidget(Graph *theGraph, QWidget *parent = 0);
 
 signals:
 

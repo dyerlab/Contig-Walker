@@ -27,7 +27,7 @@
 
 #include "graphwidget.h"
 
-GraphWidget::GraphWidget(QWidget *parent) : QWidget(parent)
+GraphWidget::GraphWidget(Graph *theGraph, QWidget *parent) : QWidget(parent)
 {
 
 }
