@@ -44,7 +44,8 @@ SOURCES += main.cpp\
     graphview.cpp \
     graphscene.cpp \
     chartops.cpp \
-    chartswidget.cpp
+    chartswidget.cpp \
+    graphwidget.cpp
 
 HEADERS  += mainwindow.h \
     parser.h \
@@ -63,7 +64,8 @@ HEADERS  += mainwindow.h \
     graphview.h \
     graphscene.h \
     chartops.h \
-    chartswidget.h
+    chartswidget.h \
+    graphwidget.h
 
 FORMS    += mainwindow.ui
 
