@@ -38,8 +38,7 @@
 
 
 #include "dataset.h"
-#include "graphview.h"
-#include "graphscene.h"
+#include "graphwidget.h"
 #include "graphdatatablemodel.h"
 
 namespace Ui {
@@ -61,8 +60,8 @@ private:
     Ui::MainWindow *ui;
     QSplitter *mainSplitter;
     QTableView *tableView;
-    GraphView *graphView;
-    GraphScene *graphScene;
+
+    GraphWidget *graphWidget;
 
     QAction *actionOpenDataFolder;
     QAction *actionToggleLayout;

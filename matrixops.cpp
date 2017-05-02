@@ -32,8 +32,8 @@
 double matrixSum( gsl_matrix *A ) {
     double ret = 0.0;
 
-    for( unsigned i=0;i<A->size1;++i){
-        for(unsigned j=0;j<A->size2;++i){
+    for( size_t i=0;i<A->size1;++i){
+        for(size_t j=0;j<A->size2;++j){
             ret += gsl_matrix_get(A,i,j);
         }
     }
@@ -43,7 +43,9 @@ double matrixSum( gsl_matrix *A ) {
 
 
 gsl_matrix* shortestPathFloydWarshall( gsl_matrix *A ){
+    Q_ASSERT( A->size1 > 0 );
     Q_ASSERT( A->size1 == A->size2 );
+
     unsigned N = A->size1;
     gsl_matrix *D = gsl_matrix_calloc( N, N );
     double gMax = matrixSum( A );

@@ -29,9 +29,12 @@
 #define GRAPHWIDGET_H
 
 #include <QWidget>
+#include <QtCharts>
+#include <QHBoxLayout>
 #include "graphview.h"
 #include "graphscene.h"
 #include "graph.h"
+
 
 
 
@@ -39,11 +42,25 @@ class GraphWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit GraphWidget(Graph *theGraph, QWidget *parent = 0);
+    explicit GraphWidget(Graph *theGraph = 0, QWidget *parent = 0);
+
+    void changeGraph( Graph *theGraph );
 
 signals:
 
 public slots:
+
+private:
+    GraphScene *graphScene;
+    GraphView *graphView;
+    QHBoxLayout *mainLayout;
+    QVBoxLayout *graphLayout;
+
+    QChartView *degreeView;
+    QChartView *closenessView;
+    QChartView *betweennessView;
+
+
 };
 
 #endif // GRAPHWIDGET_H

@@ -128,16 +128,14 @@ void MainWindow::makeUI() {
     tableView->horizontalHeader()->hide();
     tableView->setObjectName("graphTableView");
     tableView->setAttribute(Qt::WA_MacShowFocusRect, false);
-    connect( tableView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
-             this, SLOT(slotGraphSelectionChanged(QItemSelection,QItemSelection)));
+    if( tableView->selectionModel() )
+        connect( tableView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
+                 this, SLOT(slotGraphSelectionChanged(QItemSelection,QItemSelection)));
 
-    graphScene = new GraphScene(this);
-    graphView  = new GraphView(graphScene);
-    graphView->setScene(graphScene);
-    graphView->setAttribute(Qt::WA_MacShowFocusRect, false);
+    graphWidget = new GraphWidget();
     mainSplitter->setOrientation(Qt::Horizontal);
     mainSplitter->addWidget(tableView);
-    mainSplitter->addWidget(graphView);
+    mainSplitter->addWidget(graphWidget);
 
     setCentralWidget(mainSplitter);
     loadSettings();
@@ -197,15 +195,8 @@ void MainWindow::slotGraphClicked(const QModelIndex &index) {
     qDebug() << "graphSelectionChanged() to " << row;
     Graph* g = dataSet->graph(row);
     if( g ){
-        graphScene->setGraph(g);
-        if( actionToggleLayout->isCheckable() ){
-            graphView->resetLayout();
-            graphView->itemMoved();
-        }
 
-        // add the charts HERE TO DO ADD TO GRAPH VIEW
-
-
+        graphWidget->changeGraph( g );
 
     }
 

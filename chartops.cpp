@@ -25,18 +25,25 @@
 *
 ******************************************************************************/
 
+#include <QDebug>
+#include <QList>
 #include "chartops.h"
 
 QChart* histogram(gsl_vector *data, int num_bins , QString title) {
-    gsl_histogram *hist = gsl_histogram_alloc( num_bins );
+    gsl_histogram *hist = gsl_histogram_calloc( num_bins );
     for(size_t i=0;i<data->size;i++){
         gsl_histogram_increment(hist, gsl_vector_get( data, i) );
     }
 
     QBarSet *set = new QBarSet("Main");
+    QList<qreal> vals;
     for( size_t i=0; i < hist->n; i++){
-        set->append( (qreal)gsl_histogram_get(hist,i) );
+        qreal val = (qreal)gsl_histogram_get(hist,i) ;
+        vals.append(val);
+        set->append( val );
     }
+
+    gsl_histogram_free( hist );
 
     QBarSeries *series = new QBarSeries();
     series->append(set);
@@ -46,6 +53,5 @@ QChart* histogram(gsl_vector *data, int num_bins , QString title) {
     chart->setTitle( title );
     chart->setAnimationOptions( QChart::SeriesAnimations );
     return chart;
-
 }
 

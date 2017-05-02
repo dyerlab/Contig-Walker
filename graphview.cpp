@@ -41,22 +41,6 @@ GraphView::GraphView(GraphScene *scene) : QGraphicsView(scene) {
 
 }
 
-void GraphView::stopMoving() {
-    if( timerID > 0 ) {
-        killTimer(0);
-        timerID = 0;
-
-        GraphScene *theScene = static_cast<GraphScene*>(this->scene());
-        if( theScene ) {
-            scene->stopMoving();
-        }
-
-
-
-    }
-    canMove=false;
-
-}
 
 
 void GraphView::itemMoved() {
