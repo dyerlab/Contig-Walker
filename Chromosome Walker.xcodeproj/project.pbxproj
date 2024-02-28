@@ -15,6 +15,7 @@
 		2A1D8A672B8F9F3500B7F062 /* Chromosome_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A662B8F9F3500B7F062 /* Chromosome_WalkerTests.swift */; };
 		2A1D8A712B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A702B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift */; };
 		2A1D8A732B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A722B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift */; };
+		2A8CF4952B8F9F7500F5F94A /* data in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CF4942B8F9F7500F5F94A /* data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2A1D8A6C2B8F9F3500B7F062 /* Chromosome WalkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chromosome WalkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1D8A702B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkerUITests.swift; sourceTree = "<group>"; };
 		2A1D8A722B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A8CF4942B8F9F7500F5F94A /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2A1D8A462B8F9F3300B7F062 = {
 			isa = PBXGroup;
 			children = (
+				2A8CF4942B8F9F7500F5F94A /* data */,
 				2A1D8A512B8F9F3300B7F062 /* Chromosome Walker */,
 				2A1D8A652B8F9F3500B7F062 /* Chromosome WalkerTests */,
 				2A1D8A6F2B8F9F3500B7F062 /* Chromosome WalkerUITests */,
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1D8A5D2B8F9F3400B7F062 /* Preview Assets.xcassets in Resources */,
+				2A8CF4952B8F9F7500F5F94A /* data in Resources */,
 				2A1D8A592B8F9F3400B7F062 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
