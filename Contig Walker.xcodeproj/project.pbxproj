@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A89DDFD2B8FD327002EAB98 /* Contig_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */; };
+		2A89DDFF2B8FD327002EAB98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DDFE2B8FD327002EAB98 /* ContentView.swift */; };
+		2A89DE012B8FD327002EAB98 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE002B8FD327002EAB98 /* Item.swift */; };
+		2A89DE032B8FD328002EAB98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A89DE022B8FD328002EAB98 /* Assets.xcassets */; };
+		2A89DE082B8FD328002EAB98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A89DE072B8FD328002EAB98 /* Preview Assets.xcassets */; };
+		2A89DE122B8FD328002EAB98 /* Contig_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE112B8FD328002EAB98 /* Contig_WalkerTests.swift */; };
+		2A89DE1C2B8FD328002EAB98 /* Contig_WalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */; };
+		2A89DE1E2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A89DE0E2B8FD328002EAB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A89DDF12B8FD327002EAB98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A89DDF82B8FD327002EAB98;
+			remoteInfo = "Contig Walker";
+		};
+		2A89DE182B8FD328002EAB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A89DDF12B8FD327002EAB98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A89DDF82B8FD327002EAB98;
+			remoteInfo = "Contig Walker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A89DDF92B8FD327002EAB98 /* Contig Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contig Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerApp.swift; sourceTree = "<group>"; };
+		2A89DDFE2B8FD327002EAB98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A89DE002B8FD327002EAB98 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2A89DE022B8FD328002EAB98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A89DE042B8FD328002EAB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A89DE052B8FD328002EAB98 /* Contig_Walker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contig_Walker.entitlements; sourceTree = "<group>"; };
+		2A89DE072B8FD328002EAB98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A89DE0D2B8FD328002EAB98 /* Contig WalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A89DE112B8FD328002EAB98 /* Contig_WalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerTests.swift; sourceTree = "<group>"; };
+		2A89DE172B8FD328002EAB98 /* Contig WalkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITests.swift; sourceTree = "<group>"; };
+		2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A89DDF62B8FD327002EAB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A89DE0A2B8FD328002EAB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A89DE142B8FD328002EAB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A89DDF02B8FD327002EAB98 = {
+			isa = PBXGroup;
+			children = (
+				2A89DDFB2B8FD327002EAB98 /* Contig Walker */,
+				2A89DE102B8FD328002EAB98 /* Contig WalkerTests */,
+				2A89DE1A2B8FD328002EAB98 /* Contig WalkerUITests */,
+				2A89DDFA2B8FD327002EAB98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A89DDFA2B8FD327002EAB98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A89DDF92B8FD327002EAB98 /* Contig Walker.app */,
+				2A89DE0D2B8FD328002EAB98 /* Contig WalkerTests.xctest */,
+				2A89DE172B8FD328002EAB98 /* Contig WalkerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A89DDFB2B8FD327002EAB98 /* Contig Walker */ = {
+			isa = PBXGroup;
+			children = (
+				2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */,
+				2A89DDFE2B8FD327002EAB98 /* ContentView.swift */,
+				2A89DE002B8FD327002EAB98 /* Item.swift */,
+				2A89DE022B8FD328002EAB98 /* Assets.xcassets */,
+				2A89DE042B8FD328002EAB98 /* Info.plist */,
+				2A89DE052B8FD328002EAB98 /* Contig_Walker.entitlements */,
+				2A89DE062B8FD328002EAB98 /* Preview Content */,
+			);
+			path = "Contig Walker";
+			sourceTree = "<group>";
+		};
+		2A89DE062B8FD328002EAB98 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A89DE072B8FD328002EAB98 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A89DE102B8FD328002EAB98 /* Contig WalkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A89DE112B8FD328002EAB98 /* Contig_WalkerTests.swift */,
+			);
+			path = "Contig WalkerTests";
+			sourceTree = "<group>";
+		};
+		2A89DE1A2B8FD328002EAB98 /* Contig WalkerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */,
+				2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */,
+			);
+			path = "Contig WalkerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A89DDF82B8FD327002EAB98 /* Contig Walker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A89DE212B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig Walker" */;
+			buildPhases = (
+				2A89DDF52B8FD327002EAB98 /* Sources */,
+				2A89DDF62B8FD327002EAB98 /* Frameworks */,
+				2A89DDF72B8FD327002EAB98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contig Walker";
+			productName = "Contig Walker";
+			productReference = 2A89DDF92B8FD327002EAB98 /* Contig Walker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A89DE0C2B8FD328002EAB98 /* Contig WalkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A89DE242B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerTests" */;
+			buildPhases = (
+				2A89DE092B8FD328002EAB98 /* Sources */,
+				2A89DE0A2B8FD328002EAB98 /* Frameworks */,
+				2A89DE0B2B8FD328002EAB98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A89DE0F2B8FD328002EAB98 /* PBXTargetDependency */,
+			);
+			name = "Contig WalkerTests";
+			productName = "Contig WalkerTests";
+			productReference = 2A89DE0D2B8FD328002EAB98 /* Contig WalkerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A89DE162B8FD328002EAB98 /* Contig WalkerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A89DE272B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerUITests" */;
+			buildPhases = (
+				2A89DE132B8FD328002EAB98 /* Sources */,
+				2A89DE142B8FD328002EAB98 /* Frameworks */,
+				2A89DE152B8FD328002EAB98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A89DE192B8FD328002EAB98 /* PBXTargetDependency */,
+			);
+			name = "Contig WalkerUITests";
+			productName = "Contig WalkerUITests";
+			productReference = 2A89DE172B8FD328002EAB98 /* Contig WalkerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A89DDF12B8FD327002EAB98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2A89DDF82B8FD327002EAB98 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2A89DE0C2B8FD328002EAB98 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2A89DDF82B8FD327002EAB98;
+					};
+					2A89DE162B8FD328002EAB98 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2A89DDF82B8FD327002EAB98;
+					};
+				};
+			};
+			buildConfigurationList = 2A89DDF42B8FD327002EAB98 /* Build configuration list for PBXProject "Contig Walker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A89DDF02B8FD327002EAB98;
+			productRefGroup = 2A89DDFA2B8FD327002EAB98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A89DDF82B8FD327002EAB98 /* Contig Walker */,
+				2A89DE0C2B8FD328002EAB98 /* Contig WalkerTests */,
+				2A89DE162B8FD328002EAB98 /* Contig WalkerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A89DDF72B8FD327002EAB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A89DE082B8FD328002EAB98 /* Preview Assets.xcassets in Resources */,
+				2A89DE032B8FD328002EAB98 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A89DE0B2B8FD328002EAB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A89DE152B8FD328002EAB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A89DDF52B8FD327002EAB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A89DDFF2B8FD327002EAB98 /* ContentView.swift in Sources */,
+				2A89DE012B8FD327002EAB98 /* Item.swift in Sources */,
+				2A89DDFD2B8FD327002EAB98 /* Contig_WalkerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A89DE092B8FD328002EAB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A89DE122B8FD328002EAB98 /* Contig_WalkerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A89DE132B8FD328002EAB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A89DE1E2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift in Sources */,
+				2A89DE1C2B8FD328002EAB98 /* Contig_WalkerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A89DE0F2B8FD328002EAB98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A89DDF82B8FD327002EAB98 /* Contig Walker */;
+			targetProxy = 2A89DE0E2B8FD328002EAB98 /* PBXContainerItemProxy */;
+		};
+		2A89DE192B8FD328002EAB98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A89DDF82B8FD327002EAB98 /* Contig Walker */;
+			targetProxy = 2A89DE182B8FD328002EAB98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A89DE1F2B8FD328002EAB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A89DE202B8FD328002EAB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2A89DE222B8FD328002EAB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Contig Walker/Contig_Walker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contig Walker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Contig Walker/Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-Walker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A89DE232B8FD328002EAB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Contig Walker/Contig_Walker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contig Walker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Contig Walker/Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-Walker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A89DE252B8FD328002EAB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-WalkerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contig Walker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contig Walker";
+			};
+			name = Debug;
+		};
+		2A89DE262B8FD328002EAB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-WalkerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contig Walker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contig Walker";
+			};
+			name = Release;
+		};
+		2A89DE282B8FD328002EAB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-WalkerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Contig Walker";
+			};
+			name = Debug;
+		};
+		2A89DE292B8FD328002EAB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-WalkerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Contig Walker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A89DDF42B8FD327002EAB98 /* Build configuration list for PBXProject "Contig Walker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A89DE1F2B8FD328002EAB98 /* Debug */,
+				2A89DE202B8FD328002EAB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A89DE212B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig Walker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A89DE222B8FD328002EAB98 /* Debug */,
+				2A89DE232B8FD328002EAB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A89DE242B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A89DE252B8FD328002EAB98 /* Debug */,
+				2A89DE262B8FD328002EAB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A89DE272B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A89DE282B8FD328002EAB98 /* Debug */,
+				2A89DE292B8FD328002EAB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A89DDF12B8FD327002EAB98 /* Project object */;
+}

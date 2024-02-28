@@ -1,13 +1,13 @@
 //
-//  ChromosomeWalkerUITestsLaunchTests.swift
-//  ChromosomeWalkerUITests
+//  Contig_WalkerUITestsLaunchTests.swift
+//  Contig WalkerUITests
 //
-//  Created by Rodney Dyer on 2024-02-28.
+//  Created by Rodney Dyer on 2/28/24.
 //
 
 import XCTest
 
-final class ChromosomeWalkerUITestsLaunchTests: XCTestCase {
+final class Contig_WalkerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

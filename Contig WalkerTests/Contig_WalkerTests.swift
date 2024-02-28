@@ -1,14 +1,13 @@
 //
-//  ChromosomeWalkerTests.swift
-//  ChromosomeWalkerTests
+//  Contig_WalkerTests.swift
+//  Contig WalkerTests
 //
-//  Created by Rodney Dyer on 2024-02-28.
+//  Created by Rodney Dyer on 2/28/24.
 //
 
 import XCTest
-@testable import ChromosomeWalker
 
-final class ChromosomeWalkerTests: XCTestCase {
+final class Contig_WalkerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -28,7 +27,7 @@ final class ChromosomeWalkerTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
