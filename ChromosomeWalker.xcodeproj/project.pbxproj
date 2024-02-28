@@ -16,8 +16,10 @@
 		2A8CF4C12B8FA2AA00F5F94A /* ChromosomeWalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CF4C02B8FA2AA00F5F94A /* ChromosomeWalkerUITestsLaunchTests.swift */; };
 		2A8CF4CF2B8FA2D200F5F94A /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CF4CE2B8FA2D200F5F94A /* Node.swift */; };
 		2A8CF4D12B8FA2E300F5F94A /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CF4D02B8FA2E300F5F94A /* Edge.swift */; };
-		2A8CF4D32B8FA2F800F5F94A /* EdgeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CF4D22B8FA2F800F5F94A /* EdgeSet.swift */; };
+		2A8CF4D32B8FA2F800F5F94A /* PopulationGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CF4D22B8FA2F800F5F94A /* PopulationGraph.swift */; };
 		2A8CF4D52B8FA3A600F5F94A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CF4D42B8FA3A600F5F94A /* DataStore.swift */; };
+		2AEBDC1B2B8FB5AB009ACB43 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBDC1A2B8FB5AB009ACB43 /* data */; };
+		2AEBDC1D2B8FB6B3009ACB43 /* PopulationGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEBDC1C2B8FB6B3009ACB43 /* PopulationGraphTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,10 @@
 		2A8CF4C02B8FA2AA00F5F94A /* ChromosomeWalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromosomeWalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2A8CF4CE2B8FA2D200F5F94A /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2A8CF4D02B8FA2E300F5F94A /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		2A8CF4D22B8FA2F800F5F94A /* EdgeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSet.swift; sourceTree = "<group>"; };
+		2A8CF4D22B8FA2F800F5F94A /* PopulationGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationGraph.swift; sourceTree = "<group>"; };
 		2A8CF4D42B8FA3A600F5F94A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		2AEBDC1A2B8FB5AB009ACB43 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		2AEBDC1C2B8FB6B3009ACB43 /* PopulationGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationGraphTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		2A8CF4962B8FA2A900F5F94A = {
 			isa = PBXGroup;
 			children = (
+				2AEBDC1A2B8FB5AB009ACB43 /* data */,
 				2A8CF4A12B8FA2A900F5F94A /* ChromosomeWalker */,
 				2A8CF4B32B8FA2AA00F5F94A /* ChromosomeWalkerTests */,
 				2A8CF4BD2B8FA2AA00F5F94A /* ChromosomeWalkerUITests */,
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				2A8CF4B42B8FA2AA00F5F94A /* ChromosomeWalkerTests.swift */,
+				2AEBDC1C2B8FB6B3009ACB43 /* PopulationGraphTests.swift */,
 			);
 			path = ChromosomeWalkerTests;
 			sourceTree = "<group>";
@@ -143,7 +149,7 @@
 			children = (
 				2A8CF4CE2B8FA2D200F5F94A /* Node.swift */,
 				2A8CF4D02B8FA2E300F5F94A /* Edge.swift */,
-				2A8CF4D22B8FA2F800F5F94A /* EdgeSet.swift */,
+				2A8CF4D22B8FA2F800F5F94A /* PopulationGraph.swift */,
 				2A8CF4D42B8FA3A600F5F94A /* DataStore.swift */,
 			);
 			path = Models;
@@ -254,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8CF4AA2B8FA2AA00F5F94A /* Preview Assets.xcassets in Resources */,
+				2AEBDC1B2B8FB5AB009ACB43 /* data in Resources */,
 				2A8CF4A72B8FA2AA00F5F94A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A8CF4D32B8FA2F800F5F94A /* EdgeSet.swift in Sources */,
+				2A8CF4D32B8FA2F800F5F94A /* PopulationGraph.swift in Sources */,
 				2A8CF4D52B8FA3A600F5F94A /* DataStore.swift in Sources */,
 				2A8CF4CF2B8FA2D200F5F94A /* Node.swift in Sources */,
 				2A8CF4A52B8FA2A900F5F94A /* ContentView.swift in Sources */,
@@ -293,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8CF4B52B8FA2AA00F5F94A /* ChromosomeWalkerTests.swift in Sources */,
+				2AEBDC1D2B8FB6B3009ACB43 /* PopulationGraphTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,42 +7,38 @@
 
 import Foundation
 
-struct Edge: Identifiable, Codable {
-    let id: UUID
+struct Edge: Codable {
+    
+    let source: Int
+    let target: Int
     let weight: Double
-    let fromNode: UUID
-    let toNode: UUID
     
     enum CodingKeys: String, CodingKey {
-        case id
+        case source
+        case target
         case weight
-        case fromNode
-        case toNode
     }
     
 
-    init(weight: Double, from: UUID, to: UUID) {
-        self.id = UUID()
+    init(weight: Double, source: Int, target: Int) {
         self.weight = weight
-        self.fromNode = from
-        self.toNode = to
+        self.source = source
+        self.target = target
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decode(UUID.self, forKey: .id)
+        self.source = try container.decode(Int.self, forKey: .source)
+        self.target = try container.decode(Int.self, forKey: .target)
         self.weight = try container.decode(Double.self, forKey: .weight)
-        self.fromNode = try container.decode(UUID.self, forKey: .fromNode)
-        self.toNode = try container.decode(UUID.self, forKey: .toNode)
     }
     
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode( id, forKey: .id )
         try container.encode( weight, forKey: .weight )
-        try container.encode( fromNode, forKey: .fromNode )
-        try container.encode( toNode, forKey: .toNode)
+        try container.encode( source, forKey: .source )
+        try container.encode( target, forKey: .target)
     }
     
 }

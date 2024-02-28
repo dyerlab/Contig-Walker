@@ -11,9 +11,9 @@ import Foundation
 class DataStore: Identifiable, Codable {
     let id: UUID
     var nodes: [Node] = []
-    var edgeSets: [EdgeSet] = []
+    var edgeSets: [PopulationGraph] = []
     
-    init(nodes: [Node] = [], edgeSets: [EdgeSet] = []) {
+    init(nodes: [Node] = [], edgeSets: [PopulationGraph] = []) {
         self.id = UUID()
         self.nodes = nodes
         self.edgeSets = edgeSets
