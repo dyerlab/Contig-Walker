@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Chromosome Walking
+//  Chromosome Walker
 //
-//  Created by Rodney Dyer on 2024-02-27.
+//  Created by Rodney Dyer on 2024-02-28.
 //
 
 import SwiftUI

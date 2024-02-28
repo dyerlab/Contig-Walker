@@ -7,65 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A193FD72B8E38D000E10CCE /* Chromosome_WalkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A193FD62B8E38D000E10CCE /* Chromosome_WalkingApp.swift */; };
-		2A193FD92B8E38D000E10CCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A193FD82B8E38D000E10CCE /* ContentView.swift */; };
-		2A193FDB2B8E38D000E10CCE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A193FDA2B8E38D000E10CCE /* Item.swift */; };
-		2A193FDD2B8E38D100E10CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A193FDC2B8E38D100E10CCE /* Assets.xcassets */; };
-		2A193FE22B8E38D100E10CCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A193FE12B8E38D100E10CCE /* Preview Assets.xcassets */; };
-		2A193FEC2B8E38D100E10CCE /* Chromosome_WalkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A193FEB2B8E38D100E10CCE /* Chromosome_WalkingTests.swift */; };
-		2A193FF62B8E38D100E10CCE /* Chromosome_WalkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A193FF52B8E38D100E10CCE /* Chromosome_WalkingUITests.swift */; };
-		2A193FF82B8E38D100E10CCE /* Chromosome_WalkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A193FF72B8E38D100E10CCE /* Chromosome_WalkingUITestsLaunchTests.swift */; };
+		2A1D8A532B8F9F3300B7F062 /* Chromosome_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A522B8F9F3300B7F062 /* Chromosome_WalkerApp.swift */; };
+		2A1D8A552B8F9F3300B7F062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A542B8F9F3300B7F062 /* ContentView.swift */; };
+		2A1D8A572B8F9F3300B7F062 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A562B8F9F3300B7F062 /* Item.swift */; };
+		2A1D8A592B8F9F3400B7F062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1D8A582B8F9F3400B7F062 /* Assets.xcassets */; };
+		2A1D8A5D2B8F9F3400B7F062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1D8A5C2B8F9F3400B7F062 /* Preview Assets.xcassets */; };
+		2A1D8A672B8F9F3500B7F062 /* Chromosome_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A662B8F9F3500B7F062 /* Chromosome_WalkerTests.swift */; };
+		2A1D8A712B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A702B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift */; };
+		2A1D8A732B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D8A722B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2A193FE82B8E38D100E10CCE /* PBXContainerItemProxy */ = {
+		2A1D8A632B8F9F3400B7F062 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2A193FCB2B8E38D000E10CCE /* Project object */;
+			containerPortal = 2A1D8A472B8F9F3300B7F062 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A193FD22B8E38D000E10CCE;
-			remoteInfo = "Chromosome Walking";
+			remoteGlobalIDString = 2A1D8A4E2B8F9F3300B7F062;
+			remoteInfo = "Chromosome Walker";
 		};
-		2A193FF22B8E38D100E10CCE /* PBXContainerItemProxy */ = {
+		2A1D8A6D2B8F9F3500B7F062 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2A193FCB2B8E38D000E10CCE /* Project object */;
+			containerPortal = 2A1D8A472B8F9F3300B7F062 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A193FD22B8E38D000E10CCE;
-			remoteInfo = "Chromosome Walking";
+			remoteGlobalIDString = 2A1D8A4E2B8F9F3300B7F062;
+			remoteInfo = "Chromosome Walker";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A193FD32B8E38D000E10CCE /* Chromosome Walking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chromosome Walking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A193FD62B8E38D000E10CCE /* Chromosome_WalkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkingApp.swift; sourceTree = "<group>"; };
-		2A193FD82B8E38D000E10CCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2A193FDA2B8E38D000E10CCE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		2A193FDC2B8E38D100E10CCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A193FDE2B8E38D100E10CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A193FDF2B8E38D100E10CCE /* Chromosome_Walking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chromosome_Walking.entitlements; sourceTree = "<group>"; };
-		2A193FE12B8E38D100E10CCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2A193FE72B8E38D100E10CCE /* Chromosome WalkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chromosome WalkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A193FEB2B8E38D100E10CCE /* Chromosome_WalkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkingTests.swift; sourceTree = "<group>"; };
-		2A193FF12B8E38D100E10CCE /* Chromosome WalkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chromosome WalkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A193FF52B8E38D100E10CCE /* Chromosome_WalkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkingUITests.swift; sourceTree = "<group>"; };
-		2A193FF72B8E38D100E10CCE /* Chromosome_WalkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A1D8A4F2B8F9F3300B7F062 /* Chromosome Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chromosome Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1D8A522B8F9F3300B7F062 /* Chromosome_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkerApp.swift; sourceTree = "<group>"; };
+		2A1D8A542B8F9F3300B7F062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A1D8A562B8F9F3300B7F062 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2A1D8A582B8F9F3400B7F062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A1D8A5A2B8F9F3400B7F062 /* Chromosome_Walker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chromosome_Walker.entitlements; sourceTree = "<group>"; };
+		2A1D8A5C2B8F9F3400B7F062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A1D8A622B8F9F3400B7F062 /* Chromosome WalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chromosome WalkerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1D8A662B8F9F3500B7F062 /* Chromosome_WalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkerTests.swift; sourceTree = "<group>"; };
+		2A1D8A6C2B8F9F3500B7F062 /* Chromosome WalkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chromosome WalkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1D8A702B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkerUITests.swift; sourceTree = "<group>"; };
+		2A1D8A722B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chromosome_WalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A193FD02B8E38D000E10CCE /* Frameworks */ = {
+		2A1D8A4C2B8F9F3300B7F062 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A193FE42B8E38D100E10CCE /* Frameworks */ = {
+		2A1D8A5F2B8F9F3400B7F062 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A193FEE2B8E38D100E10CCE /* Frameworks */ = {
+		2A1D8A692B8F9F3500B7F062 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,145 +74,144 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A193FCA2B8E38D000E10CCE = {
+		2A1D8A462B8F9F3300B7F062 = {
 			isa = PBXGroup;
 			children = (
-				2A193FD52B8E38D000E10CCE /* Chromosome Walking */,
-				2A193FEA2B8E38D100E10CCE /* Chromosome WalkingTests */,
-				2A193FF42B8E38D100E10CCE /* Chromosome WalkingUITests */,
-				2A193FD42B8E38D000E10CCE /* Products */,
+				2A1D8A512B8F9F3300B7F062 /* Chromosome Walker */,
+				2A1D8A652B8F9F3500B7F062 /* Chromosome WalkerTests */,
+				2A1D8A6F2B8F9F3500B7F062 /* Chromosome WalkerUITests */,
+				2A1D8A502B8F9F3300B7F062 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2A193FD42B8E38D000E10CCE /* Products */ = {
+		2A1D8A502B8F9F3300B7F062 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A193FD32B8E38D000E10CCE /* Chromosome Walking.app */,
-				2A193FE72B8E38D100E10CCE /* Chromosome WalkingTests.xctest */,
-				2A193FF12B8E38D100E10CCE /* Chromosome WalkingUITests.xctest */,
+				2A1D8A4F2B8F9F3300B7F062 /* Chromosome Walker.app */,
+				2A1D8A622B8F9F3400B7F062 /* Chromosome WalkerTests.xctest */,
+				2A1D8A6C2B8F9F3500B7F062 /* Chromosome WalkerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A193FD52B8E38D000E10CCE /* Chromosome Walking */ = {
+		2A1D8A512B8F9F3300B7F062 /* Chromosome Walker */ = {
 			isa = PBXGroup;
 			children = (
-				2A193FD62B8E38D000E10CCE /* Chromosome_WalkingApp.swift */,
-				2A193FD82B8E38D000E10CCE /* ContentView.swift */,
-				2A193FDA2B8E38D000E10CCE /* Item.swift */,
-				2A193FDC2B8E38D100E10CCE /* Assets.xcassets */,
-				2A193FDE2B8E38D100E10CCE /* Info.plist */,
-				2A193FDF2B8E38D100E10CCE /* Chromosome_Walking.entitlements */,
-				2A193FE02B8E38D100E10CCE /* Preview Content */,
+				2A1D8A522B8F9F3300B7F062 /* Chromosome_WalkerApp.swift */,
+				2A1D8A542B8F9F3300B7F062 /* ContentView.swift */,
+				2A1D8A562B8F9F3300B7F062 /* Item.swift */,
+				2A1D8A582B8F9F3400B7F062 /* Assets.xcassets */,
+				2A1D8A5A2B8F9F3400B7F062 /* Chromosome_Walker.entitlements */,
+				2A1D8A5B2B8F9F3400B7F062 /* Preview Content */,
 			);
-			path = "Chromosome Walking";
+			path = "Chromosome Walker";
 			sourceTree = "<group>";
 		};
-		2A193FE02B8E38D100E10CCE /* Preview Content */ = {
+		2A1D8A5B2B8F9F3400B7F062 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2A193FE12B8E38D100E10CCE /* Preview Assets.xcassets */,
+				2A1D8A5C2B8F9F3400B7F062 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2A193FEA2B8E38D100E10CCE /* Chromosome WalkingTests */ = {
+		2A1D8A652B8F9F3500B7F062 /* Chromosome WalkerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A193FEB2B8E38D100E10CCE /* Chromosome_WalkingTests.swift */,
+				2A1D8A662B8F9F3500B7F062 /* Chromosome_WalkerTests.swift */,
 			);
-			path = "Chromosome WalkingTests";
+			path = "Chromosome WalkerTests";
 			sourceTree = "<group>";
 		};
-		2A193FF42B8E38D100E10CCE /* Chromosome WalkingUITests */ = {
+		2A1D8A6F2B8F9F3500B7F062 /* Chromosome WalkerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2A193FF52B8E38D100E10CCE /* Chromosome_WalkingUITests.swift */,
-				2A193FF72B8E38D100E10CCE /* Chromosome_WalkingUITestsLaunchTests.swift */,
+				2A1D8A702B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift */,
+				2A1D8A722B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift */,
 			);
-			path = "Chromosome WalkingUITests";
+			path = "Chromosome WalkerUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A193FD22B8E38D000E10CCE /* Chromosome Walking */ = {
+		2A1D8A4E2B8F9F3300B7F062 /* Chromosome Walker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A193FFB2B8E38D100E10CCE /* Build configuration list for PBXNativeTarget "Chromosome Walking" */;
+			buildConfigurationList = 2A1D8A762B8F9F3500B7F062 /* Build configuration list for PBXNativeTarget "Chromosome Walker" */;
 			buildPhases = (
-				2A193FCF2B8E38D000E10CCE /* Sources */,
-				2A193FD02B8E38D000E10CCE /* Frameworks */,
-				2A193FD12B8E38D000E10CCE /* Resources */,
+				2A1D8A4B2B8F9F3300B7F062 /* Sources */,
+				2A1D8A4C2B8F9F3300B7F062 /* Frameworks */,
+				2A1D8A4D2B8F9F3300B7F062 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Chromosome Walking";
-			productName = "Chromosome Walking";
-			productReference = 2A193FD32B8E38D000E10CCE /* Chromosome Walking.app */;
+			name = "Chromosome Walker";
+			productName = "Chromosome Walker";
+			productReference = 2A1D8A4F2B8F9F3300B7F062 /* Chromosome Walker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2A193FE62B8E38D100E10CCE /* Chromosome WalkingTests */ = {
+		2A1D8A612B8F9F3400B7F062 /* Chromosome WalkerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A193FFE2B8E38D100E10CCE /* Build configuration list for PBXNativeTarget "Chromosome WalkingTests" */;
+			buildConfigurationList = 2A1D8A792B8F9F3500B7F062 /* Build configuration list for PBXNativeTarget "Chromosome WalkerTests" */;
 			buildPhases = (
-				2A193FE32B8E38D100E10CCE /* Sources */,
-				2A193FE42B8E38D100E10CCE /* Frameworks */,
-				2A193FE52B8E38D100E10CCE /* Resources */,
+				2A1D8A5E2B8F9F3400B7F062 /* Sources */,
+				2A1D8A5F2B8F9F3400B7F062 /* Frameworks */,
+				2A1D8A602B8F9F3400B7F062 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2A193FE92B8E38D100E10CCE /* PBXTargetDependency */,
+				2A1D8A642B8F9F3400B7F062 /* PBXTargetDependency */,
 			);
-			name = "Chromosome WalkingTests";
-			productName = "Chromosome WalkingTests";
-			productReference = 2A193FE72B8E38D100E10CCE /* Chromosome WalkingTests.xctest */;
+			name = "Chromosome WalkerTests";
+			productName = "Chromosome WalkerTests";
+			productReference = 2A1D8A622B8F9F3400B7F062 /* Chromosome WalkerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2A193FF02B8E38D100E10CCE /* Chromosome WalkingUITests */ = {
+		2A1D8A6B2B8F9F3500B7F062 /* Chromosome WalkerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A1940012B8E38D100E10CCE /* Build configuration list for PBXNativeTarget "Chromosome WalkingUITests" */;
+			buildConfigurationList = 2A1D8A7C2B8F9F3500B7F062 /* Build configuration list for PBXNativeTarget "Chromosome WalkerUITests" */;
 			buildPhases = (
-				2A193FED2B8E38D100E10CCE /* Sources */,
-				2A193FEE2B8E38D100E10CCE /* Frameworks */,
-				2A193FEF2B8E38D100E10CCE /* Resources */,
+				2A1D8A682B8F9F3500B7F062 /* Sources */,
+				2A1D8A692B8F9F3500B7F062 /* Frameworks */,
+				2A1D8A6A2B8F9F3500B7F062 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2A193FF32B8E38D100E10CCE /* PBXTargetDependency */,
+				2A1D8A6E2B8F9F3500B7F062 /* PBXTargetDependency */,
 			);
-			name = "Chromosome WalkingUITests";
-			productName = "Chromosome WalkingUITests";
-			productReference = 2A193FF12B8E38D100E10CCE /* Chromosome WalkingUITests.xctest */;
+			name = "Chromosome WalkerUITests";
+			productName = "Chromosome WalkerUITests";
+			productReference = 2A1D8A6C2B8F9F3500B7F062 /* Chromosome WalkerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2A193FCB2B8E38D000E10CCE /* Project object */ = {
+		2A1D8A472B8F9F3300B7F062 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					2A193FD22B8E38D000E10CCE = {
+					2A1D8A4E2B8F9F3300B7F062 = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					2A193FE62B8E38D100E10CCE = {
+					2A1D8A612B8F9F3400B7F062 = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 2A193FD22B8E38D000E10CCE;
+						TestTargetID = 2A1D8A4E2B8F9F3300B7F062;
 					};
-					2A193FF02B8E38D100E10CCE = {
+					2A1D8A6B2B8F9F3500B7F062 = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 2A193FD22B8E38D000E10CCE;
+						TestTargetID = 2A1D8A4E2B8F9F3300B7F062;
 					};
 				};
 			};
-			buildConfigurationList = 2A193FCE2B8E38D000E10CCE /* Build configuration list for PBXProject "Chromosome Walking" */;
+			buildConfigurationList = 2A1D8A4A2B8F9F3300B7F062 /* Build configuration list for PBXProject "Chromosome Walker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,36 +219,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 2A193FCA2B8E38D000E10CCE;
-			productRefGroup = 2A193FD42B8E38D000E10CCE /* Products */;
+			mainGroup = 2A1D8A462B8F9F3300B7F062;
+			productRefGroup = 2A1D8A502B8F9F3300B7F062 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A193FD22B8E38D000E10CCE /* Chromosome Walking */,
-				2A193FE62B8E38D100E10CCE /* Chromosome WalkingTests */,
-				2A193FF02B8E38D100E10CCE /* Chromosome WalkingUITests */,
+				2A1D8A4E2B8F9F3300B7F062 /* Chromosome Walker */,
+				2A1D8A612B8F9F3400B7F062 /* Chromosome WalkerTests */,
+				2A1D8A6B2B8F9F3500B7F062 /* Chromosome WalkerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2A193FD12B8E38D000E10CCE /* Resources */ = {
+		2A1D8A4D2B8F9F3300B7F062 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A193FE22B8E38D100E10CCE /* Preview Assets.xcassets in Resources */,
-				2A193FDD2B8E38D100E10CCE /* Assets.xcassets in Resources */,
+				2A1D8A5D2B8F9F3400B7F062 /* Preview Assets.xcassets in Resources */,
+				2A1D8A592B8F9F3400B7F062 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A193FE52B8E38D100E10CCE /* Resources */ = {
+		2A1D8A602B8F9F3400B7F062 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A193FEF2B8E38D100E10CCE /* Resources */ = {
+		2A1D8A6A2B8F9F3500B7F062 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,50 +258,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A193FCF2B8E38D000E10CCE /* Sources */ = {
+		2A1D8A4B2B8F9F3300B7F062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A193FD92B8E38D000E10CCE /* ContentView.swift in Sources */,
-				2A193FDB2B8E38D000E10CCE /* Item.swift in Sources */,
-				2A193FD72B8E38D000E10CCE /* Chromosome_WalkingApp.swift in Sources */,
+				2A1D8A552B8F9F3300B7F062 /* ContentView.swift in Sources */,
+				2A1D8A572B8F9F3300B7F062 /* Item.swift in Sources */,
+				2A1D8A532B8F9F3300B7F062 /* Chromosome_WalkerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A193FE32B8E38D100E10CCE /* Sources */ = {
+		2A1D8A5E2B8F9F3400B7F062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A193FEC2B8E38D100E10CCE /* Chromosome_WalkingTests.swift in Sources */,
+				2A1D8A672B8F9F3500B7F062 /* Chromosome_WalkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A193FED2B8E38D100E10CCE /* Sources */ = {
+		2A1D8A682B8F9F3500B7F062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A193FF82B8E38D100E10CCE /* Chromosome_WalkingUITestsLaunchTests.swift in Sources */,
-				2A193FF62B8E38D100E10CCE /* Chromosome_WalkingUITests.swift in Sources */,
+				2A1D8A732B8F9F3500B7F062 /* Chromosome_WalkerUITestsLaunchTests.swift in Sources */,
+				2A1D8A712B8F9F3500B7F062 /* Chromosome_WalkerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2A193FE92B8E38D100E10CCE /* PBXTargetDependency */ = {
+		2A1D8A642B8F9F3400B7F062 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A193FD22B8E38D000E10CCE /* Chromosome Walking */;
-			targetProxy = 2A193FE82B8E38D100E10CCE /* PBXContainerItemProxy */;
+			target = 2A1D8A4E2B8F9F3300B7F062 /* Chromosome Walker */;
+			targetProxy = 2A1D8A632B8F9F3400B7F062 /* PBXContainerItemProxy */;
 		};
-		2A193FF32B8E38D100E10CCE /* PBXTargetDependency */ = {
+		2A1D8A6E2B8F9F3500B7F062 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A193FD22B8E38D000E10CCE /* Chromosome Walking */;
-			targetProxy = 2A193FF22B8E38D100E10CCE /* PBXContainerItemProxy */;
+			target = 2A1D8A4E2B8F9F3300B7F062 /* Chromosome Walker */;
+			targetProxy = 2A1D8A6D2B8F9F3500B7F062 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2A193FF92B8E38D100E10CCE /* Debug */ = {
+		2A1D8A742B8F9F3500B7F062 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -364,7 +362,7 @@
 			};
 			name = Debug;
 		};
-		2A193FFA2B8E38D100E10CCE /* Release */ = {
+		2A1D8A752B8F9F3500B7F062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,20 +415,19 @@
 			};
 			name = Release;
 		};
-		2A193FFC2B8E38D100E10CCE /* Debug */ = {
+		2A1D8A772B8F9F3500B7F062 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Chromosome Walking/Chromosome_Walking.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Chromosome Walker/Chromosome_Walker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chromosome Walking/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chromosome Walker/Preview Content\"";
 				DEVELOPMENT_TEAM = 3L9D67FVN7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Chromosome Walking/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -441,14 +438,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-Walking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-Walker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -458,20 +453,19 @@
 			};
 			name = Debug;
 		};
-		2A193FFD2B8E38D100E10CCE /* Release */ = {
+		2A1D8A782B8F9F3500B7F062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Chromosome Walking/Chromosome_Walking.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Chromosome Walker/Chromosome_Walker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chromosome Walking/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chromosome Walker/Preview Content\"";
 				DEVELOPMENT_TEAM = 3L9D67FVN7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Chromosome Walking/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -482,14 +476,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-Walking";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-Walker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -499,7 +491,7 @@
 			};
 			name = Release;
 		};
-		2A193FFF2B8E38D100E10CCE /* Debug */ = {
+		2A1D8A7A2B8F9F3500B7F062 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -511,18 +503,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkingTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chromosome Walking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chromosome Walking";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chromosome Walker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chromosome Walker";
 			};
 			name = Debug;
 		};
-		2A1940002B8E38D100E10CCE /* Release */ = {
+		2A1D8A7B2B8F9F3500B7F062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -534,18 +526,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkingTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chromosome Walking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chromosome Walking";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chromosome Walker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chromosome Walker";
 			};
 			name = Release;
 		};
-		2A1940022B8E38D100E10CCE /* Debug */ = {
+		2A1D8A7D2B8F9F3500B7F062 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -556,18 +548,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkingUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Chromosome Walking";
+				TEST_TARGET_NAME = "Chromosome Walker";
 			};
 			name = Debug;
 		};
-		2A1940032B8E38D100E10CCE /* Release */ = {
+		2A1D8A7E2B8F9F3500B7F062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -578,57 +570,57 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkingUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraph.Chromosome-WalkerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Chromosome Walking";
+				TEST_TARGET_NAME = "Chromosome Walker";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A193FCE2B8E38D000E10CCE /* Build configuration list for PBXProject "Chromosome Walking" */ = {
+		2A1D8A4A2B8F9F3300B7F062 /* Build configuration list for PBXProject "Chromosome Walker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A193FF92B8E38D100E10CCE /* Debug */,
-				2A193FFA2B8E38D100E10CCE /* Release */,
+				2A1D8A742B8F9F3500B7F062 /* Debug */,
+				2A1D8A752B8F9F3500B7F062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A193FFB2B8E38D100E10CCE /* Build configuration list for PBXNativeTarget "Chromosome Walking" */ = {
+		2A1D8A762B8F9F3500B7F062 /* Build configuration list for PBXNativeTarget "Chromosome Walker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A193FFC2B8E38D100E10CCE /* Debug */,
-				2A193FFD2B8E38D100E10CCE /* Release */,
+				2A1D8A772B8F9F3500B7F062 /* Debug */,
+				2A1D8A782B8F9F3500B7F062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A193FFE2B8E38D100E10CCE /* Build configuration list for PBXNativeTarget "Chromosome WalkingTests" */ = {
+		2A1D8A792B8F9F3500B7F062 /* Build configuration list for PBXNativeTarget "Chromosome WalkerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A193FFF2B8E38D100E10CCE /* Debug */,
-				2A1940002B8E38D100E10CCE /* Release */,
+				2A1D8A7A2B8F9F3500B7F062 /* Debug */,
+				2A1D8A7B2B8F9F3500B7F062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A1940012B8E38D100E10CCE /* Build configuration list for PBXNativeTarget "Chromosome WalkingUITests" */ = {
+		2A1D8A7C2B8F9F3500B7F062 /* Build configuration list for PBXNativeTarget "Chromosome WalkerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A1940022B8E38D100E10CCE /* Debug */,
-				2A1940032B8E38D100E10CCE /* Release */,
+				2A1D8A7D2B8F9F3500B7F062 /* Debug */,
+				2A1D8A7E2B8F9F3500B7F062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2A193FCB2B8E38D000E10CCE /* Project object */;
+	rootObject = 2A1D8A472B8F9F3300B7F062 /* Project object */;
 }

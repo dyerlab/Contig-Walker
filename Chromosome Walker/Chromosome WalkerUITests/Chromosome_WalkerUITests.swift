@@ -1,13 +1,13 @@
 //
-//  Chromosome_WalkingUITests.swift
-//  Chromosome WalkingUITests
+//  Chromosome_WalkerUITests.swift
+//  Chromosome WalkerUITests
 //
-//  Created by Rodney Dyer on 2024-02-27.
+//  Created by Rodney Dyer on 2024-02-28.
 //
 
 import XCTest
 
-final class Chromosome_WalkingUITests: XCTestCase {
+final class Chromosome_WalkerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
