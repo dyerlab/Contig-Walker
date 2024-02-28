@@ -31,3 +31,6 @@
 .DS_Store
 *.pro.user
 objs*
+
+*.xcuserstate
+
