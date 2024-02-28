@@ -20,7 +20,7 @@ struct Contig_WalkerApp: App {
 
 extension UTType {
     static var itemDocument: UTType {
-        UTType(importedAs: "com.example.item-document")
+        UTType(importedAs: "com.example.text")
     }
 }
 
@@ -38,6 +38,8 @@ struct Contig_WalkerVersionedSchema: VersionedSchema {
     static var versionIdentifier = Schema.Version(1, 0, 0)
 
     static var models: [any PersistentModel.Type] = [
-        Item.self,
+        Node.self,
+        Edge.self,
+        Graph.self,
     ]
 }

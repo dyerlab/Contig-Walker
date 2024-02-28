@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		2A89DDFD2B8FD327002EAB98 /* Contig_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */; };
 		2A89DDFF2B8FD327002EAB98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DDFE2B8FD327002EAB98 /* ContentView.swift */; };
-		2A89DE012B8FD327002EAB98 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE002B8FD327002EAB98 /* Item.swift */; };
 		2A89DE032B8FD328002EAB98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A89DE022B8FD328002EAB98 /* Assets.xcassets */; };
 		2A89DE082B8FD328002EAB98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A89DE072B8FD328002EAB98 /* Preview Assets.xcassets */; };
 		2A89DE122B8FD328002EAB98 /* Contig_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE112B8FD328002EAB98 /* Contig_WalkerTests.swift */; };
 		2A89DE1C2B8FD328002EAB98 /* Contig_WalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */; };
 		2A89DE1E2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */; };
+		2A89DE2C2B8FD439002EAB98 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE2B2B8FD439002EAB98 /* Node.swift */; };
+		2A89DE2E2B8FD48B002EAB98 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE2D2B8FD48B002EAB98 /* Edge.swift */; };
+		2A89DE302B8FD4D9002EAB98 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE2F2B8FD4D9002EAB98 /* Graph.swift */; };
+		2A89DE332B8FD7AE002EAB98 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE322B8FD7AE002EAB98 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		2A89DDF92B8FD327002EAB98 /* Contig Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contig Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerApp.swift; sourceTree = "<group>"; };
 		2A89DDFE2B8FD327002EAB98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2A89DE002B8FD327002EAB98 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2A89DE022B8FD328002EAB98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A89DE042B8FD328002EAB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A89DE052B8FD328002EAB98 /* Contig_Walker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contig_Walker.entitlements; sourceTree = "<group>"; };
@@ -48,6 +50,10 @@
 		2A89DE172B8FD328002EAB98 /* Contig WalkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITests.swift; sourceTree = "<group>"; };
 		2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A89DE2B2B8FD439002EAB98 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Node.swift; path = ../../../Node.swift; sourceTree = "<group>"; };
+		2A89DE2D2B8FD48B002EAB98 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = ../../../Edge.swift; sourceTree = "<group>"; };
+		2A89DE2F2B8FD4D9002EAB98 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = ../../../Graph.swift; sourceTree = "<group>"; };
+		2A89DE322B8FD7AE002EAB98 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GraphView.swift; path = ../../../GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,8 @@
 			children = (
 				2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */,
 				2A89DDFE2B8FD327002EAB98 /* ContentView.swift */,
-				2A89DE002B8FD327002EAB98 /* Item.swift */,
+				2A89DE2A2B8FD42A002EAB98 /* Models */,
+				2A89DE312B8FD79D002EAB98 /* Views */,
 				2A89DE022B8FD328002EAB98 /* Assets.xcassets */,
 				2A89DE042B8FD328002EAB98 /* Info.plist */,
 				2A89DE052B8FD328002EAB98 /* Contig_Walker.entitlements */,
@@ -132,6 +139,24 @@
 				2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */,
 			);
 			path = "Contig WalkerUITests";
+			sourceTree = "<group>";
+		};
+		2A89DE2A2B8FD42A002EAB98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A89DE2B2B8FD439002EAB98 /* Node.swift */,
+				2A89DE2D2B8FD48B002EAB98 /* Edge.swift */,
+				2A89DE2F2B8FD4D9002EAB98 /* Graph.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A89DE312B8FD79D002EAB98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A89DE322B8FD7AE002EAB98 /* GraphView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A89DE302B8FD4D9002EAB98 /* Graph.swift in Sources */,
 				2A89DDFF2B8FD327002EAB98 /* ContentView.swift in Sources */,
-				2A89DE012B8FD327002EAB98 /* Item.swift in Sources */,
 				2A89DDFD2B8FD327002EAB98 /* Contig_WalkerApp.swift in Sources */,
+				2A89DE2E2B8FD48B002EAB98 /* Edge.swift in Sources */,
+				2A89DE2C2B8FD439002EAB98 /* Node.swift in Sources */,
+				2A89DE332B8FD7AE002EAB98 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

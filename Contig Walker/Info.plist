@@ -10,9 +10,7 @@
 			<key>LSHandlerRank</key>
 			<string>Default</string>
 			<key>LSItemContentTypes</key>
-			<array>
-				<string>com.example.item-document</string>
-			</array>
+			<array/>
 			<key>NSUbiquitousDocumentUserActivityType</key>
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER).example-document</string>
 		</dict>
@@ -22,18 +20,24 @@
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
-				<string>com.apple.package</string>
+				<string>poublic.data</string>
+				<string>public.json</string>
+				<string>public.content</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Example Document</string>
+			<string>JSON Document</string>
+			<key>UTTypeIcons</key>
+			<dict/>
 			<key>UTTypeIdentifier</key>
-			<string>com.example.item-document</string>
+			<string>com.public.text</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
-					<string>exampledocument</string>
+					<string>json</string>
 				</array>
+				<key>public.mime-type</key>
+				<array/>
 			</dict>
 		</dict>
 	</array>
