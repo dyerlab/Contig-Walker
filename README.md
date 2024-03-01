@@ -1,2 +1,4 @@
-# Chromosome Walking
+# Contig Walker
+
+
 

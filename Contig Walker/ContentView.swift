@@ -8,6 +8,23 @@
 import SwiftUI
 import SwiftData
 
+
+struct ContentView: View {
+    
+    var body: some View {
+        
+        Text("Contig Walker")
+    }
+}
+
+
+#Preview {
+    ContentView()
+        .modelContainer(for: Item.self, inMemory: true)
+}
+
+
+/*
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
@@ -64,3 +81,4 @@ struct ContentView: View {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
 }
+*/

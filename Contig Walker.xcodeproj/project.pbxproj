@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */; };
 		2A293C412B920B85001474AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C402B920B85001474AA /* ContentView.swift */; };
-		2A293C432B920B85001474AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C422B920B85001474AA /* Item.swift */; };
+		2A293C432B920B85001474AA /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C422B920B85001474AA /* Graph.swift */; };
 		2A293C452B920B86001474AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C442B920B86001474AA /* Assets.xcassets */; };
 		2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C482B920B86001474AA /* Preview Assets.xcassets */; };
 		2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C522B920B86001474AA /* Contig_WalkerTests.swift */; };
 		2A293C5D2B920B86001474AA /* Contig_WalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C5C2B920B86001474AA /* Contig_WalkerUITests.swift */; };
-		2A293C5F2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C5E2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift */; };
+		2AE2D8302B920C190063DBF9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82E2B920C190063DBF9 /* LICENSE */; };
+		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		2A293C3B2B920B85001474AA /* Contig Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contig Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerApp.swift; sourceTree = "<group>"; };
 		2A293C402B920B85001474AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2A293C422B920B85001474AA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2A293C422B920B85001474AA /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		2A293C442B920B86001474AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A293C462B920B86001474AA /* Contig_Walker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contig_Walker.entitlements; sourceTree = "<group>"; };
 		2A293C482B920B86001474AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,7 +47,8 @@
 		2A293C522B920B86001474AA /* Contig_WalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerTests.swift; sourceTree = "<group>"; };
 		2A293C582B920B86001474AA /* Contig WalkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A293C5C2B920B86001474AA /* Contig_WalkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITests.swift; sourceTree = "<group>"; };
-		2A293C5E2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2AE2D82E2B920C190063DBF9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2AE2D82F2B920C190063DBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,8 @@
 		2A293C322B920B85001474AA = {
 			isa = PBXGroup;
 			children = (
+				2AE2D82E2B920C190063DBF9 /* LICENSE */,
+				2AE2D82F2B920C190063DBF9 /* README.md */,
 				2A293C3D2B920B85001474AA /* Contig Walker */,
 				2A293C512B920B86001474AA /* Contig WalkerTests */,
 				2A293C5B2B920B86001474AA /* Contig WalkerUITests */,
@@ -99,7 +103,7 @@
 			children = (
 				2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */,
 				2A293C402B920B85001474AA /* ContentView.swift */,
-				2A293C422B920B85001474AA /* Item.swift */,
+				2A293C422B920B85001474AA /* Graph.swift */,
 				2A293C442B920B86001474AA /* Assets.xcassets */,
 				2A293C462B920B86001474AA /* Contig_Walker.entitlements */,
 				2A293C472B920B86001474AA /* Preview Content */,
@@ -127,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				2A293C5C2B920B86001474AA /* Contig_WalkerUITests.swift */,
-				2A293C5E2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift */,
 			);
 			path = "Contig WalkerUITests";
 			sourceTree = "<group>";
@@ -236,7 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE2D8302B920C190063DBF9 /* LICENSE in Resources */,
 				2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */,
+				2AE2D8312B920C190063DBF9 /* README.md in Resources */,
 				2A293C452B920B86001474AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
-				2A293C432B920B85001474AA /* Item.swift in Sources */,
+				2A293C432B920B85001474AA /* Graph.swift in Sources */,
 				2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A293C5F2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift in Sources */,
 				2A293C5D2B920B86001474AA /* Contig_WalkerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
