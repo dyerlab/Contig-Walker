@@ -7,71 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A89DDFD2B8FD327002EAB98 /* Contig_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */; };
-		2A89DDFF2B8FD327002EAB98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DDFE2B8FD327002EAB98 /* ContentView.swift */; };
-		2A89DE032B8FD328002EAB98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A89DE022B8FD328002EAB98 /* Assets.xcassets */; };
-		2A89DE082B8FD328002EAB98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A89DE072B8FD328002EAB98 /* Preview Assets.xcassets */; };
-		2A89DE122B8FD328002EAB98 /* Contig_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE112B8FD328002EAB98 /* Contig_WalkerTests.swift */; };
-		2A89DE1C2B8FD328002EAB98 /* Contig_WalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */; };
-		2A89DE1E2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */; };
-		2A89DE2C2B8FD439002EAB98 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE2B2B8FD439002EAB98 /* Node.swift */; };
-		2A89DE2E2B8FD48B002EAB98 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE2D2B8FD48B002EAB98 /* Edge.swift */; };
-		2A89DE302B8FD4D9002EAB98 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE2F2B8FD4D9002EAB98 /* Graph.swift */; };
-		2A89DE332B8FD7AE002EAB98 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89DE322B8FD7AE002EAB98 /* GraphView.swift */; };
+		2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */; };
+		2A293C412B920B85001474AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C402B920B85001474AA /* ContentView.swift */; };
+		2A293C432B920B85001474AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C422B920B85001474AA /* Item.swift */; };
+		2A293C452B920B86001474AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C442B920B86001474AA /* Assets.xcassets */; };
+		2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C482B920B86001474AA /* Preview Assets.xcassets */; };
+		2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C522B920B86001474AA /* Contig_WalkerTests.swift */; };
+		2A293C5D2B920B86001474AA /* Contig_WalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C5C2B920B86001474AA /* Contig_WalkerUITests.swift */; };
+		2A293C5F2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C5E2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2A89DE0E2B8FD328002EAB98 /* PBXContainerItemProxy */ = {
+		2A293C4F2B920B86001474AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2A89DDF12B8FD327002EAB98 /* Project object */;
+			containerPortal = 2A293C332B920B85001474AA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A89DDF82B8FD327002EAB98;
+			remoteGlobalIDString = 2A293C3A2B920B85001474AA;
 			remoteInfo = "Contig Walker";
 		};
-		2A89DE182B8FD328002EAB98 /* PBXContainerItemProxy */ = {
+		2A293C592B920B86001474AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2A89DDF12B8FD327002EAB98 /* Project object */;
+			containerPortal = 2A293C332B920B85001474AA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A89DDF82B8FD327002EAB98;
+			remoteGlobalIDString = 2A293C3A2B920B85001474AA;
 			remoteInfo = "Contig Walker";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A89DDF92B8FD327002EAB98 /* Contig Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contig Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerApp.swift; sourceTree = "<group>"; };
-		2A89DDFE2B8FD327002EAB98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2A89DE022B8FD328002EAB98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A89DE042B8FD328002EAB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A89DE052B8FD328002EAB98 /* Contig_Walker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contig_Walker.entitlements; sourceTree = "<group>"; };
-		2A89DE072B8FD328002EAB98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2A89DE0D2B8FD328002EAB98 /* Contig WalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A89DE112B8FD328002EAB98 /* Contig_WalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerTests.swift; sourceTree = "<group>"; };
-		2A89DE172B8FD328002EAB98 /* Contig WalkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITests.swift; sourceTree = "<group>"; };
-		2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2A89DE2B2B8FD439002EAB98 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Node.swift; path = ../../../Node.swift; sourceTree = "<group>"; };
-		2A89DE2D2B8FD48B002EAB98 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = ../../../Edge.swift; sourceTree = "<group>"; };
-		2A89DE2F2B8FD4D9002EAB98 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = ../../../Graph.swift; sourceTree = "<group>"; };
-		2A89DE322B8FD7AE002EAB98 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GraphView.swift; path = ../../../GraphView.swift; sourceTree = "<group>"; };
+		2A293C3B2B920B85001474AA /* Contig Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contig Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerApp.swift; sourceTree = "<group>"; };
+		2A293C402B920B85001474AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A293C422B920B85001474AA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2A293C442B920B86001474AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A293C462B920B86001474AA /* Contig_Walker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contig_Walker.entitlements; sourceTree = "<group>"; };
+		2A293C482B920B86001474AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A293C4E2B920B86001474AA /* Contig WalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A293C522B920B86001474AA /* Contig_WalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerTests.swift; sourceTree = "<group>"; };
+		2A293C582B920B86001474AA /* Contig WalkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A293C5C2B920B86001474AA /* Contig_WalkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITests.swift; sourceTree = "<group>"; };
+		2A293C5E2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A89DDF62B8FD327002EAB98 /* Frameworks */ = {
+		2A293C382B920B85001474AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A89DE0A2B8FD328002EAB98 /* Frameworks */ = {
+		2A293C4B2B920B86001474AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A89DE142B8FD328002EAB98 /* Frameworks */ = {
+		2A293C552B920B86001474AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,94 +74,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A89DDF02B8FD327002EAB98 = {
+		2A293C322B920B85001474AA = {
 			isa = PBXGroup;
 			children = (
-				2A89DDFB2B8FD327002EAB98 /* Contig Walker */,
-				2A89DE102B8FD328002EAB98 /* Contig WalkerTests */,
-				2A89DE1A2B8FD328002EAB98 /* Contig WalkerUITests */,
-				2A89DDFA2B8FD327002EAB98 /* Products */,
+				2A293C3D2B920B85001474AA /* Contig Walker */,
+				2A293C512B920B86001474AA /* Contig WalkerTests */,
+				2A293C5B2B920B86001474AA /* Contig WalkerUITests */,
+				2A293C3C2B920B85001474AA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2A89DDFA2B8FD327002EAB98 /* Products */ = {
+		2A293C3C2B920B85001474AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A89DDF92B8FD327002EAB98 /* Contig Walker.app */,
-				2A89DE0D2B8FD328002EAB98 /* Contig WalkerTests.xctest */,
-				2A89DE172B8FD328002EAB98 /* Contig WalkerUITests.xctest */,
+				2A293C3B2B920B85001474AA /* Contig Walker.app */,
+				2A293C4E2B920B86001474AA /* Contig WalkerTests.xctest */,
+				2A293C582B920B86001474AA /* Contig WalkerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A89DDFB2B8FD327002EAB98 /* Contig Walker */ = {
+		2A293C3D2B920B85001474AA /* Contig Walker */ = {
 			isa = PBXGroup;
 			children = (
-				2A89DDFC2B8FD327002EAB98 /* Contig_WalkerApp.swift */,
-				2A89DDFE2B8FD327002EAB98 /* ContentView.swift */,
-				2A89DE2A2B8FD42A002EAB98 /* Models */,
-				2A89DE312B8FD79D002EAB98 /* Views */,
-				2A89DE022B8FD328002EAB98 /* Assets.xcassets */,
-				2A89DE042B8FD328002EAB98 /* Info.plist */,
-				2A89DE052B8FD328002EAB98 /* Contig_Walker.entitlements */,
-				2A89DE062B8FD328002EAB98 /* Preview Content */,
+				2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */,
+				2A293C402B920B85001474AA /* ContentView.swift */,
+				2A293C422B920B85001474AA /* Item.swift */,
+				2A293C442B920B86001474AA /* Assets.xcassets */,
+				2A293C462B920B86001474AA /* Contig_Walker.entitlements */,
+				2A293C472B920B86001474AA /* Preview Content */,
 			);
 			path = "Contig Walker";
 			sourceTree = "<group>";
 		};
-		2A89DE062B8FD328002EAB98 /* Preview Content */ = {
+		2A293C472B920B86001474AA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2A89DE072B8FD328002EAB98 /* Preview Assets.xcassets */,
+				2A293C482B920B86001474AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2A89DE102B8FD328002EAB98 /* Contig WalkerTests */ = {
+		2A293C512B920B86001474AA /* Contig WalkerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A89DE112B8FD328002EAB98 /* Contig_WalkerTests.swift */,
+				2A293C522B920B86001474AA /* Contig_WalkerTests.swift */,
 			);
 			path = "Contig WalkerTests";
 			sourceTree = "<group>";
 		};
-		2A89DE1A2B8FD328002EAB98 /* Contig WalkerUITests */ = {
+		2A293C5B2B920B86001474AA /* Contig WalkerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2A89DE1B2B8FD328002EAB98 /* Contig_WalkerUITests.swift */,
-				2A89DE1D2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift */,
+				2A293C5C2B920B86001474AA /* Contig_WalkerUITests.swift */,
+				2A293C5E2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift */,
 			);
 			path = "Contig WalkerUITests";
-			sourceTree = "<group>";
-		};
-		2A89DE2A2B8FD42A002EAB98 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2A89DE2B2B8FD439002EAB98 /* Node.swift */,
-				2A89DE2D2B8FD48B002EAB98 /* Edge.swift */,
-				2A89DE2F2B8FD4D9002EAB98 /* Graph.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2A89DE312B8FD79D002EAB98 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2A89DE322B8FD7AE002EAB98 /* GraphView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A89DDF82B8FD327002EAB98 /* Contig Walker */ = {
+		2A293C3A2B920B85001474AA /* Contig Walker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A89DE212B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig Walker" */;
+			buildConfigurationList = 2A293C622B920B86001474AA /* Build configuration list for PBXNativeTarget "Contig Walker" */;
 			buildPhases = (
-				2A89DDF52B8FD327002EAB98 /* Sources */,
-				2A89DDF62B8FD327002EAB98 /* Frameworks */,
-				2A89DDF72B8FD327002EAB98 /* Resources */,
+				2A293C372B920B85001474AA /* Sources */,
+				2A293C382B920B85001474AA /* Frameworks */,
+				2A293C392B920B85001474AA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -176,69 +149,69 @@
 			);
 			name = "Contig Walker";
 			productName = "Contig Walker";
-			productReference = 2A89DDF92B8FD327002EAB98 /* Contig Walker.app */;
+			productReference = 2A293C3B2B920B85001474AA /* Contig Walker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2A89DE0C2B8FD328002EAB98 /* Contig WalkerTests */ = {
+		2A293C4D2B920B86001474AA /* Contig WalkerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A89DE242B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerTests" */;
+			buildConfigurationList = 2A293C652B920B86001474AA /* Build configuration list for PBXNativeTarget "Contig WalkerTests" */;
 			buildPhases = (
-				2A89DE092B8FD328002EAB98 /* Sources */,
-				2A89DE0A2B8FD328002EAB98 /* Frameworks */,
-				2A89DE0B2B8FD328002EAB98 /* Resources */,
+				2A293C4A2B920B86001474AA /* Sources */,
+				2A293C4B2B920B86001474AA /* Frameworks */,
+				2A293C4C2B920B86001474AA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2A89DE0F2B8FD328002EAB98 /* PBXTargetDependency */,
+				2A293C502B920B86001474AA /* PBXTargetDependency */,
 			);
 			name = "Contig WalkerTests";
 			productName = "Contig WalkerTests";
-			productReference = 2A89DE0D2B8FD328002EAB98 /* Contig WalkerTests.xctest */;
+			productReference = 2A293C4E2B920B86001474AA /* Contig WalkerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2A89DE162B8FD328002EAB98 /* Contig WalkerUITests */ = {
+		2A293C572B920B86001474AA /* Contig WalkerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A89DE272B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerUITests" */;
+			buildConfigurationList = 2A293C682B920B86001474AA /* Build configuration list for PBXNativeTarget "Contig WalkerUITests" */;
 			buildPhases = (
-				2A89DE132B8FD328002EAB98 /* Sources */,
-				2A89DE142B8FD328002EAB98 /* Frameworks */,
-				2A89DE152B8FD328002EAB98 /* Resources */,
+				2A293C542B920B86001474AA /* Sources */,
+				2A293C552B920B86001474AA /* Frameworks */,
+				2A293C562B920B86001474AA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2A89DE192B8FD328002EAB98 /* PBXTargetDependency */,
+				2A293C5A2B920B86001474AA /* PBXTargetDependency */,
 			);
 			name = "Contig WalkerUITests";
 			productName = "Contig WalkerUITests";
-			productReference = 2A89DE172B8FD328002EAB98 /* Contig WalkerUITests.xctest */;
+			productReference = 2A293C582B920B86001474AA /* Contig WalkerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2A89DDF12B8FD327002EAB98 /* Project object */ = {
+		2A293C332B920B85001474AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					2A89DDF82B8FD327002EAB98 = {
+					2A293C3A2B920B85001474AA = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					2A89DE0C2B8FD328002EAB98 = {
+					2A293C4D2B920B86001474AA = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 2A89DDF82B8FD327002EAB98;
+						TestTargetID = 2A293C3A2B920B85001474AA;
 					};
-					2A89DE162B8FD328002EAB98 = {
+					2A293C572B920B86001474AA = {
 						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 2A89DDF82B8FD327002EAB98;
+						TestTargetID = 2A293C3A2B920B85001474AA;
 					};
 				};
 			};
-			buildConfigurationList = 2A89DDF42B8FD327002EAB98 /* Build configuration list for PBXProject "Contig Walker" */;
+			buildConfigurationList = 2A293C362B920B85001474AA /* Build configuration list for PBXProject "Contig Walker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,36 +219,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 2A89DDF02B8FD327002EAB98;
-			productRefGroup = 2A89DDFA2B8FD327002EAB98 /* Products */;
+			mainGroup = 2A293C322B920B85001474AA;
+			productRefGroup = 2A293C3C2B920B85001474AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A89DDF82B8FD327002EAB98 /* Contig Walker */,
-				2A89DE0C2B8FD328002EAB98 /* Contig WalkerTests */,
-				2A89DE162B8FD328002EAB98 /* Contig WalkerUITests */,
+				2A293C3A2B920B85001474AA /* Contig Walker */,
+				2A293C4D2B920B86001474AA /* Contig WalkerTests */,
+				2A293C572B920B86001474AA /* Contig WalkerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2A89DDF72B8FD327002EAB98 /* Resources */ = {
+		2A293C392B920B85001474AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A89DE082B8FD328002EAB98 /* Preview Assets.xcassets in Resources */,
-				2A89DE032B8FD328002EAB98 /* Assets.xcassets in Resources */,
+				2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */,
+				2A293C452B920B86001474AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A89DE0B2B8FD328002EAB98 /* Resources */ = {
+		2A293C4C2B920B86001474AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A89DE152B8FD328002EAB98 /* Resources */ = {
+		2A293C562B920B86001474AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,53 +258,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A89DDF52B8FD327002EAB98 /* Sources */ = {
+		2A293C372B920B85001474AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A89DE302B8FD4D9002EAB98 /* Graph.swift in Sources */,
-				2A89DDFF2B8FD327002EAB98 /* ContentView.swift in Sources */,
-				2A89DDFD2B8FD327002EAB98 /* Contig_WalkerApp.swift in Sources */,
-				2A89DE2E2B8FD48B002EAB98 /* Edge.swift in Sources */,
-				2A89DE2C2B8FD439002EAB98 /* Node.swift in Sources */,
-				2A89DE332B8FD7AE002EAB98 /* GraphView.swift in Sources */,
+				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
+				2A293C432B920B85001474AA /* Item.swift in Sources */,
+				2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A89DE092B8FD328002EAB98 /* Sources */ = {
+		2A293C4A2B920B86001474AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A89DE122B8FD328002EAB98 /* Contig_WalkerTests.swift in Sources */,
+				2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A89DE132B8FD328002EAB98 /* Sources */ = {
+		2A293C542B920B86001474AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A89DE1E2B8FD328002EAB98 /* Contig_WalkerUITestsLaunchTests.swift in Sources */,
-				2A89DE1C2B8FD328002EAB98 /* Contig_WalkerUITests.swift in Sources */,
+				2A293C5F2B920B86001474AA /* Contig_WalkerUITestsLaunchTests.swift in Sources */,
+				2A293C5D2B920B86001474AA /* Contig_WalkerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2A89DE0F2B8FD328002EAB98 /* PBXTargetDependency */ = {
+		2A293C502B920B86001474AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A89DDF82B8FD327002EAB98 /* Contig Walker */;
-			targetProxy = 2A89DE0E2B8FD328002EAB98 /* PBXContainerItemProxy */;
+			target = 2A293C3A2B920B85001474AA /* Contig Walker */;
+			targetProxy = 2A293C4F2B920B86001474AA /* PBXContainerItemProxy */;
 		};
-		2A89DE192B8FD328002EAB98 /* PBXTargetDependency */ = {
+		2A293C5A2B920B86001474AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A89DDF82B8FD327002EAB98 /* Contig Walker */;
-			targetProxy = 2A89DE182B8FD328002EAB98 /* PBXContainerItemProxy */;
+			target = 2A293C3A2B920B85001474AA /* Contig Walker */;
+			targetProxy = 2A293C592B920B86001474AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2A89DE1F2B8FD328002EAB98 /* Debug */ = {
+		2A293C602B920B86001474AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +362,7 @@
 			};
 			name = Debug;
 		};
-		2A89DE202B8FD328002EAB98 /* Release */ = {
+		2A293C612B920B86001474AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -445,7 +415,7 @@
 			};
 			name = Release;
 		};
-		2A89DE222B8FD328002EAB98 /* Debug */ = {
+		2A293C632B920B86001474AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -458,7 +428,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Contig Walker/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -469,8 +438,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -486,7 +453,7 @@
 			};
 			name = Debug;
 		};
-		2A89DE232B8FD328002EAB98 /* Release */ = {
+		2A293C642B920B86001474AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -499,7 +466,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Contig Walker/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -510,8 +476,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -527,7 +491,7 @@
 			};
 			name = Release;
 		};
-		2A89DE252B8FD328002EAB98 /* Debug */ = {
+		2A293C662B920B86001474AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -550,7 +514,7 @@
 			};
 			name = Debug;
 		};
-		2A89DE262B8FD328002EAB98 /* Release */ = {
+		2A293C672B920B86001474AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -573,7 +537,7 @@
 			};
 			name = Release;
 		};
-		2A89DE282B8FD328002EAB98 /* Debug */ = {
+		2A293C692B920B86001474AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -595,7 +559,7 @@
 			};
 			name = Debug;
 		};
-		2A89DE292B8FD328002EAB98 /* Release */ = {
+		2A293C6A2B920B86001474AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -620,43 +584,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A89DDF42B8FD327002EAB98 /* Build configuration list for PBXProject "Contig Walker" */ = {
+		2A293C362B920B85001474AA /* Build configuration list for PBXProject "Contig Walker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A89DE1F2B8FD328002EAB98 /* Debug */,
-				2A89DE202B8FD328002EAB98 /* Release */,
+				2A293C602B920B86001474AA /* Debug */,
+				2A293C612B920B86001474AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A89DE212B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig Walker" */ = {
+		2A293C622B920B86001474AA /* Build configuration list for PBXNativeTarget "Contig Walker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A89DE222B8FD328002EAB98 /* Debug */,
-				2A89DE232B8FD328002EAB98 /* Release */,
+				2A293C632B920B86001474AA /* Debug */,
+				2A293C642B920B86001474AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A89DE242B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerTests" */ = {
+		2A293C652B920B86001474AA /* Build configuration list for PBXNativeTarget "Contig WalkerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A89DE252B8FD328002EAB98 /* Debug */,
-				2A89DE262B8FD328002EAB98 /* Release */,
+				2A293C662B920B86001474AA /* Debug */,
+				2A293C672B920B86001474AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A89DE272B8FD328002EAB98 /* Build configuration list for PBXNativeTarget "Contig WalkerUITests" */ = {
+		2A293C682B920B86001474AA /* Build configuration list for PBXNativeTarget "Contig WalkerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A89DE282B8FD328002EAB98 /* Debug */,
-				2A89DE292B8FD328002EAB98 /* Release */,
+				2A293C692B920B86001474AA /* Debug */,
+				2A293C6A2B920B86001474AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2A89DDF12B8FD327002EAB98 /* Project object */;
+	rootObject = 2A293C332B920B85001474AA /* Project object */;
 }

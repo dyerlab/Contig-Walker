@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Contig Walker
 //
-//  Created by Rodney Dyer on 2/28/24.
+//  Created by Rodney Dyer on 3/1/24.
 //
 
 import SwiftUI
@@ -10,30 +10,57 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var graphs: [Graph]
+    @Query private var items: [Item]
 
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach( graphs ) { graph in
+                ForEach(items) { item in
                     NavigationLink {
-                        GraphView( graph: graph  )
+                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
-                        Text("\(graph.id.uuidString)")
+                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
                     }
                 }
+                .onDelete(perform: deleteItems)
             }
 #if os(macOS)
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
 #endif
+            .toolbar {
+#if os(iOS)
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    EditButton()
+                }
+#endif
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "plus")
+                    }
+                }
+            }
         } detail: {
-            Text("Select a graph")
+            Text("Select an item")
         }
     }
 
+    private func addItem() {
+        withAnimation {
+            let newItem = Item(timestamp: Date())
+            modelContext.insert(newItem)
+        }
+    }
+
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
+            for index in offsets {
+                modelContext.delete(items[index])
+            }
+        }
+    }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: [Graph.self], inMemory: true)
+        .modelContainer(for: Item.self, inMemory: true)
 }
