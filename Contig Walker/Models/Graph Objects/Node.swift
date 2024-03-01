@@ -55,3 +55,40 @@ class Node: Codable {
     
 }
 
+
+extension Node: CustomStringConvertible {
+    
+    var description: String {
+        return "\(id): \(size) @ (\(latitude), \(longitude)) in \(group)"
+    }
+    
+}
+
+
+
+extension Node {
+    
+    static var DefaultJSONNode: Node {
+        
+        let json = """
+{
+    "id":["Adygei"],
+    "size":[7.4163],
+    "longitude":[39],
+    "latitude":[44],
+    "group":["All"]}
+}
+"""
+        print( json )
+        let jd = JSONDecoder()
+        do {
+            let node = try jd.decode( Node.self, from: json.data(using: .utf8)!)
+            return node
+        } catch {
+            fatalError("Caught error \(error.localizedDescription)")
+        }
+    }
+    
+}
+
+

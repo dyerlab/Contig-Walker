@@ -13,6 +13,7 @@
 		2A293C452B920B86001474AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C442B920B86001474AA /* Assets.xcassets */; };
 		2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C482B920B86001474AA /* Preview Assets.xcassets */; };
 		2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C522B920B86001474AA /* Contig_WalkerTests.swift */; };
+		2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */; };
 		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 		2AE2D8332B920E3A0063DBF9 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D8322B920E3A0063DBF9 /* DataBase.swift */; };
 		2AE2D9012B9212040063DBF9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9002B9212040063DBF9 /* Node.swift */; };
@@ -91,6 +92,7 @@
 		2A293C482B920B86001474AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A293C4E2B920B86001474AA /* Contig WalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A293C522B920B86001474AA /* Contig_WalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerTests.swift; sourceTree = "<group>"; };
+		2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 		2AE2D82F2B920C190063DBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2AE2D8322B920E3A0063DBF9 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		2AE2D9002B9212040063DBF9 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			children = (
 				2A293C522B920B86001474AA /* Contig_WalkerTests.swift */,
 				2AF5E38F2B925DDE004A5769 /* GraphTests.swift */,
+				2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */,
 			);
 			path = "Contig WalkerTests";
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF5E3902B925DDE004A5769 /* GraphTests.swift in Sources */,
+				2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */,
 				2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
