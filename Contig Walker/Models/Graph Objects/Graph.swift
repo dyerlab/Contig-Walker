@@ -9,125 +9,150 @@ import Foundation
 import SwiftData
 
 @Model
-final class Graph {
+final class Graph: Codable  {
 
     let nodes: [Node]
-    let links: [Edge]
+    let edges: [Edge]
+    let loci: [String]
+    let location: [Int]
+    let p: [Double]
+    let Ho: [Double]
+    let He: [Double]
     
-    init(nodes: [Node], links: [Edge]) {
+    enum CodingKeys: CodingKey {
+        case nodes
+        case edges
+        case loci
+        case location
+        case p
+        case Ho
+        case He
+    }
+    
+    init(nodes: [Node]=[], edges: [Edge]=[], loci: [String]=[], location: [Int]=[], p: [Double]=[], Ho: [Double]=[], He: [Double]=[]) {
         self.nodes = nodes
-        self.links = links
+        self.edges = edges
+        self.loci = loci
+        self.location = location
+        self.p = p
+        self.Ho = Ho
+        self.He = He
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self )
+        nodes = try container.decode( Array.self, forKey: .nodes )
+        edges = try container.decode( Array.self, forKey: .edges )
+        loci = try container.decode( Array.self, forKey: .loci )
+        location = try container.decode( Array.self, forKey: .location )
+        p = try container.decode( Array.self, forKey: .p )
+        Ho = try container.decode( Array.self, forKey: .Ho )
+        He = try container.decode( Array.self, forKey: .He )
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self )
+        try container.encode( nodes, forKey: .nodes )
+        try container.encode( edges, forKey: .edges )
+        try container.encode( loci, forKey: .loci )
+        try container.encode( location, forKey: .location)
+        try container.encode( p, forKey: .p )
+        try container.encode( Ho, forKey: .Ho )
+        try container.encode( He, forKey: .He )
     }
     
     
 }
 
 
+extension Graph: CustomStringConvertible {
+    var description: String {
+        return String("Graph: \(nodes.count) nodes, \(edges.count) edges, \(loci.count) loci.")
+    }
+}
+
+
 
 extension Graph {
     
+    static var DefaultGraph: Graph {
+        let file = "graph_chr2_40bp_1"
+        
+        if let path = Bundle.main.path(forResource: file, ofType: "json") {
+            do {
+                if let jsonData = try String(contentsOfFile: path).data(using: .utf8) {
+                    
+                    print("jsonData: \(jsonData)")
+                    
+                    let jd = JSONDecoder()
+                    let graph = try jd.decode( Graph.self, from: jsonData )
+                    return graph
+                } else {
+                    print("Cannot get json data")
+                }
+            } catch {
+                fatalError("Could not load default graph from bundle, \(error.localizedDescription)")
+            }
+        } else {
+            print("Could not get path to default graph json \(file).")
+        }
+        return Graph()
+    }
+
+    /*
     static var DefaultGraphs: [Graph] {
         let ret = [Graph]()
-        let files = ["chr02_graph_0001.json",
-                     "chr02_graph_0002.json",
-                     "chr02_graph_0003.json",
-                     "chr02_graph_0004.json",
-                     "chr02_graph_0005.json",
-                     "chr02_graph_0006.json",
-                     "chr02_graph_0007.json",
-                     "chr02_graph_0008.json",
-                     "chr02_graph_0009.json",
-                     "chr02_graph_0010.json",
-                     "chr02_graph_0011.json",
-                     "chr02_graph_0012.json",
-                     "chr02_graph_0013.json",
-                     "chr02_graph_0014.json",
-                     "chr02_graph_0015.json",
-                     "chr02_graph_0016.json",
-                     "chr02_graph_0017.json",
-                     "chr02_graph_0018.json",
-                     "chr02_graph_0019.json",
-                     "chr02_graph_0020.json",
-                     "chr02_graph_0021.json",
-                     "chr02_graph_0022.json",
-                     "chr02_graph_0023.json",
-                     "chr02_graph_0024.json",
-                     "chr02_graph_0025.json",
-                     "chr02_graph_0026.json",
-                     "chr02_graph_0027.json",
-                     "chr02_graph_0028.json",
-                     "chr02_graph_0029.json",
-                     "chr02_graph_0030.json",
-                     "chr02_graph_0031.json",
-                     "chr02_graph_0032.json",
-                     "chr02_graph_0033.json",
-                     "chr02_graph_0034.json",
-                     "chr02_graph_0035.json",
-                     "chr02_graph_0036.json",
-                     "chr02_graph_0037.json",
-                     "chr02_graph_0038.json",
-                     "chr02_graph_0039.json",
-                     "chr02_graph_0040.json",
-                     "chr02_graph_0041.json",
-                     "chr02_graph_0042.json",
-                     "chr02_graph_0043.json",
-                     "chr02_graph_0044.json",
-                     "chr02_graph_0045.json",
-                     "chr02_graph_0046.json",
-                     "chr02_graph_0047.json",
-                     "chr02_graph_0048.json",
-                     "chr02_graph_0049.json",
-                     "chr02_graph_0050.json",
-                     "chr02_graph_0051.json",
-                     "chr02_graph_0052.json",
-                     "chr02_graph_0053.json",
-                     "chr02_graph_0054.json",
-                     "chr02_graph_0055.json",
-                     "chr02_graph_0056.json",
-                     "chr02_graph_0057.json",
-                     "chr02_graph_0058.json",
-                     "chr02_graph_0059.json",
-                     "chr02_graph_0060.json",
-                     "chr02_graph_0061.json",
-                     "chr02_graph_0062.json",
-                     "chr02_graph_0063.json",
-                     "chr02_graph_0064.json",
-                     "chr02_graph_0065.json",
-                     "chr02_graph_0066.json",
-                     "chr02_graph_0067.json",
-                     "chr02_graph_0068.json",
-                     "chr02_graph_0069.json",
-                     "chr02_graph_0070.json",
-                     "chr02_graph_0071.json",
-                     "chr02_graph_0072.json",
-                     "chr02_graph_0073.json",
-                     "chr02_graph_0074.json",
-                     "chr02_graph_0075.json",
-                     "chr02_graph_0076.json",
-                     "chr02_graph_0077.json",
-                     "chr02_graph_0078.json",
-                     "chr02_graph_0079.json",
-                     "chr02_graph_0080.json",
-                     "chr02_graph_0081.json",
-                     "chr02_graph_0082.json",
-                     "chr02_graph_0083.json",
-                     "chr02_graph_0084.json",
-                     "chr02_graph_0085.json",
-                     "chr02_graph_0086.json",
-                     "chr02_graph_0087.json",
-                     "chr02_graph_0088.json",
-                     "chr02_graph_0089.json",
-                     "chr02_graph_0090.json",
-                     "chr02_graph_0091.json",
-                     "chr02_graph_0092.json",
-                     "chr02_graph_0093.json",
-                     "chr02_graph_0094.json",
-                     "chr02_graph_0095.json",
-                     "chr02_graph_0096.json",
-                     "chr02_graph_0097.json",
-                     "chr02_graph_0098.json",
-                     "chr02_graph_0099.json",
-                     "chr02_graph_0100.json" ]
+        let files = ["graph_chr2_40bp_1.json",
+                     "graph_chr2_40bp_2.json",
+                     "graph_chr2_40bp_3.json",
+                     "graph_chr2_40bp_4.json",
+                     "graph_chr2_40bp_5.json",
+                     "graph_chr2_40bp_6.json",
+                     "graph_chr2_40bp_7.json",
+                     "graph_chr2_40bp_8.json",
+                     "graph_chr2_40bp_9.json",
+                     "graph_chr2_40bp_10.json",
+                     "graph_chr2_40bp_11.json",
+                     "graph_chr2_40bp_12.json",
+                     "graph_chr2_40bp_13.json",
+                     "graph_chr2_40bp_14.json",
+                     "graph_chr2_40bp_15.json",
+                     "graph_chr2_40bp_16.json",
+                     "graph_chr2_40bp_17.json",
+                     "graph_chr2_40bp_18.json",
+                     "graph_chr2_40bp_19.json",
+                     "graph_chr2_40bp_20.json",
+                     "graph_chr2_40bp_21.json",
+                     "graph_chr2_40bp_22.json",
+                     "graph_chr2_40bp_23.json",
+                     "graph_chr2_40bp_24.json",
+                     "graph_chr2_40bp_25.json",
+                     "graph_chr2_40bp_26.json",
+                     "graph_chr2_40bp_27.json",
+                     "graph_chr2_40bp_28.json",
+                     "graph_chr2_40bp_29.json",
+                     "graph_chr2_40bp_30.json",
+                     "graph_chr2_40bp_31.json",
+                     "graph_chr2_40bp_32.json",
+                     "graph_chr2_40bp_33.json",
+                     "graph_chr2_40bp_34.json",
+                     "graph_chr2_40bp_35.json",
+                     "graph_chr2_40bp_36.json",
+                     "graph_chr2_40bp_37.json",
+                     "graph_chr2_40bp_38.json",
+                     "graph_chr2_40bp_39.json",
+                     "graph_chr2_40bp_40.json",
+                     "graph_chr2_40bp_41.json",
+                     "graph_chr2_40bp_42.json",
+                     "graph_chr2_40bp_43.json",
+                     "graph_chr2_40bp_44.json",
+                     "graph_chr2_40bp_45.json",
+                     "graph_chr2_40bp_46.json",
+                     "graph_chr2_40bp_47.json",
+                     "graph_chr2_40bp_48.json",
+                     "graph_chr2_40bp_49.json",
+                     "graph_chr2_40bp_50.json"
+                      ]
         
         for file in files {
             if let path = Bundle.main.path(forResource: file, ofType: "json") {
@@ -141,5 +166,5 @@ extension Graph {
             
         return ret
     }
-    
+    */
 }
