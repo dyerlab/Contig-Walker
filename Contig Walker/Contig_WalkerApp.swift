@@ -11,16 +11,7 @@ import SwiftData
 @main
 struct Contig_WalkerApp: App {
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Graph.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
+        return previewContainer
     }()
 
     var body: some Scene {

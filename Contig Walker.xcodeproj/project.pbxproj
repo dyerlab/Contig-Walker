@@ -13,12 +13,19 @@
 		2A293C452B920B86001474AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C442B920B86001474AA /* Assets.xcassets */; };
 		2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A293C482B920B86001474AA /* Preview Assets.xcassets */; };
 		2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C522B920B86001474AA /* Contig_WalkerTests.swift */; };
+		2A2DD3272B93280800FD6B4C /* GraphInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD3262B93280800FD6B4C /* GraphInfoView.swift */; };
+		2A2DD3312B932AAA00FD6B4C /* PresentationZen in Frameworks */ = {isa = PBXBuildFile; productRef = 2A2DD3302B932AAA00FD6B4C /* PresentationZen */; };
+		2A2DD3332B932AD700FD6B4C /* NodeSetSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD3322B932AD700FD6B4C /* NodeSetSummarizer.swift */; };
+		2A2DD3372B932D6F00FD6B4C /* NodesSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD3362B932D6F00FD6B4C /* NodesSummaryView.swift */; };
+		2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD3382B9332EC00FD6B4C /* EdgeSetSummarizer.swift */; };
+		2A2DD33B2B93335900FD6B4C /* EdgesSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */; };
+		2A2DD33D2B9333DC00FD6B4C /* GraphSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */; };
+		2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */; };
 		2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */; };
 		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 		2AE2D8332B920E3A0063DBF9 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D8322B920E3A0063DBF9 /* DataBase.swift */; };
 		2AE2D9012B9212040063DBF9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9002B9212040063DBF9 /* Node.swift */; };
 		2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9022B9212A10063DBF9 /* Edge.swift */; };
-		2AF5E3292B922650004A5769 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5E3282B922650004A5769 /* Locus.swift */; };
 		2AF5E35C2B925571004A5769 /* graph_chr2_40bp_14.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32A2B92556F004A5769 /* graph_chr2_40bp_14.json */; };
 		2AF5E35D2B925571004A5769 /* graph_chr2_40bp_19.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32B2B92556F004A5769 /* graph_chr2_40bp_19.json */; };
 		2AF5E35E2B925571004A5769 /* graph_chr2_40bp_24.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32C2B92556F004A5769 /* graph_chr2_40bp_24.json */; };
@@ -92,12 +99,18 @@
 		2A293C482B920B86001474AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A293C4E2B920B86001474AA /* Contig WalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contig WalkerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A293C522B920B86001474AA /* Contig_WalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerTests.swift; sourceTree = "<group>"; };
+		2A2DD3262B93280800FD6B4C /* GraphInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphInfoView.swift; sourceTree = "<group>"; };
+		2A2DD3322B932AD700FD6B4C /* NodeSetSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSetSummarizer.swift; sourceTree = "<group>"; };
+		2A2DD3362B932D6F00FD6B4C /* NodesSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodesSummaryView.swift; sourceTree = "<group>"; };
+		2A2DD3382B9332EC00FD6B4C /* EdgeSetSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSetSummarizer.swift; sourceTree = "<group>"; };
+		2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgesSummaryView.swift; sourceTree = "<group>"; };
+		2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSummarizer.swift; sourceTree = "<group>"; };
+		2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSummaryView.swift; sourceTree = "<group>"; };
 		2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 		2AE2D82F2B920C190063DBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2AE2D8322B920E3A0063DBF9 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		2AE2D9002B9212040063DBF9 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2AE2D9022B9212A10063DBF9 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		2AF5E3282B922650004A5769 /* Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
 		2AF5E32A2B92556F004A5769 /* graph_chr2_40bp_14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_14.json; sourceTree = "<group>"; };
 		2AF5E32B2B92556F004A5769 /* graph_chr2_40bp_19.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_19.json; sourceTree = "<group>"; };
 		2AF5E32C2B92556F004A5769 /* graph_chr2_40bp_24.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_24.json; sourceTree = "<group>"; };
@@ -156,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2DD3312B932AAA00FD6B4C /* PresentationZen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +209,7 @@
 				2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */,
 				2A293C402B920B85001474AA /* ContentView.swift */,
 				2AE2D8FD2B9211E50063DBF9 /* Models */,
+				2A2DD3282B93280D00FD6B4C /* Views */,
 				2A293C442B920B86001474AA /* Assets.xcassets */,
 				2A293C462B920B86001474AA /* Contig_Walker.entitlements */,
 				2A293C472B920B86001474AA /* Preview Content */,
@@ -220,24 +235,53 @@
 			path = "Contig WalkerTests";
 			sourceTree = "<group>";
 		};
+		2A2DD3282B93280D00FD6B4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DD3262B93280800FD6B4C /* GraphInfoView.swift */,
+				2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */,
+				2A2DD3362B932D6F00FD6B4C /* NodesSummaryView.swift */,
+				2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A2DD3342B932B4300FD6B4C /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				2AE2D9002B9212040063DBF9 /* Node.swift */,
+				2A2DD3322B932AD700FD6B4C /* NodeSetSummarizer.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		2A2DD3352B932B5300FD6B4C /* Edge */ = {
+			isa = PBXGroup;
+			children = (
+				2AE2D9022B9212A10063DBF9 /* Edge.swift */,
+				2A2DD3382B9332EC00FD6B4C /* EdgeSetSummarizer.swift */,
+			);
+			path = Edge;
+			sourceTree = "<group>";
+		};
 		2AE2D8FD2B9211E50063DBF9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				2AE2D8FF2B9211F80063DBF9 /* Database */,
-				2AE2D8FE2B9211EF0063DBF9 /* Graph Objects */,
+				2A2DD3352B932B5300FD6B4C /* Edge */,
+				2AE2D8FE2B9211EF0063DBF9 /* Graph */,
+				2A2DD3342B932B4300FD6B4C /* Node */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2AE2D8FE2B9211EF0063DBF9 /* Graph Objects */ = {
+		2AE2D8FE2B9211EF0063DBF9 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
 				2A293C422B920B85001474AA /* Graph.swift */,
-				2AE2D9002B9212040063DBF9 /* Node.swift */,
-				2AE2D9022B9212A10063DBF9 /* Edge.swift */,
-				2AF5E3282B922650004A5769 /* Locus.swift */,
+				2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */,
 			);
-			path = "Graph Objects";
+			path = Graph;
 			sourceTree = "<group>";
 		};
 		2AE2D8FF2B9211F80063DBF9 /* Database */ = {
@@ -321,6 +365,9 @@
 			dependencies = (
 			);
 			name = "Contig Walker";
+			packageProductDependencies = (
+				2A2DD3302B932AAA00FD6B4C /* PresentationZen */,
+			);
 			productName = "Contig Walker";
 			productReference = 2A293C3B2B920B85001474AA /* Contig Walker.app */;
 			productType = "com.apple.product-type.application";
@@ -371,6 +418,9 @@
 				Base,
 			);
 			mainGroup = 2A293C322B920B85001474AA;
+			packageReferences = (
+				2A2DD32F2B932AAA00FD6B4C /* XCRemoteSwiftPackageReference "PresentationZen" */,
+			);
 			productRefGroup = 2A293C3C2B920B85001474AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -456,13 +506,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF5E3292B922650004A5769 /* Locus.swift in Sources */,
+				2A2DD3372B932D6F00FD6B4C /* NodesSummaryView.swift in Sources */,
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
+				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,
 				2AE2D9012B9212040063DBF9 /* Node.swift in Sources */,
+				2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */,
 				2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */,
 				2A293C432B920B85001474AA /* Graph.swift in Sources */,
 				2AE2D8332B920E3A0063DBF9 /* DataBase.swift in Sources */,
 				2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */,
+				2A2DD3332B932AD700FD6B4C /* NodeSetSummarizer.swift in Sources */,
+				2A2DD33D2B9333DC00FD6B4C /* GraphSummarizer.swift in Sources */,
+				2A2DD33B2B93335900FD6B4C /* EdgesSummaryView.swift in Sources */,
+				2A2DD3272B93280800FD6B4C /* GraphInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,7 +683,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-Walker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -665,7 +721,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-Walker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -754,6 +810,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A2DD32F2B932AAA00FD6B4C /* XCRemoteSwiftPackageReference "PresentationZen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dyerlab/PresentationZen";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A2DD3302B932AAA00FD6B4C /* PresentationZen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A2DD32F2B932AAA00FD6B4C /* XCRemoteSwiftPackageReference "PresentationZen" */;
+			productName = PresentationZen;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A293C332B920B85001474AA /* Project object */;
 }

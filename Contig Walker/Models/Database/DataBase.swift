@@ -9,7 +9,8 @@ import SwiftData
 import Foundation
 
 
-let contigWalkerSchema = Schema( [ Graph.self
+let contigWalkerSchema = Schema( [ Node.self,
+                                   Edge.self
                                  ])
 
 @MainActor

@@ -26,7 +26,7 @@ final class GraphTests: XCTestCase {
     
     func testDefault() throws {
         
-        let graph = Graph.DefaultGraph
+        let graph = Graph.DefaultJSON
         
         print("\(graph)")
         

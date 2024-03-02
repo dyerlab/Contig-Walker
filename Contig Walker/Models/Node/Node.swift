@@ -69,14 +69,13 @@ extension Node: CustomStringConvertible {
 extension Node {
     
     static var DefaultJSONNode: Node {
-        
         let json = """
 {
-    "id":["Adygei"],
-    "size":[7.4163],
-    "longitude":[39],
-    "latitude":[44],
-    "group":["All"]}
+    "id": "Adygei",
+    "size": 7.4163,
+    "longitude": 39,
+    "latitude": 44 ,
+    "group": "All"
 }
 """
         print( json )
@@ -87,8 +86,8 @@ extension Node {
         } catch {
             fatalError("Caught error \(error.localizedDescription)")
         }
+        
     }
-    
 }
 
 

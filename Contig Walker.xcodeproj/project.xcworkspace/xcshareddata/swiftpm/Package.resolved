@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "presentationzen",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dyerlab/PresentationZen",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fb7ca6c822d7ef6838328950c62f8ba0990732ee"
+      }
+    }
+  ],
+  "version" : 2
+}

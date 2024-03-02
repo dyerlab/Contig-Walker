@@ -43,3 +43,12 @@ class Edge: Codable {
     }
 }
 
+
+extension Edge: CustomStringConvertible {
+    
+    var description: String {
+        return "\(source) <-- \(weight) --> \(target)"
+    }
+}
+
+
