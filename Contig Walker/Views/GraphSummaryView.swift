@@ -20,5 +20,5 @@ struct GraphSummaryView: View {
 }
 
 #Preview {
-    GraphSummaryView(summary: GraphSummarizer(graph: Graph.DefaultJSON))
+    GraphSummaryView(summary: GraphSummarizer(graph: Graph.DefaultGraph))
 }

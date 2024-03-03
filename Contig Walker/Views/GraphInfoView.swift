@@ -20,5 +20,5 @@ struct GraphInfoView: View {
 }
 
 #Preview {
-    GraphInfoView( graph: Graph.DefaultJSON )
+    GraphInfoView( graph: Graph.DefaultGraph )
 }

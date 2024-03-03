@@ -30,7 +30,7 @@
 		{"size": 7.4777,"id": "Yi","longitude": 103,"latitude": 28,"group": "All"},
 		{"size": 11.8383,"id": "Yoruba","longitude": 5,"latitude": 7.9951,"group": "All"}
 	],
-	"links":[
+	"edges":[
 		{"source": "Adygei","target": "Kalash", "weight": 2.456},
 		{"source": "Adygei","target": "Palestinian", "weight": 1.6999},
 		{"source": "Adygei","target": "Russian", "weight": 2.3742},

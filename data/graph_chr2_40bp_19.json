@@ -30,7 +30,7 @@
 		{"size": 9.8182,"id": "Yi","longitude": 103,"latitude": 28,"group": "All"},
 		{"size": 12.6343,"id": "Yoruba","longitude": 5,"latitude": 7.9951,"group": "All"}
 	],
-	"links":[
+	"edges":[
 		{"source": "Adygei","target": "Balochi", "weight": 2.4621},
 		{"source": "Adygei","target": "Bedouin", "weight": 2.3668},
 		{"source": "Adygei","target": "Colombian", "weight": 3.1014},

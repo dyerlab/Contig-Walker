@@ -30,7 +30,7 @@
 		{"size": 7.4301,"id": "Yi","longitude": 103,"latitude": 28,"group": "All"},
 		{"size": 11.9982,"id": "Yoruba","longitude": 5,"latitude": 7.9951,"group": "All"}
 	],
-	"links":[
+	"edges":[
 		{"source": "Adygei","target": "Balochi", "weight": 1.461},
 		{"source": "Adygei","target": "Burusho", "weight": 2.1592},
 		{"source": "Adygei","target": "Daur", "weight": 2.8731},

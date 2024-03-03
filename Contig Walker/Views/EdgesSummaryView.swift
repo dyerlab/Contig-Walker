@@ -19,5 +19,5 @@ struct EdgesSummaryView: View {
 }
 
 #Preview {
-    EdgesSummaryView( summary: EdgeSetSummarizer(graph: Graph.DefaultJSON))
+    EdgesSummaryView( summary: EdgeSetSummarizer(graph: Graph.DefaultGraph))
 }

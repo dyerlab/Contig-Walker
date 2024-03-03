@@ -19,5 +19,5 @@ struct NodesSummaryView: View {
 }
 
 #Preview {
-    NodesSummaryView(summary: NodeSetSummarizer(graph: Graph.DefaultJSON))
+    NodesSummaryView(summary: NodeSetSummarizer(graph: Graph.DefaultGraph))
 }
