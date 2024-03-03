@@ -65,6 +65,16 @@ class Graph: Codable  {
 }
 
 
+
+extension Graph {
+    
+    var coordinate: Int {
+        guard let min = location.min() else { return 0 }
+        return min
+    }
+}
+
+
 extension Graph: CustomStringConvertible {
     var description: String {
         var ret = "Graph: \(nodes.count) nodes, \(edges.count) edges, \(loci.count) loci."
