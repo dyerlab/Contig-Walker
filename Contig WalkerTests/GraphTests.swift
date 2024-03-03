@@ -31,5 +31,10 @@ final class GraphTests: XCTestCase {
         print("\(graph)")
         
     }
+
     
+    func testDefaultGraphs() throws {
+        let graphs = Graph.DefaultGraphs
+        print("Loaded \(graphs.count) graphs")
+    }
 }
