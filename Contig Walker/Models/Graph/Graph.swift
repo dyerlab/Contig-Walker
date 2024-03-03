@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 
-class Graph: Codable  {
+class Graph: Codable, Identifiable  {
     
     let nodes: [Node]
     let edges: [Edge]
@@ -68,9 +68,13 @@ class Graph: Codable  {
 
 extension Graph {
     
-    var coordinate: Int {
-        guard let min = location.min() else { return 0 }
-        return min
+    var range: (Int,Int) {
+        if let mn = location.min(),
+           let mx = location.max() {
+            return (mn,mx)
+        } else {
+            return (0,0)
+        }
     }
 }
 

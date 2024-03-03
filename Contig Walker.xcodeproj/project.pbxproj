@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */; };
+		2A05D70B2B94C4DC002E1DF1 /* GraphsSideview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */; };
 		2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */; };
 		2A293C412B920B85001474AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C402B920B85001474AA /* ContentView.swift */; };
 		2A293C432B920B85001474AA /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C422B920B85001474AA /* Graph.swift */; };
@@ -90,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphLineView.swift; sourceTree = "<group>"; };
+		2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsSideview.swift; sourceTree = "<group>"; };
 		2A293C3B2B920B85001474AA /* Contig Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contig Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerApp.swift; sourceTree = "<group>"; };
 		2A293C402B920B85001474AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */,
 				2A2DD3362B932D6F00FD6B4C /* NodesSummaryView.swift */,
 				2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */,
+				2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */,
+				2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -507,10 +513,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2DD3372B932D6F00FD6B4C /* NodesSummaryView.swift in Sources */,
+				2A05D70B2B94C4DC002E1DF1 /* GraphsSideview.swift in Sources */,
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
 				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,
 				2AE2D9012B9212040063DBF9 /* Node.swift in Sources */,
 				2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */,
+				2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */,
 				2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */,
 				2A293C432B920B85001474AA /* Graph.swift in Sources */,
 				2AE2D8332B920E3A0063DBF9 /* DataBase.swift in Sources */,
