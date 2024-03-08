@@ -24,6 +24,9 @@
 		2A2DD33D2B9333DC00FD6B4C /* GraphSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */; };
 		2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */; };
 		2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */; };
+		2AB0E21A2B9B3E66003FF91E /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E2192B9B3E66003FF91E /* Locus.swift */; };
+		2AB0E21D2B9B3F5C003FF91E /* GraphJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21C2B9B3F5C003FF91E /* GraphJSONLoader.swift */; };
+		2AB0E2202B9B3FE7003FF91E /* Array+Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */; };
 		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 		2AE2D8332B920E3A0063DBF9 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D8322B920E3A0063DBF9 /* DataBase.swift */; };
 		2AE2D9012B9212040063DBF9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9002B9212040063DBF9 /* Node.swift */; };
@@ -78,7 +81,7 @@
 		2AF5E38B2B925571004A5769 /* graph_chr2_40bp_45.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3592B925570004A5769 /* graph_chr2_40bp_45.json */; };
 		2AF5E38C2B925571004A5769 /* graph_chr2_40bp_26.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E35A2B925570004A5769 /* graph_chr2_40bp_26.json */; };
 		2AF5E38D2B925571004A5769 /* graph_chr2_40bp_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E35B2B925571004A5769 /* graph_chr2_40bp_2.json */; };
-		2AF5E3902B925DDE004A5769 /* GraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5E38F2B925DDE004A5769 /* GraphTests.swift */; };
+		2AF5E3902B925DDE004A5769 /* GraphJSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5E38F2B925DDE004A5769 /* GraphJSONLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSummarizer.swift; sourceTree = "<group>"; };
 		2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSummaryView.swift; sourceTree = "<group>"; };
 		2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
+		2AB0E2192B9B3E66003FF91E /* Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
+		2AB0E21C2B9B3F5C003FF91E /* GraphJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphJSONLoader.swift; sourceTree = "<group>"; };
+		2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Locus.swift"; sourceTree = "<group>"; };
 		2AE2D82F2B920C190063DBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2AE2D8322B920E3A0063DBF9 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		2AE2D9002B9212040063DBF9 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -165,7 +171,7 @@
 		2AF5E3592B925570004A5769 /* graph_chr2_40bp_45.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_45.json; sourceTree = "<group>"; };
 		2AF5E35A2B925570004A5769 /* graph_chr2_40bp_26.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_26.json; sourceTree = "<group>"; };
 		2AF5E35B2B925571004A5769 /* graph_chr2_40bp_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_2.json; sourceTree = "<group>"; };
-		2AF5E38F2B925DDE004A5769 /* GraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTests.swift; sourceTree = "<group>"; };
+		2AF5E38F2B925DDE004A5769 /* GraphJSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphJSONLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +218,7 @@
 			children = (
 				2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */,
 				2A293C402B920B85001474AA /* ContentView.swift */,
+				2AB0E21E2B9B3FCA003FF91E /* Extensions */,
 				2AE2D8FD2B9211E50063DBF9 /* Models */,
 				2A2DD3282B93280D00FD6B4C /* Views */,
 				2A293C442B920B86001474AA /* Assets.xcassets */,
@@ -233,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				2A293C522B920B86001474AA /* Contig_WalkerTests.swift */,
-				2AF5E38F2B925DDE004A5769 /* GraphTests.swift */,
+				2AF5E38F2B925DDE004A5769 /* GraphJSONLoaderTests.swift */,
 				2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */,
 			);
 			path = "Contig WalkerTests";
@@ -270,6 +277,22 @@
 			path = Edge;
 			sourceTree = "<group>";
 		};
+		2AB0E21B2B9B3E6D003FF91E /* Locus */ = {
+			isa = PBXGroup;
+			children = (
+				2AB0E2192B9B3E66003FF91E /* Locus.swift */,
+			);
+			path = Locus;
+			sourceTree = "<group>";
+		};
+		2AB0E21E2B9B3FCA003FF91E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2AE2D8FD2B9211E50063DBF9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +300,7 @@
 				2A2DD3352B932B5300FD6B4C /* Edge */,
 				2AE2D8FE2B9211EF0063DBF9 /* Graph */,
 				2A2DD3342B932B4300FD6B4C /* Node */,
+				2AB0E21B2B9B3E6D003FF91E /* Locus */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				2AE2D8322B920E3A0063DBF9 /* DataBase.swift */,
+				2AB0E21C2B9B3F5C003FF91E /* GraphJSONLoader.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -518,14 +543,17 @@
 				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,
 				2AE2D9012B9212040063DBF9 /* Node.swift in Sources */,
 				2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */,
+				2AB0E21D2B9B3F5C003FF91E /* GraphJSONLoader.swift in Sources */,
 				2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */,
 				2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */,
 				2A293C432B920B85001474AA /* Graph.swift in Sources */,
 				2AE2D8332B920E3A0063DBF9 /* DataBase.swift in Sources */,
 				2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */,
 				2A2DD3332B932AD700FD6B4C /* NodeSetSummarizer.swift in Sources */,
+				2AB0E21A2B9B3E66003FF91E /* Locus.swift in Sources */,
 				2A2DD33D2B9333DC00FD6B4C /* GraphSummarizer.swift in Sources */,
 				2A2DD33B2B93335900FD6B4C /* EdgesSummaryView.swift in Sources */,
+				2AB0E2202B9B3FE7003FF91E /* Array+Locus.swift in Sources */,
 				2A2DD3272B93280800FD6B4C /* GraphInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF5E3902B925DDE004A5769 /* GraphTests.swift in Sources */,
+				2AF5E3902B925DDE004A5769 /* GraphJSONLoaderTests.swift in Sources */,
 				2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */,
 				2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */,
 			);

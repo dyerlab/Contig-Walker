@@ -14,7 +14,7 @@ let contigWalkerSchema = Schema( [ Node.self,
                                  ])
 
 @MainActor
-public let previewContainer: ModelContainer = {
+public let graphDataContainer: ModelContainer = {
     let configuration = ModelConfiguration( schema: contigWalkerSchema,
                                             isStoredInMemoryOnly: true)
     
@@ -25,6 +25,8 @@ public let previewContainer: ModelContainer = {
         
         
         let context = container.mainContext
+        
+        
         
         /// Set up the default values.
         

@@ -10,14 +10,11 @@ import SwiftData
 
 @main
 struct Contig_WalkerApp: App {
-    var sharedModelContainer: ModelContainer = {
-        return previewContainer
-    }()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(graphDataContainer)
     }
 }

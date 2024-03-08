@@ -20,7 +20,7 @@ struct GraphLineView: View {
                 Text("Nodes: \(graph.nodes.count); Edges: \(graph.edges.count)")
                     .font(.callout)
                     .foregroundStyle(.secondary)
-                Text("\(graph.range.0) ↔︎ \(graph.range.1)")
+                Text("\(graph.loci.range.0) ↔︎ \(graph.loci.range.1)")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
             }

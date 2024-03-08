@@ -8,12 +8,12 @@
 @testable import Contig_Walker
 import XCTest
 
-final class GraphTests: XCTestCase {
+final class GraphJSONLoaderTests: XCTestCase {
     
     
     func testEmpty() throws {
         
-        let graph = Graph()
+        let graph = GraphJSONLoader()
         
         XCTAssertEqual( graph.nodes.count, 0 )
         XCTAssertEqual( graph.edges.count, 0 )
@@ -26,7 +26,7 @@ final class GraphTests: XCTestCase {
     
     func testDefault() throws {
         
-        let graph = Graph.DefaultGraph
+        let graph = GraphJSONLoader.DefaultGraph
         
         print("\(graph)")
         
@@ -34,7 +34,7 @@ final class GraphTests: XCTestCase {
 
     
     func testDefaultGraphs() throws {
-        let graphs = Graph.DefaultGraphs
+        let graphs = GraphJSONLoader.DefaultGraphs
         print("Loaded \(graphs.count) graphs")
     }
 }
