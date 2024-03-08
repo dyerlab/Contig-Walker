@@ -18,5 +18,5 @@ struct GraphsSideview: View {
 }
 
 #Preview {
-    GraphsSideview( graphs: Graph.DefaultGraphs )
+    GraphsSideview( graphs: DataStore.DefaultDataStore.graphs )
 }

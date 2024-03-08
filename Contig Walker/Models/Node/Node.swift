@@ -8,8 +8,6 @@
 import SwiftData
 import Foundation
 
-
-@Model
 class Node: Codable {
     let id: String
     let size: Double

@@ -8,33 +8,17 @@
 import Foundation
 import SwiftData
 
-@Model
-class Graph {
+class Graph : Codable, Identifiable {
+    let id: UUID
+    var nodes: [Node]
+    var edges: [Edge]
+    var loci: [String]
     
-    let nodes: [Node]
-    let edges: [Edge]
-    let loci: [Locus]
-    
-    init(nodes: [Node]=[], edges: [Edge]=[], loci: [Locus] = [] ) {
+    init(nodes: [Node]=[], edges: [Edge]=[], loci: [String] = [] ) {
+        self.id = UUID()
         self.nodes = nodes
         self.edges = edges
         self.loci = loci
-    }
-    
-    init( json: GraphJSONLoader ) {
-        var theLoci = [Locus]()
-        for i in 0 ..< json.loci.count {
-            let locus = Locus(name: json.loci[i],
-                              location: json.location[i],
-                              p: json.p[i],
-                              Ho: json.Ho[i],
-                              He: json.He[i] )
-            theLoci.append( locus )
-        }
-        self.nodes = json.nodes
-        self.edges = json.edges
-        self.loci = theLoci
-        
     }
     
 }
@@ -57,27 +41,34 @@ extension Graph: CustomStringConvertible {
 }
 
 
-
-
-
-extension Graph {
+extension Graph: Equatable, Hashable {
     
-    
-    static var DefaultGraph: Graph {
-        return Graph(json: GraphJSONLoader.DefaultGraph )
+    static func == (lhs: Graph, rhs: Graph) -> Bool {
+        return lhs.id == rhs.id
     }
     
-    static var DefaultGraphs: [Graph] {
-        var ret = [Graph]()
-        let jsons = GraphJSONLoader.DefaultGraphs
-        
-        for json in jsons {
-            ret.append( Graph(json: json) )
-        }
-        
-        return ret
+    func hash(into hasher: inout Hasher) {
+        hasher.combine( self.id )
     }
     
     
 }
 
+
+extension Graph {
+    
+    static var DefaultGraph: Graph {
+        let json = GraphJSONLoader.DefaultGraph
+        return json.asGraph
+    }
+    
+    static var DefaultGraphs: [Graph] {
+        let jsons = GraphJSONLoader.DefaultGraphs
+        var ret = [Graph]()
+        for json in jsons {
+            ret.append( json.asGraph )
+        }
+        return ret
+    }
+    
+}

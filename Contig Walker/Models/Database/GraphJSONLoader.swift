@@ -11,54 +11,69 @@ import Foundation
 class GraphJSONLoader: Codable {
     
     let nodes: [Node]
-        let edges: [Edge]
-        let loci: [String]
-        let location: [Int]
-        let p: [Double]
-        let Ho: [Double]
-        let He: [Double]
-        
-        enum CodingKeys: String, CodingKey {
-            case nodes = "nodes"
-            case edges = "edges"
-            case loci = "loci"
-            case location = "location"
-            case p = "p"
-            case Ho = "Ho"
-            case He = "He"
+    let edges: [Edge]
+    let loci: [String]
+    let location: [Int]
+    let p: [Double]
+    let Ho: [Double]
+    let He: [Double]
+    
+    
+    var asGraph: Graph {
+        var theLoci = [Locus]()
+        for i in 0 ..< loci.count {
+            let locus = Locus(name: loci[i],
+                              location: location[i],
+                              p: p[i],
+                              Ho: Ho[i],
+                              He: He[i] )
+            theLoci.append( locus )
         }
         
-        init(nodes: [Node]=[], edges: [Edge]=[], loci: [String]=[], location: [Int]=[], p: [Double]=[], Ho: [Double]=[], He: [Double]=[]) {
-            self.nodes = nodes
-            self.edges = edges
-            self.loci = loci
-            self.location = location
-            self.p = p
-            self.Ho = Ho
-            self.He = He
-        }
-        
-        required init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self )
-            nodes = try container.decode( [Node].self, forKey: .nodes )
-            edges = try container.decode( [Edge].self, forKey: .edges )
-            loci = try container.decode( [String].self, forKey: .loci )
-            location = try container.decode( [Int].self, forKey: .location )
-            p = try container.decode( [Double].self, forKey: .p )
-            Ho = try container.decode( [Double].self, forKey: .Ho )
-            He = try container.decode( [Double].self, forKey: .He )
-        }
-        
-        func encode(to encoder: Encoder) throws {
-            var container = encoder.container(keyedBy: CodingKeys.self )
-            try container.encode( nodes, forKey: .nodes )
-            try container.encode( edges, forKey: .edges )
-            try container.encode( loci, forKey: .loci )
-            try container.encode( location, forKey: .location)
-            try container.encode( p, forKey: .p )
-            try container.encode( Ho, forKey: .Ho )
-            try container.encode( He, forKey: .He )
-        }
+        return Graph(nodes: nodes, edges: edges, loci: loci)
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case nodes = "nodes"
+        case edges = "edges"
+        case loci = "loci"
+        case location = "location"
+        case p = "p"
+        case Ho = "Ho"
+        case He = "He"
+    }
+    
+    init(nodes: [Node]=[], edges: [Edge]=[], loci: [String]=[], location: [Int]=[], p: [Double]=[], Ho: [Double]=[], He: [Double]=[]) {
+        self.nodes = nodes
+        self.edges = edges
+        self.loci = loci
+        self.location = location
+        self.p = p
+        self.Ho = Ho
+        self.He = He
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self )
+        nodes = try container.decode( [Node].self, forKey: .nodes )
+        edges = try container.decode( [Edge].self, forKey: .edges )
+        loci = try container.decode( [String].self, forKey: .loci )
+        location = try container.decode( [Int].self, forKey: .location )
+        p = try container.decode( [Double].self, forKey: .p )
+        Ho = try container.decode( [Double].self, forKey: .Ho )
+        He = try container.decode( [Double].self, forKey: .He )
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self )
+        try container.encode( nodes, forKey: .nodes )
+        try container.encode( edges, forKey: .edges )
+        try container.encode( loci, forKey: .loci )
+        try container.encode( location, forKey: .location)
+        try container.encode( p, forKey: .p )
+        try container.encode( Ho, forKey: .Ho )
+        try container.encode( He, forKey: .He )
+    }
     
     
 }
@@ -103,7 +118,7 @@ extension GraphJSONLoader {
             } else {
                 print("Could not find path to \(filename)")
             }
-
+            
         }
         
         return ret

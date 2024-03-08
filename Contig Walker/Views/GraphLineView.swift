@@ -15,15 +15,13 @@ struct GraphLineView: View {
             Image(systemName: "point.3.filled.connected.trianglepath.dotted")
                 .symbolRenderingMode(.palette)
                 .foregroundStyle( .blue, .primary )
-                .font(.largeTitle)
+                .font(.title2)
             VStack(alignment:.leading) {
-                Text("Nodes: \(graph.nodes.count); Edges: \(graph.edges.count)")
-                    .font(.callout)
-                    .foregroundStyle(.secondary)
-                Text("\(graph.loci.range.0) ↔︎ \(graph.loci.range.1)")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
+                Text("Nodes: \(graph.nodes.count)")
+                Text("Edges: \(graph.edges.count)")
             }
+            .font(.system(size: 10))
+            .foregroundStyle(.secondary)
         })
         
     }

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftData
 
 @main
 struct Contig_WalkerApp: App {
@@ -15,6 +14,5 @@ struct Contig_WalkerApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(graphDataContainer)
     }
 }

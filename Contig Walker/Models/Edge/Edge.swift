@@ -8,7 +8,6 @@
 import SwiftData
 import Foundation
 
-@Model
 class Edge: Codable {
     let source: String
     let target: String
