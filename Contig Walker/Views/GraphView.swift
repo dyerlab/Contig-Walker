@@ -12,19 +12,17 @@ struct GraphView: View {
     var loci: [Locus]
     
     var body: some View {
-        VStack(alignment:.leading){
-            Text("Graph")
-                .font(.largeTitle)
-            Text("ID: \(graph.id.uuidString)")
-            HStack(alignment: .center, content: {
-                LocusSideView(loci: loci)
-                GraphInfoView(graph: graph )
-            })
-        }
+        
+        HStack(alignment: .center, content: {
+            LocusSideView(loci: loci)
+            GraphDisplayView(graph: graph )
+        })
+        .navigationTitle( graph.id.uuidString )
     }
 }
 
 #Preview {
     GraphView( graph: DataStore.DefaultDataStore.exampleGraph,
                loci: DataStore.DefaultDataStore.lociForGraph(graph: DataStore.DefaultDataStore.exampleGraph) )
+    .frame( minWidth: 800, minHeight: 600)
 }

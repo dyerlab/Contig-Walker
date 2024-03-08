@@ -26,6 +26,10 @@
 		2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */; };
 		2AA9C44E2B9B583C0095FBF1 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */; };
 		2AA9C4502B9B5BAF0095FBF1 /* LocusSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */; };
+		2AA9C4522B9BA5470095FBF1 /* GraphDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C4512B9BA5470095FBF1 /* GraphDisplayView.swift */; };
+		2AA9C4552B9BA5EF0095FBF1 /* ForceSimulation in Frameworks */ = {isa = PBXBuildFile; productRef = 2AA9C4542B9BA5EF0095FBF1 /* ForceSimulation */; };
+		2AA9C4572B9BA5EF0095FBF1 /* Grape in Frameworks */ = {isa = PBXBuildFile; productRef = 2AA9C4562B9BA5EF0095FBF1 /* Grape */; };
+		2AA9C4592B9BA6CD0095FBF1 /* GroupColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C4582B9BA6CD0095FBF1 /* GroupColors.swift */; };
 		2AB0E21A2B9B3E66003FF91E /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E2192B9B3E66003FF91E /* Locus.swift */; };
 		2AB0E21D2B9B3F5C003FF91E /* GraphJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21C2B9B3F5C003FF91E /* GraphJSONLoader.swift */; };
 		2AB0E2202B9B3FE7003FF91E /* Array+Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */; };
@@ -119,6 +123,8 @@
 		2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 		2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusSideView.swift; sourceTree = "<group>"; };
+		2AA9C4512B9BA5470095FBF1 /* GraphDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDisplayView.swift; sourceTree = "<group>"; };
+		2AA9C4582B9BA6CD0095FBF1 /* GroupColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupColors.swift; sourceTree = "<group>"; };
 		2AB0E2192B9B3E66003FF91E /* Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
 		2AB0E21C2B9B3F5C003FF91E /* GraphJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphJSONLoader.swift; sourceTree = "<group>"; };
 		2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Locus.swift"; sourceTree = "<group>"; };
@@ -185,7 +191,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA9C4572B9BA5EF0095FBF1 /* Grape in Frameworks */,
 				2A2DD3312B932AAA00FD6B4C /* PresentationZen in Frameworks */,
+				2AA9C4552B9BA5EF0095FBF1 /* ForceSimulation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +266,8 @@
 			children = (
 				2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */,
 				2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */,
-				2A2DD3262B93280800FD6B4C /* GraphInfoView.swift */,
-				2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */,
-				2A2DD3362B932D6F00FD6B4C /* NodesSummaryView.swift */,
-				2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */,
-				2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */,
-				2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */,
+				2AA9C4512B9BA5470095FBF1 /* GraphDisplayView.swift */,
+				2AA9C45A2B9BA8150095FBF1 /* SummaryViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +288,19 @@
 				2A2DD3382B9332EC00FD6B4C /* EdgeSetSummarizer.swift */,
 			);
 			path = Edge;
+			sourceTree = "<group>";
+		};
+		2AA9C45A2B9BA8150095FBF1 /* SummaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DD3262B93280800FD6B4C /* GraphInfoView.swift */,
+				2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */,
+				2A2DD3362B932D6F00FD6B4C /* NodesSummaryView.swift */,
+				2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */,
+				2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */,
+				2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */,
+			);
+			path = SummaryViews;
 			sourceTree = "<group>";
 		};
 		2AB0E21B2B9B3E6D003FF91E /* Locus */ = {
@@ -310,6 +327,7 @@
 				2AE2D8FE2B9211EF0063DBF9 /* Graph */,
 				2A2DD3342B932B4300FD6B4C /* Node */,
 				2AB0E21B2B9B3E6D003FF91E /* Locus */,
+				2AA9C4582B9BA6CD0095FBF1 /* GroupColors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -407,6 +425,8 @@
 			name = "Contig Walker";
 			packageProductDependencies = (
 				2A2DD3302B932AAA00FD6B4C /* PresentationZen */,
+				2AA9C4542B9BA5EF0095FBF1 /* ForceSimulation */,
+				2AA9C4562B9BA5EF0095FBF1 /* Grape */,
 			);
 			productName = "Contig Walker";
 			productReference = 2A293C3B2B920B85001474AA /* Contig Walker.app */;
@@ -460,6 +480,7 @@
 			mainGroup = 2A293C322B920B85001474AA;
 			packageReferences = (
 				2A2DD32F2B932AAA00FD6B4C /* XCRemoteSwiftPackageReference "PresentationZen" */,
+				2AA9C4532B9BA5EF0095FBF1 /* XCRemoteSwiftPackageReference "Grape" */,
 			);
 			productRefGroup = 2A293C3C2B920B85001474AA /* Products */;
 			projectDirPath = "";
@@ -551,9 +572,11 @@
 				2A05D70B2B94C4DC002E1DF1 /* GraphsSideview.swift in Sources */,
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
 				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,
+				2AA9C4522B9BA5470095FBF1 /* GraphDisplayView.swift in Sources */,
 				2AE2D9012B9212040063DBF9 /* Node.swift in Sources */,
 				2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */,
 				2AB0E21D2B9B3F5C003FF91E /* GraphJSONLoader.swift in Sources */,
+				2AA9C4592B9BA6CD0095FBF1 /* GroupColors.swift in Sources */,
 				2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */,
 				2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */,
 				2A293C432B920B85001474AA /* Graph.swift in Sources */,
@@ -874,6 +897,14 @@
 				kind = branch;
 			};
 		};
+		2AA9C4532B9BA5EF0095FBF1 /* XCRemoteSwiftPackageReference "Grape" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/li3zhen1/Grape";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -881,6 +912,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2A2DD32F2B932AAA00FD6B4C /* XCRemoteSwiftPackageReference "PresentationZen" */;
 			productName = PresentationZen;
+		};
+		2AA9C4542B9BA5EF0095FBF1 /* ForceSimulation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AA9C4532B9BA5EF0095FBF1 /* XCRemoteSwiftPackageReference "Grape" */;
+			productName = ForceSimulation;
+		};
+		2AA9C4562B9BA5EF0095FBF1 /* Grape */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AA9C4532B9BA5EF0095FBF1 /* XCRemoteSwiftPackageReference "Grape" */;
+			productName = Grape;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

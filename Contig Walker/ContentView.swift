@@ -20,7 +20,6 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             List( data.graphs, id: \.self, selection: $selectedGraph){ graph in
-            
                 NavigationLink(value: graph.id, label: {
                     GraphLineView(graph: graph)
                 })
@@ -32,7 +31,7 @@ struct ContentView: View {
                            loci: data.lociForGraph(graph: selected ) )
                 .padding()
             } else {
-                Text("Select a Graph")
+                Text("Select a Topology")
             }
         }
 

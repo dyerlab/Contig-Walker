@@ -14,6 +14,17 @@ struct LocusSideView: View {
     var scaleMin: Int
     var scaleMax: Int
     
+    var dataPoints: [DataPoint] {
+        var ret = [DataPoint]()
+        
+        for loc in loci {
+            ret.append( DataPoint(x: loc.p, y: Double(loc.location), group: "p") )
+            ret.append( DataPoint(x: loc.He, y: Double(loc.location), group: "He") )
+            ret.append( DataPoint(x: loc.Ho, y: Double(loc.location), group: "Ho") )
+        }
+        return ret
+    }
+    
     init(loci: [Locus]) {
         let rng = loci.range
         let span = (rng.1 - rng.0) / 20
@@ -27,12 +38,24 @@ struct LocusSideView: View {
     
     var body: some View {
         Chart {
+            
+            ForEach( loci, id: \.self) { item in
+                LineMark(
+                    x: .value("X Value", item.He),
+                    y: .value("Y Value", item.location)
+                )
+                .lineStyle( .init( lineWidth: 1.0, dash: [1,2]) )
+                .opacity( 0.25)
+            }
+            
+            
+            
             ForEach( loci, id: \.self) { item in
                 PointMark(
                     x: .value("X Value", item.He  ),
                     y: .value("Y Value", item.location )
                 )
-                .symbolSize( item.p*100 )
+                .symbolSize( 6 )
                 .annotation(position: .trailing) {
                     Text("\(item.id )")
                         .font( .footnote )
@@ -43,8 +66,11 @@ struct LocusSideView: View {
         .chartXAxisLabel(position: .bottom,
                          alignment: .center,
                          content: {
-            Text("SNP Diversity")
+            Text("Diversity")
         } )
+        .chartXAxis {
+            AxisMarks( values: .automatic(desiredCount: 3))
+        }
         .chartYScale( domain: scaleMin ... scaleMax )
         .chartYAxis {
             AxisMarks(position: .leading) { item in

@@ -38,7 +38,6 @@ class Edge: Codable {
         try container.encode( source, forKey: .source )
         try container.encode( target, forKey: .target )
         try container.encode( weight, forKey: .weight )
-        
     }
 }
 
