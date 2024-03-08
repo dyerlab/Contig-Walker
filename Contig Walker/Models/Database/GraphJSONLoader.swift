@@ -20,9 +20,14 @@ class GraphJSONLoader: Codable {
     
     
     var asGraph: Graph {
+        return Graph(nodes: nodes, edges: edges, loci: asLoci.compactMap( {$0.id}))
+    }
+    
+    
+    var asLoci: [Locus] {
         var theLoci = [Locus]()
         for i in 0 ..< loci.count {
-            let locus = Locus(name: loci[i],
+            let locus = Locus(id: loci[i],
                               location: location[i],
                               p: p[i],
                               Ho: Ho[i],
@@ -30,7 +35,7 @@ class GraphJSONLoader: Codable {
             theLoci.append( locus )
         }
         
-        return Graph(nodes: nodes, edges: edges, loci: loci)
+        return theLoci
     }
     
     enum CodingKeys: String, CodingKey {

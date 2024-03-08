@@ -28,7 +28,9 @@ struct ContentView: View {
             }
         } detail: {
             if let selected = selectedGraph {
-                GraphInfoView(graph: selected )
+                GraphView( graph: selected,
+                           loci: data.lociForGraph(graph: selected ) )
+                .padding()
             } else {
                 Text("Select a Graph")
             }

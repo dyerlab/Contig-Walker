@@ -14,8 +14,8 @@ class Locus: Identifiable, Codable  {
     let Ho: Double
     let He: Double
     
-    init(name: String, location: Int, p: Double, Ho: Double, He: Double) {
-        self.id = name
+    init(id: String, location: Int, p: Double, Ho: Double, He: Double) {
+        self.id = id
         self.location = location
         self.p = p
         self.Ho = Ho
@@ -41,4 +41,15 @@ extension Locus: Equatable, Hashable, Comparable {
         hasher.combine(id)
         hasher.combine(location)
     }
+}
+
+
+
+extension Locus {
+    
+    static var DefaultLoci: [Locus] {
+        let json = GraphJSONLoader.DefaultGraph
+        return json.asLoci
+    }
+    
 }

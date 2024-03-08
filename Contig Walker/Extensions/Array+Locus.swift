@@ -5,6 +5,7 @@
 //  Created by Rodney Dyer on 3/8/24.
 //
 
+import PresentationZen
 import Foundation
 
 
@@ -18,6 +19,15 @@ extension Array where Element == Locus {
         } else {
             return ( 0, 0 )
         }
+    }
+
+    
+    var locationDataPoints: [DataPoint] {
+        var ret = [DataPoint]()
+        for item in self {
+            ret.append( DataPoint(x: 0.0, y: Double(item.location), label: item.id ) )
+        }
+        return ret
     }
     
 }

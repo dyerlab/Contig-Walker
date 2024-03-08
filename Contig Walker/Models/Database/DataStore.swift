@@ -33,11 +33,32 @@ class DataStore: Codable {
         try container.encode( graphs, forKey: .graphs )
         try container.encode( loci, forKey: .loci )
     }
+    
+    
+    func lociForGraph( graph: Graph ) -> [Locus] {
+        var ret = [Locus]()
+        for locusID in graph.loci {
+            if let theLoc = loci.first(where: {$0.id == locusID} ) {
+                ret.append( theLoc)
+            }
+        }
+        return ret
+    }
+    
 }
 
 
 
 extension DataStore {
+    
+    
+    var exampleGraph: Graph {
+        if let ret = self.graphs.first {
+            return ret
+        } else {
+            return Graph.DefaultGraph
+        }
+    }
     
     static var DefaultDataStore: DataStore {
         let jsons = GraphJSONLoader.DefaultGraphs
@@ -47,7 +68,7 @@ extension DataStore {
         for json in jsons {
             graphs.append( json.asGraph )
             for i in 0 ..< json.loci.count {
-                let locus = Locus( name: json.loci[i],
+                let locus = Locus( id: json.loci[i],
                                    location: json.location[i],
                                    p: json.p[i],
                                    Ho: json.Ho[i],
