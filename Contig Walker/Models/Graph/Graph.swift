@@ -21,6 +21,15 @@ class Graph : Codable, Identifiable {
         self.loci = loci
     }
     
+    
+    /// Returns the Link indices of nodes for all edges
+    func getLinkIndices() -> [(Int, Int)] {
+        let linkIds = self.edges.map { l in
+            ( nodes.firstIndex{l.source==$0.id}!, nodes.firstIndex{l.target==$0.id}!) }
+        return linkIds
+    }
+
+    
 }
 
 

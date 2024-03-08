@@ -30,6 +30,11 @@
 		2AA9C4552B9BA5EF0095FBF1 /* ForceSimulation in Frameworks */ = {isa = PBXBuildFile; productRef = 2AA9C4542B9BA5EF0095FBF1 /* ForceSimulation */; };
 		2AA9C4572B9BA5EF0095FBF1 /* Grape in Frameworks */ = {isa = PBXBuildFile; productRef = 2AA9C4562B9BA5EF0095FBF1 /* Grape */; };
 		2AA9C4592B9BA6CD0095FBF1 /* GroupColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C4582B9BA6CD0095FBF1 /* GroupColors.swift */; };
+		2AA9C45C2B9BA9730095FBF1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C45B2B9BA9730095FBF1 /* Color.swift */; };
+		2AA9C45E2B9BB3480095FBF1 /* FlatlandGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C45D2B9BB3480095FBF1 /* FlatlandGraphView.swift */; };
+		2AA9C4602B9BB3D60095FBF1 /* VolumetricGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C45F2B9BB3D60095FBF1 /* VolumetricGraphView.swift */; };
+		2AA9C4622B9BB4D20095FBF1 /* VolumetricForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C4612B9BB4D20095FBF1 /* VolumetricForce.swift */; };
+		2AA9C4672B9BBC2C0095FBF1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C4662B9BBC2C0095FBF1 /* HomeView.swift */; };
 		2AB0E21A2B9B3E66003FF91E /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E2192B9B3E66003FF91E /* Locus.swift */; };
 		2AB0E21D2B9B3F5C003FF91E /* GraphJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21C2B9B3F5C003FF91E /* GraphJSONLoader.swift */; };
 		2AB0E2202B9B3FE7003FF91E /* Array+Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */; };
@@ -125,6 +130,11 @@
 		2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusSideView.swift; sourceTree = "<group>"; };
 		2AA9C4512B9BA5470095FBF1 /* GraphDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDisplayView.swift; sourceTree = "<group>"; };
 		2AA9C4582B9BA6CD0095FBF1 /* GroupColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupColors.swift; sourceTree = "<group>"; };
+		2AA9C45B2B9BA9730095FBF1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2AA9C45D2B9BB3480095FBF1 /* FlatlandGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatlandGraphView.swift; sourceTree = "<group>"; };
+		2AA9C45F2B9BB3D60095FBF1 /* VolumetricGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumetricGraphView.swift; sourceTree = "<group>"; };
+		2AA9C4612B9BB4D20095FBF1 /* VolumetricForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumetricForce.swift; sourceTree = "<group>"; };
+		2AA9C4662B9BBC2C0095FBF1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2AB0E2192B9B3E66003FF91E /* Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
 		2AB0E21C2B9B3F5C003FF91E /* GraphJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphJSONLoader.swift; sourceTree = "<group>"; };
 		2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Locus.swift"; sourceTree = "<group>"; };
@@ -266,8 +276,9 @@
 			children = (
 				2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */,
 				2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */,
-				2AA9C4512B9BA5470095FBF1 /* GraphDisplayView.swift */,
+				2AA9C4652B9BB50A0095FBF1 /* GraphViews */,
 				2AA9C45A2B9BA8150095FBF1 /* SummaryViews */,
+				2AA9C4662B9BBC2C0095FBF1 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,6 +314,33 @@
 			path = SummaryViews;
 			sourceTree = "<group>";
 		};
+		2AA9C4632B9BB4EF0095FBF1 /* Volumetric */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9C45F2B9BB3D60095FBF1 /* VolumetricGraphView.swift */,
+				2AA9C4612B9BB4D20095FBF1 /* VolumetricForce.swift */,
+			);
+			path = Volumetric;
+			sourceTree = "<group>";
+		};
+		2AA9C4642B9BB4FA0095FBF1 /* Flat */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9C45D2B9BB3480095FBF1 /* FlatlandGraphView.swift */,
+			);
+			path = Flat;
+			sourceTree = "<group>";
+		};
+		2AA9C4652B9BB50A0095FBF1 /* GraphViews */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9C4512B9BA5470095FBF1 /* GraphDisplayView.swift */,
+				2AA9C4642B9BB4FA0095FBF1 /* Flat */,
+				2AA9C4632B9BB4EF0095FBF1 /* Volumetric */,
+			);
+			path = GraphViews;
+			sourceTree = "<group>";
+		};
 		2AB0E21B2B9B3E6D003FF91E /* Locus */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */,
+				2AA9C45B2B9BA9730095FBF1 /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -567,14 +606,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA9C4672B9BBC2C0095FBF1 /* HomeView.swift in Sources */,
 				2AB0E2242B9B4B81003FF91E /* DataStore.swift in Sources */,
 				2A2DD3372B932D6F00FD6B4C /* NodesSummaryView.swift in Sources */,
+				2AA9C45C2B9BA9730095FBF1 /* Color.swift in Sources */,
+				2AA9C4602B9BB3D60095FBF1 /* VolumetricGraphView.swift in Sources */,
 				2A05D70B2B94C4DC002E1DF1 /* GraphsSideview.swift in Sources */,
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
+				2AA9C45E2B9BB3480095FBF1 /* FlatlandGraphView.swift in Sources */,
 				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,
 				2AA9C4522B9BA5470095FBF1 /* GraphDisplayView.swift in Sources */,
 				2AE2D9012B9212040063DBF9 /* Node.swift in Sources */,
 				2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */,
+				2AA9C4622B9BB4D20095FBF1 /* VolumetricForce.swift in Sources */,
 				2AB0E21D2B9B3F5C003FF91E /* GraphJSONLoader.swift in Sources */,
 				2AA9C4592B9BA6CD0095FBF1 /* GroupColors.swift in Sources */,
 				2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */,
@@ -762,10 +806,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-Walker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
@@ -801,10 +846,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dyerlab.popgraphs.Contig-Walker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};

@@ -30,8 +30,9 @@ struct ContentView: View {
                 GraphView( graph: selected,
                            loci: data.lociForGraph(graph: selected ) )
                 .padding()
+                .background( Color.tertiaryBackground )
             } else {
-                Text("Select a Topology")
+                HomeView()
             }
         }
 

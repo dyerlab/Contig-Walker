@@ -10,8 +10,8 @@ import Foundation
 
 
 let GroupColors: [Color] = [
-    .init(red: 246.0/255, green: 133.0/255, blue: 18.0/255),    // Orange
     .init(red: 22.0/255, green: 124.0/255, blue: 243.0/255),    // Blue
+    .init(red: 246.0/255, green: 133.0/255, blue: 18.0/255),    // Orange
     .init(red: 17.0/255, green: 181.0/255, blue: 174.0/255),    // Cyan
     .init(red: 64.0/255, green: 70.0/255, blue: 201.0/255),     // Dark Blue/Purple
     .init(red: 222.0/255, green: 60.0/255, blue: 130.0/255),    // Magenta

@@ -14,6 +14,16 @@ struct LocusSideView: View {
     var scaleMin: Int
     var scaleMax: Int
     
+    var plotColor: Color {
+        #if os(visionOS)
+        return .white
+        #else
+        return .blue
+        #endif
+        
+    }
+    
+    
     var dataPoints: [DataPoint] {
         var ret = [DataPoint]()
         
@@ -46,6 +56,7 @@ struct LocusSideView: View {
                 )
                 .lineStyle( .init( lineWidth: 1.0, dash: [1,2]) )
                 .opacity( 0.25)
+                .foregroundStyle( plotColor )
             }
             
             
@@ -61,6 +72,7 @@ struct LocusSideView: View {
                         .font( .footnote )
                         .foregroundStyle(.secondary)
                 }
+                .foregroundStyle( plotColor )
             }
         }
         .chartXAxisLabel(position: .bottom,
