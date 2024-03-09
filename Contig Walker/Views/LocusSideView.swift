@@ -14,12 +14,18 @@ struct LocusSideView: View {
     var scaleMin: Int
     var scaleMax: Int
     
+    @State private var selectedSNP: Locus? = nil
+    
+    @State private var hoverLocation: CGPoint = .zero
+    @State private var isHovering = false
+    
+    
     var plotColor: Color {
-        #if os(visionOS)
+#if os(visionOS)
         return .white
-        #else
+#else
         return .blue
-        #endif
+#endif
         
     }
     
@@ -70,9 +76,10 @@ struct LocusSideView: View {
                     Text("\(item.id )")
                         .font( .footnote )
                         .foregroundStyle(.secondary)
-                        .help("This is the help text")
+                    
                 }
             }
+            
         }
         .chartXAxisLabel(position: .bottom,
                          alignment: .center,
@@ -92,6 +99,17 @@ struct LocusSideView: View {
             
         }
         .frame( maxWidth: 150 )
+    }
+    
+    @ViewBuilder
+    private func getSNPOverlay(locus: Locus) -> some View {
+        VStack{
+            Spacer()
+            Text("p = \(locus.p); Ho = \(locus.Ho)")
+        }
+        .font(.system(size: 9.0))
+        .foregroundStyle(.secondary)
+        
     }
 }
 
