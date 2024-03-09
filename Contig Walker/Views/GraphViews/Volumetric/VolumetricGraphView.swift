@@ -225,4 +225,12 @@ struct VolumetricGraphView: View {
         .frame(minHeight: 800)
 }
 
+#else
+
+struct VolumetricGraphView: View {
+    var body: some View {
+        Text("Volumetric view not available on this platform.")
+    }
+}
+
 #endif

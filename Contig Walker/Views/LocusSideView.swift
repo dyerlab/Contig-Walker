@@ -28,9 +28,8 @@ struct LocusSideView: View {
         var ret = [DataPoint]()
         
         for loc in loci {
-            ret.append( DataPoint(x: loc.p, y: Double(loc.location), group: "p") )
             ret.append( DataPoint(x: loc.He, y: Double(loc.location), group: "He") )
-            ret.append( DataPoint(x: loc.Ho, y: Double(loc.location), group: "Ho") )
+            ret.append( DataPoint(x: (loc.He - loc.Ho)/loc.He, y: Double(loc.location), group: "F") )
         }
         return ret
     }
@@ -49,30 +48,30 @@ struct LocusSideView: View {
     var body: some View {
         Chart {
             
-            ForEach( loci, id: \.self) { item in
+            ForEach( dataPoints ) { item in
                 LineMark(
-                    x: .value("X Value", item.He),
-                    y: .value("Y Value", item.location)
+                    x: .value("X Value", item.xValue),
+                    y: .value("Y Value", item.yValue)
                 )
-                .lineStyle( .init( lineWidth: 1.0, dash: [1,2]) )
+                .lineStyle( .init( lineWidth: 2.0) )
                 .opacity( 0.25)
-                .foregroundStyle( plotColor )
+                .foregroundStyle(by: .value("group", item.grouping) )
             }
             
             
             
             ForEach( loci, id: \.self) { item in
                 PointMark(
-                    x: .value("X Value", item.He  ),
+                    x: .value("X Value", 1.0  ),
                     y: .value("Y Value", item.location )
                 )
-                .symbolSize( 6 )
-                .annotation(position: .trailing) {
+                .symbolSize(0.0)
+                .annotation(position: .leading) {
                     Text("\(item.id )")
                         .font( .footnote )
                         .foregroundStyle(.secondary)
+                        .help("This is the help text")
                 }
-                .foregroundStyle( plotColor )
             }
         }
         .chartXAxisLabel(position: .bottom,
@@ -81,7 +80,7 @@ struct LocusSideView: View {
             Text("Diversity")
         } )
         .chartXAxis {
-            AxisMarks( values: .automatic(desiredCount: 3))
+            AxisMarks( values: [0.0, 0.25, 0.50, 0.75 ])
         }
         .chartYScale( domain: scaleMin ... scaleMax )
         .chartYAxis {
