@@ -14,7 +14,7 @@ struct FlatlandGraphView: View {
             self.isRunning = true
         }
     }
-    @State private var showingLabels = false
+    @State private var showingLabels = true
     @State private var isRunning = true
     @State private var graphState = ForceDirectedGraphState(
         initialIsRunning: true,
@@ -82,7 +82,10 @@ struct FlatlandGraphView: View {
             ManyBodyForce(strength: -20)
             CenterForce()
             LinkForce(
-                originalLength: .constant(35.0),
+                originalLength: .varied({id, _ in
+                    return graph.weightForConnection(source: id.source, target: id.target)
+                    
+                }),
                 stiffness: .weightedByDegree(k: { _, _ in 1.0})
             )
         }
@@ -94,7 +97,7 @@ struct FlatlandGraphView: View {
                 }, label: {
                     Image(systemName: "123.rectangle")
                 })
-                .background( !showingLabels ? Color.background : .secondaryBackground )
+                .background( !showingLabels ? Color.clear : Color.background )
                 .cornerRadius( 3.0 )
             })
         }

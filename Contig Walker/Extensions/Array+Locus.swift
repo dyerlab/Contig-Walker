@@ -30,4 +30,12 @@ extension Array where Element == Locus {
         return ret
     }
     
+    var firstLocation: Int {
+        return self.range.0
+    }
+    
+    var lastLocation: Int {
+        return self.range.1
+    }
+    
 }

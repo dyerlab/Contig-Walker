@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */; };
-		2A05D70B2B94C4DC002E1DF1 /* GraphsSideview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */; };
 		2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */; };
 		2A293C412B920B85001474AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C402B920B85001474AA /* ContentView.swift */; };
 		2A293C432B920B85001474AA /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A293C422B920B85001474AA /* Graph.swift */; };
@@ -108,7 +107,6 @@
 
 /* Begin PBXFileReference section */
 		2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphLineView.swift; sourceTree = "<group>"; };
-		2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsSideview.swift; sourceTree = "<group>"; };
 		2A293C3B2B920B85001474AA /* Contig Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contig Walker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A293C3E2B920B85001474AA /* Contig_WalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contig_WalkerApp.swift; sourceTree = "<group>"; };
 		2A293C402B920B85001474AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -308,8 +306,6 @@
 				2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */,
 				2A2DD3362B932D6F00FD6B4C /* NodesSummaryView.swift */,
 				2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */,
-				2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */,
-				2A05D70A2B94C4DC002E1DF1 /* GraphsSideview.swift */,
 			);
 			path = SummaryViews;
 			sourceTree = "<group>";
@@ -334,6 +330,7 @@
 		2AA9C4652B9BB50A0095FBF1 /* GraphViews */ = {
 			isa = PBXGroup;
 			children = (
+				2A05D7082B94C2F7002E1DF1 /* GraphLineView.swift */,
 				2AA9C4512B9BA5470095FBF1 /* GraphDisplayView.swift */,
 				2AA9C4642B9BB4FA0095FBF1 /* Flat */,
 				2AA9C4632B9BB4EF0095FBF1 /* Volumetric */,
@@ -611,7 +608,6 @@
 				2A2DD3372B932D6F00FD6B4C /* NodesSummaryView.swift in Sources */,
 				2AA9C45C2B9BA9730095FBF1 /* Color.swift in Sources */,
 				2AA9C4602B9BB3D60095FBF1 /* VolumetricGraphView.swift in Sources */,
-				2A05D70B2B94C4DC002E1DF1 /* GraphsSideview.swift in Sources */,
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
 				2AA9C45E2B9BB3480095FBF1 /* FlatlandGraphView.swift in Sources */,
 				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,

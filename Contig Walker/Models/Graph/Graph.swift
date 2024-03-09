@@ -28,6 +28,17 @@ class Graph : Codable, Identifiable {
             ( nodes.firstIndex{l.source==$0.id}!, nodes.firstIndex{l.target==$0.id}!) }
         return linkIds
     }
+    
+    func weightForConnection( source: Int, target: Int) -> Double {
+        
+        if let edge = edges.filter( {$0.source == nodes[source].id && $0.target == nodes[target].id }).first {
+            print("found edge with \(edge.weight)")
+            return edge.weight
+        } else {
+            return 1.0
+        }
+        
+    }
 
     
 }
