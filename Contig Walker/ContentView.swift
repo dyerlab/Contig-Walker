@@ -22,7 +22,7 @@ struct ContentView: View {
             VStack(alignment: .leading){
                 List( data.graphs, id: \.self, selection: $selectedGraph){ graph in
                     
-                    if( asDestination ) {
+                    if( asDestination ) {  /// This one forces a full restart on the layout
                         NavigationLink(destination: {
                     
                             GraphView( graph: graph,
@@ -33,9 +33,8 @@ struct ContentView: View {
                         }, label: {
                             GraphLineView( graph: graph,
                                                   loci: data.lociForGraph( graph: graph ) )})
-
                     }
-                    else {
+                    else {   /// This one picks up from the previous layout and modifies it...
                         NavigationLink(value: graph, label: {
                             GraphLineView( graph: graph,
                                            loci: data.lociForGraph( graph: graph ) )

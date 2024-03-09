@@ -13,9 +13,10 @@ struct GraphView: View {
     
     var body: some View {
         
-        HStack(alignment: .center, content: {
-            LocusSideView(loci: loci)
+        VStack(alignment: .center, content: {
             GraphDisplayView(graph: graph )
+            LocusSideView(loci: loci)
+                .padding()
         })
         .navigationTitle( graph.id.uuidString )
     }

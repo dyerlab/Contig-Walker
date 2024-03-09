@@ -34,8 +34,8 @@ struct LocusSideView: View {
         var ret = [DataPoint]()
         
         for loc in loci {
-            ret.append( DataPoint(x: loc.He, y: Double(loc.location), group: "He") )
-            ret.append( DataPoint(x: (loc.He - loc.Ho)/loc.He, y: Double(loc.location), group: "F") )
+            ret.append( DataPoint(x: Double(loc.location), y: loc.He, group: "He") )
+            ret.append( DataPoint(x: Double(loc.location), y: (loc.He - loc.Ho)/loc.He, group: "F") )
         }
         return ret
     }
@@ -68,29 +68,40 @@ struct LocusSideView: View {
             
             ForEach( loci, id: \.self) { item in
                 PointMark(
-                    x: .value("X Value", 1.0  ),
-                    y: .value("Y Value", item.location )
+                    x: .value("X Value", item.location  ),
+                    y: .value("Y Value", 0.0 )
                 )
                 .symbolSize(0.0)
-                .annotation(position: .leading) {
+                .annotation(position: .automatic,
+                            spacing: 0,
+                            overflowResolution: .init(x: .padScale, y: .padScale)) {
                     Text("\(item.id )")
-                        .font( .footnote )
+                        .font( .system(size: 9) )
                         .foregroundStyle(.secondary)
+                        .rotationEffect(Angle(degrees: -45))
                     
                 }
             }
             
         }
-        .chartXAxisLabel(position: .bottom,
+        .frame(maxHeight: 150 )
+        .chartXScale(domain: scaleMin ... scaleMax )
+        .chartLegend( position: .top )
+        .chartYAxis{
+            AxisMarks(values: [0.0, 0.25, 0.50 ] )
+        }
+        .chartXAxis { }
+        /*
+        .chartYAxisLabel(position: .bottom,
                          alignment: .center,
                          content: {
             Text("Diversity")
         } )
-        .chartXAxis {
+        .chartYAxis {
             AxisMarks( values: [0.0, 0.25, 0.50, 0.75 ])
         }
-        .chartYScale( domain: scaleMin ... scaleMax )
-        .chartYAxis {
+        .chartXScale( domain: scaleMin ... scaleMax )
+        .chartXAxis {
             AxisMarks(position: .leading) { item in
                 AxisValueLabel(orientation: .verticalReversed,
                                horizontalSpacing: 0.0,
@@ -99,6 +110,7 @@ struct LocusSideView: View {
             
         }
         .frame( maxWidth: 150 )
+         */
     }
     
     @ViewBuilder
@@ -115,5 +127,4 @@ struct LocusSideView: View {
 
 #Preview {
     LocusSideView( loci: Locus.DefaultLoci )
-        .frame( minHeight: 800 )
 }
