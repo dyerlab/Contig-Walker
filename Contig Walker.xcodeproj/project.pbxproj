@@ -39,6 +39,9 @@
 		2AB0E2202B9B3FE7003FF91E /* Array+Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */; };
 		2AB0E2222B9B4650003FF91E /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E2212B9B4650003FF91E /* GraphTest.swift */; };
 		2AB0E2242B9B4B81003FF91E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E2232B9B4B81003FF91E /* DataStore.swift */; };
+		2AC30E272B9DE896008B135C /* ChromosomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC30E262B9DE896008B135C /* ChromosomeView.swift */; };
+		2AC30E292B9DEAF0008B135C /* GraphMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC30E282B9DEAF0008B135C /* GraphMetaData.swift */; };
+		2AC30E2B2B9DEBF5008B135C /* GraphsMetaDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */; };
 		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 		2AE2D9012B9212040063DBF9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9002B9212040063DBF9 /* Node.swift */; };
 		2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9022B9212A10063DBF9 /* Edge.swift */; };
@@ -138,6 +141,9 @@
 		2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Locus.swift"; sourceTree = "<group>"; };
 		2AB0E2212B9B4650003FF91E /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		2AB0E2232B9B4B81003FF91E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		2AC30E262B9DE896008B135C /* ChromosomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromosomeView.swift; sourceTree = "<group>"; };
+		2AC30E282B9DEAF0008B135C /* GraphMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMetaData.swift; sourceTree = "<group>"; };
+		2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsMetaDataView.swift; sourceTree = "<group>"; };
 		2AE2D82F2B920C190063DBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2AE2D9002B9212040063DBF9 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2AE2D9022B9212A10063DBF9 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
@@ -277,6 +283,8 @@
 				2AA9C4652B9BB50A0095FBF1 /* GraphViews */,
 				2AA9C45A2B9BA8150095FBF1 /* SummaryViews */,
 				2AA9C4662B9BBC2C0095FBF1 /* HomeView.swift */,
+				2AC30E262B9DE896008B135C /* ChromosomeView.swift */,
+				2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,6 +381,7 @@
 			children = (
 				2A293C422B920B85001474AA /* Graph.swift */,
 				2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */,
+				2AC30E282B9DEAF0008B135C /* GraphMetaData.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -607,14 +616,17 @@
 				2AB0E2242B9B4B81003FF91E /* DataStore.swift in Sources */,
 				2A2DD3372B932D6F00FD6B4C /* NodesSummaryView.swift in Sources */,
 				2AA9C45C2B9BA9730095FBF1 /* Color.swift in Sources */,
+				2AC30E2B2B9DEBF5008B135C /* GraphsMetaDataView.swift in Sources */,
 				2AA9C4602B9BB3D60095FBF1 /* VolumetricGraphView.swift in Sources */,
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,
 				2AA9C45E2B9BB3480095FBF1 /* FlatlandGraphView.swift in Sources */,
+				2AC30E272B9DE896008B135C /* ChromosomeView.swift in Sources */,
 				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,
 				2AA9C4522B9BA5470095FBF1 /* GraphDisplayView.swift in Sources */,
 				2AE2D9012B9212040063DBF9 /* Node.swift in Sources */,
 				2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */,
 				2AA9C4622B9BB4D20095FBF1 /* VolumetricForce.swift in Sources */,
+				2AC30E292B9DEAF0008B135C /* GraphMetaData.swift in Sources */,
 				2AB0E21D2B9B3F5C003FF91E /* GraphJSONLoader.swift in Sources */,
 				2AA9C4592B9BA6CD0095FBF1 /* GroupColors.swift in Sources */,
 				2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */,

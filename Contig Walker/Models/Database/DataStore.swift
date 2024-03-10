@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PresentationZen
 
 class DataStore: Codable {
     
@@ -45,7 +46,49 @@ class DataStore: Codable {
         return ret
     }
     
+
+    
+    
 }
+
+
+
+
+/// Barfing up info on the graphs
+extension DataStore : DataPointProvider {
+    
+    var graphsMetaData: [GraphMetaData] {
+        var ret = [GraphMetaData]()
+        
+        for i in 0 ..< graphs.count {
+            let graph = graphs[i]
+            let locusRange = lociForGraph(graph: graph).range
+            let meta = GraphMetaData(id: i,
+                                     numNodes: graph.nodes.count,
+                                     numEdges: graph.edges.count, 
+                                     startingBP: locusRange.0,
+                                     endingBP: locusRange.1)
+            ret.append( meta )
+        }
+        
+        return ret
+    }
+    
+    var dataPoints: [DataPoint] {
+        var ret = [DataPoint]()
+        for i in 0 ..< graphs.count  {
+            let graph = graphs[i]
+            let r = lociForGraph(graph: graph).range
+            let pt = DataPoint( x: Double(r.0 + ( r.1 - r.0 )/2),
+                                y: 1.0,
+                                label: String("Graph \(i)") )
+            ret.append( pt )
+        }
+        return ret
+    }
+    
+}
+
 
 
 
