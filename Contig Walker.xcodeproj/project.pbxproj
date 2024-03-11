@@ -48,56 +48,6 @@
 		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 		2AE2D9012B9212040063DBF9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9002B9212040063DBF9 /* Node.swift */; };
 		2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9022B9212A10063DBF9 /* Edge.swift */; };
-		2AF5E35C2B925571004A5769 /* graph_chr2_40bp_14.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32A2B92556F004A5769 /* graph_chr2_40bp_14.json */; };
-		2AF5E35D2B925571004A5769 /* graph_chr2_40bp_19.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32B2B92556F004A5769 /* graph_chr2_40bp_19.json */; };
-		2AF5E35E2B925571004A5769 /* graph_chr2_40bp_24.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32C2B92556F004A5769 /* graph_chr2_40bp_24.json */; };
-		2AF5E35F2B925571004A5769 /* graph_chr2_40bp_11.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32D2B92556F004A5769 /* graph_chr2_40bp_11.json */; };
-		2AF5E3602B925571004A5769 /* graph_chr2_40bp_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32E2B92556F004A5769 /* graph_chr2_40bp_7.json */; };
-		2AF5E3612B925571004A5769 /* graph_chr2_40bp_36.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E32F2B92556F004A5769 /* graph_chr2_40bp_36.json */; };
-		2AF5E3622B925571004A5769 /* graph_chr2_40bp_21.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3302B92556F004A5769 /* graph_chr2_40bp_21.json */; };
-		2AF5E3632B925571004A5769 /* graph_chr2_40bp_44.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3312B925570004A5769 /* graph_chr2_40bp_44.json */; };
-		2AF5E3642B925571004A5769 /* graph_chr2_40bp_18.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3322B925570004A5769 /* graph_chr2_40bp_18.json */; };
-		2AF5E3652B925571004A5769 /* graph_chr2_40bp_12.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3332B925570004A5769 /* graph_chr2_40bp_12.json */; };
-		2AF5E3662B925571004A5769 /* graph_chr2_40bp_37.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3342B925570004A5769 /* graph_chr2_40bp_37.json */; };
-		2AF5E3672B925571004A5769 /* graph_chr2_40bp_13.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3352B925570004A5769 /* graph_chr2_40bp_13.json */; };
-		2AF5E3682B925571004A5769 /* graph_chr2_40bp_32.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3362B925570004A5769 /* graph_chr2_40bp_32.json */; };
-		2AF5E3692B925571004A5769 /* graph_chr2_40bp_9.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3372B925570004A5769 /* graph_chr2_40bp_9.json */; };
-		2AF5E36A2B925571004A5769 /* graph_chr2_40bp_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3382B925570004A5769 /* graph_chr2_40bp_10.json */; };
-		2AF5E36B2B925571004A5769 /* graph_chr2_40bp_41.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3392B925570004A5769 /* graph_chr2_40bp_41.json */; };
-		2AF5E36C2B925571004A5769 /* graph_chr2_40bp_50.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E33A2B925570004A5769 /* graph_chr2_40bp_50.json */; };
-		2AF5E36D2B925571004A5769 /* graph_chr2_40bp_47.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E33B2B925570004A5769 /* graph_chr2_40bp_47.json */; };
-		2AF5E36E2B925571004A5769 /* graph_chr2_40bp_16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E33C2B925570004A5769 /* graph_chr2_40bp_16.json */; };
-		2AF5E36F2B925571004A5769 /* graph_chr2_40bp_25.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E33D2B925570004A5769 /* graph_chr2_40bp_25.json */; };
-		2AF5E3702B925571004A5769 /* graph_chr2_40bp_28.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E33E2B925570004A5769 /* graph_chr2_40bp_28.json */; };
-		2AF5E3712B925571004A5769 /* graph_chr2_40bp_20.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E33F2B925570004A5769 /* graph_chr2_40bp_20.json */; };
-		2AF5E3722B925571004A5769 /* graph_chr2_40bp_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3402B925570004A5769 /* graph_chr2_40bp_4.json */; };
-		2AF5E3732B925571004A5769 /* graph_chr2_40bp_49.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3412B925570004A5769 /* graph_chr2_40bp_49.json */; };
-		2AF5E3742B925571004A5769 /* graph_chr2_40bp_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3422B925570004A5769 /* graph_chr2_40bp_5.json */; };
-		2AF5E3752B925571004A5769 /* graph_chr2_40bp_48.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3432B925570004A5769 /* graph_chr2_40bp_48.json */; };
-		2AF5E3762B925571004A5769 /* graph_chr2_40bp_31.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3442B925570004A5769 /* graph_chr2_40bp_31.json */; };
-		2AF5E3772B925571004A5769 /* graph_chr2_40bp_46.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3452B925570004A5769 /* graph_chr2_40bp_46.json */; };
-		2AF5E3782B925571004A5769 /* graph_chr2_40bp_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3462B925570004A5769 /* graph_chr2_40bp_6.json */; };
-		2AF5E3792B925571004A5769 /* graph_chr2_40bp_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3472B925570004A5769 /* graph_chr2_40bp_8.json */; };
-		2AF5E37A2B925571004A5769 /* graph_chr2_40bp_27.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3482B925570004A5769 /* graph_chr2_40bp_27.json */; };
-		2AF5E37B2B925571004A5769 /* graph_chr2_40bp_33.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3492B925570004A5769 /* graph_chr2_40bp_33.json */; };
-		2AF5E37C2B925571004A5769 /* graph_chr2_40bp_35.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E34A2B925570004A5769 /* graph_chr2_40bp_35.json */; };
-		2AF5E37D2B925571004A5769 /* graph_chr2_40bp_15.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E34B2B925570004A5769 /* graph_chr2_40bp_15.json */; };
-		2AF5E37E2B925571004A5769 /* graph_chr2_40bp_23.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E34C2B925570004A5769 /* graph_chr2_40bp_23.json */; };
-		2AF5E37F2B925571004A5769 /* graph_chr2_40bp_39.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E34D2B925570004A5769 /* graph_chr2_40bp_39.json */; };
-		2AF5E3802B925571004A5769 /* graph_chr2_40bp_17.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E34E2B925570004A5769 /* graph_chr2_40bp_17.json */; };
-		2AF5E3812B925571004A5769 /* graph_chr2_40bp_30.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E34F2B925570004A5769 /* graph_chr2_40bp_30.json */; };
-		2AF5E3822B925571004A5769 /* graph_chr2_40bp_38.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3502B925570004A5769 /* graph_chr2_40bp_38.json */; };
-		2AF5E3832B925571004A5769 /* graph_chr2_40bp_42.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3512B925570004A5769 /* graph_chr2_40bp_42.json */; };
-		2AF5E3842B925571004A5769 /* graph_chr2_40bp_29.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3522B925570004A5769 /* graph_chr2_40bp_29.json */; };
-		2AF5E3852B925571004A5769 /* graph_chr2_40bp_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3532B925570004A5769 /* graph_chr2_40bp_1.json */; };
-		2AF5E3862B925571004A5769 /* graph_chr2_40bp_22.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3542B925570004A5769 /* graph_chr2_40bp_22.json */; };
-		2AF5E3872B925571004A5769 /* graph_chr2_40bp_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3552B925570004A5769 /* graph_chr2_40bp_3.json */; };
-		2AF5E3882B925571004A5769 /* graph_chr2_40bp_43.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3562B925570004A5769 /* graph_chr2_40bp_43.json */; };
-		2AF5E3892B925571004A5769 /* graph_chr2_40bp_40.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3572B925570004A5769 /* graph_chr2_40bp_40.json */; };
-		2AF5E38A2B925571004A5769 /* graph_chr2_40bp_34.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3582B925570004A5769 /* graph_chr2_40bp_34.json */; };
-		2AF5E38B2B925571004A5769 /* graph_chr2_40bp_45.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E3592B925570004A5769 /* graph_chr2_40bp_45.json */; };
-		2AF5E38C2B925571004A5769 /* graph_chr2_40bp_26.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E35A2B925570004A5769 /* graph_chr2_40bp_26.json */; };
-		2AF5E38D2B925571004A5769 /* graph_chr2_40bp_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF5E35B2B925571004A5769 /* graph_chr2_40bp_2.json */; };
 		2AF5E3902B925DDE004A5769 /* GraphJSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5E38F2B925DDE004A5769 /* GraphJSONLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -152,56 +102,6 @@
 		2AE2D82F2B920C190063DBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2AE2D9002B9212040063DBF9 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2AE2D9022B9212A10063DBF9 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		2AF5E32A2B92556F004A5769 /* graph_chr2_40bp_14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_14.json; sourceTree = "<group>"; };
-		2AF5E32B2B92556F004A5769 /* graph_chr2_40bp_19.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_19.json; sourceTree = "<group>"; };
-		2AF5E32C2B92556F004A5769 /* graph_chr2_40bp_24.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_24.json; sourceTree = "<group>"; };
-		2AF5E32D2B92556F004A5769 /* graph_chr2_40bp_11.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_11.json; sourceTree = "<group>"; };
-		2AF5E32E2B92556F004A5769 /* graph_chr2_40bp_7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_7.json; sourceTree = "<group>"; };
-		2AF5E32F2B92556F004A5769 /* graph_chr2_40bp_36.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_36.json; sourceTree = "<group>"; };
-		2AF5E3302B92556F004A5769 /* graph_chr2_40bp_21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_21.json; sourceTree = "<group>"; };
-		2AF5E3312B925570004A5769 /* graph_chr2_40bp_44.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_44.json; sourceTree = "<group>"; };
-		2AF5E3322B925570004A5769 /* graph_chr2_40bp_18.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_18.json; sourceTree = "<group>"; };
-		2AF5E3332B925570004A5769 /* graph_chr2_40bp_12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_12.json; sourceTree = "<group>"; };
-		2AF5E3342B925570004A5769 /* graph_chr2_40bp_37.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_37.json; sourceTree = "<group>"; };
-		2AF5E3352B925570004A5769 /* graph_chr2_40bp_13.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_13.json; sourceTree = "<group>"; };
-		2AF5E3362B925570004A5769 /* graph_chr2_40bp_32.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_32.json; sourceTree = "<group>"; };
-		2AF5E3372B925570004A5769 /* graph_chr2_40bp_9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_9.json; sourceTree = "<group>"; };
-		2AF5E3382B925570004A5769 /* graph_chr2_40bp_10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_10.json; sourceTree = "<group>"; };
-		2AF5E3392B925570004A5769 /* graph_chr2_40bp_41.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_41.json; sourceTree = "<group>"; };
-		2AF5E33A2B925570004A5769 /* graph_chr2_40bp_50.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_50.json; sourceTree = "<group>"; };
-		2AF5E33B2B925570004A5769 /* graph_chr2_40bp_47.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_47.json; sourceTree = "<group>"; };
-		2AF5E33C2B925570004A5769 /* graph_chr2_40bp_16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_16.json; sourceTree = "<group>"; };
-		2AF5E33D2B925570004A5769 /* graph_chr2_40bp_25.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_25.json; sourceTree = "<group>"; };
-		2AF5E33E2B925570004A5769 /* graph_chr2_40bp_28.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_28.json; sourceTree = "<group>"; };
-		2AF5E33F2B925570004A5769 /* graph_chr2_40bp_20.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_20.json; sourceTree = "<group>"; };
-		2AF5E3402B925570004A5769 /* graph_chr2_40bp_4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_4.json; sourceTree = "<group>"; };
-		2AF5E3412B925570004A5769 /* graph_chr2_40bp_49.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_49.json; sourceTree = "<group>"; };
-		2AF5E3422B925570004A5769 /* graph_chr2_40bp_5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_5.json; sourceTree = "<group>"; };
-		2AF5E3432B925570004A5769 /* graph_chr2_40bp_48.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_48.json; sourceTree = "<group>"; };
-		2AF5E3442B925570004A5769 /* graph_chr2_40bp_31.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_31.json; sourceTree = "<group>"; };
-		2AF5E3452B925570004A5769 /* graph_chr2_40bp_46.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_46.json; sourceTree = "<group>"; };
-		2AF5E3462B925570004A5769 /* graph_chr2_40bp_6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_6.json; sourceTree = "<group>"; };
-		2AF5E3472B925570004A5769 /* graph_chr2_40bp_8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_8.json; sourceTree = "<group>"; };
-		2AF5E3482B925570004A5769 /* graph_chr2_40bp_27.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_27.json; sourceTree = "<group>"; };
-		2AF5E3492B925570004A5769 /* graph_chr2_40bp_33.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_33.json; sourceTree = "<group>"; };
-		2AF5E34A2B925570004A5769 /* graph_chr2_40bp_35.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_35.json; sourceTree = "<group>"; };
-		2AF5E34B2B925570004A5769 /* graph_chr2_40bp_15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_15.json; sourceTree = "<group>"; };
-		2AF5E34C2B925570004A5769 /* graph_chr2_40bp_23.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_23.json; sourceTree = "<group>"; };
-		2AF5E34D2B925570004A5769 /* graph_chr2_40bp_39.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_39.json; sourceTree = "<group>"; };
-		2AF5E34E2B925570004A5769 /* graph_chr2_40bp_17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_17.json; sourceTree = "<group>"; };
-		2AF5E34F2B925570004A5769 /* graph_chr2_40bp_30.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_30.json; sourceTree = "<group>"; };
-		2AF5E3502B925570004A5769 /* graph_chr2_40bp_38.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_38.json; sourceTree = "<group>"; };
-		2AF5E3512B925570004A5769 /* graph_chr2_40bp_42.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_42.json; sourceTree = "<group>"; };
-		2AF5E3522B925570004A5769 /* graph_chr2_40bp_29.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_29.json; sourceTree = "<group>"; };
-		2AF5E3532B925570004A5769 /* graph_chr2_40bp_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_1.json; sourceTree = "<group>"; };
-		2AF5E3542B925570004A5769 /* graph_chr2_40bp_22.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_22.json; sourceTree = "<group>"; };
-		2AF5E3552B925570004A5769 /* graph_chr2_40bp_3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_3.json; sourceTree = "<group>"; };
-		2AF5E3562B925570004A5769 /* graph_chr2_40bp_43.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_43.json; sourceTree = "<group>"; };
-		2AF5E3572B925570004A5769 /* graph_chr2_40bp_40.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_40.json; sourceTree = "<group>"; };
-		2AF5E3582B925570004A5769 /* graph_chr2_40bp_34.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_34.json; sourceTree = "<group>"; };
-		2AF5E3592B925570004A5769 /* graph_chr2_40bp_45.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_45.json; sourceTree = "<group>"; };
-		2AF5E35A2B925570004A5769 /* graph_chr2_40bp_26.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_26.json; sourceTree = "<group>"; };
-		2AF5E35B2B925571004A5769 /* graph_chr2_40bp_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = graph_chr2_40bp_2.json; sourceTree = "<group>"; };
 		2AF5E38F2B925DDE004A5769 /* GraphJSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphJSONLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				2AE2D82F2B920C190063DBF9 /* README.md */,
-				2AF5E38E2B92557E004A5769 /* data */,
 				2A293C3D2B920B85001474AA /* Contig Walker */,
 				2A293C512B920B86001474AA /* Contig WalkerTests */,
 				2A293C3C2B920B85001474AA /* Products */,
@@ -403,63 +302,6 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		2AF5E38E2B92557E004A5769 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				2AF5E3532B925570004A5769 /* graph_chr2_40bp_1.json */,
-				2AF5E35B2B925571004A5769 /* graph_chr2_40bp_2.json */,
-				2AF5E3552B925570004A5769 /* graph_chr2_40bp_3.json */,
-				2AF5E3402B925570004A5769 /* graph_chr2_40bp_4.json */,
-				2AF5E3422B925570004A5769 /* graph_chr2_40bp_5.json */,
-				2AF5E3462B925570004A5769 /* graph_chr2_40bp_6.json */,
-				2AF5E32E2B92556F004A5769 /* graph_chr2_40bp_7.json */,
-				2AF5E3472B925570004A5769 /* graph_chr2_40bp_8.json */,
-				2AF5E3372B925570004A5769 /* graph_chr2_40bp_9.json */,
-				2AF5E3382B925570004A5769 /* graph_chr2_40bp_10.json */,
-				2AF5E32D2B92556F004A5769 /* graph_chr2_40bp_11.json */,
-				2AF5E3332B925570004A5769 /* graph_chr2_40bp_12.json */,
-				2AF5E3352B925570004A5769 /* graph_chr2_40bp_13.json */,
-				2AF5E32A2B92556F004A5769 /* graph_chr2_40bp_14.json */,
-				2AF5E34B2B925570004A5769 /* graph_chr2_40bp_15.json */,
-				2AF5E33C2B925570004A5769 /* graph_chr2_40bp_16.json */,
-				2AF5E34E2B925570004A5769 /* graph_chr2_40bp_17.json */,
-				2AF5E3322B925570004A5769 /* graph_chr2_40bp_18.json */,
-				2AF5E32B2B92556F004A5769 /* graph_chr2_40bp_19.json */,
-				2AF5E33F2B925570004A5769 /* graph_chr2_40bp_20.json */,
-				2AF5E3302B92556F004A5769 /* graph_chr2_40bp_21.json */,
-				2AF5E3542B925570004A5769 /* graph_chr2_40bp_22.json */,
-				2AF5E34C2B925570004A5769 /* graph_chr2_40bp_23.json */,
-				2AF5E32C2B92556F004A5769 /* graph_chr2_40bp_24.json */,
-				2AF5E33D2B925570004A5769 /* graph_chr2_40bp_25.json */,
-				2AF5E35A2B925570004A5769 /* graph_chr2_40bp_26.json */,
-				2AF5E3482B925570004A5769 /* graph_chr2_40bp_27.json */,
-				2AF5E33E2B925570004A5769 /* graph_chr2_40bp_28.json */,
-				2AF5E3522B925570004A5769 /* graph_chr2_40bp_29.json */,
-				2AF5E34F2B925570004A5769 /* graph_chr2_40bp_30.json */,
-				2AF5E3442B925570004A5769 /* graph_chr2_40bp_31.json */,
-				2AF5E3362B925570004A5769 /* graph_chr2_40bp_32.json */,
-				2AF5E3492B925570004A5769 /* graph_chr2_40bp_33.json */,
-				2AF5E3582B925570004A5769 /* graph_chr2_40bp_34.json */,
-				2AF5E34A2B925570004A5769 /* graph_chr2_40bp_35.json */,
-				2AF5E32F2B92556F004A5769 /* graph_chr2_40bp_36.json */,
-				2AF5E3342B925570004A5769 /* graph_chr2_40bp_37.json */,
-				2AF5E3502B925570004A5769 /* graph_chr2_40bp_38.json */,
-				2AF5E34D2B925570004A5769 /* graph_chr2_40bp_39.json */,
-				2AF5E3572B925570004A5769 /* graph_chr2_40bp_40.json */,
-				2AF5E3392B925570004A5769 /* graph_chr2_40bp_41.json */,
-				2AF5E3512B925570004A5769 /* graph_chr2_40bp_42.json */,
-				2AF5E3562B925570004A5769 /* graph_chr2_40bp_43.json */,
-				2AF5E3312B925570004A5769 /* graph_chr2_40bp_44.json */,
-				2AF5E3592B925570004A5769 /* graph_chr2_40bp_45.json */,
-				2AF5E3452B925570004A5769 /* graph_chr2_40bp_46.json */,
-				2AF5E33B2B925570004A5769 /* graph_chr2_40bp_47.json */,
-				2AF5E3432B925570004A5769 /* graph_chr2_40bp_48.json */,
-				2AF5E3412B925570004A5769 /* graph_chr2_40bp_49.json */,
-				2AF5E33A2B925570004A5769 /* graph_chr2_40bp_50.json */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -552,56 +394,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF5E35C2B925571004A5769 /* graph_chr2_40bp_14.json in Resources */,
-				2AF5E35D2B925571004A5769 /* graph_chr2_40bp_19.json in Resources */,
-				2AF5E35E2B925571004A5769 /* graph_chr2_40bp_24.json in Resources */,
-				2AF5E35F2B925571004A5769 /* graph_chr2_40bp_11.json in Resources */,
-				2AF5E3602B925571004A5769 /* graph_chr2_40bp_7.json in Resources */,
-				2AF5E3612B925571004A5769 /* graph_chr2_40bp_36.json in Resources */,
-				2AF5E3622B925571004A5769 /* graph_chr2_40bp_21.json in Resources */,
-				2AF5E3632B925571004A5769 /* graph_chr2_40bp_44.json in Resources */,
-				2AF5E3642B925571004A5769 /* graph_chr2_40bp_18.json in Resources */,
-				2AF5E3652B925571004A5769 /* graph_chr2_40bp_12.json in Resources */,
-				2AF5E3662B925571004A5769 /* graph_chr2_40bp_37.json in Resources */,
-				2AF5E3672B925571004A5769 /* graph_chr2_40bp_13.json in Resources */,
-				2AF5E3682B925571004A5769 /* graph_chr2_40bp_32.json in Resources */,
-				2AF5E3692B925571004A5769 /* graph_chr2_40bp_9.json in Resources */,
-				2AF5E36A2B925571004A5769 /* graph_chr2_40bp_10.json in Resources */,
-				2AF5E36B2B925571004A5769 /* graph_chr2_40bp_41.json in Resources */,
-				2AF5E36C2B925571004A5769 /* graph_chr2_40bp_50.json in Resources */,
-				2AF5E36D2B925571004A5769 /* graph_chr2_40bp_47.json in Resources */,
-				2AF5E36E2B925571004A5769 /* graph_chr2_40bp_16.json in Resources */,
-				2AF5E36F2B925571004A5769 /* graph_chr2_40bp_25.json in Resources */,
-				2AF5E3702B925571004A5769 /* graph_chr2_40bp_28.json in Resources */,
-				2AF5E3712B925571004A5769 /* graph_chr2_40bp_20.json in Resources */,
-				2AF5E3722B925571004A5769 /* graph_chr2_40bp_4.json in Resources */,
-				2AF5E3732B925571004A5769 /* graph_chr2_40bp_49.json in Resources */,
-				2AF5E3742B925571004A5769 /* graph_chr2_40bp_5.json in Resources */,
-				2AF5E3752B925571004A5769 /* graph_chr2_40bp_48.json in Resources */,
-				2AF5E3762B925571004A5769 /* graph_chr2_40bp_31.json in Resources */,
-				2AF5E3772B925571004A5769 /* graph_chr2_40bp_46.json in Resources */,
-				2AF5E3782B925571004A5769 /* graph_chr2_40bp_6.json in Resources */,
-				2AF5E3792B925571004A5769 /* graph_chr2_40bp_8.json in Resources */,
-				2AF5E37A2B925571004A5769 /* graph_chr2_40bp_27.json in Resources */,
-				2AF5E37B2B925571004A5769 /* graph_chr2_40bp_33.json in Resources */,
-				2AF5E37C2B925571004A5769 /* graph_chr2_40bp_35.json in Resources */,
-				2AF5E37D2B925571004A5769 /* graph_chr2_40bp_15.json in Resources */,
-				2AF5E37E2B925571004A5769 /* graph_chr2_40bp_23.json in Resources */,
-				2AF5E37F2B925571004A5769 /* graph_chr2_40bp_39.json in Resources */,
-				2AF5E3802B925571004A5769 /* graph_chr2_40bp_17.json in Resources */,
-				2AF5E3812B925571004A5769 /* graph_chr2_40bp_30.json in Resources */,
-				2AF5E3822B925571004A5769 /* graph_chr2_40bp_38.json in Resources */,
-				2AF5E3832B925571004A5769 /* graph_chr2_40bp_42.json in Resources */,
-				2AF5E3842B925571004A5769 /* graph_chr2_40bp_29.json in Resources */,
-				2AF5E3852B925571004A5769 /* graph_chr2_40bp_1.json in Resources */,
-				2AF5E3862B925571004A5769 /* graph_chr2_40bp_22.json in Resources */,
-				2AF5E3872B925571004A5769 /* graph_chr2_40bp_3.json in Resources */,
-				2AF5E3882B925571004A5769 /* graph_chr2_40bp_43.json in Resources */,
-				2AF5E3892B925571004A5769 /* graph_chr2_40bp_40.json in Resources */,
-				2AF5E38A2B925571004A5769 /* graph_chr2_40bp_34.json in Resources */,
-				2AF5E38B2B925571004A5769 /* graph_chr2_40bp_45.json in Resources */,
-				2AF5E38C2B925571004A5769 /* graph_chr2_40bp_26.json in Resources */,
-				2AF5E38D2B925571004A5769 /* graph_chr2_40bp_2.json in Resources */,
 				2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */,
 				2AE2D8312B920C190063DBF9 /* README.md in Resources */,
 				2A293C452B920B86001474AA /* Assets.xcassets in Resources */,

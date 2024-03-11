@@ -29,7 +29,10 @@ class Graph : Codable, Identifiable {
         self.metaData = GraphMetaData(id: UUID(),
                                       numNodes: nodes.count,
                                       numEdges: edges.count,
-                                      degree: Degree
+                                      degree: Degree(A: A),
+                                      closeness: Closeness(A: A),
+                                      betweenness: Betweeness(A: A),
+                                      diameter: Diameter(A: A))
 
         
     }

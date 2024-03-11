@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dyerlab/DLMatrix",
       "state" : {
-        "revision" : "a8c4107e19596374f03fa894bef717c3dcc54aca",
-        "version" : "1.0.6"
+        "revision" : "8b4fed6bc2d953ca4221a607eedc331d6ff4c7bd",
+        "version" : "1.0.7"
       }
     },
     {
