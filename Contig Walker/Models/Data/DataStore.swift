@@ -13,6 +13,10 @@ class DataStore: Codable {
     var graphs: [Graph]
     var loci: [Locus]
     
+    var metaData: [GraphMetaData] {
+        return graphs.compactMap({ $0.metaData })
+    }
+    
     enum CodingKeys: CodingKey {
         case graphs
         case loci

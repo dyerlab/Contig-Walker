@@ -24,8 +24,6 @@ class Graph : Codable, Identifiable {
         self.loci = loci
         
         let A = asMatrix()
-        
-        
         self.metaData = GraphMetaData(id: UUID(),
                                       numNodes: nodes.count,
                                       numEdges: edges.count,
@@ -33,7 +31,7 @@ class Graph : Codable, Identifiable {
                                       closeness: Closeness(A: A),
                                       betweenness: Betweenness(A: A),
                                       diameter: Diameter(A: A))
-        
+         
     }
     
     

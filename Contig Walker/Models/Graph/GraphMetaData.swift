@@ -5,6 +5,7 @@
 //  Created by Rodney Dyer on 3/10/24.
 //
 
+import PresentationZen
 import Foundation
 import DLMatrix
 
@@ -28,20 +29,24 @@ struct GraphMetaData: Codable {
 
 
 extension GraphMetaData {
-    
-    /*
      
     static var DefaultMetaData: GraphMetaData {
-        
-        return GraphMetaData(id: 1,
-                             numNodes: 29,
-                             numEdges: 34,
-                             startingBP: 23234,
-                             endingBP: 24523,
-                             
-        )
+        return Graph.DefaultGraph.metaData!
     }
-     */
+
+}
+
+
+extension GraphMetaData: DataPointProvider {
+    
+    var dataPoints: [PresentationZen.DataPoint] {
+        return [  DataPoint(category: "Nodes",       value: 0.0, label: String(numNodes) ),
+                  DataPoint(category: "Edges",       value: 0.0, label: String(numEdges) ),
+                  DataPoint(category: "Degree",      value: 0.0, label: String(format: "%.2f", degree.mean) ),
+                  DataPoint(category: "Closeness",   value: 0.0, label: String(format: "%.2f", closeness.mean) ),
+                  DataPoint(category: "Betweenness", value: 0.0, label: String(format: "%.2f", betweenness.mean) ),
+                  DataPoint(category: "Diameter",    value: 0.0, label: String(format: "%.2f", diameter) ) ]
+    }
     
 }
 

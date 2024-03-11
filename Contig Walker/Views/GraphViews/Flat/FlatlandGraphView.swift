@@ -88,18 +88,9 @@ struct FlatlandGraphView: View {
                 stiffness: .weightedByDegree(k: { _, _ in 1.0})
             )
         }
-        .toolbar {
-            ToolbarItem(placement: .automatic, content: {
-                Button(action: {
-                    showingLabels.toggle()
-                    print("showing labels is now \(showingLabels)")
-                }, label: {
-                    Image(systemName: "123.rectangle")
-                })
-                .background( !showingLabels ? Color.clear : Color.primaryBackground )
-                .cornerRadius( 3.0 )
-            })
-        }
+        .onReceive( NotificationCenter.default.publisher(for: .toggleLabels), perform: { _ in
+            showingLabels.toggle()
+        })
     }
     
     

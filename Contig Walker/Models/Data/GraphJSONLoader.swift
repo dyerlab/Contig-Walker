@@ -20,7 +20,7 @@ class GraphJSONLoader: Codable {
     
     
     var asGraph: Graph {
-        return Graph(nodes: nodes, edges: edges, loci: asLoci.compactMap( {$0.id}))
+        return Graph(nodes: nodes, edges: edges, loci: asLoci.compactMap( {$0.id} ) )
     }
     
     

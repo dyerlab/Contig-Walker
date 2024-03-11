@@ -6,21 +6,22 @@
 //
 
 import SwiftUI
-
+import PresentationZen
 
 struct GraphsMetaDataView: View {
     var item: GraphMetaData
     var body: some View {
             VStack(alignment: .leading) {
                 Text("Graph \(item.id)")
-                    .font(.title3)
-                Text("N: \(item.numNodes); E: \(item.numEdges)")
-                    .font(.subheadline)
+                    .font(.title2)
+                KeyValueTable(data: item.dataPoints,
+                              columnTypes: [.category, .label ],
+                              columnHeaders: ["Parameter","Value"])
+                .cardBackground()
             }
-            .padding(5)
-            .background( Color("CardBackgroundColor") )
-            .cornerRadius(5)
-            .shadow(color: Color.black.opacity(0.4), radius: 5)
+            
+        
+
     }
 }
 
