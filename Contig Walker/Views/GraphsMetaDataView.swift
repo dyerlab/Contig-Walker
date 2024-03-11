@@ -16,8 +16,6 @@ struct GraphsMetaDataView: View {
                     .font(.title3)
                 Text("N: \(item.numNodes); E: \(item.numEdges)")
                     .font(.subheadline)
-                Text("\(item.startingBP) - \(item.endingBP)")
-                    .font(.system(size: 9))
             }
             .padding(5)
             .background( Color("CardBackgroundColor") )
@@ -26,10 +24,10 @@ struct GraphsMetaDataView: View {
     }
 }
 
-/*
+
 #Preview {
-    GraphsMetaDataView( item: GraphMetaData.DefaultMetaData )
+    GraphsMetaDataView( item: Graph.DefaultGraph.metaData! )
         .padding(15)
         
 }
-*/
+

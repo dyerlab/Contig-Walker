@@ -53,7 +53,7 @@ final class GraphTest: XCTestCase {
         print("Closeness")
         print("\(C)")
         
-        let B = BetweennessCentrality(A: A)
+        let B = Betweenness(A: A)
         print("Betweenness")
         print("\(B)")
     }

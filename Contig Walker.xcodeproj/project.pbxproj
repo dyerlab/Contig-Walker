@@ -44,11 +44,11 @@
 		2AC30E2B2B9DEBF5008B135C /* GraphsMetaDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */; };
 		2AC3DA242B9F678500E38088 /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3DA232B9F678500E38088 /* CardBackground.swift */; };
 		2AC3DA262B9F68C600E38088 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3DA252B9F68C600E38088 /* View.swift */; };
-		2AC3DA292B9F721F00E38088 /* DLMatrix in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC3DA282B9F721F00E38088 /* DLMatrix */; };
 		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 		2AE2D9012B9212040063DBF9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9002B9212040063DBF9 /* Node.swift */; };
 		2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9022B9212A10063DBF9 /* Edge.swift */; };
 		2AF5E3902B925DDE004A5769 /* GraphJSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5E38F2B925DDE004A5769 /* GraphJSONLoaderTests.swift */; };
+		2AF7AF392B9F89B400E72540 /* DLMatrix in Frameworks */ = {isa = PBXBuildFile; productRef = 2AF7AF382B9F89B400E72540 /* DLMatrix */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AA9C4572B9BA5EF0095FBF1 /* Grape in Frameworks */,
-				2AC3DA292B9F721F00E38088 /* DLMatrix in Frameworks */,
+				2AF7AF392B9F89B400E72540 /* DLMatrix in Frameworks */,
 				2A2DD3312B932AAA00FD6B4C /* PresentationZen in Frameworks */,
 				2AA9C4552B9BA5EF0095FBF1 /* ForceSimulation in Frameworks */,
 			);
@@ -322,7 +322,7 @@
 				2A2DD3302B932AAA00FD6B4C /* PresentationZen */,
 				2AA9C4542B9BA5EF0095FBF1 /* ForceSimulation */,
 				2AA9C4562B9BA5EF0095FBF1 /* Grape */,
-				2AC3DA282B9F721F00E38088 /* DLMatrix */,
+				2AF7AF382B9F89B400E72540 /* DLMatrix */,
 			);
 			productName = "Contig Walker";
 			productReference = 2A293C3B2B920B85001474AA /* Contig Walker.app */;
@@ -377,7 +377,7 @@
 			packageReferences = (
 				2A2DD32F2B932AAA00FD6B4C /* XCRemoteSwiftPackageReference "PresentationZen" */,
 				2AA9C4532B9BA5EF0095FBF1 /* XCRemoteSwiftPackageReference "Grape" */,
-				2AC3DA272B9F721F00E38088 /* XCRemoteSwiftPackageReference "DLMatrix" */,
+				2AF7AF372B9F89B400E72540 /* XCRemoteSwiftPackageReference "DLMatrix" */,
 			);
 			productRefGroup = 2A293C3C2B920B85001474AA /* Products */;
 			projectDirPath = "";
@@ -763,12 +763,12 @@
 				minimumVersion = 0.7.1;
 			};
 		};
-		2AC3DA272B9F721F00E38088 /* XCRemoteSwiftPackageReference "DLMatrix" */ = {
+		2AF7AF372B9F89B400E72540 /* XCRemoteSwiftPackageReference "DLMatrix" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dyerlab/DLMatrix";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -789,9 +789,9 @@
 			package = 2AA9C4532B9BA5EF0095FBF1 /* XCRemoteSwiftPackageReference "Grape" */;
 			productName = Grape;
 		};
-		2AC3DA282B9F721F00E38088 /* DLMatrix */ = {
+		2AF7AF382B9F89B400E72540 /* DLMatrix */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2AC3DA272B9F721F00E38088 /* XCRemoteSwiftPackageReference "DLMatrix" */;
+			package = 2AF7AF372B9F89B400E72540 /* XCRemoteSwiftPackageReference "DLMatrix" */;
 			productName = DLMatrix;
 		};
 /* End XCSwiftPackageProductDependency section */

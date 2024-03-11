@@ -15,7 +15,7 @@ class Graph : Codable, Identifiable {
     var nodes: [Node]
     var edges: [Edge]
     var loci: [String]
-    var metaData: GraphMetaData? = nil
+    var metaData: GraphMetaData?
     
     init(nodes: [Node]=[], edges: [Edge]=[], loci: [String] = [] ) {
         self.id = UUID()
@@ -23,7 +23,7 @@ class Graph : Codable, Identifiable {
         self.edges = edges
         self.loci = loci
         
-        let A = self.asMatrix()
+        let A = asMatrix()
         
         
         self.metaData = GraphMetaData(id: UUID(),
@@ -31,9 +31,8 @@ class Graph : Codable, Identifiable {
                                       numEdges: edges.count,
                                       degree: Degree(A: A),
                                       closeness: Closeness(A: A),
-                                      betweenness: Betweeness(A: A),
+                                      betweenness: Betweenness(A: A),
                                       diameter: Diameter(A: A))
-
         
     }
     
@@ -64,8 +63,6 @@ extension Graph: MatrixConvertible {
         let N = nodes.count
         let A = Matrix(N,N,0.0)
         let idx = getLinkIndices()
-        
-        assert( N == idx.count,  "Failed Graph::asMatrix" )
         
         for i in 0 ..< edges.count {
             A[ idx[i].0, idx[i].1 ] = edges[i].weight
