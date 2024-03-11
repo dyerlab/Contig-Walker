@@ -23,9 +23,6 @@ struct Contig_WalkerApp: App {
                     Text("Import")
                 })
                 .keyboardShortcut("I", modifiers: .command)
-                .fileImporter(isPresented: $importing,
-                              allowedContentTypes: [.json],
-                              onCompletion: <#T##(Result<URL, any Error>) -> Void##(Result<URL, any Error>) -> Void##(_ result: Result<URL, any Error>) -> Void#>)
             })
         }
     }

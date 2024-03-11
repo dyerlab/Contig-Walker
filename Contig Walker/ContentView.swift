@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var data: DataStore
+    @State var isImporting: Bool = false
     @State var selectedGraph: Graph? = nil
     private var asDestination = false
     
@@ -62,6 +63,10 @@ struct ContentView: View {
             }
 
         }
+        .onReceive( NotificationCenter.default.publisher(for: .importData), perform: { _ in
+            data.importJSON()
+        })
+        
         
     }
     
