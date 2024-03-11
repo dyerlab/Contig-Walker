@@ -10,5 +10,6 @@ import Foundation
 extension Notification.Name {
     
     static let toggleLabels = Notification.Name(rawValue: "onToggleLabels")
+    static let importData = Notification.Name(rawValue: "importJSON")
     
 }

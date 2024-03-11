@@ -25,12 +25,23 @@ class DataStore: Codable {
     init(graphs: [Graph] = [], loci: [Locus] = []  ) {
         self.graphs = graphs
         self.loci = loci
+        
+        NotificationCenter.default.addObserver( self,
+                                                selector: #selector(importJSON),
+                                                name: .importData,
+                                                object: nil )
     }
     
     required init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self )
         graphs = try container.decode( [Graph].self, forKey: .graphs )
         loci = try container.decode( [Locus].self, forKey: .loci )
+        
+        
+        NotificationCenter.default.addObserver( self,
+                                                selector: #selector(importJSON),
+                                                name: .importData,
+                                                object: nil )
     }
     
     func encode(to encoder: any Encoder) throws {
@@ -50,6 +61,10 @@ class DataStore: Codable {
         return ret
     }
     
+    
+    @objc func importJSON(_ notification: Notification) {
+        print("in importJSON")
+    }
     
 }
 

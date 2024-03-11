@@ -1,0 +1,555 @@
+{
+  "nodes": [
+    {
+      "size": 10.9905,
+      "id": "Adygei",
+      "longitude": 39,
+      "latitude": 44,
+      "group": "All"
+    },
+    {
+      "size": 8.829,
+      "id": "Balochi",
+      "longitude": 66.5,
+      "latitude": 30.4987,
+      "group": "All"
+    },
+    {
+      "size": 15.7956,
+      "id": "BantuKenya",
+      "longitude": 37,
+      "latitude": -3,
+      "group": "All"
+    },
+    {
+      "size": 12.1178,
+      "id": "BantuSouthAfrica",
+      "longitude": 24.25,
+      "latitude": -25.5693,
+      "group": "All"
+    },
+    {
+      "size": 8.7419,
+      "id": "Basque",
+      "longitude": 0,
+      "latitude": 43,
+      "group": "All"
+    },
+    {
+      "size": 8.7997,
+      "id": "Bedouin",
+      "longitude": 35,
+      "latitude": 31,
+      "group": "All"
+    },
+    {
+      "size": 11.5644,
+      "id": "BiakaPygmy",
+      "longitude": 17,
+      "latitude": 4,
+      "group": "All"
+    },
+    {
+      "size": 15.6964,
+      "id": "Burusho",
+      "longitude": 74,
+      "latitude": 36.4984,
+      "group": "All"
+    },
+    {
+      "size": 6.3589,
+      "id": "Cambodian",
+      "longitude": 105,
+      "latitude": 12,
+      "group": "All"
+    },
+    {
+      "size": 5.9769,
+      "id": "Colombian",
+      "longitude": -68,
+      "latitude": 3,
+      "group": "All"
+    },
+    {
+      "size": 8.1583,
+      "id": "Daur",
+      "longitude": 124,
+      "latitude": 48.4975,
+      "group": "All"
+    },
+    {
+      "size": 7.3375,
+      "id": "Druze",
+      "longitude": 35,
+      "latitude": 32,
+      "group": "All"
+    },
+    {
+      "size": 7.9083,
+      "id": "Kalash",
+      "longitude": 71.5,
+      "latitude": 35.9937,
+      "group": "All"
+    },
+    {
+      "size": 5,
+      "id": "Lahu",
+      "longitude": 100,
+      "latitude": 22,
+      "group": "All"
+    },
+    {
+      "size": 9.9149,
+      "id": "Mandenka",
+      "longitude": -12,
+      "latitude": 12,
+      "group": "All"
+    },
+    {
+      "size": 6.4237,
+      "id": "Maya",
+      "longitude": -91,
+      "latitude": 19,
+      "group": "All"
+    },
+    {
+      "size": 13.4028,
+      "id": "MbutiPygmy",
+      "longitude": 29,
+      "latitude": 1,
+      "group": "All"
+    },
+    {
+      "size": 7.0986,
+      "id": "Melanesian",
+      "longitude": 155,
+      "latitude": -6,
+      "group": "All"
+    },
+    {
+      "size": 9.2632,
+      "id": "Mongola",
+      "longitude": 111,
+      "latitude": 45,
+      "group": "All"
+    },
+    {
+      "size": 6.7253,
+      "id": "Mozabite",
+      "longitude": 3,
+      "latitude": 32,
+      "group": "All"
+    },
+    {
+      "size": 7.6334,
+      "id": "Palestinian",
+      "longitude": 35,
+      "latitude": 32,
+      "group": "All"
+    },
+    {
+      "size": 9.2729,
+      "id": "Papuan",
+      "longitude": 143,
+      "latitude": -4,
+      "group": "All"
+    },
+    {
+      "size": 6.4808,
+      "id": "Pima",
+      "longitude": -108,
+      "latitude": 29,
+      "group": "All"
+    },
+    {
+      "size": 7.9553,
+      "id": "Russian",
+      "longitude": 40,
+      "latitude": 61,
+      "group": "All"
+    },
+    {
+      "size": 13.069,
+      "id": "San",
+      "longitude": 20,
+      "latitude": -21,
+      "group": "All"
+    },
+    {
+      "size": 7.3052,
+      "id": "Uygur",
+      "longitude": 81,
+      "latitude": 44,
+      "group": "All"
+    },
+    {
+      "size": 7.2177,
+      "id": "Yakut",
+      "longitude": 129.5,
+      "latitude": 62.9829,
+      "group": "All"
+    },
+    {
+      "size": 7.5978,
+      "id": "Yi",
+      "longitude": 103,
+      "latitude": 28,
+      "group": "All"
+    },
+    {
+      "size": 10.3899,
+      "id": "Yoruba",
+      "longitude": 5,
+      "latitude": 7.9951,
+      "group": "All"
+    }
+  ],
+  "links": [
+    {
+      "source": "Adygei",
+      "target": "Bedouin",
+      "weight": 2.909
+    },
+    {
+      "source": "Adygei",
+      "target": "Kalash",
+      "weight": 4.2353
+    },
+    {
+      "source": "Adygei",
+      "target": "Melanesian",
+      "weight": 3.0455
+    },
+    {
+      "source": "Adygei",
+      "target": "Papuan",
+      "weight": 3.9494
+    },
+    {
+      "source": "Adygei",
+      "target": "Pima",
+      "weight": 3.2746
+    },
+    {
+      "source": "Balochi",
+      "target": "Burusho",
+      "weight": 3.4446
+    },
+    {
+      "source": "Balochi",
+      "target": "Cambodian",
+      "weight": 1.9856
+    },
+    {
+      "source": "Balochi",
+      "target": "Druze",
+      "weight": 1.5198
+    },
+    {
+      "source": "Balochi",
+      "target": "Palestinian",
+      "weight": 1.3285
+    },
+    {
+      "source": "Balochi",
+      "target": "Russian",
+      "weight": 2.2735
+    },
+    {
+      "source": "BantuKenya",
+      "target": "BantuSouthAfrica",
+      "weight": 5.5275
+    },
+    {
+      "source": "BantuKenya",
+      "target": "BiakaPygmy",
+      "weight": 4.9691
+    },
+    {
+      "source": "BantuKenya",
+      "target": "Daur",
+      "weight": 5.1124
+    },
+    {
+      "source": "BantuKenya",
+      "target": "MbutiPygmy",
+      "weight": 6.2513
+    },
+    {
+      "source": "BantuKenya",
+      "target": "Mozabite",
+      "weight": 3.5125
+    },
+    {
+      "source": "BantuSouthAfrica",
+      "target": "Mandenka",
+      "weight": 4.122
+    },
+    {
+      "source": "BantuSouthAfrica",
+      "target": "San",
+      "weight": 5.8365
+    },
+    {
+      "source": "BantuSouthAfrica",
+      "target": "Yoruba",
+      "weight": 3.9796
+    },
+    {
+      "source": "Basque",
+      "target": "Bedouin",
+      "weight": 2.6237
+    },
+    {
+      "source": "Basque",
+      "target": "Druze",
+      "weight": 2.2105
+    },
+    {
+      "source": "Basque",
+      "target": "Kalash",
+      "weight": 3.9902
+    },
+    {
+      "source": "Basque",
+      "target": "Pima",
+      "weight": 3.7406
+    },
+    {
+      "source": "Basque",
+      "target": "Russian",
+      "weight": 2.2434
+    },
+    {
+      "source": "Bedouin",
+      "target": "Mozabite",
+      "weight": 1.88
+    },
+    {
+      "source": "Bedouin",
+      "target": "Palestinian",
+      "weight": 2.0833
+    },
+    {
+      "source": "BiakaPygmy",
+      "target": "Mandenka",
+      "weight": 4.0047
+    },
+    {
+      "source": "BiakaPygmy",
+      "target": "MbutiPygmy",
+      "weight": 5.5522
+    },
+    {
+      "source": "BiakaPygmy",
+      "target": "San",
+      "weight": 6.5875
+    },
+    {
+      "source": "BiakaPygmy",
+      "target": "Yoruba",
+      "weight": 4.2502
+    },
+    {
+      "source": "Burusho",
+      "target": "Kalash",
+      "weight": 4.5382
+    },
+    {
+      "source": "Burusho",
+      "target": "Mongola",
+      "weight": 4.9946
+    },
+    {
+      "source": "Burusho",
+      "target": "Russian",
+      "weight": 3.2377
+    },
+    {
+      "source": "Burusho",
+      "target": "Uygur",
+      "weight": 3.2994
+    },
+    {
+      "source": "Cambodian",
+      "target": "Daur",
+      "weight": 2.1907
+    },
+    {
+      "source": "Cambodian",
+      "target": "Druze",
+      "weight": 1.7323
+    },
+    {
+      "source": "Cambodian",
+      "target": "Kalash",
+      "weight": 3.8944
+    },
+    {
+      "source": "Cambodian",
+      "target": "Maya",
+      "weight": 2.39
+    },
+    {
+      "source": "Cambodian",
+      "target": "Yakut",
+      "weight": 1.8777
+    },
+    {
+      "source": "Cambodian",
+      "target": "Yi",
+      "weight": 1.7586
+    },
+    {
+      "source": "Colombian",
+      "target": "Lahu",
+      "weight": 1.7842
+    },
+    {
+      "source": "Colombian",
+      "target": "Maya",
+      "weight": 1.3751
+    },
+    {
+      "source": "Colombian",
+      "target": "Pima",
+      "weight": 1.618
+    },
+    {
+      "source": "Colombian",
+      "target": "Yakut",
+      "weight": 1.8634
+    },
+    {
+      "source": "Daur",
+      "target": "Maya",
+      "weight": 1.9692
+    },
+    {
+      "source": "Daur",
+      "target": "Mongola",
+      "weight": 1.9299
+    },
+    {
+      "source": "Daur",
+      "target": "Yi",
+      "weight": 1.9288
+    },
+    {
+      "source": "Druze",
+      "target": "Palestinian",
+      "weight": 1.312
+    },
+    {
+      "source": "Druze",
+      "target": "Russian",
+      "weight": 1.328
+    },
+    {
+      "source": "Druze",
+      "target": "Uygur",
+      "weight": 1.7729
+    },
+    {
+      "source": "Kalash",
+      "target": "Mongola",
+      "weight": 4.8854
+    },
+    {
+      "source": "Kalash",
+      "target": "Palestinian",
+      "weight": 3.5942
+    },
+    {
+      "source": "Kalash",
+      "target": "Russian",
+      "weight": 3.3358
+    },
+    {
+      "source": "Lahu",
+      "target": "Maya",
+      "weight": 1.7957
+    },
+    {
+      "source": "Lahu",
+      "target": "Yakut",
+      "weight": 1.5776
+    },
+    {
+      "source": "Lahu",
+      "target": "Yi",
+      "weight": 1.6697
+    },
+    {
+      "source": "Mandenka",
+      "target": "Mozabite",
+      "weight": 3.5767
+    },
+    {
+      "source": "Mandenka",
+      "target": "Yoruba",
+      "weight": 2.0503
+    },
+    {
+      "source": "Maya",
+      "target": "Pima",
+      "weight": 2.1689
+    },
+    {
+      "source": "Maya",
+      "target": "Russian",
+      "weight": 2.2078
+    },
+    {
+      "source": "MbutiPygmy",
+      "target": "San",
+      "weight": 7.3336
+    },
+    {
+      "source": "Melanesian",
+      "target": "Mongola",
+      "weight": 3.4482
+    },
+    {
+      "source": "Melanesian",
+      "target": "Papuan",
+      "weight": 3.7384
+    },
+    {
+      "source": "Melanesian",
+      "target": "Uygur",
+      "weight": 2.0962
+    },
+    {
+      "source": "Mongola",
+      "target": "Yi",
+      "weight": 1.8736
+    },
+    {
+      "source": "Palestinian",
+      "target": "Russian",
+      "weight": 1.7762
+    },
+    {
+      "source": "Papuan",
+      "target": "San",
+      "weight": 8.5241
+    },
+    {
+      "source": "Russian",
+      "target": "Uygur",
+      "weight": 2.0104
+    },
+    {
+      "source": "Uygur",
+      "target": "Yakut",
+      "weight": 2.1891
+    }
+  ],
+  "loci": ["rs13421315", "rs7563242", "rs13396065", "rs1438040", "rs6737872", "rs1946814", "rs6433698", "rs3821010", "rs3770047", "rs1344923", "rs934803", "rs1438062", "rs13389525", "rs9808399", "rs753346", "rs6756606", "rs6738614", "rs7570981", "rs2118482", "rs7600368", "rs2037757", "rs1405650", "rs1405648", "rs13398604", "rs17401468", "rs11690740", "rs11883602", "rs10497484", "rs2695115", "rs2695735", "rs17401650", "rs2695112", "rs10198877", "rs1880916", "rs2695109", "rs10497482", "rs13389574", "rs13390014", "rs10497480", "rs2573085"],
+  "location": [178461840, 178463888, 178465313, 178466387, 178485690, 178505183, 178507041, 178508162, 178511041, 178514746, 178516293, 178521237, 178521385, 178522135, 178523424, 178525564, 178533545, 178537790, 178543146, 178554418, 178561572, 178573715, 178573801, 178589170, 178594190, 178595808, 178600895, 178601688, 178608562, 178613995, 178617334, 178619216, 178619546, 178620937, 178627257, 178630935, 178634374, 178634613, 178658621, 178661840],
+  "p": [0.3342, 0.3425, 0.3777, 0.366, 0.4255, 0.407, 0.4054, 0.1281, 0.4087, 0.1658, 0.3593, 0.0251, 0.1164, 0.1918, 0.062, 0.108, 0.2186, 0.4807, 0.1072, 0.3065, 0.3291, 0.4623, 0.294, 0.062, 0.16, 0.0352, 0.0762, 0.0276, 0.2454, 0.335, 0.0829, 0.34, 0.0829, 0.2152, 0.2404, 0.0678, 0.0469, 0.0452, 0.1876, 0.443],
+  "Ho": [0.397, 0.397, 0.3601, 0.407, 0.3719, 0.3652, 0.3618, 0.206, 0.3216, 0.2211, 0.3769, 0.0402, 0.1859, 0.2764, 0.0905, 0.1625, 0.2931, 0.3585, 0.1575, 0.3685, 0.3199, 0.3853, 0.3702, 0.0905, 0.2194, 0.0704, 0.129, 0.0452, 0.3501, 0.3283, 0.1357, 0.3317, 0.1357, 0.3266, 0.3467, 0.1022, 0.0771, 0.0737, 0.2948, 0.3501],
+  "Hs": [0.378, 0.3892, 0.3634, 0.4067, 0.3842, 0.3685, 0.3684, 0.2004, 0.3259, 0.2345, 0.3817, 0.0341, 0.1674, 0.2872, 0.1093, 0.1447, 0.3074, 0.3647, 0.1446, 0.3337, 0.3236, 0.391, 0.3942, 0.0843, 0.2119, 0.0607, 0.128, 0.062, 0.3129, 0.3305, 0.12, 0.3449, 0.12, 0.2871, 0.3089, 0.1279, 0.0714, 0.0684, 0.2899, 0.3534],
+  "Ht": [0.4117, 0.426, 0.4931, 0.4485, 0.4744, 0.4632, 0.4622, 0.2023, 0.4965, 0.2672, 0.4389, 0.0364, 0.2019, 0.2945, 0.1109, 0.1729, 0.3432, 0.4972, 0.1721, 0.4054, 0.4708, 0.493, 0.415, 0.1027, 0.2411, 0.0624, 0.1319, 0.0685, 0.3451, 0.4734, 0.1328, 0.4774, 0.1328, 0.3072, 0.3395, 0.1289, 0.0828, 0.0801, 0.2993, 0.5003]
+}

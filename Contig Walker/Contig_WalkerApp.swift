@@ -14,5 +14,19 @@ struct Contig_WalkerApp: App {
         WindowGroup {
             ContentView()
         }
+        .commands {
+            CommandGroup(replacing: .importExport, addition: {
+                Button(action: {
+                    print("Importing Menu")
+                    NotificationCenter.default.post(name: .importData, object: nil)
+                }, label: {
+                    Text("Import")
+                })
+                .keyboardShortcut("I", modifiers: .command)
+                .fileImporter(isPresented: $importing,
+                              allowedContentTypes: [.json],
+                              onCompletion: <#T##(Result<URL, any Error>) -> Void##(Result<URL, any Error>) -> Void##(_ result: Result<URL, any Error>) -> Void#>)
+            })
+        }
     }
 }

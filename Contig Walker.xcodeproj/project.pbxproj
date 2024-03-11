@@ -43,6 +43,7 @@
 		2AC30E2B2B9DEBF5008B135C /* GraphsMetaDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */; };
 		2AC3DA242B9F678500E38088 /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3DA232B9F678500E38088 /* CardBackground.swift */; };
 		2AC3DA262B9F68C600E38088 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3DA252B9F68C600E38088 /* View.swift */; };
+		2ADBA98F2B9FA64B005E9A5F /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBA98E2B9FA64B005E9A5F /* Logo.swift */; };
 		2AE2D8312B920C190063DBF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2D82F2B920C190063DBF9 /* README.md */; };
 		2AE2D9012B9212040063DBF9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9002B9212040063DBF9 /* Node.swift */; };
 		2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2D9022B9212A10063DBF9 /* Edge.swift */; };
@@ -99,6 +100,7 @@
 		2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsMetaDataView.swift; sourceTree = "<group>"; };
 		2AC3DA232B9F678500E38088 /* CardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
 		2AC3DA252B9F68C600E38088 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		2ADBA98E2B9FA64B005E9A5F /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		2AE2D82F2B920C190063DBF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2AE2D9002B9212040063DBF9 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2AE2D9022B9212A10063DBF9 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				2AA9C45A2B9BA8150095FBF1 /* SummaryViews */,
 				2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */,
 				2AC3DA232B9F678500E38088 /* CardBackground.swift */,
+				2ADBA98E2B9FA64B005E9A5F /* Logo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,8 +401,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */,
-				2AE2D8312B920C190063DBF9 /* README.md in Resources */,
 				2A293C452B920B86001474AA /* Assets.xcassets in Resources */,
+				2AE2D8312B920C190063DBF9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +424,7 @@
 				2AB0E2242B9B4B81003FF91E /* DataStore.swift in Sources */,
 				2A2DD3372B932D6F00FD6B4C /* NodesSummaryView.swift in Sources */,
 				2AA9C45C2B9BA9730095FBF1 /* Color.swift in Sources */,
+				2ADBA98F2B9FA64B005E9A5F /* Logo.swift in Sources */,
 				2AC30E2B2B9DEBF5008B135C /* GraphsMetaDataView.swift in Sources */,
 				2AA9C4602B9BB3D60095FBF1 /* VolumetricGraphView.swift in Sources */,
 				2A293C412B920B85001474AA /* ContentView.swift in Sources */,

@@ -60,18 +60,11 @@ data.frame( Population = as.character( levels( groups ) ) ) |>
 paste( contig, windowSize, sep="_") -> outDir
 
 
-#if( !dir.exists(outDir) ) {
-#  dir.create( outDir )
-#} else { 
-#  system( paste("rm ",outDir,"/*.json", sep="") )
-#}
+if( !dir.exists(outDir) ) {
+  dir.create( outDir )
+} 
 
-#'  died so I skipped
-#'  
-#' fileCtr <- 1288;  baseCtr <- 26741
-
-toSkip <- c(1288, 1289, 1289,
-            1660 )
+toSkip <- c( 1288, 1289, 1289, 1660 )
 
 while( baseCtr < (numLoci - 40) ) { 
   
