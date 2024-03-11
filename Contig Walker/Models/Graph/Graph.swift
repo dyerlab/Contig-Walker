@@ -7,18 +7,31 @@
 
 import Foundation
 import SwiftData
+import DLMatrix
+
 
 class Graph : Codable, Identifiable {
     let id: UUID
     var nodes: [Node]
     var edges: [Edge]
     var loci: [String]
+    var metaData: GraphMetaData? = nil
     
     init(nodes: [Node]=[], edges: [Edge]=[], loci: [String] = [] ) {
         self.id = UUID()
         self.nodes = nodes
         self.edges = edges
         self.loci = loci
+        
+        let A = self.asMatrix()
+        
+        
+        self.metaData = GraphMetaData(id: UUID(),
+                                      numNodes: nodes.count,
+                                      numEdges: edges.count,
+                                      degree: Degree
+
+        
     }
     
     
@@ -37,6 +50,27 @@ class Graph : Codable, Identifiable {
         }
     }
 
+    
+    
+}
+
+
+extension Graph: MatrixConvertible {
+    
+    func asMatrix() -> DLMatrix.Matrix {
+        let N = nodes.count
+        let A = Matrix(N,N,0.0)
+        let idx = getLinkIndices()
+        
+        assert( N == idx.count,  "Failed Graph::asMatrix" )
+        
+        for i in 0 ..< edges.count {
+            A[ idx[i].0, idx[i].1 ] = edges[i].weight
+            A[ idx[i].1, idx[i].0 ] = A[ idx[i].0, idx[i].1 ]
+        }
+        
+        return A
+    }
     
 }
 

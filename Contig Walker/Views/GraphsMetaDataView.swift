@@ -7,21 +7,29 @@
 
 import SwiftUI
 
+
 struct GraphsMetaDataView: View {
     var item: GraphMetaData
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Graph \(item.id)")
-                .font(.title3)
-            Text("N: \(item.numNodes); E: \(item.numEdges)")
-                .font(.subheadline)
-            Text("\(item.startingBP) - \(item.endingBP)")
-                .font(.system(size: 9))
-        }
-        .padding()
+            VStack(alignment: .leading) {
+                Text("Graph \(item.id)")
+                    .font(.title3)
+                Text("N: \(item.numNodes); E: \(item.numEdges)")
+                    .font(.subheadline)
+                Text("\(item.startingBP) - \(item.endingBP)")
+                    .font(.system(size: 9))
+            }
+            .padding(5)
+            .background( Color("CardBackgroundColor") )
+            .cornerRadius(5)
+            .shadow(color: Color.black.opacity(0.4), radius: 5)
     }
 }
 
+/*
 #Preview {
     GraphsMetaDataView( item: GraphMetaData.DefaultMetaData )
+        .padding(15)
+        
 }
+*/

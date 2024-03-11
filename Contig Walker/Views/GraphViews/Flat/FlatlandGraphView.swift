@@ -49,8 +49,7 @@ struct FlatlandGraphView: View {
                         .richLabel(node.id,
                                    alignment: .leading,
                                    offset: .zero) {
-                                self.getLabel( node.id,
-                                               color: .secondary )
+                                self.getLabel( node.id )
                         }
                 }
                 else {
@@ -97,7 +96,7 @@ struct FlatlandGraphView: View {
                 }, label: {
                     Image(systemName: "123.rectangle")
                 })
-                .background( !showingLabels ? Color.clear : Color.background )
+                .background( !showingLabels ? Color.clear : Color.primaryBackground )
                 .cornerRadius( 3.0 )
             })
         }
@@ -105,18 +104,18 @@ struct FlatlandGraphView: View {
     
     
     @ViewBuilder
-    func getLabel(_ text: String, color: Color) -> some View {
+    func getLabel(_ text: String ) -> some View {
         Text(text)
             .font(.caption2)
             .padding(.vertical, 2.0)
-            .padding(.horizontal, 2.0)
+            .padding(.horizontal, 4.0)
             .background(alignment: .center) {
-                RoundedRectangle(cornerSize: .init(width: 12, height: 12))
-                    .fill(.white)
+                RoundedRectangle(cornerRadius: 3)
+                    .fill(.quaternary)
                     .shadow(radius: 1.5, y: 1.0)
             }
             .padding()
-            .foregroundColor( color )
+
     }
 }
 

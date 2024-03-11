@@ -6,14 +6,22 @@
 //
 
 import Foundation
+import DLMatrix
 
-struct GraphMetaData {
-    
-    let id: Int
+struct GraphMetaData: Codable {
+    let id: UUID
     let numNodes: Int
     let numEdges: Int
-    let startingBP: Int
-    let endingBP: Int
+        
+    /// features related to node structure
+    let degree: Vector
+    let closeness: Vector
+    let betweenness: Vector
+    
+    /// features reltaed to edge structure
+    let diameter: Double
+    
+    
 
 }
 
@@ -21,15 +29,19 @@ struct GraphMetaData {
 
 extension GraphMetaData {
     
+    /*
+     
     static var DefaultMetaData: GraphMetaData {
         
         return GraphMetaData(id: 1,
                              numNodes: 29,
                              numEdges: 34,
                              startingBP: 23234,
-                             endingBP: 24523)
-        
+                             endingBP: 24523,
+                             
+        )
     }
+     */
     
 }
 

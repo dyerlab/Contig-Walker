@@ -46,8 +46,6 @@ class DataStore: Codable {
         return ret
     }
     
-
-    
     
 }
 
@@ -57,14 +55,14 @@ class DataStore: Codable {
 /// Barfing up info on the graphs
 extension DataStore : DataPointProvider {
     
+    /*
     var graphsMetaData: [GraphMetaData] {
         var ret = [GraphMetaData]()
         
         for i in 0 ..< graphs.count {
             let graph = graphs[i]
             let locusRange = lociForGraph(graph: graph).range
-            let meta = GraphMetaData(id: i,
-                                     numNodes: graph.nodes.count,
+            let meta = GraphMetaData(numNodes: graph.nodes.count,
                                      numEdges: graph.edges.count, 
                                      startingBP: locusRange.0,
                                      endingBP: locusRange.1)
@@ -73,6 +71,7 @@ extension DataStore : DataPointProvider {
         
         return ret
     }
+     */
     
     var dataPoints: [DataPoint] {
         var ret = [DataPoint]()

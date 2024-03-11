@@ -18,6 +18,7 @@ struct ChromosomeView: View {
             LazyHStack {
                 ForEach( data, id: \.self ){ item in
                     GraphsMetaDataView( item: item )
+                        .cardBackground()
                 }
             }
        }
@@ -26,6 +27,8 @@ struct ChromosomeView: View {
     }
 }
 
+/*
 #Preview {
     ChromosomeView(data: DataStore.DefaultDataStore.graphsMetaData )
 }
+*/
