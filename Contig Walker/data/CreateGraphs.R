@@ -12,6 +12,33 @@ load("df_snps.rda")
 load("df_samples.rda")
 raw <- as.data.frame( df_samples )
 
+# Add Fst to the df_snps 
+
+if( !("Fst" %in% names(df_snps))) { 
+
+  df_snps$Hs <- NA
+  df_snps$Ht <- NA
+  df_snps$Fst <- NA
+  
+  for( i in seq(1,nrow(df_snps))) { 
+    theLoc <- df_snps$Name[i]
+    
+    res <- Fst( data.frame( Population = df_samples$Population, 
+                            Locus = df_samples[,theLoc]) )
+    
+    df_snps$Fst[i] <- res$Fst[1]
+    df_snps$Hs[i] <- res$Hs[1]
+    df_snps$Ht[i] <- res$Ht[1]
+    df_snps[1,]  
+    
+    if( (i %% 100) == 0 ) {
+      cat(i,"\n")
+    }
+  }
+  
+  save(df_snps, file = "df_snps.rda")
+}
+
 source("humanCoordinates.R")
 
 ## Variables
@@ -84,16 +111,15 @@ while( baseCtr < (numLoci - 40) ) {
       dat$location <- locusData$Location
       dat$p <- locusData$p
       dat$Ho <- locusData$Ho
-      dat$He <- locusData$He
+      dat$Hs <- locusData$Hs
+      dat$Ht <- locusData$Ht
       dat$attributes <- NULL
       
       #toJSON( dat, pretty = TRUE )
-      write_json( dat, path = graphName )
+      write_json( dat, path = graphName, pretty = TRUE, auto_unbox=TRUE )
       
     }
   }
-  
-  
   
   # Save the graph 
   fileCtr <- fileCtr + 1
