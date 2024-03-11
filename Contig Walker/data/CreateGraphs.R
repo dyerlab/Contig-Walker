@@ -36,8 +36,9 @@ if( !("Fst" %in% names(df_snps))) {
     }
   }
   
-  
+  save(df_snps, file = "df_snps.rda")
 }
+
 
 
 

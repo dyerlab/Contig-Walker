@@ -272,11 +272,11 @@
 		2A2DD3282B93280D00FD6B4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2AA9C4662B9BBC2C0095FBF1 /* HomeView.swift */,
 				2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */,
 				2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */,
 				2AA9C4652B9BB50A0095FBF1 /* GraphViews */,
 				2AA9C45A2B9BA8150095FBF1 /* SummaryViews */,
-				2AA9C4662B9BBC2C0095FBF1 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -784,6 +784,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -824,6 +825,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
