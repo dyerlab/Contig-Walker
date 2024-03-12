@@ -96,11 +96,11 @@ struct LocusSideView: View {
                     .symbolSize(0.0)
                     .annotation(position: .automatic,
                                 spacing: 0,
-                                overflowResolution: .init(x: .padScale, y: .padScale)) {
+                                overflowResolution: .init(x: .padScale, y: .fit)) {
                         Text("\(item.id )")
                             .font( .system(size: 9) )
                             .foregroundStyle(.secondary)
-                            .rotationEffect(Angle(degrees: -45))
+                            .rotationEffect(Angle(degrees: -90))
                         
                     }
                 }
@@ -113,6 +113,7 @@ struct LocusSideView: View {
                 // AxisMarks(values: [0.0, 0.25, 0.50 ] )
             }
             .chartXAxis { }
+            .padding( .bottom, 15  )
             /*
             .chartYAxisLabel(position: .bottom,
                              alignment: .center,
