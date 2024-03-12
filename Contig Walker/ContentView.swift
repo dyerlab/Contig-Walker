@@ -72,7 +72,7 @@ struct ContentView: View {
             
             switch result {
             case .success(let urls):
-                data.importFromJSONs(files: urls)
+                data.importFromJSONs(urls: urls)
             case .failure:
                 isImporting = false
             }

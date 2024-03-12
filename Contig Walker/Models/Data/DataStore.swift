@@ -51,8 +51,11 @@ class DataStore: Codable {
     }
     
     
-    func importFromJSONs(files: [URL]) {
+    func importFromJSONs(urls: [URL]) {
         print("DataStore::importFromJSONs")
+        let jsons = GraphJSONLoader.loadFromURLs(urls: urls )
+        loadFromGraphJSONS(jsons: jsons )
+        print("DataStore::updated")
     }
     
 }

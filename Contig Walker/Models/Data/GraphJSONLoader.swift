@@ -108,7 +108,34 @@ extension GraphJSONLoader: CustomStringConvertible {
 
 extension GraphJSONLoader {
     
+    
+    static func loadFromURLs( urls: [URL]) -> [GraphJSONLoader] {
+        var ret = [GraphJSONLoader]()
+        let jd = JSONDecoder()
+        
+        for url in urls {
+            do {
+                if url.startAccessingSecurityScopedResource() {
+                    let rawJSON = try String(contentsOf: url)
+                    let graph = try jd.decode( GraphJSONLoader.self, from: rawJSON.data(using: .utf8)! )
+                    ret.append( graph )
+                    url.stopAccessingSecurityScopedResource()
+                }
+                
+            } catch {
+                print("Error in GraphJSONLoader::loadFromURLs \(error)")
+            }
+        }
+        return ret
+    }
+    
     static var DefaultGraphs: [GraphJSONLoader] {
+        
+        let urls = [URL]()
+        
+        
+        return GraphJSONLoader.loadFromURLs(urls: urls)
+        /*
         var ret = [GraphJSONLoader]()
         let jd = JSONDecoder()
         
@@ -133,6 +160,7 @@ extension GraphJSONLoader {
         }
         
         return ret
+         */
     }
     
     static var DefaultGraph: GraphJSONLoader {
