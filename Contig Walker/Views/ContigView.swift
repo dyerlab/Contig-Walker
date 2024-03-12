@@ -13,21 +13,32 @@ struct ContigView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 8)
                     .fill( .blue.gradient )
                     .frame( height: 18 )
                     .position(x: geometry.size.width/2.0, y: 15.0 )
+                    .opacity( 0.75 )
 
                 ForEach( locations, id: \.self) { loc in
                     Rectangle()
-                        .fill( .red.gradient )
+                        .fill( .gray.gradient )
                         .frame(width: 2, height: 22 )
                         .position( x: loc * geometry.size.width, y: 15.0 )
+                        .opacity(0.5)
                 }
+                
                 Rectangle()
-                    .fill( .yellow.gradient )
+                    .fill( .gray.gradient )
                     .frame(width: 4, height: 26 )
                     .position( x: selected * geometry.size.width, y: 15.0 )
+
+                Path { path in
+                    path.move(to: CGPoint(x: 0.0, y: 0.0))
+                    path.addLine(to: CGPoint( x: selected * geometry.size.width, y: 5.0))
+                    path.addLine(to: CGPoint( x: geometry.size.width, y: 0.0) )
+                    path.addLine(to: CGPoint(x: 0.0, y: 0.0))
+                }
+                .fill(.gray.gradient)
             }
             
         }

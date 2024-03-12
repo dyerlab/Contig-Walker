@@ -27,7 +27,6 @@ struct GraphView: View {
             ToolbarItem(placement: .automatic, content: {
                 Button(action: {
                     NotificationCenter.default.post(name: .toggleLabels, object: nil)
-                    print("toggle showing labels")
                 }, label: {
                     Image(systemName: "123.rectangle")
                 })
