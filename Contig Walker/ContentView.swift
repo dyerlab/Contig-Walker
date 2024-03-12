@@ -52,13 +52,19 @@ struct ContentView: View {
                 HomeView()
             } else {
                 if let selected = selectedGraph {
-                    VStack {
-                        GraphView( graph: selected,
-                                   loci: data.lociForGraph(graph: selected ) )
-                        ContigView( locations: data.graphLocations,
-                                    selected: data.locationForGraph(graph: selected) )
+                    
+                    ZStack {
+                        GraphDisplayView(graph: selected )
+                        VStack(alignment: .center) {
+                            Spacer()
+                            LocusSideView(loci: data.lociForGraph(graph: selected ))
+                                .padding()
+                            ContigView( locations: data.graphLocations,
+                                        selected: data.locationForGraph(graph: selected) )
+                        }
+                        .padding()
+
                     }
-                    .padding()
                     .background( Color.tertiaryBackground )
                 } else {
                     HomeView()

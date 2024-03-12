@@ -12,33 +12,24 @@ struct GraphView: View {
     var loci: [Locus]
     
     var body: some View {
-        
-        ZStack {
-            GraphDisplayView(graph: graph )
-            VStack(alignment: .center, content: {
-                Spacer()
-                LocusSideView(loci: loci)
-                    .padding()
-            })
-
-        }
-        .navigationTitle( graph.id.uuidString )
-        .toolbar {
-            ToolbarItem(placement: .automatic, content: {
-                Button(action: {
-                    NotificationCenter.default.post(name: .toggleLabels, object: nil)
-                }, label: {
-                    Image(systemName: "123.rectangle")
+        GraphDisplayView(graph: graph )
+            .navigationTitle( graph.id.uuidString )
+            .toolbar {
+                ToolbarItem(placement: .automatic, content: {
+                    Button(action: {
+                        NotificationCenter.default.post(name: .toggleLabels, object: nil)
+                    }, label: {
+                        Image(systemName: "123.rectangle")
+                    })
                 })
-            })
-            ToolbarItem(placement: .automatic, content: {
-                Button(action: {
-                    print("other button")
-                }, label: {
-                    Image(systemName: "sidebar.trailing" )
+                ToolbarItem(placement: .automatic, content: {
+                    Button(action: {
+                        print("other button")
+                    }, label: {
+                        Image(systemName: "sidebar.trailing" )
+                    })
                 })
-            })
-        }
+            }
     }
 }
 
