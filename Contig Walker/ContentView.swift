@@ -63,6 +63,22 @@ struct ContentView: View {
                                         selected: data.locationForGraph(graph: selected) )
                         }
                         .padding()
+                        .toolbar {
+                            ToolbarItem(placement: .automatic, content: {
+                                Button(action: {
+                                    NotificationCenter.default.post(name: .toggleLabels, object: nil)
+                                }, label: {
+                                    Image(systemName: "123.rectangle")
+                                })
+                            })
+                            ToolbarItem(placement: .automatic, content: {
+                                Button(action: {
+                                    print("other button")
+                                }, label: {
+                                    Image(systemName: "sidebar.trailing" )
+                                })
+                            })
+                        }
 
                     }
                     .background( Color.tertiaryBackground )

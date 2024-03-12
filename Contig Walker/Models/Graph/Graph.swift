@@ -24,7 +24,7 @@ class Graph : Codable, Identifiable {
         self.loci = loci
         
         let A = asMatrix()
-        self.metaData = GraphMetaData(id: UUID(),
+        self.metaData = GraphMetaData(id: self.id,
                                       numNodes: nodes.count,
                                       numEdges: edges.count,
                                       degree: Degree(A: A),

@@ -9,15 +9,19 @@ import SwiftUI
 import PresentationZen
 
 struct GraphsMetaDataView: View {
+    
+    var idx: Int
     var item: GraphMetaData
+    
     var body: some View {
             VStack(alignment: .leading) {
-                Text("Graph \(item.id)")
+                Text("Topology \(idx)")
                     .font(.title2)
                 KeyValueTable(data: item.dataPoints,
                               columnTypes: [.category, .label ],
                               columnHeaders: ["Parameter","Value"])
                 .cardBackground()
+                .frame(maxWidth: 220, maxHeight: 125)
             }
             
         
@@ -27,7 +31,7 @@ struct GraphsMetaDataView: View {
 
 
 #Preview {
-    GraphsMetaDataView( item: Graph.DefaultGraph.metaData! )
+    GraphsMetaDataView( idx: 2, item: Graph.DefaultGraph.metaData! )
         .padding(15)
         
 }

@@ -22,7 +22,6 @@ struct GraphMetaData: Codable {
     /// features reltaed to edge structure
     let diameter: Double
     
-    
 
 }
 
@@ -40,12 +39,12 @@ extension GraphMetaData {
 extension GraphMetaData: DataPointProvider {
     
     var dataPoints: [PresentationZen.DataPoint] {
-        return [  DataPoint(category: "Nodes",       value: 0.0, label: String(numNodes) ),
-                  DataPoint(category: "Edges",       value: 0.0, label: String(numEdges) ),
-                  DataPoint(category: "Degree",      value: 0.0, label: String(format: "%.2f", degree.mean) ),
-                  DataPoint(category: "Closeness",   value: 0.0, label: String(format: "%.2f", closeness.mean) ),
-                  DataPoint(category: "Betweenness", value: 0.0, label: String(format: "%.2f", betweenness.mean) ),
-                  DataPoint(category: "Diameter",    value: 0.0, label: String(format: "%.2f", diameter) ) ]
+        
+        return [  DataPoint(category: "Edges",       value: Double(numEdges), label: String(numEdges) ),
+                  DataPoint(category: "Degree",      value: degree.mean, label: String(format: "%.2f", degree.mean) ),
+                  DataPoint(category: "Closeness",   value: closeness.mean, label: String(format: "%.2f", closeness.mean) ),
+                  DataPoint(category: "Betweenness", value: betweenness.mean, label: String(format: "%.2f", betweenness.mean) ),
+                  DataPoint(category: "Diameter",    value: diameter, label: String(format: "%.2f", diameter) ) ]
     }
     
 }

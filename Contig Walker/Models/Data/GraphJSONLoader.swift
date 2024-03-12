@@ -29,7 +29,7 @@ class GraphJSONLoader: Codable {
         var theLoci = [Locus]()
         for i in 0 ..< loci.count {
             let locus = Locus(id: loci[i],
-                              coordinate: location[i],
+                              coordinate: UInt(location[i]),
                               p: p[i],
                               Ho: Ho[i],
                               Hs: Hs[i],
@@ -130,37 +130,24 @@ extension GraphJSONLoader {
     }
     
     static var DefaultGraphs: [GraphJSONLoader] {
-        
-        let urls = [URL]()
-        
-        
-        return GraphJSONLoader.loadFromURLs(urls: urls)
-        /*
         var ret = [GraphJSONLoader]()
         let jd = JSONDecoder()
         
-        for i in 1 ... 50 {
+        for i in 1 ... 100 {
             let filename = String("graph_chr2_40bp_\(i)")
             if let path = Bundle.main.path(forResource: filename, ofType: "json") {
-                
                 do {
                     let rawJSON = try String(contentsOfFile: path)
                     let graph = try jd.decode(GraphJSONLoader.self, from: rawJSON.data(using: .utf8)! )
                     ret.append( graph )
-                    
                 } catch {
                     print("Failing \(path) with error \(error)")
                 }
-                
-                
             } else {
                 print("Could not find path to \(filename)")
             }
-            
         }
-        
         return ret
-         */
     }
     
     static var DefaultGraph: GraphJSONLoader {

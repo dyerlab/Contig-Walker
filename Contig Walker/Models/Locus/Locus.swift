@@ -9,7 +9,7 @@ import Foundation
 
 class Locus: Identifiable, Codable  {
     let id: String
-    let coordinate: Int
+    let coordinate: UInt
     let p: Double
     let Ho: Double
     let Hs: Double
@@ -49,10 +49,10 @@ class Locus: Identifiable, Codable  {
     
     /// Shannon-Wiener Diversity Index
     var SW: Double {
-        return  ( p * log2(p)) + (q * log2(q) )
+        return  -1.0 * (( p * log2(p)) + (q * log2(q) ))
     }
 
-    init(id: String, coordinate: Int, p: Double, Ho: Double, Hs: Double, Ht: Double) {
+    init(id: String, coordinate: UInt, p: Double, Ho: Double, Hs: Double, Ht: Double) {
         self.id = id
         self.coordinate = coordinate
         self.p = p

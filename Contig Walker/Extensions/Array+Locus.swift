@@ -11,7 +11,7 @@ import Foundation
 
 extension Array where Element == Locus {
     
-    var range: (Int, Int) {
+    var range: (UInt, UInt) {
         let locations = self.compactMap( { $0.coordinate } )
         if let mn = locations.min(),
            let mx = locations.max() {
@@ -30,11 +30,11 @@ extension Array where Element == Locus {
         return ret
     }
     
-    var firstLocation: Int {
+    var firstLocation: UInt {
         return self.range.0
     }
     
-    var lastLocation: Int {
+    var lastLocation: UInt {
         return self.range.1
     }
     

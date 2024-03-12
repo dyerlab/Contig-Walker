@@ -22,6 +22,110 @@
 		2A2DD33B2B93335900FD6B4C /* EdgesSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */; };
 		2A2DD33D2B9333DC00FD6B4C /* GraphSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */; };
 		2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */; };
+		2A58447B2BA0D8F90011BDC6 /* graph_chr2_40bp_43.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844172BA0D8F70011BDC6 /* graph_chr2_40bp_43.json */; };
+		2A58447C2BA0D8F90011BDC6 /* graph_chr2_40bp_98.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844182BA0D8F70011BDC6 /* graph_chr2_40bp_98.json */; };
+		2A58447D2BA0D8F90011BDC6 /* graph_chr2_40bp_57.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844192BA0D8F70011BDC6 /* graph_chr2_40bp_57.json */; };
+		2A58447E2BA0D8F90011BDC6 /* graph_chr2_40bp_41.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58441A2BA0D8F70011BDC6 /* graph_chr2_40bp_41.json */; };
+		2A58447F2BA0D8F90011BDC6 /* graph_chr2_40bp_12.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58441B2BA0D8F70011BDC6 /* graph_chr2_40bp_12.json */; };
+		2A5844802BA0D8F90011BDC6 /* graph_chr2_40bp_16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58441C2BA0D8F70011BDC6 /* graph_chr2_40bp_16.json */; };
+		2A5844812BA0D8F90011BDC6 /* graph_chr2_40bp_47.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58441D2BA0D8F80011BDC6 /* graph_chr2_40bp_47.json */; };
+		2A5844822BA0D8F90011BDC6 /* graph_chr2_40bp_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58441E2BA0D8F80011BDC6 /* graph_chr2_40bp_3.json */; };
+		2A5844832BA0D8F90011BDC6 /* graph_chr2_40bp_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58441F2BA0D8F80011BDC6 /* graph_chr2_40bp_5.json */; };
+		2A5844842BA0D8F90011BDC6 /* graph_chr2_40bp_93.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844202BA0D8F80011BDC6 /* graph_chr2_40bp_93.json */; };
+		2A5844852BA0D8F90011BDC6 /* graph_chr2_40bp_32.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844212BA0D8F80011BDC6 /* graph_chr2_40bp_32.json */; };
+		2A5844862BA0D8F90011BDC6 /* graph_chr2_40bp_36.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844222BA0D8F80011BDC6 /* graph_chr2_40bp_36.json */; };
+		2A5844872BA0D8F90011BDC6 /* graph_chr2_40bp_9.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844232BA0D8F80011BDC6 /* graph_chr2_40bp_9.json */; };
+		2A5844882BA0D8F90011BDC6 /* graph_chr2_40bp_74.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844242BA0D8F80011BDC6 /* graph_chr2_40bp_74.json */; };
+		2A5844892BA0D8F90011BDC6 /* graph_chr2_40bp_78.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844252BA0D8F80011BDC6 /* graph_chr2_40bp_78.json */; };
+		2A58448A2BA0D8F90011BDC6 /* graph_chr2_40bp_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844262BA0D8F80011BDC6 /* graph_chr2_40bp_10.json */; };
+		2A58448B2BA0D8F90011BDC6 /* graph_chr2_40bp_92.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844272BA0D8F80011BDC6 /* graph_chr2_40bp_92.json */; };
+		2A58448C2BA0D8F90011BDC6 /* graph_chr2_40bp_73.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844282BA0D8F80011BDC6 /* graph_chr2_40bp_73.json */; };
+		2A58448D2BA0D8F90011BDC6 /* graph_chr2_40bp_29.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844292BA0D8F80011BDC6 /* graph_chr2_40bp_29.json */; };
+		2A58448E2BA0D8F90011BDC6 /* graph_chr2_40bp_55.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58442A2BA0D8F80011BDC6 /* graph_chr2_40bp_55.json */; };
+		2A58448F2BA0D8F90011BDC6 /* graph_chr2_40bp_25.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58442B2BA0D8F80011BDC6 /* graph_chr2_40bp_25.json */; };
+		2A5844902BA0D8F90011BDC6 /* graph_chr2_40bp_79.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58442C2BA0D8F80011BDC6 /* graph_chr2_40bp_79.json */; };
+		2A5844912BA0D8F90011BDC6 /* graph_chr2_40bp_85.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58442D2BA0D8F80011BDC6 /* graph_chr2_40bp_85.json */; };
+		2A5844922BA0D8F90011BDC6 /* graph_chr2_40bp_90.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58442E2BA0D8F80011BDC6 /* graph_chr2_40bp_90.json */; };
+		2A5844932BA0D8F90011BDC6 /* graph_chr2_40bp_31.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58442F2BA0D8F80011BDC6 /* graph_chr2_40bp_31.json */; };
+		2A5844942BA0D8F90011BDC6 /* graph_chr2_40bp_26.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844302BA0D8F80011BDC6 /* graph_chr2_40bp_26.json */; };
+		2A5844952BA0D8F90011BDC6 /* graph_chr2_40bp_44.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844312BA0D8F80011BDC6 /* graph_chr2_40bp_44.json */; };
+		2A5844962BA0D8F90011BDC6 /* graph_chr2_40bp_42.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844322BA0D8F80011BDC6 /* graph_chr2_40bp_42.json */; };
+		2A5844972BA0D8F90011BDC6 /* graph_chr2_40bp_80.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844332BA0D8F80011BDC6 /* graph_chr2_40bp_80.json */; };
+		2A5844982BA0D8F90011BDC6 /* graph_chr2_40bp_39.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844342BA0D8F80011BDC6 /* graph_chr2_40bp_39.json */; };
+		2A5844992BA0D8F90011BDC6 /* graph_chr2_40bp_69.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844352BA0D8F80011BDC6 /* graph_chr2_40bp_69.json */; };
+		2A58449A2BA0D8F90011BDC6 /* graph_chr2_40bp_37.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844362BA0D8F80011BDC6 /* graph_chr2_40bp_37.json */; };
+		2A58449B2BA0D8F90011BDC6 /* graph_chr2_40bp_61.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844372BA0D8F80011BDC6 /* graph_chr2_40bp_61.json */; };
+		2A58449C2BA0D8F90011BDC6 /* graph_chr2_40bp_49.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844382BA0D8F80011BDC6 /* graph_chr2_40bp_49.json */; };
+		2A58449D2BA0D8F90011BDC6 /* graph_chr2_40bp_15.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844392BA0D8F80011BDC6 /* graph_chr2_40bp_15.json */; };
+		2A58449E2BA0D8F90011BDC6 /* graph_chr2_40bp_58.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58443A2BA0D8F80011BDC6 /* graph_chr2_40bp_58.json */; };
+		2A58449F2BA0D8F90011BDC6 /* graph_chr2_40bp_71.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58443B2BA0D8F80011BDC6 /* graph_chr2_40bp_71.json */; };
+		2A5844A02BA0D8F90011BDC6 /* graph_chr2_40bp_64.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58443C2BA0D8F80011BDC6 /* graph_chr2_40bp_64.json */; };
+		2A5844A12BA0D8F90011BDC6 /* graph_chr2_40bp_72.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58443D2BA0D8F80011BDC6 /* graph_chr2_40bp_72.json */; };
+		2A5844A22BA0D8F90011BDC6 /* graph_chr2_40bp_82.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58443E2BA0D8F80011BDC6 /* graph_chr2_40bp_82.json */; };
+		2A5844A32BA0D8F90011BDC6 /* graph_chr2_40bp_66.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58443F2BA0D8F80011BDC6 /* graph_chr2_40bp_66.json */; };
+		2A5844A42BA0D8F90011BDC6 /* graph_chr2_40bp_34.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844402BA0D8F80011BDC6 /* graph_chr2_40bp_34.json */; };
+		2A5844A52BA0D8F90011BDC6 /* graph_chr2_40bp_62.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844412BA0D8F80011BDC6 /* graph_chr2_40bp_62.json */; };
+		2A5844A62BA0D8F90011BDC6 /* graph_chr2_40bp_45.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844422BA0D8F80011BDC6 /* graph_chr2_40bp_45.json */; };
+		2A5844A72BA0D8F90011BDC6 /* graph_chr2_40bp_91.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844432BA0D8F80011BDC6 /* graph_chr2_40bp_91.json */; };
+		2A5844A82BA0D8F90011BDC6 /* graph_chr2_40bp_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844442BA0D8F80011BDC6 /* graph_chr2_40bp_4.json */; };
+		2A5844A92BA0D8F90011BDC6 /* graph_chr2_40bp_81.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844452BA0D8F80011BDC6 /* graph_chr2_40bp_81.json */; };
+		2A5844AA2BA0D8F90011BDC6 /* graph_chr2_40bp_30.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844462BA0D8F80011BDC6 /* graph_chr2_40bp_30.json */; };
+		2A5844AB2BA0D8F90011BDC6 /* graph_chr2_40bp_33.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844472BA0D8F80011BDC6 /* graph_chr2_40bp_33.json */; };
+		2A5844AC2BA0D8F90011BDC6 /* graph_chr2_40bp_24.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844482BA0D8F80011BDC6 /* graph_chr2_40bp_24.json */; };
+		2A5844AD2BA0D8F90011BDC6 /* graph_chr2_40bp_35.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844492BA0D8F80011BDC6 /* graph_chr2_40bp_35.json */; };
+		2A5844AE2BA0D8F90011BDC6 /* graph_chr2_40bp_96.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58444A2BA0D8F80011BDC6 /* graph_chr2_40bp_96.json */; };
+		2A5844AF2BA0D8F90011BDC6 /* graph_chr2_40bp_38.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58444B2BA0D8F80011BDC6 /* graph_chr2_40bp_38.json */; };
+		2A5844B02BA0D8F90011BDC6 /* graph_chr2_40bp_21.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58444C2BA0D8F80011BDC6 /* graph_chr2_40bp_21.json */; };
+		2A5844B12BA0D8F90011BDC6 /* graph_chr2_40bp_75.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58444D2BA0D8F90011BDC6 /* graph_chr2_40bp_75.json */; };
+		2A5844B22BA0D8F90011BDC6 /* graph_chr2_40bp_87.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58444E2BA0D8F90011BDC6 /* graph_chr2_40bp_87.json */; };
+		2A5844B32BA0D8FA0011BDC6 /* graph_chr2_40bp_28.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58444F2BA0D8F90011BDC6 /* graph_chr2_40bp_28.json */; };
+		2A5844B42BA0D8FA0011BDC6 /* graph_chr2_40bp_53.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844502BA0D8F90011BDC6 /* graph_chr2_40bp_53.json */; };
+		2A5844B52BA0D8FA0011BDC6 /* graph_chr2_40bp_51.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844512BA0D8F90011BDC6 /* graph_chr2_40bp_51.json */; };
+		2A5844B62BA0D8FA0011BDC6 /* graph_chr2_40bp_70.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844522BA0D8F90011BDC6 /* graph_chr2_40bp_70.json */; };
+		2A5844B72BA0D8FA0011BDC6 /* graph_chr2_40bp_14.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844532BA0D8F90011BDC6 /* graph_chr2_40bp_14.json */; };
+		2A5844B82BA0D8FA0011BDC6 /* graph_chr2_40bp_65.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844542BA0D8F90011BDC6 /* graph_chr2_40bp_65.json */; };
+		2A5844B92BA0D8FA0011BDC6 /* graph_chr2_40bp_56.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844552BA0D8F90011BDC6 /* graph_chr2_40bp_56.json */; };
+		2A5844BA2BA0D8FA0011BDC6 /* graph_chr2_40bp_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844562BA0D8F90011BDC6 /* graph_chr2_40bp_8.json */; };
+		2A5844BB2BA0D8FA0011BDC6 /* graph_chr2_40bp_94.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844572BA0D8F90011BDC6 /* graph_chr2_40bp_94.json */; };
+		2A5844BC2BA0D8FA0011BDC6 /* graph_chr2_40bp_83.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844582BA0D8F90011BDC6 /* graph_chr2_40bp_83.json */; };
+		2A5844BD2BA0D8FA0011BDC6 /* graph_chr2_40bp_60.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844592BA0D8F90011BDC6 /* graph_chr2_40bp_60.json */; };
+		2A5844BE2BA0D8FA0011BDC6 /* graph_chr2_40bp_89.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58445A2BA0D8F90011BDC6 /* graph_chr2_40bp_89.json */; };
+		2A5844BF2BA0D8FA0011BDC6 /* graph_chr2_40bp_48.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58445B2BA0D8F90011BDC6 /* graph_chr2_40bp_48.json */; };
+		2A5844C02BA0D8FA0011BDC6 /* graph_chr2_40bp_86.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58445C2BA0D8F90011BDC6 /* graph_chr2_40bp_86.json */; };
+		2A5844C12BA0D8FA0011BDC6 /* graph_chr2_40bp_97.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58445D2BA0D8F90011BDC6 /* graph_chr2_40bp_97.json */; };
+		2A5844C22BA0D8FA0011BDC6 /* graph_chr2_40bp_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58445E2BA0D8F90011BDC6 /* graph_chr2_40bp_2.json */; };
+		2A5844C32BA0D8FA0011BDC6 /* graph_chr2_40bp_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58445F2BA0D8F90011BDC6 /* graph_chr2_40bp_7.json */; };
+		2A5844C42BA0D8FA0011BDC6 /* graph_chr2_40bp_52.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844602BA0D8F90011BDC6 /* graph_chr2_40bp_52.json */; };
+		2A5844C52BA0D8FA0011BDC6 /* graph_chr2_40bp_18.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844612BA0D8F90011BDC6 /* graph_chr2_40bp_18.json */; };
+		2A5844C62BA0D8FA0011BDC6 /* graph_chr2_40bp_88.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844622BA0D8F90011BDC6 /* graph_chr2_40bp_88.json */; };
+		2A5844C72BA0D8FA0011BDC6 /* graph_chr2_40bp_100.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844632BA0D8F90011BDC6 /* graph_chr2_40bp_100.json */; };
+		2A5844C82BA0D8FA0011BDC6 /* graph_chr2_40bp_63.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844642BA0D8F90011BDC6 /* graph_chr2_40bp_63.json */; };
+		2A5844C92BA0D8FA0011BDC6 /* graph_chr2_40bp_27.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844652BA0D8F90011BDC6 /* graph_chr2_40bp_27.json */; };
+		2A5844CA2BA0D8FA0011BDC6 /* graph_chr2_40bp_11.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844662BA0D8F90011BDC6 /* graph_chr2_40bp_11.json */; };
+		2A5844CB2BA0D8FA0011BDC6 /* graph_chr2_40bp_40.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844672BA0D8F90011BDC6 /* graph_chr2_40bp_40.json */; };
+		2A5844CC2BA0D8FA0011BDC6 /* graph_chr2_40bp_13.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844682BA0D8F90011BDC6 /* graph_chr2_40bp_13.json */; };
+		2A5844CD2BA0D8FA0011BDC6 /* graph_chr2_40bp_19.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844692BA0D8F90011BDC6 /* graph_chr2_40bp_19.json */; };
+		2A5844CE2BA0D8FA0011BDC6 /* graph_chr2_40bp_46.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58446A2BA0D8F90011BDC6 /* graph_chr2_40bp_46.json */; };
+		2A5844CF2BA0D8FA0011BDC6 /* graph_chr2_40bp_95.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58446B2BA0D8F90011BDC6 /* graph_chr2_40bp_95.json */; };
+		2A5844D02BA0D8FA0011BDC6 /* graph_chr2_40bp_84.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58446C2BA0D8F90011BDC6 /* graph_chr2_40bp_84.json */; };
+		2A5844D12BA0D8FA0011BDC6 /* graph_chr2_40bp_50.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58446D2BA0D8F90011BDC6 /* graph_chr2_40bp_50.json */; };
+		2A5844D22BA0D8FA0011BDC6 /* graph_chr2_40bp_54.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58446E2BA0D8F90011BDC6 /* graph_chr2_40bp_54.json */; };
+		2A5844D32BA0D8FA0011BDC6 /* graph_chr2_40bp_59.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58446F2BA0D8F90011BDC6 /* graph_chr2_40bp_59.json */; };
+		2A5844D42BA0D8FA0011BDC6 /* graph_chr2_40bp_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844702BA0D8F90011BDC6 /* graph_chr2_40bp_1.json */; };
+		2A5844D52BA0D8FA0011BDC6 /* graph_chr2_40bp_22.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844712BA0D8F90011BDC6 /* graph_chr2_40bp_22.json */; };
+		2A5844D62BA0D8FA0011BDC6 /* graph_chr2_40bp_23.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844722BA0D8F90011BDC6 /* graph_chr2_40bp_23.json */; };
+		2A5844D72BA0D8FA0011BDC6 /* graph_chr2_40bp_99.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844732BA0D8F90011BDC6 /* graph_chr2_40bp_99.json */; };
+		2A5844D82BA0D8FA0011BDC6 /* graph_chr2_40bp_67.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844742BA0D8F90011BDC6 /* graph_chr2_40bp_67.json */; };
+		2A5844D92BA0D8FA0011BDC6 /* graph_chr2_40bp_17.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844752BA0D8F90011BDC6 /* graph_chr2_40bp_17.json */; };
+		2A5844DA2BA0D8FA0011BDC6 /* graph_chr2_40bp_68.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844762BA0D8F90011BDC6 /* graph_chr2_40bp_68.json */; };
+		2A5844DB2BA0D8FA0011BDC6 /* graph_chr2_40bp_77.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844772BA0D8F90011BDC6 /* graph_chr2_40bp_77.json */; };
+		2A5844DC2BA0D8FA0011BDC6 /* graph_chr2_40bp_20.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844782BA0D8F90011BDC6 /* graph_chr2_40bp_20.json */; };
+		2A5844DD2BA0D8FA0011BDC6 /* graph_chr2_40bp_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5844792BA0D8F90011BDC6 /* graph_chr2_40bp_6.json */; };
+		2A5844DE2BA0D8FA0011BDC6 /* graph_chr2_40bp_76.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58447A2BA0D8F90011BDC6 /* graph_chr2_40bp_76.json */; };
+		2A5844E02BA0DA150011BDC6 /* GraphMetaDataPlots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5844DF2BA0DA150011BDC6 /* GraphMetaDataPlots.swift */; };
+		2A5844E22BA0DA630011BDC6 /* Array+GraphMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5844E12BA0DA630011BDC6 /* Array+GraphMetaData.swift */; };
+		2A5844E42BA0E67F0011BDC6 /* GraphMetaDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5844E32BA0E67F0011BDC6 /* GraphMetaDataType.swift */; };
+		2A5844E62BA0EB4A0011BDC6 /* DataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5844E52BA0EB4A0011BDC6 /* DataStoreTests.swift */; };
 		2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */; };
 		2AA9C44E2B9B583C0095FBF1 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */; };
 		2AA9C4502B9B5BAF0095FBF1 /* LocusSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */; };
@@ -82,6 +186,110 @@
 		2A2DD33A2B93335900FD6B4C /* EdgesSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgesSummaryView.swift; sourceTree = "<group>"; };
 		2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSummarizer.swift; sourceTree = "<group>"; };
 		2A2DD33E2B93858700FD6B4C /* GraphSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSummaryView.swift; sourceTree = "<group>"; };
+		2A5844172BA0D8F70011BDC6 /* graph_chr2_40bp_43.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_43.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_43.json"; sourceTree = SOURCE_ROOT; };
+		2A5844182BA0D8F70011BDC6 /* graph_chr2_40bp_98.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_98.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_98.json"; sourceTree = SOURCE_ROOT; };
+		2A5844192BA0D8F70011BDC6 /* graph_chr2_40bp_57.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_57.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_57.json"; sourceTree = SOURCE_ROOT; };
+		2A58441A2BA0D8F70011BDC6 /* graph_chr2_40bp_41.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_41.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_41.json"; sourceTree = SOURCE_ROOT; };
+		2A58441B2BA0D8F70011BDC6 /* graph_chr2_40bp_12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_12.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_12.json"; sourceTree = SOURCE_ROOT; };
+		2A58441C2BA0D8F70011BDC6 /* graph_chr2_40bp_16.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_16.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_16.json"; sourceTree = SOURCE_ROOT; };
+		2A58441D2BA0D8F80011BDC6 /* graph_chr2_40bp_47.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_47.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_47.json"; sourceTree = SOURCE_ROOT; };
+		2A58441E2BA0D8F80011BDC6 /* graph_chr2_40bp_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_3.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_3.json"; sourceTree = SOURCE_ROOT; };
+		2A58441F2BA0D8F80011BDC6 /* graph_chr2_40bp_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_5.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_5.json"; sourceTree = SOURCE_ROOT; };
+		2A5844202BA0D8F80011BDC6 /* graph_chr2_40bp_93.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_93.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_93.json"; sourceTree = SOURCE_ROOT; };
+		2A5844212BA0D8F80011BDC6 /* graph_chr2_40bp_32.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_32.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_32.json"; sourceTree = SOURCE_ROOT; };
+		2A5844222BA0D8F80011BDC6 /* graph_chr2_40bp_36.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_36.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_36.json"; sourceTree = SOURCE_ROOT; };
+		2A5844232BA0D8F80011BDC6 /* graph_chr2_40bp_9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_9.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_9.json"; sourceTree = SOURCE_ROOT; };
+		2A5844242BA0D8F80011BDC6 /* graph_chr2_40bp_74.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_74.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_74.json"; sourceTree = SOURCE_ROOT; };
+		2A5844252BA0D8F80011BDC6 /* graph_chr2_40bp_78.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_78.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_78.json"; sourceTree = SOURCE_ROOT; };
+		2A5844262BA0D8F80011BDC6 /* graph_chr2_40bp_10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_10.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_10.json"; sourceTree = SOURCE_ROOT; };
+		2A5844272BA0D8F80011BDC6 /* graph_chr2_40bp_92.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_92.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_92.json"; sourceTree = SOURCE_ROOT; };
+		2A5844282BA0D8F80011BDC6 /* graph_chr2_40bp_73.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_73.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_73.json"; sourceTree = SOURCE_ROOT; };
+		2A5844292BA0D8F80011BDC6 /* graph_chr2_40bp_29.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_29.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_29.json"; sourceTree = SOURCE_ROOT; };
+		2A58442A2BA0D8F80011BDC6 /* graph_chr2_40bp_55.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_55.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_55.json"; sourceTree = SOURCE_ROOT; };
+		2A58442B2BA0D8F80011BDC6 /* graph_chr2_40bp_25.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_25.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_25.json"; sourceTree = SOURCE_ROOT; };
+		2A58442C2BA0D8F80011BDC6 /* graph_chr2_40bp_79.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_79.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_79.json"; sourceTree = SOURCE_ROOT; };
+		2A58442D2BA0D8F80011BDC6 /* graph_chr2_40bp_85.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_85.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_85.json"; sourceTree = SOURCE_ROOT; };
+		2A58442E2BA0D8F80011BDC6 /* graph_chr2_40bp_90.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_90.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_90.json"; sourceTree = SOURCE_ROOT; };
+		2A58442F2BA0D8F80011BDC6 /* graph_chr2_40bp_31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_31.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_31.json"; sourceTree = SOURCE_ROOT; };
+		2A5844302BA0D8F80011BDC6 /* graph_chr2_40bp_26.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_26.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_26.json"; sourceTree = SOURCE_ROOT; };
+		2A5844312BA0D8F80011BDC6 /* graph_chr2_40bp_44.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_44.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_44.json"; sourceTree = SOURCE_ROOT; };
+		2A5844322BA0D8F80011BDC6 /* graph_chr2_40bp_42.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_42.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_42.json"; sourceTree = SOURCE_ROOT; };
+		2A5844332BA0D8F80011BDC6 /* graph_chr2_40bp_80.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_80.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_80.json"; sourceTree = SOURCE_ROOT; };
+		2A5844342BA0D8F80011BDC6 /* graph_chr2_40bp_39.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_39.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_39.json"; sourceTree = SOURCE_ROOT; };
+		2A5844352BA0D8F80011BDC6 /* graph_chr2_40bp_69.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_69.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_69.json"; sourceTree = SOURCE_ROOT; };
+		2A5844362BA0D8F80011BDC6 /* graph_chr2_40bp_37.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_37.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_37.json"; sourceTree = SOURCE_ROOT; };
+		2A5844372BA0D8F80011BDC6 /* graph_chr2_40bp_61.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_61.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_61.json"; sourceTree = SOURCE_ROOT; };
+		2A5844382BA0D8F80011BDC6 /* graph_chr2_40bp_49.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_49.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_49.json"; sourceTree = SOURCE_ROOT; };
+		2A5844392BA0D8F80011BDC6 /* graph_chr2_40bp_15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_15.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_15.json"; sourceTree = SOURCE_ROOT; };
+		2A58443A2BA0D8F80011BDC6 /* graph_chr2_40bp_58.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_58.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_58.json"; sourceTree = SOURCE_ROOT; };
+		2A58443B2BA0D8F80011BDC6 /* graph_chr2_40bp_71.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_71.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_71.json"; sourceTree = SOURCE_ROOT; };
+		2A58443C2BA0D8F80011BDC6 /* graph_chr2_40bp_64.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_64.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_64.json"; sourceTree = SOURCE_ROOT; };
+		2A58443D2BA0D8F80011BDC6 /* graph_chr2_40bp_72.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_72.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_72.json"; sourceTree = SOURCE_ROOT; };
+		2A58443E2BA0D8F80011BDC6 /* graph_chr2_40bp_82.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_82.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_82.json"; sourceTree = SOURCE_ROOT; };
+		2A58443F2BA0D8F80011BDC6 /* graph_chr2_40bp_66.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_66.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_66.json"; sourceTree = SOURCE_ROOT; };
+		2A5844402BA0D8F80011BDC6 /* graph_chr2_40bp_34.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_34.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_34.json"; sourceTree = SOURCE_ROOT; };
+		2A5844412BA0D8F80011BDC6 /* graph_chr2_40bp_62.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_62.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_62.json"; sourceTree = SOURCE_ROOT; };
+		2A5844422BA0D8F80011BDC6 /* graph_chr2_40bp_45.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_45.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_45.json"; sourceTree = SOURCE_ROOT; };
+		2A5844432BA0D8F80011BDC6 /* graph_chr2_40bp_91.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_91.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_91.json"; sourceTree = SOURCE_ROOT; };
+		2A5844442BA0D8F80011BDC6 /* graph_chr2_40bp_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_4.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_4.json"; sourceTree = SOURCE_ROOT; };
+		2A5844452BA0D8F80011BDC6 /* graph_chr2_40bp_81.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_81.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_81.json"; sourceTree = SOURCE_ROOT; };
+		2A5844462BA0D8F80011BDC6 /* graph_chr2_40bp_30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_30.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_30.json"; sourceTree = SOURCE_ROOT; };
+		2A5844472BA0D8F80011BDC6 /* graph_chr2_40bp_33.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_33.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_33.json"; sourceTree = SOURCE_ROOT; };
+		2A5844482BA0D8F80011BDC6 /* graph_chr2_40bp_24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_24.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_24.json"; sourceTree = SOURCE_ROOT; };
+		2A5844492BA0D8F80011BDC6 /* graph_chr2_40bp_35.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_35.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_35.json"; sourceTree = SOURCE_ROOT; };
+		2A58444A2BA0D8F80011BDC6 /* graph_chr2_40bp_96.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_96.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_96.json"; sourceTree = SOURCE_ROOT; };
+		2A58444B2BA0D8F80011BDC6 /* graph_chr2_40bp_38.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_38.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_38.json"; sourceTree = SOURCE_ROOT; };
+		2A58444C2BA0D8F80011BDC6 /* graph_chr2_40bp_21.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_21.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_21.json"; sourceTree = SOURCE_ROOT; };
+		2A58444D2BA0D8F90011BDC6 /* graph_chr2_40bp_75.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_75.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_75.json"; sourceTree = SOURCE_ROOT; };
+		2A58444E2BA0D8F90011BDC6 /* graph_chr2_40bp_87.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_87.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_87.json"; sourceTree = SOURCE_ROOT; };
+		2A58444F2BA0D8F90011BDC6 /* graph_chr2_40bp_28.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_28.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_28.json"; sourceTree = SOURCE_ROOT; };
+		2A5844502BA0D8F90011BDC6 /* graph_chr2_40bp_53.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_53.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_53.json"; sourceTree = SOURCE_ROOT; };
+		2A5844512BA0D8F90011BDC6 /* graph_chr2_40bp_51.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_51.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_51.json"; sourceTree = SOURCE_ROOT; };
+		2A5844522BA0D8F90011BDC6 /* graph_chr2_40bp_70.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_70.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_70.json"; sourceTree = SOURCE_ROOT; };
+		2A5844532BA0D8F90011BDC6 /* graph_chr2_40bp_14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_14.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_14.json"; sourceTree = SOURCE_ROOT; };
+		2A5844542BA0D8F90011BDC6 /* graph_chr2_40bp_65.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_65.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_65.json"; sourceTree = SOURCE_ROOT; };
+		2A5844552BA0D8F90011BDC6 /* graph_chr2_40bp_56.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_56.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_56.json"; sourceTree = SOURCE_ROOT; };
+		2A5844562BA0D8F90011BDC6 /* graph_chr2_40bp_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_8.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_8.json"; sourceTree = SOURCE_ROOT; };
+		2A5844572BA0D8F90011BDC6 /* graph_chr2_40bp_94.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_94.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_94.json"; sourceTree = SOURCE_ROOT; };
+		2A5844582BA0D8F90011BDC6 /* graph_chr2_40bp_83.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_83.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_83.json"; sourceTree = SOURCE_ROOT; };
+		2A5844592BA0D8F90011BDC6 /* graph_chr2_40bp_60.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_60.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_60.json"; sourceTree = SOURCE_ROOT; };
+		2A58445A2BA0D8F90011BDC6 /* graph_chr2_40bp_89.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_89.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_89.json"; sourceTree = SOURCE_ROOT; };
+		2A58445B2BA0D8F90011BDC6 /* graph_chr2_40bp_48.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_48.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_48.json"; sourceTree = SOURCE_ROOT; };
+		2A58445C2BA0D8F90011BDC6 /* graph_chr2_40bp_86.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_86.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_86.json"; sourceTree = SOURCE_ROOT; };
+		2A58445D2BA0D8F90011BDC6 /* graph_chr2_40bp_97.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_97.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_97.json"; sourceTree = SOURCE_ROOT; };
+		2A58445E2BA0D8F90011BDC6 /* graph_chr2_40bp_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_2.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_2.json"; sourceTree = SOURCE_ROOT; };
+		2A58445F2BA0D8F90011BDC6 /* graph_chr2_40bp_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_7.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_7.json"; sourceTree = SOURCE_ROOT; };
+		2A5844602BA0D8F90011BDC6 /* graph_chr2_40bp_52.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_52.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_52.json"; sourceTree = SOURCE_ROOT; };
+		2A5844612BA0D8F90011BDC6 /* graph_chr2_40bp_18.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_18.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_18.json"; sourceTree = SOURCE_ROOT; };
+		2A5844622BA0D8F90011BDC6 /* graph_chr2_40bp_88.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_88.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_88.json"; sourceTree = SOURCE_ROOT; };
+		2A5844632BA0D8F90011BDC6 /* graph_chr2_40bp_100.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_100.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_100.json"; sourceTree = SOURCE_ROOT; };
+		2A5844642BA0D8F90011BDC6 /* graph_chr2_40bp_63.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_63.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_63.json"; sourceTree = SOURCE_ROOT; };
+		2A5844652BA0D8F90011BDC6 /* graph_chr2_40bp_27.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_27.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_27.json"; sourceTree = SOURCE_ROOT; };
+		2A5844662BA0D8F90011BDC6 /* graph_chr2_40bp_11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_11.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_11.json"; sourceTree = SOURCE_ROOT; };
+		2A5844672BA0D8F90011BDC6 /* graph_chr2_40bp_40.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_40.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_40.json"; sourceTree = SOURCE_ROOT; };
+		2A5844682BA0D8F90011BDC6 /* graph_chr2_40bp_13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_13.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_13.json"; sourceTree = SOURCE_ROOT; };
+		2A5844692BA0D8F90011BDC6 /* graph_chr2_40bp_19.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_19.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_19.json"; sourceTree = SOURCE_ROOT; };
+		2A58446A2BA0D8F90011BDC6 /* graph_chr2_40bp_46.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_46.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_46.json"; sourceTree = SOURCE_ROOT; };
+		2A58446B2BA0D8F90011BDC6 /* graph_chr2_40bp_95.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_95.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_95.json"; sourceTree = SOURCE_ROOT; };
+		2A58446C2BA0D8F90011BDC6 /* graph_chr2_40bp_84.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_84.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_84.json"; sourceTree = SOURCE_ROOT; };
+		2A58446D2BA0D8F90011BDC6 /* graph_chr2_40bp_50.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_50.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_50.json"; sourceTree = SOURCE_ROOT; };
+		2A58446E2BA0D8F90011BDC6 /* graph_chr2_40bp_54.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_54.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_54.json"; sourceTree = SOURCE_ROOT; };
+		2A58446F2BA0D8F90011BDC6 /* graph_chr2_40bp_59.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_59.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_59.json"; sourceTree = SOURCE_ROOT; };
+		2A5844702BA0D8F90011BDC6 /* graph_chr2_40bp_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_1.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_1.json"; sourceTree = SOURCE_ROOT; };
+		2A5844712BA0D8F90011BDC6 /* graph_chr2_40bp_22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_22.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_22.json"; sourceTree = SOURCE_ROOT; };
+		2A5844722BA0D8F90011BDC6 /* graph_chr2_40bp_23.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_23.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_23.json"; sourceTree = SOURCE_ROOT; };
+		2A5844732BA0D8F90011BDC6 /* graph_chr2_40bp_99.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_99.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_99.json"; sourceTree = SOURCE_ROOT; };
+		2A5844742BA0D8F90011BDC6 /* graph_chr2_40bp_67.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_67.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_67.json"; sourceTree = SOURCE_ROOT; };
+		2A5844752BA0D8F90011BDC6 /* graph_chr2_40bp_17.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_17.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_17.json"; sourceTree = SOURCE_ROOT; };
+		2A5844762BA0D8F90011BDC6 /* graph_chr2_40bp_68.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_68.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_68.json"; sourceTree = SOURCE_ROOT; };
+		2A5844772BA0D8F90011BDC6 /* graph_chr2_40bp_77.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_77.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_77.json"; sourceTree = SOURCE_ROOT; };
+		2A5844782BA0D8F90011BDC6 /* graph_chr2_40bp_20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_20.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_20.json"; sourceTree = SOURCE_ROOT; };
+		2A5844792BA0D8F90011BDC6 /* graph_chr2_40bp_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_6.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_6.json"; sourceTree = SOURCE_ROOT; };
+		2A58447A2BA0D8F90011BDC6 /* graph_chr2_40bp_76.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = graph_chr2_40bp_76.json; path = "Contig Walker/data/chr2_40/graph_chr2_40bp_76.json"; sourceTree = SOURCE_ROOT; };
+		2A5844DF2BA0DA150011BDC6 /* GraphMetaDataPlots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMetaDataPlots.swift; sourceTree = "<group>"; };
+		2A5844E12BA0DA630011BDC6 /* Array+GraphMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+GraphMetaData.swift"; sourceTree = "<group>"; };
+		2A5844E32BA0E67F0011BDC6 /* GraphMetaDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMetaDataType.swift; sourceTree = "<group>"; };
+		2A5844E52BA0EB4A0011BDC6 /* DataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTests.swift; sourceTree = "<group>"; };
 		2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 		2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusSideView.swift; sourceTree = "<group>"; };
@@ -137,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				2AE2D82F2B920C190063DBF9 /* README.md */,
+				2A5844162BA0D8E20011BDC6 /* data */,
 				2A293C3D2B920B85001474AA /* Contig Walker */,
 				2A293C512B920B86001474AA /* Contig WalkerTests */,
 				2A293C3C2B920B85001474AA /* Products */,
@@ -182,6 +391,7 @@
 				2AF5E38F2B925DDE004A5769 /* GraphJSONLoaderTests.swift */,
 				2AA75C5F2B9268EF00F39EB6 /* NodeTests.swift */,
 				2AB0E2212B9B4650003FF91E /* GraphTest.swift */,
+				2A5844E52BA0EB4A0011BDC6 /* DataStoreTests.swift */,
 			);
 			path = "Contig WalkerTests";
 			sourceTree = "<group>";
@@ -191,10 +401,10 @@
 			children = (
 				2AA9C4662B9BBC2C0095FBF1 /* HomeView.swift */,
 				2AA9C44D2B9B583C0095FBF1 /* GraphView.swift */,
-				2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */,
+				2A5844152BA0D5360011BDC6 /* LocusViews */,
 				2AA9C4652B9BB50A0095FBF1 /* GraphViews */,
 				2AA9C45A2B9BA8150095FBF1 /* SummaryViews */,
-				2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */,
+				2A5844142BA0D48B0011BDC6 /* GraphMetaData */,
 				2AC3DA232B9F678500E38088 /* CardBackground.swift */,
 				2ADBA98E2B9FA64B005E9A5F /* Logo.swift */,
 				2AB7045F2BA0747300B19918 /* ContigView.swift */,
@@ -218,6 +428,130 @@
 				2A2DD3382B9332EC00FD6B4C /* EdgeSetSummarizer.swift */,
 			);
 			path = Edge;
+			sourceTree = "<group>";
+		};
+		2A5844142BA0D48B0011BDC6 /* GraphMetaData */ = {
+			isa = PBXGroup;
+			children = (
+				2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */,
+				2A5844DF2BA0DA150011BDC6 /* GraphMetaDataPlots.swift */,
+			);
+			path = GraphMetaData;
+			sourceTree = "<group>";
+		};
+		2A5844152BA0D5360011BDC6 /* LocusViews */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9C44F2B9B5BAF0095FBF1 /* LocusSideView.swift */,
+			);
+			path = LocusViews;
+			sourceTree = "<group>";
+		};
+		2A5844162BA0D8E20011BDC6 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2A5844702BA0D8F90011BDC6 /* graph_chr2_40bp_1.json */,
+				2A58445E2BA0D8F90011BDC6 /* graph_chr2_40bp_2.json */,
+				2A58441E2BA0D8F80011BDC6 /* graph_chr2_40bp_3.json */,
+				2A5844442BA0D8F80011BDC6 /* graph_chr2_40bp_4.json */,
+				2A58441F2BA0D8F80011BDC6 /* graph_chr2_40bp_5.json */,
+				2A5844792BA0D8F90011BDC6 /* graph_chr2_40bp_6.json */,
+				2A58445F2BA0D8F90011BDC6 /* graph_chr2_40bp_7.json */,
+				2A5844562BA0D8F90011BDC6 /* graph_chr2_40bp_8.json */,
+				2A5844232BA0D8F80011BDC6 /* graph_chr2_40bp_9.json */,
+				2A5844262BA0D8F80011BDC6 /* graph_chr2_40bp_10.json */,
+				2A5844662BA0D8F90011BDC6 /* graph_chr2_40bp_11.json */,
+				2A58441B2BA0D8F70011BDC6 /* graph_chr2_40bp_12.json */,
+				2A5844682BA0D8F90011BDC6 /* graph_chr2_40bp_13.json */,
+				2A5844532BA0D8F90011BDC6 /* graph_chr2_40bp_14.json */,
+				2A5844392BA0D8F80011BDC6 /* graph_chr2_40bp_15.json */,
+				2A58441C2BA0D8F70011BDC6 /* graph_chr2_40bp_16.json */,
+				2A5844752BA0D8F90011BDC6 /* graph_chr2_40bp_17.json */,
+				2A5844612BA0D8F90011BDC6 /* graph_chr2_40bp_18.json */,
+				2A5844692BA0D8F90011BDC6 /* graph_chr2_40bp_19.json */,
+				2A5844782BA0D8F90011BDC6 /* graph_chr2_40bp_20.json */,
+				2A58444C2BA0D8F80011BDC6 /* graph_chr2_40bp_21.json */,
+				2A5844712BA0D8F90011BDC6 /* graph_chr2_40bp_22.json */,
+				2A5844722BA0D8F90011BDC6 /* graph_chr2_40bp_23.json */,
+				2A5844482BA0D8F80011BDC6 /* graph_chr2_40bp_24.json */,
+				2A58442B2BA0D8F80011BDC6 /* graph_chr2_40bp_25.json */,
+				2A5844302BA0D8F80011BDC6 /* graph_chr2_40bp_26.json */,
+				2A5844652BA0D8F90011BDC6 /* graph_chr2_40bp_27.json */,
+				2A58444F2BA0D8F90011BDC6 /* graph_chr2_40bp_28.json */,
+				2A5844292BA0D8F80011BDC6 /* graph_chr2_40bp_29.json */,
+				2A5844462BA0D8F80011BDC6 /* graph_chr2_40bp_30.json */,
+				2A58442F2BA0D8F80011BDC6 /* graph_chr2_40bp_31.json */,
+				2A5844212BA0D8F80011BDC6 /* graph_chr2_40bp_32.json */,
+				2A5844472BA0D8F80011BDC6 /* graph_chr2_40bp_33.json */,
+				2A5844402BA0D8F80011BDC6 /* graph_chr2_40bp_34.json */,
+				2A5844492BA0D8F80011BDC6 /* graph_chr2_40bp_35.json */,
+				2A5844222BA0D8F80011BDC6 /* graph_chr2_40bp_36.json */,
+				2A5844362BA0D8F80011BDC6 /* graph_chr2_40bp_37.json */,
+				2A58444B2BA0D8F80011BDC6 /* graph_chr2_40bp_38.json */,
+				2A5844342BA0D8F80011BDC6 /* graph_chr2_40bp_39.json */,
+				2A5844672BA0D8F90011BDC6 /* graph_chr2_40bp_40.json */,
+				2A58441A2BA0D8F70011BDC6 /* graph_chr2_40bp_41.json */,
+				2A5844322BA0D8F80011BDC6 /* graph_chr2_40bp_42.json */,
+				2A5844172BA0D8F70011BDC6 /* graph_chr2_40bp_43.json */,
+				2A5844312BA0D8F80011BDC6 /* graph_chr2_40bp_44.json */,
+				2A5844422BA0D8F80011BDC6 /* graph_chr2_40bp_45.json */,
+				2A58446A2BA0D8F90011BDC6 /* graph_chr2_40bp_46.json */,
+				2A58441D2BA0D8F80011BDC6 /* graph_chr2_40bp_47.json */,
+				2A58445B2BA0D8F90011BDC6 /* graph_chr2_40bp_48.json */,
+				2A5844382BA0D8F80011BDC6 /* graph_chr2_40bp_49.json */,
+				2A58446D2BA0D8F90011BDC6 /* graph_chr2_40bp_50.json */,
+				2A5844512BA0D8F90011BDC6 /* graph_chr2_40bp_51.json */,
+				2A5844602BA0D8F90011BDC6 /* graph_chr2_40bp_52.json */,
+				2A5844502BA0D8F90011BDC6 /* graph_chr2_40bp_53.json */,
+				2A58446E2BA0D8F90011BDC6 /* graph_chr2_40bp_54.json */,
+				2A58442A2BA0D8F80011BDC6 /* graph_chr2_40bp_55.json */,
+				2A5844552BA0D8F90011BDC6 /* graph_chr2_40bp_56.json */,
+				2A5844192BA0D8F70011BDC6 /* graph_chr2_40bp_57.json */,
+				2A58443A2BA0D8F80011BDC6 /* graph_chr2_40bp_58.json */,
+				2A58446F2BA0D8F90011BDC6 /* graph_chr2_40bp_59.json */,
+				2A5844592BA0D8F90011BDC6 /* graph_chr2_40bp_60.json */,
+				2A5844372BA0D8F80011BDC6 /* graph_chr2_40bp_61.json */,
+				2A5844412BA0D8F80011BDC6 /* graph_chr2_40bp_62.json */,
+				2A5844642BA0D8F90011BDC6 /* graph_chr2_40bp_63.json */,
+				2A58443C2BA0D8F80011BDC6 /* graph_chr2_40bp_64.json */,
+				2A5844542BA0D8F90011BDC6 /* graph_chr2_40bp_65.json */,
+				2A58443F2BA0D8F80011BDC6 /* graph_chr2_40bp_66.json */,
+				2A5844742BA0D8F90011BDC6 /* graph_chr2_40bp_67.json */,
+				2A5844762BA0D8F90011BDC6 /* graph_chr2_40bp_68.json */,
+				2A5844352BA0D8F80011BDC6 /* graph_chr2_40bp_69.json */,
+				2A5844522BA0D8F90011BDC6 /* graph_chr2_40bp_70.json */,
+				2A58443B2BA0D8F80011BDC6 /* graph_chr2_40bp_71.json */,
+				2A58443D2BA0D8F80011BDC6 /* graph_chr2_40bp_72.json */,
+				2A5844282BA0D8F80011BDC6 /* graph_chr2_40bp_73.json */,
+				2A5844242BA0D8F80011BDC6 /* graph_chr2_40bp_74.json */,
+				2A58444D2BA0D8F90011BDC6 /* graph_chr2_40bp_75.json */,
+				2A58447A2BA0D8F90011BDC6 /* graph_chr2_40bp_76.json */,
+				2A5844772BA0D8F90011BDC6 /* graph_chr2_40bp_77.json */,
+				2A5844252BA0D8F80011BDC6 /* graph_chr2_40bp_78.json */,
+				2A58442C2BA0D8F80011BDC6 /* graph_chr2_40bp_79.json */,
+				2A5844332BA0D8F80011BDC6 /* graph_chr2_40bp_80.json */,
+				2A5844452BA0D8F80011BDC6 /* graph_chr2_40bp_81.json */,
+				2A58443E2BA0D8F80011BDC6 /* graph_chr2_40bp_82.json */,
+				2A5844582BA0D8F90011BDC6 /* graph_chr2_40bp_83.json */,
+				2A58446C2BA0D8F90011BDC6 /* graph_chr2_40bp_84.json */,
+				2A58442D2BA0D8F80011BDC6 /* graph_chr2_40bp_85.json */,
+				2A58445C2BA0D8F90011BDC6 /* graph_chr2_40bp_86.json */,
+				2A58444E2BA0D8F90011BDC6 /* graph_chr2_40bp_87.json */,
+				2A5844622BA0D8F90011BDC6 /* graph_chr2_40bp_88.json */,
+				2A58445A2BA0D8F90011BDC6 /* graph_chr2_40bp_89.json */,
+				2A58442E2BA0D8F80011BDC6 /* graph_chr2_40bp_90.json */,
+				2A5844432BA0D8F80011BDC6 /* graph_chr2_40bp_91.json */,
+				2A5844272BA0D8F80011BDC6 /* graph_chr2_40bp_92.json */,
+				2A5844202BA0D8F80011BDC6 /* graph_chr2_40bp_93.json */,
+				2A5844572BA0D8F90011BDC6 /* graph_chr2_40bp_94.json */,
+				2A58446B2BA0D8F90011BDC6 /* graph_chr2_40bp_95.json */,
+				2A58444A2BA0D8F80011BDC6 /* graph_chr2_40bp_96.json */,
+				2A58445D2BA0D8F90011BDC6 /* graph_chr2_40bp_97.json */,
+				2A5844182BA0D8F70011BDC6 /* graph_chr2_40bp_98.json */,
+				2A5844732BA0D8F90011BDC6 /* graph_chr2_40bp_99.json */,
+				2A5844632BA0D8F90011BDC6 /* graph_chr2_40bp_100.json */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		2AA9C45A2B9BA8150095FBF1 /* SummaryViews */ = {
@@ -275,6 +609,7 @@
 				2AC3DA252B9F68C600E38088 /* View.swift */,
 				2AF348F52B9F8ECD001D87D1 /* Vector.swift */,
 				2AF348F72B9F9550001D87D1 /* Notification.swift */,
+				2A5844E12BA0DA630011BDC6 /* Array+GraphMetaData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,6 +633,7 @@
 				2A293C422B920B85001474AA /* Graph.swift */,
 				2A2DD33C2B9333DC00FD6B4C /* GraphSummarizer.swift */,
 				2AC30E282B9DEAF0008B135C /* GraphMetaData.swift */,
+				2A5844E32BA0E67F0011BDC6 /* GraphMetaDataType.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -406,6 +742,106 @@
 				2A293C492B920B86001474AA /* Preview Assets.xcassets in Resources */,
 				2A293C452B920B86001474AA /* Assets.xcassets in Resources */,
 				2AE2D8312B920C190063DBF9 /* README.md in Resources */,
+				2A58448A2BA0D8F90011BDC6 /* graph_chr2_40bp_10.json in Resources */,
+				2A5844962BA0D8F90011BDC6 /* graph_chr2_40bp_42.json in Resources */,
+				2A5844902BA0D8F90011BDC6 /* graph_chr2_40bp_79.json in Resources */,
+				2A5844CE2BA0D8FA0011BDC6 /* graph_chr2_40bp_46.json in Resources */,
+				2A58449E2BA0D8F90011BDC6 /* graph_chr2_40bp_58.json in Resources */,
+				2A5844982BA0D8F90011BDC6 /* graph_chr2_40bp_39.json in Resources */,
+				2A58449C2BA0D8F90011BDC6 /* graph_chr2_40bp_49.json in Resources */,
+				2A5844B82BA0D8FA0011BDC6 /* graph_chr2_40bp_65.json in Resources */,
+				2A5844A92BA0D8F90011BDC6 /* graph_chr2_40bp_81.json in Resources */,
+				2A5844B12BA0D8F90011BDC6 /* graph_chr2_40bp_75.json in Resources */,
+				2A5844BD2BA0D8FA0011BDC6 /* graph_chr2_40bp_60.json in Resources */,
+				2A58449D2BA0D8F90011BDC6 /* graph_chr2_40bp_15.json in Resources */,
+				2A5844D82BA0D8FA0011BDC6 /* graph_chr2_40bp_67.json in Resources */,
+				2A5844D62BA0D8FA0011BDC6 /* graph_chr2_40bp_23.json in Resources */,
+				2A5844CD2BA0D8FA0011BDC6 /* graph_chr2_40bp_19.json in Resources */,
+				2A5844DE2BA0D8FA0011BDC6 /* graph_chr2_40bp_76.json in Resources */,
+				2A5844B32BA0D8FA0011BDC6 /* graph_chr2_40bp_28.json in Resources */,
+				2A5844C02BA0D8FA0011BDC6 /* graph_chr2_40bp_86.json in Resources */,
+				2A5844922BA0D8F90011BDC6 /* graph_chr2_40bp_90.json in Resources */,
+				2A58448F2BA0D8F90011BDC6 /* graph_chr2_40bp_25.json in Resources */,
+				2A5844D92BA0D8FA0011BDC6 /* graph_chr2_40bp_17.json in Resources */,
+				2A58449F2BA0D8F90011BDC6 /* graph_chr2_40bp_71.json in Resources */,
+				2A5844B52BA0D8FA0011BDC6 /* graph_chr2_40bp_51.json in Resources */,
+				2A5844892BA0D8F90011BDC6 /* graph_chr2_40bp_78.json in Resources */,
+				2A5844D02BA0D8FA0011BDC6 /* graph_chr2_40bp_84.json in Resources */,
+				2A5844A72BA0D8F90011BDC6 /* graph_chr2_40bp_91.json in Resources */,
+				2A5844C82BA0D8FA0011BDC6 /* graph_chr2_40bp_63.json in Resources */,
+				2A5844B22BA0D8F90011BDC6 /* graph_chr2_40bp_87.json in Resources */,
+				2A5844CF2BA0D8FA0011BDC6 /* graph_chr2_40bp_95.json in Resources */,
+				2A5844BB2BA0D8FA0011BDC6 /* graph_chr2_40bp_94.json in Resources */,
+				2A58447B2BA0D8F90011BDC6 /* graph_chr2_40bp_43.json in Resources */,
+				2A5844832BA0D8F90011BDC6 /* graph_chr2_40bp_5.json in Resources */,
+				2A58448D2BA0D8F90011BDC6 /* graph_chr2_40bp_29.json in Resources */,
+				2A58447D2BA0D8F90011BDC6 /* graph_chr2_40bp_57.json in Resources */,
+				2A5844932BA0D8F90011BDC6 /* graph_chr2_40bp_31.json in Resources */,
+				2A5844D42BA0D8FA0011BDC6 /* graph_chr2_40bp_1.json in Resources */,
+				2A5844882BA0D8F90011BDC6 /* graph_chr2_40bp_74.json in Resources */,
+				2A5844AB2BA0D8F90011BDC6 /* graph_chr2_40bp_33.json in Resources */,
+				2A58447E2BA0D8F90011BDC6 /* graph_chr2_40bp_41.json in Resources */,
+				2A5844CC2BA0D8FA0011BDC6 /* graph_chr2_40bp_13.json in Resources */,
+				2A5844DB2BA0D8FA0011BDC6 /* graph_chr2_40bp_77.json in Resources */,
+				2A58449A2BA0D8F90011BDC6 /* graph_chr2_40bp_37.json in Resources */,
+				2A5844AA2BA0D8F90011BDC6 /* graph_chr2_40bp_30.json in Resources */,
+				2A5844A62BA0D8F90011BDC6 /* graph_chr2_40bp_45.json in Resources */,
+				2A58448C2BA0D8F90011BDC6 /* graph_chr2_40bp_73.json in Resources */,
+				2A5844812BA0D8F90011BDC6 /* graph_chr2_40bp_47.json in Resources */,
+				2A5844802BA0D8F90011BDC6 /* graph_chr2_40bp_16.json in Resources */,
+				2A5844942BA0D8F90011BDC6 /* graph_chr2_40bp_26.json in Resources */,
+				2A58449B2BA0D8F90011BDC6 /* graph_chr2_40bp_61.json in Resources */,
+				2A5844C22BA0D8FA0011BDC6 /* graph_chr2_40bp_2.json in Resources */,
+				2A5844952BA0D8F90011BDC6 /* graph_chr2_40bp_44.json in Resources */,
+				2A5844C42BA0D8FA0011BDC6 /* graph_chr2_40bp_52.json in Resources */,
+				2A5844992BA0D8F90011BDC6 /* graph_chr2_40bp_69.json in Resources */,
+				2A5844AE2BA0D8F90011BDC6 /* graph_chr2_40bp_96.json in Resources */,
+				2A5844912BA0D8F90011BDC6 /* graph_chr2_40bp_85.json in Resources */,
+				2A58447F2BA0D8F90011BDC6 /* graph_chr2_40bp_12.json in Resources */,
+				2A5844A02BA0D8F90011BDC6 /* graph_chr2_40bp_64.json in Resources */,
+				2A5844AF2BA0D8F90011BDC6 /* graph_chr2_40bp_38.json in Resources */,
+				2A5844C12BA0D8FA0011BDC6 /* graph_chr2_40bp_97.json in Resources */,
+				2A5844C32BA0D8FA0011BDC6 /* graph_chr2_40bp_7.json in Resources */,
+				2A5844BA2BA0D8FA0011BDC6 /* graph_chr2_40bp_8.json in Resources */,
+				2A5844A22BA0D8F90011BDC6 /* graph_chr2_40bp_82.json in Resources */,
+				2A5844C72BA0D8FA0011BDC6 /* graph_chr2_40bp_100.json in Resources */,
+				2A5844B02BA0D8F90011BDC6 /* graph_chr2_40bp_21.json in Resources */,
+				2A5844B92BA0D8FA0011BDC6 /* graph_chr2_40bp_56.json in Resources */,
+				2A5844A12BA0D8F90011BDC6 /* graph_chr2_40bp_72.json in Resources */,
+				2A5844DA2BA0D8FA0011BDC6 /* graph_chr2_40bp_68.json in Resources */,
+				2A5844D22BA0D8FA0011BDC6 /* graph_chr2_40bp_54.json in Resources */,
+				2A5844BC2BA0D8FA0011BDC6 /* graph_chr2_40bp_83.json in Resources */,
+				2A5844D12BA0D8FA0011BDC6 /* graph_chr2_40bp_50.json in Resources */,
+				2A5844852BA0D8F90011BDC6 /* graph_chr2_40bp_32.json in Resources */,
+				2A5844D72BA0D8FA0011BDC6 /* graph_chr2_40bp_99.json in Resources */,
+				2A5844C92BA0D8FA0011BDC6 /* graph_chr2_40bp_27.json in Resources */,
+				2A58448B2BA0D8F90011BDC6 /* graph_chr2_40bp_92.json in Resources */,
+				2A5844872BA0D8F90011BDC6 /* graph_chr2_40bp_9.json in Resources */,
+				2A58448E2BA0D8F90011BDC6 /* graph_chr2_40bp_55.json in Resources */,
+				2A5844972BA0D8F90011BDC6 /* graph_chr2_40bp_80.json in Resources */,
+				2A5844A52BA0D8F90011BDC6 /* graph_chr2_40bp_62.json in Resources */,
+				2A5844A82BA0D8F90011BDC6 /* graph_chr2_40bp_4.json in Resources */,
+				2A5844B42BA0D8FA0011BDC6 /* graph_chr2_40bp_53.json in Resources */,
+				2A5844A42BA0D8F90011BDC6 /* graph_chr2_40bp_34.json in Resources */,
+				2A5844822BA0D8F90011BDC6 /* graph_chr2_40bp_3.json in Resources */,
+				2A5844B72BA0D8FA0011BDC6 /* graph_chr2_40bp_14.json in Resources */,
+				2A58447C2BA0D8F90011BDC6 /* graph_chr2_40bp_98.json in Resources */,
+				2A5844842BA0D8F90011BDC6 /* graph_chr2_40bp_93.json in Resources */,
+				2A5844862BA0D8F90011BDC6 /* graph_chr2_40bp_36.json in Resources */,
+				2A5844D32BA0D8FA0011BDC6 /* graph_chr2_40bp_59.json in Resources */,
+				2A5844AC2BA0D8F90011BDC6 /* graph_chr2_40bp_24.json in Resources */,
+				2A5844CB2BA0D8FA0011BDC6 /* graph_chr2_40bp_40.json in Resources */,
+				2A5844CA2BA0D8FA0011BDC6 /* graph_chr2_40bp_11.json in Resources */,
+				2A5844B62BA0D8FA0011BDC6 /* graph_chr2_40bp_70.json in Resources */,
+				2A5844DC2BA0D8FA0011BDC6 /* graph_chr2_40bp_20.json in Resources */,
+				2A5844C62BA0D8FA0011BDC6 /* graph_chr2_40bp_88.json in Resources */,
+				2A5844A32BA0D8F90011BDC6 /* graph_chr2_40bp_66.json in Resources */,
+				2A5844D52BA0D8FA0011BDC6 /* graph_chr2_40bp_22.json in Resources */,
+				2A5844C52BA0D8FA0011BDC6 /* graph_chr2_40bp_18.json in Resources */,
+				2A5844AD2BA0D8F90011BDC6 /* graph_chr2_40bp_35.json in Resources */,
+				2A5844BE2BA0D8FA0011BDC6 /* graph_chr2_40bp_89.json in Resources */,
+				2A5844DD2BA0D8FA0011BDC6 /* graph_chr2_40bp_6.json in Resources */,
+				2A5844BF2BA0D8FA0011BDC6 /* graph_chr2_40bp_48.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,9 +880,12 @@
 				2AA9C4592B9BA6CD0095FBF1 /* GroupColors.swift in Sources */,
 				2A05D7092B94C2F7002E1DF1 /* GraphLineView.swift in Sources */,
 				2AE2D9032B9212A10063DBF9 /* Edge.swift in Sources */,
+				2A5844E22BA0DA630011BDC6 /* Array+GraphMetaData.swift in Sources */,
 				2A293C432B920B85001474AA /* Graph.swift in Sources */,
 				2AF348F82B9F9550001D87D1 /* Notification.swift in Sources */,
+				2A5844E02BA0DA150011BDC6 /* GraphMetaDataPlots.swift in Sources */,
 				2A293C3F2B920B85001474AA /* Contig_WalkerApp.swift in Sources */,
+				2A5844E42BA0E67F0011BDC6 /* GraphMetaDataType.swift in Sources */,
 				2A2DD3332B932AD700FD6B4C /* NodeSetSummarizer.swift in Sources */,
 				2AB0E21A2B9B3E66003FF91E /* Locus.swift in Sources */,
 				2A2DD33D2B9333DC00FD6B4C /* GraphSummarizer.swift in Sources */,
@@ -465,6 +904,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AB0E2222B9B4650003FF91E /* GraphTest.swift in Sources */,
+				2A5844E62BA0EB4A0011BDC6 /* DataStoreTests.swift in Sources */,
 				2AF5E3902B925DDE004A5769 /* GraphJSONLoaderTests.swift in Sources */,
 				2AA75C602B9268EF00F39EB6 /* NodeTests.swift in Sources */,
 				2A293C532B920B86001474AA /* Contig_WalkerTests.swift in Sources */,

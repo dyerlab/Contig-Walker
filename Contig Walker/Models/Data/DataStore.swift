@@ -60,11 +60,16 @@ class DataStore: Codable {
         return ret
     }
     
-    func locationForGraph( graph: Graph ) -> Double {
+    func locationForGraph( graph: Graph, standardized: Bool = true ) -> Double {
         let r = loci.range
         let graphLoci = lociForGraph(graph: graph )
         let graphCenter = graphLoci.centroid
-        return graphCenter / Double( r.1 - r.0 )
+        if standardized {
+            return graphCenter / Double( r.1 - r.0 )
+        } else {
+            return graphCenter
+        }
+
     }
     
     
@@ -114,6 +119,39 @@ extension DataStore : DataPointProvider {
         return ret
     }
     
+    
+    func metaDataPoints(metaDataType: GraphMetaDataType) -> [DataPoint] {
+        var ret = [DataPoint]()
+        
+        for i in 0 ..< graphs.count {
+            
+            let graph = graphs[i]
+            let coord = locationForGraph(graph: graph, standardized: false)
+            
+            var dat = DataPoint(x: Double(coord), y: Double.nan)
+            if let md = graph.metaData {
+                switch metaDataType {
+                case .Edges:
+                    dat.yValue = Double(md.numEdges)
+                case .Degree:
+                    dat.yValue = md.degree.mean
+                case .Closeness:
+                    dat.yValue = md.closeness.mean
+                case .Betweenness:
+                    dat.yValue = md.betweenness.mean
+                case .Diameter:
+                    dat.yValue = md.diameter
+                }
+                ret.append( dat )
+
+            }
+            
+        }
+        return ret
+    }
+    
+    
+    
 }
 
 
@@ -145,7 +183,7 @@ extension DataStore {
             graphs.append( json.asGraph )
             for i in 0 ..< json.loci.count {
                 let locus = Locus( id: json.loci[i],
-                                   coordinate: json.location[i],
+                                   coordinate: UInt(json.location[i]),
                                    p: json.p[i],
                                    Ho: json.Ho[i],
                                    Hs: json.Hs[i],

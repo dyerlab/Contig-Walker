@@ -14,22 +14,6 @@ struct GraphView: View {
     var body: some View {
         GraphDisplayView(graph: graph )
             .navigationTitle( graph.id.uuidString )
-            .toolbar {
-                ToolbarItem(placement: .automatic, content: {
-                    Button(action: {
-                        NotificationCenter.default.post(name: .toggleLabels, object: nil)
-                    }, label: {
-                        Image(systemName: "123.rectangle")
-                    })
-                })
-                ToolbarItem(placement: .automatic, content: {
-                    Button(action: {
-                        print("other button")
-                    }, label: {
-                        Image(systemName: "sidebar.trailing" )
-                    })
-                })
-            }
     }
 }
 
