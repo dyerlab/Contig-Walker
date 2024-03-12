@@ -34,8 +34,8 @@ struct LocusSideView: View {
         var ret = [DataPoint]()
         
         for loc in loci {
-            ret.append( DataPoint(x: Double(loc.location), y: loc.He, group: "He") )
-            ret.append( DataPoint(x: Double(loc.location), y: (loc.He - loc.Ho)/loc.He, group: "F") )
+            ret.append( DataPoint(x: Double(loc.coordinate), y: loc.He, group: "He") )
+            ret.append( DataPoint(x: Double(loc.coordinate), y: (loc.He - loc.Ho)/loc.He, group: "F") )
         }
         return ret
     }
@@ -68,7 +68,7 @@ struct LocusSideView: View {
             
             ForEach( loci, id: \.self) { item in
                 PointMark(
-                    x: .value("X Value", item.location  ),
+                    x: .value("X Value", item.coordinate  ),
                     y: .value("Y Value", 0.0 )
                 )
                 .symbolSize(0.0)

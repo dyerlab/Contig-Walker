@@ -51,8 +51,8 @@ class DataStore: Codable {
     }
     
     
-    @objc func importJSON() {
-        print("in importJSON")
+    func importFromJSONs(files: [URL]) {
+        print("DataStore::importFromJSONs")
     }
     
 }
@@ -112,6 +112,12 @@ extension DataStore {
     
     static var DefaultDataStore: DataStore {
         let jsons = GraphJSONLoader.DefaultGraphs
+        let ret = DataStore()
+        ret.loadFromGraphJSONS(jsons: jsons)
+        return ret
+    }
+    
+    func loadFromGraphJSONS( jsons: [GraphJSONLoader]) {
         var loci = Set<Locus>()
         var graphs = [Graph]()
         
@@ -119,17 +125,19 @@ extension DataStore {
             graphs.append( json.asGraph )
             for i in 0 ..< json.loci.count {
                 let locus = Locus( id: json.loci[i],
-                                   location: json.location[i],
+                                   coordinate: json.location[i],
                                    p: json.p[i],
                                    Ho: json.Ho[i],
-                                   He: json.He[i] )
+                                   Hs: json.Hs[i],
+                                   Ht: json.Ht[i] )
                 if !loci.contains( locus ) {
                     loci.insert( locus )
                 }
             }
         }
-     
-        return DataStore(graphs: graphs, loci: Array<Locus>(loci).sorted() )
+        self.loci = Array<Locus>(loci)
+        self.graphs = graphs
     }
+    
     
 }

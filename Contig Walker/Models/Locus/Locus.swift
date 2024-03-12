@@ -9,17 +9,48 @@ import Foundation
 
 class Locus: Identifiable, Codable  {
     let id: String
-    let location: Int
+    let coordinate: Int
     let p: Double
     let Ho: Double
-    let He: Double
+    let Hs: Double
+    let Ht: Double
     
-    init(id: String, location: Int, p: Double, Ho: Double, He: Double) {
+    /// The other allele
+    var q: Double {
+        return 1.0 - p
+    }
+    
+    /// Frequency corrected effective diversity
+    var Ae: Double{
+        return 1.0 / ( (p*p) + ( q*q) )
+    }
+    
+    /// Expected heterozygosity 2pq
+    var He: Double {
+        return (1.0 - p) * p * 2.0
+    }
+    
+    /// Variance in allele frequencies Fst
+    var Fst: Double {
+        if Ht != 0 {
+            return 1.0 - Hs/Ht
+        } else {
+            return Double.nan
+        }
+    }
+    
+    /// Shannon-Wiener Diversity Index
+    var SW: Double {
+        return  ( p * log2(p)) + (q * log2(q) )
+    }
+
+    init(id: String, coordinate: Int, p: Double, Ho: Double, Hs: Double, Ht: Double) {
         self.id = id
-        self.location = location
+        self.coordinate = coordinate
         self.p = p
         self.Ho = Ho
-        self.He = He
+        self.Hs = Hs
+        self.Ht = Ht
     }
     
 }
@@ -30,7 +61,7 @@ class Locus: Identifiable, Codable  {
 extension Locus: Equatable, Hashable, Comparable {
     
     static func < (lhs: Locus, rhs: Locus) -> Bool {
-        return lhs.location < rhs.location
+        return lhs.coordinate < rhs.coordinate
     }
     
     static func == (lhs: Locus, rhs: Locus) -> Bool {
@@ -39,7 +70,7 @@ extension Locus: Equatable, Hashable, Comparable {
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
-        hasher.combine(location)
+        hasher.combine(coordinate)
     }
 }
 

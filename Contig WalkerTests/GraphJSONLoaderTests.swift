@@ -20,8 +20,9 @@ final class GraphJSONLoaderTests: XCTestCase {
         XCTAssertEqual( graph.location.count, 0 )
         XCTAssertEqual( graph.loci.count, 0 )
         XCTAssertEqual( graph.p.count, 0 )
-        XCTAssertEqual( graph.He.count, 0 )
         XCTAssertEqual( graph.Ho.count, 0 )
+        XCTAssertEqual( graph.Hs.count, 0 )
+        XCTAssertEqual( graph.Ht.count, 0 )
     }
     
     func testDefault() throws {

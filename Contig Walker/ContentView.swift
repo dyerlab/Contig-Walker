@@ -15,7 +15,7 @@ struct ContentView: View {
     private var asDestination = false
     
     init() {
-        self.data = DataStore.DefaultDataStore
+        self.data = DataStore()
     }
     
     var body: some View {
@@ -64,7 +64,19 @@ struct ContentView: View {
 
         }
         .onReceive( NotificationCenter.default.publisher(for: .importData), perform: { _ in
-            data.importJSON()
+            isImporting = true
+        })
+        .fileImporter(isPresented: $isImporting,
+                      allowedContentTypes: [ .json ],
+                      allowsMultipleSelection: true, onCompletion: { result in
+            
+            switch result {
+            case .success(let urls):
+                data.importFromJSONs(files: urls)
+            case .failure:
+                isImporting = false
+            }
+
         })
         
         
