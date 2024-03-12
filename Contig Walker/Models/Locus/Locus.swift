@@ -30,6 +30,14 @@ class Locus: Identifiable, Codable  {
         return (1.0 - p) * p * 2.0
     }
     
+    var Fis: Double {
+        if He > 0  {
+            return 1.0 - (Ho / He)
+        } else {
+            return Double.nan
+        }
+    }
+    
     /// Variance in allele frequencies Fst
     var Fst: Double {
         if Ht != 0 {

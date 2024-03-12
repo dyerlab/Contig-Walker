@@ -39,6 +39,7 @@
 		2AB0E2202B9B3FE7003FF91E /* Array+Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */; };
 		2AB0E2222B9B4650003FF91E /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E2212B9B4650003FF91E /* GraphTest.swift */; };
 		2AB0E2242B9B4B81003FF91E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E2232B9B4B81003FF91E /* DataStore.swift */; };
+		2AB704602BA0747300B19918 /* ContigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB7045F2BA0747300B19918 /* ContigView.swift */; };
 		2AC30E292B9DEAF0008B135C /* GraphMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC30E282B9DEAF0008B135C /* GraphMetaData.swift */; };
 		2AC30E2B2B9DEBF5008B135C /* GraphsMetaDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */; };
 		2AC3DA242B9F678500E38088 /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3DA232B9F678500E38088 /* CardBackground.swift */; };
@@ -96,6 +97,7 @@
 		2AB0E21F2B9B3FE7003FF91E /* Array+Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Locus.swift"; sourceTree = "<group>"; };
 		2AB0E2212B9B4650003FF91E /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		2AB0E2232B9B4B81003FF91E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		2AB7045F2BA0747300B19918 /* ContigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContigView.swift; sourceTree = "<group>"; };
 		2AC30E282B9DEAF0008B135C /* GraphMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMetaData.swift; sourceTree = "<group>"; };
 		2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsMetaDataView.swift; sourceTree = "<group>"; };
 		2AC3DA232B9F678500E38088 /* CardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				2AC30E2A2B9DEBF5008B135C /* GraphsMetaDataView.swift */,
 				2AC3DA232B9F678500E38088 /* CardBackground.swift */,
 				2ADBA98E2B9FA64B005E9A5F /* Logo.swift */,
+				2AB7045F2BA0747300B19918 /* ContigView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				2AC3DA242B9F678500E38088 /* CardBackground.swift in Sources */,
 				2A2DD3392B9332EC00FD6B4C /* EdgeSetSummarizer.swift in Sources */,
 				2AA9C4522B9BA5470095FBF1 /* GraphDisplayView.swift in Sources */,
+				2AB704602BA0747300B19918 /* ContigView.swift in Sources */,
 				2AE2D9012B9212040063DBF9 /* Node.swift in Sources */,
 				2A2DD33F2B93858700FD6B4C /* GraphSummaryView.swift in Sources */,
 				2AA9C4622B9BB4D20095FBF1 /* VolumetricForce.swift in Sources */,

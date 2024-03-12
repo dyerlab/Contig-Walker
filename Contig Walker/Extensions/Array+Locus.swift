@@ -38,4 +38,9 @@ extension Array where Element == Locus {
         return self.range.1
     }
     
+    var centroid: Double {
+        let stride = Double( lastLocation - firstLocation ) / 2.0
+        return Double(firstLocation) + stride 
+    }
+    
 }

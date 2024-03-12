@@ -13,11 +13,15 @@ struct GraphView: View {
     
     var body: some View {
         
-        VStack(alignment: .center, content: {
+        ZStack {
             GraphDisplayView(graph: graph )
-            LocusSideView(loci: loci)
-                .padding()
-        })
+            VStack(alignment: .center, content: {
+                Spacer()
+                LocusSideView(loci: loci)
+                    .padding()
+            })
+
+        }
         .navigationTitle( graph.id.uuidString )
         .toolbar {
             ToolbarItem(placement: .automatic, content: {

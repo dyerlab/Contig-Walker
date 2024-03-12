@@ -19,6 +19,13 @@ struct LocusSideView: View {
     @State private var hoverLocation: CGPoint = .zero
     @State private var isHovering = false
     
+    @State private var showingAe = false
+    @State private var showingP = false
+    @State private var showingHo = false
+    @State private var showingHe = true
+    @State private var showingHs = true
+    @State private var showingFis = false
+    @State private var showingFst = true
     
     var plotColor: Color {
 #if os(visionOS)
@@ -34,8 +41,21 @@ struct LocusSideView: View {
         var ret = [DataPoint]()
         
         for loc in loci {
-            ret.append( DataPoint(x: Double(loc.coordinate), y: loc.He, group: "He") )
-            ret.append( DataPoint(x: Double(loc.coordinate), y: (loc.He - loc.Ho)/loc.He, group: "F") )
+            if showingP {
+                ret.append( DataPoint(x: Double(loc.coordinate), y: loc.p, group: "p") )
+            }
+            if showingHo {
+                ret.append( DataPoint(x: Double(loc.coordinate), y: loc.Ho, group: "Ho") )
+            }
+            if showingHs {
+                ret.append( DataPoint(x: Double(loc.coordinate), y: loc.Hs, group: "Hs") )
+            }
+            if showingFis {
+                ret.append( DataPoint(x: Double(loc.coordinate), y: loc.Fis, group: "Fis") )
+            }
+            if showingFst {
+                ret.append( DataPoint(x: Double(loc.coordinate), y: loc.Fst, group: "Fst") )
+            }
         }
         return ret
     }
@@ -52,65 +72,94 @@ struct LocusSideView: View {
     
     
     var body: some View {
-        Chart {
+        HStack {
             
-            ForEach( dataPoints ) { item in
-                LineMark(
-                    x: .value("X Value", item.xValue),
-                    y: .value("Y Value", item.yValue)
-                )
-                .lineStyle( .init( lineWidth: 2.0) )
-                .opacity( 0.25)
-                .foregroundStyle(by: .value("group", item.grouping) )
-            }
-            
-            
-            
-            ForEach( loci, id: \.self) { item in
-                PointMark(
-                    x: .value("X Value", item.coordinate  ),
-                    y: .value("Y Value", 0.0 )
-                )
-                .symbolSize(0.0)
-                .annotation(position: .automatic,
-                            spacing: 0,
-                            overflowResolution: .init(x: .padScale, y: .padScale)) {
-                    Text("\(item.id )")
-                        .font( .system(size: 9) )
-                        .foregroundStyle(.secondary)
-                        .rotationEffect(Angle(degrees: -45))
-                    
+            Chart {
+                
+                ForEach( dataPoints ) { item in
+                    LineMark(
+                        x: .value("X Value", item.xValue),
+                        y: .value("Y Value", item.yValue)
+                    )
+                    .lineStyle( .init( lineWidth: 2.0) )
+                    .opacity( 0.25)
+                    .foregroundStyle(by: .value("group", item.grouping) )
                 }
+                
+                
+                
+                ForEach( loci, id: \.self) { item in
+                    PointMark(
+                        x: .value("X Value", item.coordinate  ),
+                        y: .value("Y Value", 0.0 )
+                    )
+                    .symbolSize(0.0)
+                    .annotation(position: .automatic,
+                                spacing: 0,
+                                overflowResolution: .init(x: .padScale, y: .padScale)) {
+                        Text("\(item.id )")
+                            .font( .system(size: 9) )
+                            .foregroundStyle(.secondary)
+                            .rotationEffect(Angle(degrees: -45))
+                        
+                    }
+                }
+                
+            }
+            .frame(maxHeight: 150 )
+            .chartXScale(domain: scaleMin ... scaleMax )
+            .chartLegend( position: .top )
+            .chartYAxis{
+                // AxisMarks(values: [0.0, 0.25, 0.50 ] )
+            }
+            .chartXAxis { }
+            /*
+            .chartYAxisLabel(position: .bottom,
+                             alignment: .center,
+                             content: {
+                Text("Diversity")
+            } )
+            .chartYAxis {
+                AxisMarks( values: [0.0, 0.25, 0.50, 0.75 ])
+            }
+            .chartXScale( domain: scaleMin ... scaleMax )
+            .chartXAxis {
+                AxisMarks(position: .leading) { item in
+                    AxisValueLabel(orientation: .verticalReversed,
+                                   horizontalSpacing: 0.0,
+                                   verticalSpacing: 0.0)
+                }
+                
+            }
+            .frame( maxWidth: 150 )
+             */
+            
+            
+            VStack(alignment: .leading) {
+                Toggle(isOn: $showingP, label: {
+                    Text("p")
+                })
+                .toggleStyle( .switch)
+                Toggle(isOn: $showingHo, label: {
+                    Text("Ho")
+                })
+                .toggleStyle( .switch)
+                Toggle(isOn: $showingHs, label: {
+                    Text("Hs")
+                })
+                .toggleStyle( .switch)
+                Toggle(isOn: $showingFis, label: {
+                    Text("Fis")
+                })
+                .toggleStyle( .switch)
+                Toggle(isOn: $showingFst, label: {
+                    Text("Fst")
+                })
+                .toggleStyle( .switch)
             }
             
+
         }
-        .frame(maxHeight: 150 )
-        .chartXScale(domain: scaleMin ... scaleMax )
-        .chartLegend( position: .top )
-        .chartYAxis{
-            AxisMarks(values: [0.0, 0.25, 0.50 ] )
-        }
-        .chartXAxis { }
-        /*
-        .chartYAxisLabel(position: .bottom,
-                         alignment: .center,
-                         content: {
-            Text("Diversity")
-        } )
-        .chartYAxis {
-            AxisMarks( values: [0.0, 0.25, 0.50, 0.75 ])
-        }
-        .chartXScale( domain: scaleMin ... scaleMax )
-        .chartXAxis {
-            AxisMarks(position: .leading) { item in
-                AxisValueLabel(orientation: .verticalReversed,
-                               horizontalSpacing: 0.0,
-                               verticalSpacing: 0.0)
-            }
-            
-        }
-        .frame( maxWidth: 150 )
-         */
     }
     
     @ViewBuilder

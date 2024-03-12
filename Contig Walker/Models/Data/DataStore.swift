@@ -17,6 +17,16 @@ class DataStore: Codable {
         return graphs.compactMap({ $0.metaData })
     }
     
+    
+    var graphLocations: [Double] {
+        var ret = [Double]()
+        for graph in graphs {
+            ret.append( locationForGraph(graph: graph) )
+        }
+        return ret
+    }
+    
+    
     enum CodingKeys: CodingKey {
         case graphs
         case loci
@@ -48,6 +58,13 @@ class DataStore: Codable {
             }
         }
         return ret
+    }
+    
+    func locationForGraph( graph: Graph ) -> Double {
+        let r = loci.range
+        let graphLoci = lociForGraph(graph: graph )
+        let graphCenter = graphLoci.centroid
+        return graphCenter / Double( r.1 - r.0 )
     }
     
     

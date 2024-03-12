@@ -38,7 +38,7 @@ struct ContentView: View {
                     else {   /// This one picks up from the previous layout and modifies it...
                         NavigationLink(value: graph, label: {
                             GraphLineView( graph: graph,
-                                           loci: data.lociForGraph( graph: graph ) )
+                                           loci: data.lociForGraph( graph: graph ))
                         })
                     }
 
@@ -52,8 +52,12 @@ struct ContentView: View {
                 HomeView()
             } else {
                 if let selected = selectedGraph {
-                    GraphView( graph: selected,
-                               loci: data.lociForGraph(graph: selected ) )
+                    VStack {
+                        GraphView( graph: selected,
+                                   loci: data.lociForGraph(graph: selected ) )
+                        ContigView( locations: data.graphLocations,
+                                    selected: data.locationForGraph(graph: selected) )
+                    }
                     .padding()
                     .background( Color.tertiaryBackground )
                 } else {
