@@ -152,7 +152,6 @@ struct LocusSideView: View {
                 
             }
         }
-        .padding()
     }
     
     @ViewBuilder

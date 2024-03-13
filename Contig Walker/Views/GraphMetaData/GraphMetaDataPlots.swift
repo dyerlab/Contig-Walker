@@ -15,6 +15,7 @@ struct GraphMetaDataPlots: View {
     var body: some View {
         
         VStack(alignment: .leading ) {
+            Text("Found \(data.graphs.count)")
             Chart {
                 ForEach( data.metaDataPoints(metaDataType: .Edges), id: \.self) { item in
                     

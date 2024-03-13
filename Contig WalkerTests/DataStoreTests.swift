@@ -24,6 +24,13 @@ final class DataStoreTests: XCTestCase {
         XCTAssertEqual( ds.graphs.count, 100 )
         XCTAssertEqual( ds.loci.count, 2020  )
         XCTAssertEqual( ds.metaData.count, 100)
+        
+        if let g = ds.graphs.first {
+            print( "Graph: \(g)")
+        } else {
+            print( "ERROR GRAPH WAS NIL")
+        }
+        
         XCTAssertEqual( ds.graphs.first!.loci.count, 40 )
         
         let gmd_edges = ds.metaDataPoints(metaDataType: .Edges)
