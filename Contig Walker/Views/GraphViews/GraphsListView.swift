@@ -11,13 +11,17 @@ struct GraphsListView: View {
     var data: DataStore
     
     var body: some View {
-        List( data.graphs ) { graph in
-            NavigationLink {
-                GraphDetailView( data: data,
-                                 graph: graph )
-            } label: {
-                GraphLineView( graph: graph,
-                               loci: data.lociForGraph(graph: graph) )
+        if data.isEmpty {
+            Text("Load Topologies")
+        } else {
+            List( data.graphs ) { graph in
+                NavigationLink {
+                    GraphDetailView( data: data,
+                                     graph: graph )
+                } label: {
+                    GraphLineView( data: data,
+                                   graph: graph )
+                }
             }
         }
     }

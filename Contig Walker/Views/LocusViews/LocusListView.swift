@@ -10,11 +10,17 @@ import SwiftUI
 struct LocusListView: View {
     var loci: [Locus]
     var body: some View {
-        List( loci ) { locus in
-            NavigationLink {
-                LocusDetailView( locus: locus )
-            } label: {
-                LocusRowView( locus: locus )
+        
+        if loci.isEmpty {
+            Text("Load Topologies")
+        } else {
+            
+            List( loci ) { locus in
+                NavigationLink {
+                    LocusDetailView( locus: locus )
+                } label: {
+                    LocusRowView( locus: locus )
+                }
             }
         }
     }

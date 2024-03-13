@@ -10,7 +10,18 @@ import SwiftUI
 struct GraphLineView: View {
     var graph: Graph
     var loci: [Locus]
-    var index: Int = 0
+    var index: Int
+    
+    init(data: DataStore, graph: Graph  ) {
+        self.graph = graph
+        self.loci =  data.lociForGraph(graph: graph)
+        
+        if let idx = data.graphs.firstIndex(of: graph ) {
+            self.index = idx
+        } else {
+            self.index = -1
+        }
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -31,7 +42,6 @@ struct GraphLineView: View {
 }
 
 #Preview {
-    GraphLineView(graph: DataStore.DefaultDataStore.exampleGraph,
-                  loci: DataStore.DefaultDataStore.lociForGraph( graph: DataStore.DefaultDataStore.exampleGraph ),
-                  index: 42 )
+    GraphLineView(data: DataStore.DefaultDataStore,
+                  graph: DataStore.DefaultDataStore.exampleGraph)
 }

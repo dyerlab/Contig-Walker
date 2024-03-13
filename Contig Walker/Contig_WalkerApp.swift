@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct Contig_WalkerApp: App {
-    
+    @State var dataStore = DataStore()
+        
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            MainWindowView()
+            MainWindowView(data: dataStore)
         }
         .commands {
             CommandGroup(replacing: .importExport, addition: {

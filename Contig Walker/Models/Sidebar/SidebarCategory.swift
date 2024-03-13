@@ -13,6 +13,7 @@ enum SidebarCategory: String, CaseIterable, Identifiable {
     case Loci = "Loci"
     case Map = "Maps"
     case Graphs = "Graphs"
+    case Traces = "Traces"
     
     var localizedString: String {
         return self.rawValue
@@ -26,6 +27,8 @@ enum SidebarCategory: String, CaseIterable, Identifiable {
             return "mappin.and.ellipse"
         case .Graphs:
             return "point.3.filled.connected.trianglepath.dotted"
+        case .Traces:
+            return "chart.xyaxis.line"
         }
     }
     

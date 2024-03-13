@@ -17,7 +17,7 @@ struct GraphMetaDataPlots: View {
         VStack(alignment: .leading ) {
             Text("Found \(data.graphs.count)")
             Chart {
-                ForEach( data.metaDataPoints(metaDataType: .Edges), id: \.self) { item in
+                ForEach( data.metaDataPoints(dataCategory: .Edges), id: \.self) { item in
                     
                     LineMark(
                         x: .value("X Value", item.xValue  ),

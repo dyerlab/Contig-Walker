@@ -13,8 +13,12 @@ import PresentationZen
     var graphs: [Graph]
     var loci: [Locus]
     
+    var isEmpty: Bool {
+        return graphs.isEmpty
+    }
+    
     var metaData: [GraphMetaData] {
-        return graphs.compactMap({ $0.metaData })
+        return graphs.compactMap( { $0.metaData } )
     }
     
     
@@ -120,7 +124,7 @@ extension DataStore : DataPointProvider {
     }
     
     
-    func metaDataPoints(metaDataType: GraphMetaDataType) -> [DataPoint] {
+    func metaDataPoints(dataCategory: GraphDataCategory) -> [DataPoint] {
         var ret = [DataPoint]()
         
         for i in 0 ..< graphs.count {
@@ -130,7 +134,7 @@ extension DataStore : DataPointProvider {
             
             var dat = DataPoint(x: Double(coord), y: Double.nan)
             if let md = graph.metaData {
-                switch metaDataType {
+                switch dataCategory {
                 case .Edges:
                     dat.yValue = Double(md.numEdges)
                 case .Degree:

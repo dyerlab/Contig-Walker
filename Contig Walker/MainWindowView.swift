@@ -9,11 +9,8 @@ import SwiftUI
 
 struct MainWindowView: View {
     @State private var selected: SidebarCategory?
+    @State private var isImporting = false
     var data: DataStore
-    
-    init() {
-        data = DataStore.DefaultDataStore
-    }
     
     var body: some View {
         NavigationSplitView(sidebar: {
@@ -25,9 +22,12 @@ struct MainWindowView: View {
                         .foregroundStyle( .blue, .secondary )
                     Text("\(item.localizedString)")
                 }
+                .disabled( data.isEmpty )
             }
             .listStyle( SidebarListStyle() )
-            
+            Spacer()
+            Text("\(data.graphs.count) graphs")
+                .font(.footnote)
         }, content: {
             switch selected {
             case .Loci:
@@ -36,15 +36,33 @@ struct MainWindowView: View {
                 Text("Maps")
             case .Graphs:
                 GraphsListView(data: data )
+            case .Traces:
+                TracesListView(data: data )
             case nil:
                 EmptyView()
             }
         }, detail: {
             HomeView()
         })
+        .onReceive( NotificationCenter.default.publisher(for: .importData), perform: { _ in
+            isImporting = true
+        })
+        .fileImporter(isPresented: $isImporting,
+                      allowedContentTypes: [ .json ],
+                      allowsMultipleSelection: true, onCompletion: { result in
+            
+            switch result {
+            case .success(let urls):
+                data.importFromJSONs(urls: urls)
+            case .failure:
+                isImporting = false
+            }
+            
+        })
     }
 }
 
 #Preview {
-    MainWindowView()
+    MainWindowView(data: DataStore.DefaultDataStore )
+        .frame( minWidth: 800)
 }

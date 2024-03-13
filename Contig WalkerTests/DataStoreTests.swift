@@ -33,7 +33,7 @@ final class DataStoreTests: XCTestCase {
         
         XCTAssertEqual( ds.graphs.first!.loci.count, 40 )
         
-        let gmd_edges = ds.metaDataPoints(metaDataType: .Edges)
+        let gmd_edges = ds.metaDataPoints(dataCategory: .Edges)
         XCTAssertEqual( gmd_edges.count, 100)
         print("GMD.Edges")
         for edge in gmd_edges {
