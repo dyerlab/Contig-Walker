@@ -15,15 +15,15 @@ struct ContigView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 8)
                     .fill( .blue.gradient )
-                    .frame( height: 18 )
-                    .position(x: geometry.size.width/2.0, y: 15.0 )
+                    .frame( height: 10 )
+                    .position(x: geometry.size.width/2.0, y: 20.0 )
                     .opacity( 0.75 )
 
                 ForEach( locations, id: \.self) { loc in
                     Rectangle()
                         .fill( .gray.gradient )
-                        .frame(width: 2, height: 22 )
-                        .position( x: loc * geometry.size.width, y: 15.0 )
+                        .frame(width: 2, height: 12 )
+                        .position( x: loc * geometry.size.width, y: 20.0 )
                         .opacity(0.5)
                 }
                 

@@ -21,7 +21,7 @@ final class GraphTest: XCTestCase {
         print("\(graph)")
         
         XCTAssertEqual( graph.nodes.count, 29 )
-        XCTAssertEqual( graph.edges.count, 69 )
+        XCTAssertEqual( graph.edges.count, 83 )
         XCTAssertEqual( graph.loci.count, 40 )
     }
     

@@ -78,7 +78,7 @@ struct FlatlandGraphView: View {
             }
             
         } force: {
-            ManyBodyForce(strength: -20)
+            ManyBodyForce(strength: -100)
             CenterForce()
             LinkForce(
                 originalLength: .varied({id, _ in

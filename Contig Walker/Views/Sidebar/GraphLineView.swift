@@ -10,25 +10,18 @@ import SwiftUI
 struct GraphLineView: View {
     var graph: Graph
     var loci: [Locus]
+    var index: Int = 0
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Population Graph")
+            Text("Topology \(index)")
             HStack(alignment: .center, content: {
-                /*
-                Image(systemName: "point.3.filled.connected.trianglepath.dotted")
-                    .symbolRenderingMode(.palette)
-                    .foregroundStyle( .blue, .primary )
-                    .font(.title2)
-                 */
-                
                 VStack(alignment:.leading) {
                     Text("Nodes: \(graph.nodes.count); Edges: \(graph.edges.count)")
                         .font(.system(size: 11))
                     Text("\(loci.firstLocation)bp - \(loci.lastLocation)bp")
                         .font(.system(size: 9))
                 }
-                
                 .foregroundStyle(.secondary)
             })
         }
@@ -39,5 +32,6 @@ struct GraphLineView: View {
 
 #Preview {
     GraphLineView(graph: DataStore.DefaultDataStore.exampleGraph,
-                  loci: DataStore.DefaultDataStore.lociForGraph(graph: DataStore.DefaultDataStore.exampleGraph) )
+                  loci: DataStore.DefaultDataStore.lociForGraph( graph: DataStore.DefaultDataStore.exampleGraph ),
+                  index: 42 )
 }

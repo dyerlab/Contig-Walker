@@ -8,7 +8,7 @@
 import Foundation
 import PresentationZen
 
-class DataStore: Codable {
+@Observable class DataStore: Codable {
     
     var graphs: [Graph]
     var loci: [Locus]

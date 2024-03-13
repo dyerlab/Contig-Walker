@@ -12,7 +12,8 @@ struct Contig_WalkerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            MainWindowView()
         }
         .commands {
             CommandGroup(replacing: .importExport, addition: {

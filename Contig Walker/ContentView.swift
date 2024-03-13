@@ -25,7 +25,7 @@ struct ContentView: View {
                     
                     if( asDestination ) {  /// This one forces a full restart on the layout
                         NavigationLink(destination: {
-                    
+                            
                             GraphView( graph: graph,
                                        loci: data.lociForGraph(graph: graph ) )
                             .padding()
@@ -33,15 +33,17 @@ struct ContentView: View {
                             
                         }, label: {
                             GraphLineView( graph: graph,
-                                                  loci: data.lociForGraph( graph: graph ) )})
+                                           loci: data.lociForGraph( graph: graph ),
+                                           index: 0 )})
                     }
                     else {   /// This one picks up from the previous layout and modifies it...
                         NavigationLink(value: graph, label: {
                             GraphLineView( graph: graph,
-                                           loci: data.lociForGraph( graph: graph ))
+                                           loci: data.lociForGraph( graph: graph ),
+                                           index: 0 )
                         })
                     }
-
+                    
                 }
                 Text("  \(data.graphs.count) Topologies")
                     .font(.subheadline)
@@ -79,15 +81,15 @@ struct ContentView: View {
                                 })
                             })
                         }
-
+                        
                     }
                     .background( Color.tertiaryBackground )
                 } else {
                     HomeView()
                 }
-
+                
             }
-
+            
         }
         .onReceive( NotificationCenter.default.publisher(for: .importData), perform: { _ in
             isImporting = true
@@ -102,7 +104,7 @@ struct ContentView: View {
             case .failure:
                 isImporting = false
             }
-
+            
         })
         
         
