@@ -133,7 +133,7 @@ extension GraphJSONLoader {
         var ret = [GraphJSONLoader]()
         let jd = JSONDecoder()
         
-        for i in 1 ... 50 {
+        for i in 1 ... 100 {
             let filename = String("graph_chr2_40bp_\(i)")
             if let path = Bundle.main.path(forResource: filename, ofType: "json") {
                 do {

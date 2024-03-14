@@ -13,11 +13,25 @@ struct GraphDisplayView: View {
     
     var body: some View {
         
+        
+        VStack {
         #if os(visionOS)
-        VolumetricGraphView(graph: graph )
+            TabView {
+                VolumetricGraphView(graph: graph )
+                    .tabItem {
+                        Label("", systemImage: "view.3d")
+                    }
+                FlatlandGraphView(graph: graph )
+                    .tabItem {
+                        Label("", systemImage: "view.2")
+                    }
+                
+            }
         #else
         FlatlandGraphView(graph: graph )
         #endif
+
+        }
         
     }
     

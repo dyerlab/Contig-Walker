@@ -115,7 +115,7 @@ struct LocusSideView: View {
                 // AxisMarks(values: [0.0, 0.25, 0.50 ] )
             }
             .chartXAxis { }
-            .padding( .bottom, 15  )
+            .frame(maxWidth: .infinity)
     
             
             VStack(alignment: .trailing) {
@@ -149,8 +149,8 @@ struct LocusSideView: View {
                 })
                 .toggleStyle( .switch )
                 .controlSize( .mini )
-                
             }
+            .frame(maxWidth: 150)
         }
     }
     
@@ -168,5 +168,5 @@ struct LocusSideView: View {
 
 #Preview {
     LocusSideView( loci: Locus.DefaultLoci )
-        .frame(minWidth: 1200)
+        .frame(minWidth: 1900)
 }

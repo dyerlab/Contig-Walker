@@ -9,8 +9,11 @@ import SwiftUI
 
 @main
 struct Contig_WalkerApp: App {
+    #if os(visionOS)
+    @State var dataStore = DataStore.DefaultDataStore
+    #else
     @State var dataStore = DataStore()
-        
+    #endif
     var body: some Scene {
         WindowGroup {
             MainWindowView(data: dataStore)

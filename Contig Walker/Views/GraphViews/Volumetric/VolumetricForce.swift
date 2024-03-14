@@ -19,8 +19,9 @@ struct VolumetricForce: ForceField3D {
         Kinetics3D.LinkForce(stiffness: .constant(0.5))
          */
         Kinetics3D.CenterForce(center: .zero, strength: 1)
-        Kinetics3D.ManyBodyForce(strength: -2)
-        Kinetics3D.LinkForce(stiffness: .constant(0.5))
+        Kinetics3D.ManyBodyForce(strength: -20)
+        Kinetics3D.LinkForce(stiffness: .constant(1.0))
+        
     }
     
 }
