@@ -82,7 +82,7 @@ struct VolumetricGraphView: View {
                         
                         sphereEntity.addChild( labelEntity )
                         content.add(sphereEntity)
-                        print( "\(gid)")
+
                     }
                     
                     /// Draw the links

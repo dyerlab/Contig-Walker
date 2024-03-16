@@ -7,7 +7,7 @@ library( gstudio )
 library( popgraph )
 library( jsonlite )
 
-
+fullData <- FALSE
 load("df_snps.rda")
 load("df_samples.rda")
 raw <- as.data.frame( df_samples )
@@ -44,9 +44,15 @@ source("humanCoordinates.R")
 ## Variables
 baseCtr <- 1
 fileCtr <- 1
-numLoci <- nrow( df_snps )
+if( fullData ) { 
+  contig <- "chr2"
+  numLoci <- nrow( df_snps )
+} else { 
+  contig <- "chr2a"
+  numLoci <- 120
+}
 windowSize <- 40 
-contig <- "chr2"
+
 groups <- raw$Population
 
 
@@ -65,6 +71,8 @@ if( !dir.exists(outDir) ) {
 } 
 
 toSkip <- c( 1288, 1289, 1289, 1660 )
+
+
 
 while( baseCtr < (numLoci - 40) ) { 
   

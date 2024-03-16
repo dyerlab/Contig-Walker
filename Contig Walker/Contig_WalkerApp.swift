@@ -19,6 +19,14 @@ struct Contig_WalkerApp: App {
             MainWindowView(data: dataStore)
         }
         .commands {
+            CommandGroup(replacing: .saveItem, addition: {
+                Button(action: {
+                    print("saveItem Menu")
+                    NotificationCenter.default.post(name: .saveData, object: nil)
+                }, label: {
+                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                })
+            })
             CommandGroup(replacing: .importExport, addition: {
                 Button(action: {
                     print("Importing Menu")
