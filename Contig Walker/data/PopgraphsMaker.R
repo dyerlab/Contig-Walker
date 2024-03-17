@@ -13,7 +13,8 @@ load("df_samples.rda")
 source("humanCoordinates.R")
 raw <- as.data.frame( df_samples )
 
-edgeSets <- list()
+edgeSets <- list() 
+
 numLoci <- dim(df_snps)[1]
 baseCtr <- 1
 graphCtr <- 1
@@ -41,24 +42,23 @@ while( graphCtr < 11) {
   
   # Set up the edges
   edgeSet <- list( loci = loci2Use )
-  
+  edgeKey <- paste("Edge Set",graphCtr )
+    
   # Set up the edge sets
   edgeTargets <- as_edgelist(graph )
   weights <- edge_attr( graph )$weight 
-  theEdges <-  list( sources=edgeTargets[,1],
+  theEdges <-  list( id = edgeKey,
+                     sources=edgeTargets[,1],
                      targets=edgeTargets[,2],
                      weights=weights,
-                     loci=loci2Use)
+                     loci=loci2Use )
   
-  edgeKey <- paste("Edge Set",graphCtr )
-  edgeSets[[edgeKey]] <- theEdges 
-  
+  edgeSets[[edgeKey]] <- theEdges
   
   # Increment the counters
-  baseCtr <- baseCtr + windowStep 
+  baseCtr <- windowStep + baseCtr
   graphCtr <- graphCtr + 1 
 } 
-
 
 
 # Get the loci that were used and then save them as a 
